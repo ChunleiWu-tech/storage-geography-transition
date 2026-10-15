@@ -1,0 +1,34 @@
+{
+  "version": "V31R6_PUBLICATION_FIGURES_LAYOUT_AUDITED_20260902",
+  "status": "PASS",
+  "typography": {
+    "family": "Arial",
+    "panel_letters": "lowercase bold a/b/c/d/e",
+    "panel_anchor": "outside axes, upper-left, common normalized position"
+  },
+  "unit_contract": {
+    "power": "MW to GW once at plotting boundary",
+    "energy": "MWh to GWh once at plotting boundary",
+    "annual_cost": "USD/year to million or billion USD/year as labelled",
+    "present_value_cost": "USD PV to billion USD PV as labelled"
+  },
+  "cartography_contract": {
+    "official_reference": "Ministry of Natural Resources standard map GS(2023)2767",
+    "territorial_elements": "Taiwan is displayed on every national map; South China Sea discontinuous lines are displayed in an unlabelled dedicated inset.",
+    "model_scope": "Taiwan is a cartographic element only because the archived mainland model has no Taiwan model-zone result; no synthetic value is assigned.",
+    "publication_caveat": "The archived official reference and hashes support provenance; obtain a new map-review number if required by the journal or public-release authority for the overlaid thematic map."
+  },
+  "evidence_layers": {
+    "main_16_case": "spatial legacy mechanism and multiyear adaptation",
+    "targetyear_8_case": "linked chronology, LDES and one-hour sensitivity",
+    "future_storage_26_case": "8 target-year correction + 16 evidence-direct pathway + 2 equal-horizon cases",
+    "full8760_4_case": "fixed-portfolio minimum additional technology-neutral balancing capacity"
+  },
+  "claim_boundaries": [
+    "A positive FULL8760 minimum additional balancing capacity is a lower-bound hourly feasibility gap, not an actual technology build, economic cost, or original fixed-portfolio feasibility pass.",
+    "Layer-A annualized target-year costs are not added to Layer-B/C multiyear present-value costs.",
+    "Expanded CAES/H2 portfolios are pressure tests and not headline province-siting evidence.",
+    "Missing values are never imputed as scientific zero; true strict-success zero builds remain zero.",
+    "V31R6 changes only figure layout and cartographic text: the Fig. 3d colour-scale position, Fig. 6 column spacing, Fig. S5 map spacing and omission of the South China Sea inset text label; inset geometry and all scientific inputs, constraints, objectives, solver results, plotted values and colour-scale domains remain unchanged."
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "summary": {
+    "version": "V17",
+    "hard_checks": 64,
+    "hard_passed": 64,
+    "hard_all_pass": true,
+    "official_scenario_count": 16,
+    "python_file_count": 38
+  },
+  "checks": [
+    {
+      "check": "python_compile",
+      "pass": true,
+      "detail": "[]",
+      "severity": "error"
+    },
+    {
+      "check": "scenario_master_columns",
+      "pass": true,
+      "detail": "[]",
+      "severity": "error"
+    },
+    {
+      "check": "sixteen_official_scenarios",
+      "pass": true,
+      "detail": "16",
+      "severity": "error"
+    },
+    {
+      "check": "scenario_names_unique",
+      "pass": true,
+      "detail": "['SL00_OBSERVED_ACTUAL', 'SL01_OBSERVED_STANDARDIZED', 'SL02_OPTIMAL_REALLOCATION', 'SL03_NO_LEGACY', 'SL04_RULE_LOAD', 'SL05_RULE_VRE', 'SL06_TX_FIXED_OBSERVED', 'SL07_TX_FIXED_OPTIMAL', 'SL08_PH_CONSERVATIVE_OBSERVED', 'SL09_PH_CONSERVATIVE_OPTIMAL', 'SL10_CARBON_TIGHT_OBSERVED', 'SL11_CARBON_TIGHT_OPTIMAL', 'SL12_COST_LOW_OBSERVED', 'SL13_COST_LOW_OPTIMAL', 'SL14_COST_HIGH_OBSERVED', 'SL15_COST_HIGH_OPTIMAL']",
+      "severity": "error"
+    },
+    {
+      "check": "all_official_no_beccs",
+      "pass": true,
+      "detail": "[]",
+      "severity": "error"
+    },
+    {
+      "check": "all_official_declare_no_cdr",
+      "pass": true,
+      "detail": "NBCCS, DACCS and BECCS disabled; fossil generator CCS remains separately declared",
+      "severity": "error"
+    },
+    {
+      "check": "claim_scope_excludes_long_duration",
+      "pass": true,
+      "detail": "representative-day evidence boundary",
+      "severity": "error"
+    },
+    {
+      "check": "model:scaled_economic_objective",
+      "pass": true,
+      "detail": "ECONOMIC_OBJECTIVE_SCALE_USD = 1.0e6",
+      "severity": "error"
+    },
+    {
+      "check": "model:configurable_threads",
+      "pass": true,
+      "detail": "V17_SOLVER_THREADS",
+      "severity": "error"
+    },
+    {
+      "check": "model:barrier_primary",
+      "pass": true,
+      "detail": "profile == \"scaled_barrier\"",
+      "severity": "error"
+    },
+    {
+      "check": "model:barrier_no_crossover",
+      "pass": true,
+      "detail": "crossover = 0",
+      "severity": "error"
+    },
+    {
+      "check": "model:native_solver_certificate",
+      "pass": true,
+      "detail": "stage1_native_solver_certificate_pass",
+      "severity": "error"
+    },
+    {
+      "check": "model:native_barrier_proof_source",
+      "pass": true,
+      "detail": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "severity": "error"
+    },
+    {
+      "check": "model:native_zero_iteration_proof_source",
+      "pass": true,
+      "detail": "gurobi_zero_iteration_optimal_under_barrier_configuration",
+      "severity": "error"
+    },
+    {
+      "check": "model:presolve_safe_iteration_mode",
+      "pass": true,
+      "detail": "stage1_zero_iteration_optimal",
+      "severity": "error"
+    },
+    {
+      "check": "model:native_gurobi_status",
+      "pass": true,
+      "detail": "stage1_gurobi_status_gate_pass",
+      "severity": "error"
+    },
+    {
+      "check": "model:native_gurobi_objval",
+      "pass": true,
+      "detail": "stage1_gurobi_objval_gate_pass",
+      "severity": "error"
+    },
+    {
+      "check": "model:external_diagnostic_tolerance",
+      "pass": true,
+      "detail": "STAGE1_CERT_ACCEPT_REL_TOL",
+      "severity": "error"
+    },
+    {
+      "check": "model:safe_objbound",
+      "pass": true,
+      "detail": "_safe_solve_float(() -> objective_bound(mod))",
+      "severity": "error"
+    },
+    {
+      "check": "model:safe_dual_objective",
+      "pass": true,
+      "detail": "_safe_solve_float(() -> dual_objective_value(mod))",
+      "severity": "error"
+    },
+    {
+      "check": "model:certificate_grade",
+      "pass": true,
+      "detail": "strict_solver_native",
+      "severity": "error"
+    },
+    {
+      "check": "model:external_diagnostic_only",
+      "pass": true,
+      "detail": "stage1_dual_objective_diagnostic_only",
+      "severity": "error"
+    },
+    {
+      "check": "model:single_cleanup_route",
+      "pass": true,
+      "detail": "cleanup_route_for_profile(cleanup_profile)",
+      "severity": "error"
+    },
+    {
+      "check": "model:economic_cost_band",
+      "pass": true,
+      "detail": "Enforce_Lexicographic_Economic_Cost_Band",
+      "severity": "error"
+    },
+    {
+      "check": "model:aggregate_generation_locks",
+      "pass": true,
+      "detail": "gen_build_groups",
+      "severity": "error"
+    },
+    {
+      "check": "model:aggregate_storage_energy_locks",
+      "pass": true,
+      "detail": "storage_energy_groups",
+      "severity": "error"
+    },
+    {
+      "check": "model:retirement_locks",
+      "pass": true,
+      "detail": "retirement_groups",
+      "severity": "error"
+    },
+    {
+      "check": "model:ccs_locks",
+      "pass": true,
+      "detail": "ccs_groups",
+      "severity": "error"
+    },
+    {
+      "check": "model:local_grid_locks",
+      "pass": true,
+      "detail": "BuildLocalTD[idx]",
+      "severity": "error"
+    },
+    {
+      "check": "model:explicit_gate_diagnostics",
+      "pass": true,
+      "detail": "solve_gate_diagnostics.json",
+      "severity": "error"
+    },
+    {
+      "check": "model:publication_gate",
+      "pass": true,
+      "detail": "PUBLICATION_SOLVE_GATE_FAILED",
+      "severity": "error"
+    },
+    {
+      "check": "model:cdr_compile_off",
+      "pass": true,
+      "detail": "STORAGE_CDR_MODULES_COMPILED = false",
+      "severity": "error"
+    },
+    {
+      "check": "model:raw_pstart_reset",
+      "pass": true,
+      "detail": "Gurobi.GRBreset",
+      "severity": "error"
+    },
+    {
+      "check": "model:raw_pstart_array",
+      "pass": true,
+      "detail": "Gurobi.GRBsetdblattrarray",
+      "severity": "error"
+    },
+    {
+      "check": "model:raw_pstart_list",
+      "pass": true,
+      "detail": "Gurobi.GRBsetdblattrlist",
+      "severity": "error"
+    },
+    {
+      "check": "model:raw_pstart_column_map",
+      "pass": true,
+      "detail": "Gurobi.c_column",
+      "severity": "error"
+    },
+    {
+      "check": "model:raw_pstart_not_serialized",
+      "pass": true,
+      "detail": ":cleanup_raw_pstart_serialized => [false]",
+      "severity": "error"
+    },
+    {
+      "check": "model:optional_diagnostic_cleanup_pstart",
+      "pass": true,
+      "detail": "diagnostic_primal_simplex_raw_pstart_sparse_face_selection",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:crossover_basis_attribute_write",
+      "pass": true,
+      "detail": "\"CrossoverBasis\",",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:price_basis",
+      "pass": true,
+      "detail": "price_basis",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:capture_simplex_basis",
+      "pass": true,
+      "detail": "capture_simplex_basis",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:restore_simplex_basis",
+      "pass": true,
+      "detail": "restore_simplex_basis!",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:variable_basis_status",
+      "pass": true,
+      "detail": "VariableBasisStatus",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:constraint_basis_status",
+      "pass": true,
+      "detail": "ConstraintBasisStatus",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:dual_start_attribute_write",
+      "pass": true,
+      "detail": "\"DStart\",",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:set_start_value",
+      "pass": true,
+      "detail": "set_start_value(",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:old_cleanup_profile",
+      "pass": true,
+      "detail": "two_stage_physical_cleanup",
+      "severity": "error"
+    },
+    {
+      "check": "forbidden_absent:old_objbound_tolerance",
+      "pass": true,
+      "detail": "stage1_objective_bound_gap_tolerance_usd",
+      "severity": "error"
+    },
+    {
+      "check": "runner_hard_disables_cdr",
+      "pass": true,
+      "detail": "runner arguments",
+      "severity": "error"
+    },
+    {
+      "check": "batch_fresh_process_attempts",
+      "pass": true,
+      "detail": "fresh model per route",
+      "severity": "error"
+    },
+    {
+      "check": "batch_no_stage1_primal_diagnostic",
+      "pass": true,
+      "detail": "stage-1 primal simplex remains diagnostic only",
+      "severity": "error"
+    },
+    {
+      "check": "bounded_stage1_route_tree",
+      "pass": true,
+      "detail": "official fallback changes only the stage-1 solver algorithm",
+      "severity": "error"
+    },
+    {
+      "check": "stage1_official_primary",
+      "pass": true,
+      "detail": "formal route publishes the certified stage-1 solution",
+      "severity": "error"
+    },
+    {
+      "check": "cleanup_absent_from_official_fallback",
+      "pass": true,
+      "detail": "cleanup algorithms cannot replace or reject the official stage-1 result",
+      "severity": "error"
+    },
+    {
+      "check": "raw_pstart_only_ephemeral",
+      "pass": true,
+      "detail": "no PStart persistence",
+      "severity": "error"
+    },
+    {
+      "check": "source_load_probe_present",
+      "pass": true,
+      "detail": "production source is actually included before solve",
+      "severity": "error"
+    },
+    {
+      "check": "runtime_invokes_source_load",
+      "pass": true,
+      "detail": "runtime validation cannot bypass production source lowering",
+      "severity": "error"
+    },
+    {
+      "check": "grb_error_constant_top_level",
+      "pass": true,
+      "detail": "no local const declaration",
+      "severity": "error"
+    },
+    {
+      "check": "figure_registry_22",
+      "pass": true,
+      "detail": "22",
+      "severity": "error"
+    },
+    {
+      "check": "six_main_figures",
+      "pass": true,
+      "detail": "main figures",
+      "severity": "error"
+    },
+    {
+      "check": "figure_ids_unique",
+      "pass": true,
+      "detail": "['Fig1', 'Fig2', 'Fig3', 'Fig4', 'Fig5', 'Fig6', 'FigS01', 'FigS02', 'FigS03', 'FigS04', 'FigS05', 'FigS06', 'FigS07', 'FigS08', 'FigS09', 'FigS10', 'FigS11', 'FigS12', 'FigS13', 'FigS14', 'FigS15', 'FigS16']",
+      "severity": "error"
+    },
+    {
+      "check": "legacy_32_zones",
+      "pass": true,
+      "detail": "{'rows': 32, 'zones': 32}",
+      "severity": "error"
+    },
+    {
+      "check": "legacy_power_closure",
+      "pass": true,
+      "detail": "135930.0",
+      "severity": "error"
+    },
+    {
+      "check": "legacy_energy_closure",
+      "pass": true,
+      "detail": "351120.0",
+      "severity": "error"
+    }
+  ]
+}

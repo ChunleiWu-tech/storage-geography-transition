@@ -1,0 +1,2 @@
+comparison,four_hour_penalty_usd_per_yr,one_hour_penalty_usd_per_yr,one_hour_minus_four_hour_usd_per_yr,one_hour_retention_fraction,interpretation
+2033 four-hour vs one-hour representative-day discretization,2454160116.5861816,1919592047.4676514,-534568069.1185303,0.7821788132299484,"energy-preserving bounded within-block reconstruction; a temporal-discretization sensitivity, not observed hourly data or a full 8760-hour chronology"

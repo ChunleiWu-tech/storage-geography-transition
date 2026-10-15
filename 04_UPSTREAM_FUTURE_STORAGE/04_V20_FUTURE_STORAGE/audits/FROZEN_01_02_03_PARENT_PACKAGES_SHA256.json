@@ -1,0 +1,24 @@
+{
+  "version": "V18_PARENT_PACKAGE_IMMUTABILITY_LEDGER_R1",
+  "purpose": "04_FUTURE_STORAGE_PLANNING_V18 is an additive child package; 01/02/03 are frozen and not overwritten.",
+  "parents": [
+    {
+      "package": "01_MAIN_UPSTREAM_V17T4R3_CURRENT_CONSOLIDATED_FINAL_20260809(1).zip",
+      "sha256": "2878b00e1619798703af317707038327bea00285ceb0a06a22bce88c44738e8b",
+      "size_bytes": 65347481,
+      "status": "FROZEN_PARENT_NOT_MODIFIED"
+    },
+    {
+      "package": "02_TARGETYEAR_SENSITIVITY_V17T2R5_CURRENT_CONSOLIDATED_FINAL_20260809(1).zip",
+      "sha256": "ec4df30875dbe5662add84ffb846207e831a421f165a1b612e8aff38a8e72d98",
+      "size_bytes": 34614418,
+      "status": "FROZEN_PARENT_NOT_MODIFIED"
+    },
+    {
+      "package": "03_FULL8760_VALIDATION_V17T2R6R7_HF1_CURRENT_FINAL_2X10_20260809(1).zip",
+      "sha256": "7bb1836d05481f25cd37db1361eee3bd747f2763cbb45e79adf8eac873c2adbf",
+      "size_bytes": 137719967,
+      "status": "FROZEN_PARENT_NOT_MODIFIED"
+    }
+  ]
+}

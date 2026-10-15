@@ -1,0 +1,34 @@
+{
+  "version": "V31R2_PUBLICATION_FIGURES_CARTOGRAPHIC_QA_20260831",
+  "status": "PASS",
+  "checked_at": "2026-08-31",
+  "official_provider": "Ministry of Natural Resources of the People's Republic of China, Standard Map Service System",
+  "official_service_url": "http://bzdt.ch.mnr.gov.cn/",
+  "official_review_number": "GS(2023)2767",
+  "official_picture_id": "4o28b0625501ad13015501ad2bfc2187",
+  "official_map_name": "中国地图 1∶740万 对开",
+  "official_map_variant": "界线版 无邻国 线划一",
+  "official_download_record": "The public official search and download endpoints returned the archived ZIP and JPG listed below.",
+  "rendering_contract": {
+    "taiwan": "The analytical GeoJSON contains 台湾省 and the renderer draws it with an explicit visible outline and geographic label. The upstream mainland electricity model has no Taiwan model zone, so no synthetic scientific value is assigned.",
+    "south_china_sea": "The renderer displays the archived discontinuous-line geometry in a dedicated South China Sea inset on every national map.",
+    "boundary_editing": "No analytical result is used to alter a territorial boundary. The official raster is archived as the authoritative compliance reference; the vector presentation layer is separately hashed and audited for Taiwan and South China Sea features.",
+    "publication_review": "If the journal or public-release authority requires a new review number for the overlaid thematic map, submit the final composed map through the applicable map-review process before public release."
+  },
+  "geometry_audit": {
+    "china_feature_count": 34,
+    "taiwan_feature_name": "台湾省",
+    "taiwan_present": true,
+    "south_china_sea_line_feature_count": 10,
+    "south_china_sea_line_present": true
+  },
+  "files": {
+    "中国地图 1∶740万 (界线版 无邻国 无河流 线划(一).jpg": "AF7873985350A9654477A65C3AB0731C09A84F8F2AD13D06DA83FAAFA2B5410A",
+    "china_provinces.geojson": "278464F0E47733664E68A4BDE1BE7C132FC4C990EA8C6EC14431544E46D6009B",
+    "download_GS2023_2767_response.json": "8914686F10C09B1EB95D58EDA1840CA408F68C521E56A32D05FEE0B45E1DAC8A",
+    "GS_2023_2767_official_standard_map.zip": "F389F709C8E802375B24AB79CB7622D837ECED2C073B285C557A2FD2031B2BF2",
+    "mnr_standard_map_home.html": "4ED96A27F65F55D8C86DC1CB93DB69331827695823D2F7189A0725E2FD058A72",
+    "nine_dash_line_geometry_only.geojson": "210EAB063546C90F4F6FB4F371A22D18E9EC139FF964A34B91C9FAC674A05411",
+    "search_GS2023_2767.json": "836E459B781726A143C9621110D05780AB75DA5FF1CE5043459C10A596D64B76"
+  }
+}

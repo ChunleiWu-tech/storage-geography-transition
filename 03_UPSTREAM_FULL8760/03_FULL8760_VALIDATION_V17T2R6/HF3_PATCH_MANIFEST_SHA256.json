@@ -1,0 +1,37 @@
+{
+  "version": "V17T2R6R8_HF3_FULL8760_EQUIVALENT_PROJECTION_SERIAL_PRIMARY",
+  "scope": "HF3 patch files only; all sensitivity case inputs remain governed by their frozen CASE_PUBLICATION_SOURCE_FINGERPRINT.json files",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "bytes": 419638,
+      "sha256": "92ab2d6e3c840f5b7c4a564f45da6b35d26bdf73c809d6ad9c23d9d7316bfa58"
+    },
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "bytes": 29744,
+      "sha256": "5207bd08928a930ed1aaef37a5fa18443eaf4fffce23d98838d6aca92f38dfba"
+    },
+    {
+      "path": "tools/check_v17t2r6r8_hf3_projection.py",
+      "bytes": 11622,
+      "sha256": "94db0a6ab28d8d72fe17b2661e1ad8e8e0e2e9966bc73e850aa3d171597f21a9"
+    },
+    {
+      "path": "RUN_V17T2R6R8_HF3_8760_ALL4_SERIAL_RESUME.bat",
+      "bytes": 1285,
+      "sha256": "7e2f4295b058f94cdfafcddf40f0b04554f4fbabccb68e05f384e5182d25f0f8"
+    },
+    {
+      "path": "CHECK_V17T2R6R8_HF3_8760.bat",
+      "bytes": 387,
+      "sha256": "d298d8064e588bfe1416a37b1f346557ffc0da4d72684c61663623c3777e7581"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R8_HF3.md",
+      "bytes": 2117,
+      "sha256": "5de81b86b59441f40c8ed4b661c8ce105e3b6f5b1cb99942c635474ab148299b"
+    }
+  ]
+}

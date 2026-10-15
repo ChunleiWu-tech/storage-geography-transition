@@ -1,0 +1,12 @@
+{
+  "version": "SUBMISSION_4PACK_FINAL_20260830",
+  "package_id": "01_MAIN_UPSTREAM_V17T4R3_SUBMISSION_FINAL_20260830",
+  "package_root": "main_model_upstream_V17T2",
+  "status": "PASS",
+  "case_count": 16,
+  "numerical_closure_status": "16/16 user-confirmed strict completion; runtime outputs intentionally excluded",
+  "scientific_change": false,
+  "runtime_outputs_included": false,
+  "primary_launcher": "RUN_CLEAN_REPRODUCE_SUCCESSFUL_METHODS_16.bat",
+  "submission_status": "FINAL_REPRODUCIBLE_METHOD_AND_INPUT_PACKAGE"
+}

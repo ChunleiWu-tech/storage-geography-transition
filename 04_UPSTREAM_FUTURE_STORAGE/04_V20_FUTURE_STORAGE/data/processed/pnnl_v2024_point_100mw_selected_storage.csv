@@ -1,0 +1,455 @@
+candidate_tech,Technology,Year,Power_MW,Duration_hr,Estimate_type,Parameter_category,Parameter,Value
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,DC Storage Block ($/kWh),184.37
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,DC Storage BOS ($/kWh),35.54
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Power Equipment ($/kW),63.48
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,C&C ($/kW),1.32
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Systems Integration ($/kWh),40.38
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,EPC ($/kWh),41.48
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Project Development ($/kWh),49.78
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Grid Integration ($/kW),19.89
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,O&M Cost,Fixed O&M ($/kW-year),4.27
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Decommissioning,Recycling ($/kWh),2.65
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Rest Before Charge (hrs),1.39
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Rest After Discharge (hrs),1.39
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,RTE (%),0.83
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Calendar Life (yrs),16
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Primary DOD (%),0.8
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Cycle Life at Primary DOD (#),2400
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Secondary DOD (%),0.6
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,Cycle Life at Secondary DOD (#),8000
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Performance,End of Life (%),0.6
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Total Installed Cost ($),149089000
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Total Installed Cost ($/kW),1490.89
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,Capital Cost,Total Installed Cost ($/kWh),372.72
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,LCOS,LCOS_Project_Life (yrs),25
+V18_LFP_4h,Lithium-ion LFP,2023,100,4,Point,LCOS,LCOS ($/kWh),0.1813
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,DC Storage Block ($/kWh),134.28
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,DC Storage BOS ($/kWh),28.84
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Power Equipment ($/kW),55.77
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,C&C ($/kW),0.96
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Systems Integration ($/kWh),33.84
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,EPC ($/kWh),34.22
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Project Development ($/kWh),41.02
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Grid Integration ($/kW),16.87
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,O&M Cost,Fixed O&M ($/kW-year),3.62
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Decommissioning,Recycling ($/kWh),0
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Rest Before Charge (hrs),1.39
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Rest After Discharge (hrs),1.39
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,RTE (%),0.85
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Calendar Life (yrs),16
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Primary DOD (%),0.8
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Cycle Life at Primary DOD (#),2640
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Secondary DOD (%),0.6
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,Cycle Life at Secondary DOD (#),8800
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Performance,End of Life (%),0.6
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Total Installed Cost ($),116240000
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Total Installed Cost ($/kW),1162.4
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,Capital Cost,Total Installed Cost ($/kWh),290.6
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,LCOS,LCOS_Project_Life (yrs),20
+V18_LFP_4h,Lithium-ion LFP,2030,100,4,Point,LCOS,LCOS ($/kWh),0.1504
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,DC Storage Block ($/kWh),183.35
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,DC Storage BOS ($/kWh),34.55
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Power Equipment ($/kW),63.48
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,C&C ($/kW),1.3
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Systems Integration ($/kWh),37.77
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,EPC ($/kWh),39.39
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Project Development ($/kWh),47.27
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Grid Integration ($/kW),19.89
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,O&M Cost,Fixed O&M ($/kW-year),7.63
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Decommissioning,Recycling ($/kWh),2.65
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Rest Before Charge (hrs),0.65
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Rest After Discharge (hrs),0.65
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,RTE (%),0.83
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Calendar Life (yrs),16
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Primary DOD (%),0.8
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Cycle Life at Primary DOD (#),2400
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Secondary DOD (%),0.6
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,Cycle Life at Secondary DOD (#),8000
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Performance,End of Life (%),0.6
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Total Installed Cost ($),282331000
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Total Installed Cost ($/kW),2823.31
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,Capital Cost,Total Installed Cost ($/kWh),352.91
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,LCOS,LCOS_Project_Life (yrs),25
+V18_LFP_8h,Lithium-ion LFP,2023,100,8,Point,LCOS,LCOS ($/kWh),0.1752
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,DC Storage Block ($/kWh),133.33
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,DC Storage BOS ($/kWh),27.14
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Power Equipment ($/kW),55.77
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,C&C ($/kW),0.96
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Systems Integration ($/kWh),32.04
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,EPC ($/kWh),32.08
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Project Development ($/kWh),38.39
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Grid Integration ($/kW),16.87
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,O&M Cost,Fixed O&M ($/kW-year),6.48
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Decommissioning,Recycling ($/kWh),0
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Rest Before Charge (hrs),0.65
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Rest After Discharge (hrs),0.65
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,RTE (%),0.85
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Calendar Life (yrs),16
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Primary DOD (%),0.8
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Cycle Life at Primary DOD (#),2640
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Secondary DOD (%),0.6
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,Cycle Life at Secondary DOD (#),8800
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Performance,End of Life (%),0.6
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Total Installed Cost ($),217744000
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Total Installed Cost ($/kW),2177.44
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,Capital Cost,Total Installed Cost ($/kWh),272.18
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,LCOS,LCOS_Project_Life (yrs),20
+V18_LFP_8h,Lithium-ion LFP,2030,100,8,Point,LCOS,LCOS ($/kWh),0.1444
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,DC Storage Block ($/kWh),182.46
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,DC Storage BOS ($/kWh),34.32
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Power Equipment ($/kW),63.48
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,C&C ($/kW),1.3
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Systems Integration ($/kWh),37.55
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,EPC ($/kWh),39.06
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Project Development ($/kWh),47.21
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Grid Integration ($/kW),19.89
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),9.33
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Decommissioning,Recycling ($/kWh),2.65
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Rest Before Charge (hrs),0.53
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Rest After Discharge (hrs),0.53
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,RTE (%),0.83
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Calendar Life (yrs),16
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Primary DOD (%),0.8
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Cycle Life at Primary DOD (#),2400
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Secondary DOD (%),0.6
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,Cycle Life at Secondary DOD (#),8000
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Performance,End of Life (%),0.6
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Total Installed Cost ($),349067000
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kW),3490.67
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),349.07
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,LCOS,LCOS_Project_Life (yrs),26
+V18_LFP_10h,Lithium-ion LFP,2023,100,10,Point,LCOS,LCOS ($/kWh),0.1743
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,DC Storage Block ($/kWh),133.03
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,DC Storage BOS ($/kWh),26.97
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Power Equipment ($/kW),55.77
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,C&C ($/kW),0.96
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Systems Integration ($/kWh),31.81
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,EPC ($/kWh),31.79
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Project Development ($/kWh),38.04
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Grid Integration ($/kW),16.87
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),7.89
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Decommissioning,Recycling ($/kWh),0
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Rest Before Charge (hrs),0.53
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Rest After Discharge (hrs),0.53
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,RTE (%),0.85
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Calendar Life (yrs),16
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Primary DOD (%),0.8
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Cycle Life at Primary DOD (#),2640
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Secondary DOD (%),0.6
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,Cycle Life at Secondary DOD (#),8800
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Performance,End of Life (%),0.6
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Total Installed Cost ($),269000000
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kW),2690
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),269
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,LCOS,LCOS_Project_Life (yrs),21
+V18_LFP_10h,Lithium-ion LFP,2030,100,10,Point,LCOS,LCOS ($/kWh),0.142
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,DC Storage Block ($/kWh),264.64
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,DC Storage BOS ($/kWh),48.19
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Power Equipment ($/kW),114.79
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,C&C ($/kW),1.42
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Systems Integration ($/kWh),35.83
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,EPC ($/kWh),39.05
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Project Development ($/kWh),44.9
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Grid Integration ($/kW),20
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),11.39
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Decommissioning,Recycling ($/kWh),25.11
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Warranty,Warranty ($/kWh),1.4
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Replacement,Redox Flow Stack Replacement Cost ($/kW),542
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,Rest Before Charge (hrs),0
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,Rest After Discharge (hrs),0
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,RTE (%),0.65
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,Calendar Life (yrs),12
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,Primary DOD (%),0.8
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,Cycle Life at Primary DOD (#),5250
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Performance,End of Life (%),0.8
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Total Installed Cost ($),446231000
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kW),4462.31
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),446.23
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,LCOS,LCOS_Project_Life (yrs),24
+V18_VRFB_10h,Vanadium Redox Flow,2023,100,10,Point,LCOS,LCOS ($/kWh),0.2056
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,DC Storage Block ($/kWh),241.16
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,DC Storage BOS ($/kWh),43.13
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Power Equipment ($/kW),101.54
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,C&C ($/kW),1.17
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Systems Integration ($/kWh),33.56
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,EPC ($/kWh),37
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Project Development ($/kWh),42.55
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Grid Integration ($/kW),16.97
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),9.95
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Decommissioning,Recycling ($/kWh),21.62
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Warranty,Warranty ($/kWh),1.79
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Replacement,Redox Flow Stack Replacement Cost ($/kW),492.7
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,Rest Before Charge (hrs),0
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,Rest After Discharge (hrs),0
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,RTE (%),0.65
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,Calendar Life (yrs),12
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,Primary DOD (%),0.8
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,Cycle Life at Primary DOD (#),5250
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Performance,End of Life (%),0.8
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Total Installed Cost ($),409368000
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kW),4093.68
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),409.37
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,LCOS,LCOS_Project_Life (yrs),24
+V18_VRFB_10h,Vanadium Redox Flow,2030,100,10,Point,LCOS,LCOS ($/kWh),0.1941
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,DC Storage Block ($/kWh),238.32
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,DC Storage BOS ($/kWh),46.34
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Power Equipment ($/kW),114.79
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,C&C ($/kW),1.37
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Systems Integration ($/kWh),30.36
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,EPC ($/kWh),34.35
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Project Development ($/kWh),39.51
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Grid Integration ($/kW),20
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),23.33
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Decommissioning,Recycling ($/kWh),21.68
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Warranty,Warranty ($/kWh),1.26
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Replacement,Redox Flow Stack Replacement Cost ($/kW),542
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,RTE (%),0.65
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,Calendar Life (yrs),12
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,Primary DOD (%),0.8
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,Cycle Life at Primary DOD (#),5250
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Performance,End of Life (%),0.8
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Total Installed Cost ($),946928000
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Total Installed Cost ($/kW),9469.28
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),394.55
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,LCOS,LCOS_Project_Life (yrs),24
+V18_VRFB_24h,Vanadium Redox Flow,2023,100,24,Point,LCOS,LCOS ($/kWh),0.3728
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,DC Storage Block ($/kWh),217.55
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,DC Storage BOS ($/kWh),41.47
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Power Equipment ($/kW),101.54
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,C&C ($/kW),1.06
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Systems Integration ($/kWh),26.47
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,EPC ($/kWh),32.38
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Project Development ($/kWh),37.24
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Grid Integration ($/kW),16.97
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),20.15
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Decommissioning,Recycling ($/kWh),18.69
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Warranty,Warranty ($/kWh),0.97
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Replacement,Redox Flow Stack Replacement Cost ($/kW),492.7
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,RTE (%),0.65
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,Calendar Life (yrs),12
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,Primary DOD (%),0.8
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,Cycle Life at Primary DOD (#),5250
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Performance,End of Life (%),0.8
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Total Installed Cost ($),864221000
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kW),8642.21
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),360.09
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,LCOS,LCOS_Project_Life (yrs),24
+V18_VRFB_24h,Vanadium Redox Flow,2030,100,24,Point,LCOS,LCOS ($/kWh),0.3429
+V18_CAES_10h,CAES,2023,100,10,Point,Capital Cost,"CAES Capital (Turbine, Compressor, BOP, & EPC Management) ($/kW)",1048.93
+V18_CAES_10h,CAES,2023,100,10,Point,Capital Cost,Cavern Storage ($/kWh),7.64
+V18_CAES_10h,CAES,2023,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),15.43
+V18_CAES_10h,CAES,2023,100,10,Point,Performance,Rest Before Charge (hrs),0
+V18_CAES_10h,CAES,2023,100,10,Point,Performance,Rest After Discharge (hrs),0
+V18_CAES_10h,CAES,2023,100,10,Point,Performance,RTE (%),0.55
+V18_CAES_10h,CAES,2023,100,10,Point,Performance,Calendar Life (yrs),60
+V18_CAES_10h,CAES,2023,100,10,Point,Performance,Primary DOD (%),0.8
+V18_CAES_10h,CAES,2023,100,10,Point,Capital Cost,Total Installed Cost ($),112533000
+V18_CAES_10h,CAES,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kW),1125.33
+V18_CAES_10h,CAES,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),112.53
+V18_CAES_10h,CAES,2023,100,10,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_CAES_10h,CAES,2023,100,10,Point,LCOS,LCOS ($/kWh),0.0966
+V18_CAES_10h,CAES,2030,100,10,Point,Capital Cost,"CAES Capital (Turbine, Compressor, BOP, & EPC Management) ($/kW)",1048.93
+V18_CAES_10h,CAES,2030,100,10,Point,Capital Cost,Cavern Storage ($/kWh),7.64
+V18_CAES_10h,CAES,2030,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),15.43
+V18_CAES_10h,CAES,2030,100,10,Point,Performance,Rest Before Charge (hrs),0
+V18_CAES_10h,CAES,2030,100,10,Point,Performance,Rest After Discharge (hrs),0
+V18_CAES_10h,CAES,2030,100,10,Point,Performance,RTE (%),0.55
+V18_CAES_10h,CAES,2030,100,10,Point,Performance,Calendar Life (yrs),60
+V18_CAES_10h,CAES,2030,100,10,Point,Performance,Primary DOD (%),0.8
+V18_CAES_10h,CAES,2030,100,10,Point,Capital Cost,Total Installed Cost ($),112533000
+V18_CAES_10h,CAES,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kW),1125.33
+V18_CAES_10h,CAES,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),112.53
+V18_CAES_10h,CAES,2030,100,10,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_CAES_10h,CAES,2030,100,10,Point,LCOS,LCOS ($/kWh),0.0966
+V18_CAES_24h,CAES,2023,100,24,Point,Capital Cost,"CAES Capital (Turbine, Compressor, BOP, & EPC Management) ($/kW)",1048.41
+V18_CAES_24h,CAES,2023,100,24,Point,Capital Cost,Cavern Storage ($/kWh),6.63
+V18_CAES_24h,CAES,2023,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),14.88
+V18_CAES_24h,CAES,2023,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_CAES_24h,CAES,2023,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_CAES_24h,CAES,2023,100,24,Point,Performance,RTE (%),0.55
+V18_CAES_24h,CAES,2023,100,24,Point,Performance,Calendar Life (yrs),60
+V18_CAES_24h,CAES,2023,100,24,Point,Performance,Primary DOD (%),0.8
+V18_CAES_24h,CAES,2023,100,24,Point,Capital Cost,Total Installed Cost ($),120753000
+V18_CAES_24h,CAES,2023,100,24,Point,Capital Cost,Total Installed Cost ($/kW),1207.53
+V18_CAES_24h,CAES,2023,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),50.31
+V18_CAES_24h,CAES,2023,100,24,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_CAES_24h,CAES,2023,100,24,Point,LCOS,LCOS ($/kWh),0.099
+V18_CAES_24h,CAES,2030,100,24,Point,Capital Cost,"CAES Capital (Turbine, Compressor, BOP, & EPC Management) ($/kW)",1048.41
+V18_CAES_24h,CAES,2030,100,24,Point,Capital Cost,Cavern Storage ($/kWh),6.63
+V18_CAES_24h,CAES,2030,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),14.88
+V18_CAES_24h,CAES,2030,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_CAES_24h,CAES,2030,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_CAES_24h,CAES,2030,100,24,Point,Performance,RTE (%),0.55
+V18_CAES_24h,CAES,2030,100,24,Point,Performance,Calendar Life (yrs),60
+V18_CAES_24h,CAES,2030,100,24,Point,Performance,Primary DOD (%),0.8
+V18_CAES_24h,CAES,2030,100,24,Point,Capital Cost,Total Installed Cost ($),120753000
+V18_CAES_24h,CAES,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kW),1207.53
+V18_CAES_24h,CAES,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),50.31
+V18_CAES_24h,CAES,2030,100,24,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_CAES_24h,CAES,2030,100,24,Point,LCOS,LCOS ($/kWh),0.099
+V18_CAES_100h,CAES,2023,100,100,Point,Capital Cost,"CAES Capital (Turbine, Compressor, BOP, & EPC Management) ($/kW)",1048.13
+V18_CAES_100h,CAES,2023,100,100,Point,Capital Cost,Cavern Storage ($/kWh),5.89
+V18_CAES_100h,CAES,2023,100,100,Point,O&M Cost,Fixed O&M ($/kW-year),16.5
+V18_CAES_100h,CAES,2023,100,100,Point,Performance,Rest Before Charge (hrs),0
+V18_CAES_100h,CAES,2023,100,100,Point,Performance,Rest After Discharge (hrs),0
+V18_CAES_100h,CAES,2023,100,100,Point,Performance,RTE (%),0.55
+V18_CAES_100h,CAES,2023,100,100,Point,Performance,Calendar Life (yrs),60
+V18_CAES_100h,CAES,2023,100,100,Point,Performance,Primary DOD (%),0.8
+V18_CAES_100h,CAES,2023,100,100,Point,Capital Cost,Total Installed Cost ($),163713000
+V18_CAES_100h,CAES,2023,100,100,Point,Capital Cost,Total Installed Cost ($/kW),1637.13
+V18_CAES_100h,CAES,2023,100,100,Point,Capital Cost,Total Installed Cost ($/kWh),16.37
+V18_CAES_100h,CAES,2023,100,100,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_CAES_100h,CAES,2023,100,100,Point,LCOS,LCOS ($/kWh),0.1131
+V18_CAES_100h,CAES,2030,100,100,Point,Capital Cost,"CAES Capital (Turbine, Compressor, BOP, & EPC Management) ($/kW)",1048.13
+V18_CAES_100h,CAES,2030,100,100,Point,Capital Cost,Cavern Storage ($/kWh),5.89
+V18_CAES_100h,CAES,2030,100,100,Point,O&M Cost,Fixed O&M ($/kW-year),16.5
+V18_CAES_100h,CAES,2030,100,100,Point,Performance,Rest Before Charge (hrs),0
+V18_CAES_100h,CAES,2030,100,100,Point,Performance,Rest After Discharge (hrs),0
+V18_CAES_100h,CAES,2030,100,100,Point,Performance,RTE (%),0.55
+V18_CAES_100h,CAES,2030,100,100,Point,Performance,Calendar Life (yrs),60
+V18_CAES_100h,CAES,2030,100,100,Point,Performance,Primary DOD (%),0.8
+V18_CAES_100h,CAES,2030,100,100,Point,Capital Cost,Total Installed Cost ($),163713000
+V18_CAES_100h,CAES,2030,100,100,Point,Capital Cost,Total Installed Cost ($/kW),1637.13
+V18_CAES_100h,CAES,2030,100,100,Point,Capital Cost,Total Installed Cost ($/kWh),16.37
+V18_CAES_100h,CAES,2030,100,100,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_CAES_100h,CAES,2030,100,100,Point,LCOS,LCOS ($/kWh),0.1131
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,C&C ($/kW),1.5
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,Grid Integration ($/kW),19.89
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,Cavern Storage ($/kWh),5.82
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,HESS Electrolyzer ($/kW),1316
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,HESS Rectifier ($/kW),130
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,HESS Compressor ($/kW),39.3
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,HESS Fuel Cell ($/kW),1320
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,HESS Inverter ($/kW),67
+V18_H2_24h,Hydrogen,2021,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),23.9
+V18_H2_24h,Hydrogen,2021,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_H2_24h,Hydrogen,2021,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_H2_24h,Hydrogen,2021,100,24,Point,Performance,RTE (%),0.31
+V18_H2_24h,Hydrogen,2021,100,24,Point,Performance,Calendar Life (yrs),30
+V18_H2_24h,Hydrogen,2021,100,24,Point,Performance,Primary DOD (%),0.8
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,Total Installed Cost ($),303337000
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,Total Installed Cost ($/kW),3033.37
+V18_H2_24h,Hydrogen,2021,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),126.39
+V18_H2_24h,Hydrogen,2021,100,24,Point,LCOS,LCOS_Project_Life (yrs),30
+V18_H2_24h,Hydrogen,2021,100,24,Point,LCOS,LCOS ($/kWh),0.3547
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,C&C ($/kW),1.06
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,Grid Integration ($/kW),16.3
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,Cavern Storage ($/kWh),5.82
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,HESS Electrolyzer ($/kW),350
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,HESS Rectifier ($/kW),84
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,HESS Compressor ($/kW),39.3
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,HESS Fuel Cell ($/kW),425
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,HESS Inverter ($/kW),38.9
+V18_H2_24h,Hydrogen,2030,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),15
+V18_H2_24h,Hydrogen,2030,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_H2_24h,Hydrogen,2030,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_H2_24h,Hydrogen,2030,100,24,Point,Performance,RTE (%),0.31
+V18_H2_24h,Hydrogen,2030,100,24,Point,Performance,Calendar Life (yrs),30
+V18_H2_24h,Hydrogen,2030,100,24,Point,Performance,Primary DOD (%),0.8
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,Total Installed Cost ($),109424000
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kW),1094.24
+V18_H2_24h,Hydrogen,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),45.59
+V18_H2_24h,Hydrogen,2030,100,24,Point,LCOS,LCOS_Project_Life (yrs),30
+V18_H2_24h,Hydrogen,2030,100,24,Point,LCOS,LCOS ($/kWh),0.1937
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,C&C ($/kW),1.5
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,Grid Integration ($/kW),19.89
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,Cavern Storage ($/kWh),5.53
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,HESS Electrolyzer ($/kW),1316
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,HESS Rectifier ($/kW),130
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,HESS Compressor ($/kW),39.3
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,HESS Fuel Cell ($/kW),1320
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,HESS Inverter ($/kW),67
+V18_H2_100h,Hydrogen,2021,100,100,Point,O&M Cost,Fixed O&M ($/kW-year),27.47
+V18_H2_100h,Hydrogen,2021,100,100,Point,Performance,Rest Before Charge (hrs),0
+V18_H2_100h,Hydrogen,2021,100,100,Point,Performance,Rest After Discharge (hrs),0
+V18_H2_100h,Hydrogen,2021,100,100,Point,Performance,RTE (%),0.31
+V18_H2_100h,Hydrogen,2021,100,100,Point,Performance,Calendar Life (yrs),30
+V18_H2_100h,Hydrogen,2021,100,100,Point,Performance,Primary DOD (%),0.8
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,Total Installed Cost ($),344669000
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,Total Installed Cost ($/kW),3446.69
+V18_H2_100h,Hydrogen,2021,100,100,Point,Capital Cost,Total Installed Cost ($/kWh),34.47
+V18_H2_100h,Hydrogen,2021,100,100,Point,LCOS,LCOS_Project_Life (yrs),30
+V18_H2_100h,Hydrogen,2021,100,100,Point,LCOS,LCOS ($/kWh),0.3794
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,C&C ($/kW),1.06
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,Grid Integration ($/kW),16.3
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,Cavern Storage ($/kWh),5.53
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,HESS Electrolyzer ($/kW),350
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,HESS Rectifier ($/kW),84
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,HESS Compressor ($/kW),39.3
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,HESS Fuel Cell ($/kW),425
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,HESS Inverter ($/kW),38.9
+V18_H2_100h,Hydrogen,2030,100,100,Point,O&M Cost,Fixed O&M ($/kW-year),18.56
+V18_H2_100h,Hydrogen,2030,100,100,Point,Performance,Rest Before Charge (hrs),0
+V18_H2_100h,Hydrogen,2030,100,100,Point,Performance,Rest After Discharge (hrs),0
+V18_H2_100h,Hydrogen,2030,100,100,Point,Performance,RTE (%),0.31
+V18_H2_100h,Hydrogen,2030,100,100,Point,Performance,Calendar Life (yrs),30
+V18_H2_100h,Hydrogen,2030,100,100,Point,Performance,Primary DOD (%),0.8
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,Total Installed Cost ($),150756000
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,Total Installed Cost ($/kW),1507.56
+V18_H2_100h,Hydrogen,2030,100,100,Point,Capital Cost,Total Installed Cost ($/kWh),15.08
+V18_H2_100h,Hydrogen,2030,100,100,Point,LCOS,LCOS_Project_Life (yrs),30
+V18_H2_100h,Hydrogen,2030,100,100,Point,LCOS,LCOS ($/kWh),0.2184
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,PSH Reservoir Construction & Infrastructure ($/kWh),36.83
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,PSH Powerhouse Construction & Infrastructure ($/kW),900.79
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,PSH Electromechanical ($/kW),595.01
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,PSH EPC Contractor Indirect Costs + Contingency ($/kW),922.74
+V18_PSH_10h,PSH,2023,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),27.21
+V18_PSH_10h,PSH,2023,100,10,Point,Performance,Rest Before Charge (hrs),0
+V18_PSH_10h,PSH,2023,100,10,Point,Performance,Rest After Discharge (hrs),0
+V18_PSH_10h,PSH,2023,100,10,Point,Performance,RTE (%),0.8
+V18_PSH_10h,PSH,2023,100,10,Point,Performance,Calendar Life (yrs),60
+V18_PSH_10h,PSH,2023,100,10,Point,Performance,Primary DOD (%),0.8
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,Total Installed Cost ($),278684000
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kW),2786.84
+V18_PSH_10h,PSH,2023,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),278.68
+V18_PSH_10h,PSH,2023,100,10,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_PSH_10h,PSH,2023,100,10,Point,LCOS,LCOS ($/kWh),0.1221
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,PSH Reservoir Construction & Infrastructure ($/kWh),36.83
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,PSH Powerhouse Construction & Infrastructure ($/kW),900.79
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,PSH Electromechanical ($/kW),595.01
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,PSH EPC Contractor Indirect Costs + Contingency ($/kW),922.74
+V18_PSH_10h,PSH,2030,100,10,Point,O&M Cost,Fixed O&M ($/kW-year),27.21
+V18_PSH_10h,PSH,2030,100,10,Point,Performance,Rest Before Charge (hrs),0
+V18_PSH_10h,PSH,2030,100,10,Point,Performance,Rest After Discharge (hrs),0
+V18_PSH_10h,PSH,2030,100,10,Point,Performance,RTE (%),0.8
+V18_PSH_10h,PSH,2030,100,10,Point,Performance,Calendar Life (yrs),60
+V18_PSH_10h,PSH,2030,100,10,Point,Performance,Primary DOD (%),0.8
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,Total Installed Cost ($),278684000
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kW),2786.84
+V18_PSH_10h,PSH,2030,100,10,Point,Capital Cost,Total Installed Cost ($/kWh),278.68
+V18_PSH_10h,PSH,2030,100,10,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_PSH_10h,PSH,2030,100,10,Point,LCOS,LCOS ($/kWh),0.1221
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,PSH Reservoir Construction & Infrastructure ($/kWh),19.9
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,PSH Powerhouse Construction & Infrastructure ($/kW),900.79
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,PSH Electromechanical ($/kW),595.01
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,PSH EPC Contractor Indirect Costs + Contingency ($/kW),976.89
+V18_PSH_24h,PSH,2023,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),27.21
+V18_PSH_24h,PSH,2023,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_PSH_24h,PSH,2023,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_PSH_24h,PSH,2023,100,24,Point,Performance,RTE (%),0.8
+V18_PSH_24h,PSH,2023,100,24,Point,Performance,Calendar Life (yrs),60
+V18_PSH_24h,PSH,2023,100,24,Point,Performance,Primary DOD (%),0.8
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,Total Installed Cost ($),295029000
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,Total Installed Cost ($/kW),2950.29
+V18_PSH_24h,PSH,2023,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),122.93
+V18_PSH_24h,PSH,2023,100,24,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_PSH_24h,PSH,2023,100,24,Point,LCOS,LCOS ($/kWh),0.1209
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,PSH Reservoir Construction & Infrastructure ($/kWh),19.9
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,PSH Powerhouse Construction & Infrastructure ($/kW),900.79
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,PSH Electromechanical ($/kW),595.01
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,PSH EPC Contractor Indirect Costs + Contingency ($/kW),976.89
+V18_PSH_24h,PSH,2030,100,24,Point,O&M Cost,Fixed O&M ($/kW-year),27.21
+V18_PSH_24h,PSH,2030,100,24,Point,Performance,Rest Before Charge (hrs),0
+V18_PSH_24h,PSH,2030,100,24,Point,Performance,Rest After Discharge (hrs),0
+V18_PSH_24h,PSH,2030,100,24,Point,Performance,RTE (%),0.8
+V18_PSH_24h,PSH,2030,100,24,Point,Performance,Calendar Life (yrs),60
+V18_PSH_24h,PSH,2030,100,24,Point,Performance,Primary DOD (%),0.8
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,Total Installed Cost ($),295029000
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kW),2950.29
+V18_PSH_24h,PSH,2030,100,24,Point,Capital Cost,Total Installed Cost ($/kWh),122.93
+V18_PSH_24h,PSH,2030,100,24,Point,LCOS,LCOS_Project_Life (yrs),60
+V18_PSH_24h,PSH,2030,100,24,Point,LCOS,LCOS ($/kWh),0.1209

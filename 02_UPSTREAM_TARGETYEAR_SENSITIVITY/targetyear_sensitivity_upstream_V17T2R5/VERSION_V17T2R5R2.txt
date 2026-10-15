@@ -1,0 +1,9 @@
+V17T2R5R2_EQUIVALENT_PROJECTED_LEGACY_ENERGY_20260812
+
+Scope: TY2033_CHRONO_1H_OPTIMAL only.
+Change: algebraically project the 32 legacy 2023 Battery energy-build
+coordinates onto E = standardized_duration * P, removing 32 variables,
+32 equality rows and duplicate energy bounds from the numerical LP.
+Inputs, scientific feasible set, objective, chronology, strict tolerances,
+publication gates, output schema and the other seven completed results remain
+unchanged.

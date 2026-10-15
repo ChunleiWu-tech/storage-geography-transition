@@ -1,0 +1,17 @@
+{
+  "package_kind": "main_upstream_16",
+  "version": "V17T4R3_CURRENT_CONSOLIDATED_FINAL_20260809",
+  "status": "PASS",
+  "scenario_count": 16,
+  "scientific_model_sha256": "2ca76a8f503de7dfcf3912a4230a7f4e876925fd2c0082cfd10f666c73a696ad",
+  "scenario_registry_sha256": "be57f4ac6e61689a05b1333a8f1d666b3193d9a18989e9d0133f2c0cce5e39c5",
+  "source_gate_at_build": "PASS",
+  "prepared_case_gate_at_build": "PASS",
+  "main_16_runtime_evidence": "previous local 16/16 strict success; solver outputs intentionally not bundled",
+  "standalone_source_snapshots_bundled": true,
+  "manifest_file_count": 1055,
+  "python_cache_items": [],
+  "generated_output_dirs": [],
+  "machine_specific_text_files": [],
+  "scientific_inputs_changed_from_prior_validated_standalone": false
+}

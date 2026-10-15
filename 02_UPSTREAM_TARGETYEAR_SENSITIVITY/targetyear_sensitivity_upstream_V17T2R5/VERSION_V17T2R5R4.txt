@@ -1,0 +1,8 @@
+V17T2R5R4_OBSERVED_FEASIBLE_START_FULL_OPTIMAL_CONTINUATION_2033_1H_OPTIMAL_ONLY_20260813
+
+Scope: TY2033_CHRONO_1H_OPTIMAL only.
+Phase A obtains a strict feasible optimum with the paired observed 32-zone
+legacy allocation. Phase B restores the complete optimized-allocation bounds,
+sets a full primal start and solves the unchanged final OPTIMAL model.
+Scientific inputs, objective, constraints, tolerances, release gates and the
+other seven completed outputs are unchanged.

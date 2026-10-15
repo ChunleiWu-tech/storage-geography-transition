@@ -1,0 +1,26 @@
+{
+  "version": "V30_UPSTREAM_SOURCE_SCHEMA_CROSSCHECK_20260830",
+  "status": "PASS",
+  "audited_submission_archives": [
+    "03_FULL8760_V17T2R6R24P3_HF18P2_SUBMISSION_FINAL_20260830.zip",
+    "04_V20_FUTURE_STORAGE_HF5_SUBMISSION_FINAL_20260830.zip"
+  ],
+  "source_hashes_sha256": {
+    "v20_dynamic_model": "9aefc85c850165b17d69d4a7a66c386c0adc1c1fac2ee622422a892008a6781a",
+    "v20_layer_a_targetyear_model": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84",
+    "v20_layer_b_c_strict_runner": "4406b5c13fe4fda58856231e28cda5a8e883293095d3c4078d2dbf73bfe7ad70",
+    "v20_layer_a_strict_runner": "e0b81dfde49aad48de0e74f6f37896b896e7776d55fbf5dbdc37f35b419b2327",
+    "full8760_hf18p2_model": "f4824408efea09f8df5a985f2ad8ff67fd8de7f2fc0176582722e5c461acff24",
+    "full8760_r24p3_recovery": "a6f423c9cfe705802b42412307d1d73eccaf7e71fdf1a3d1427a8c96aea3b215"
+  },
+  "confirmed_schema": {
+    "BuildGen": "native power decision exported in MW",
+    "BuildStorageEnergy_MWh": "native storage-energy decision exported in MWh",
+    "SystemCost_annualized_usd_per_yr": "SystemCostPerPeriod divided by bring_annual_costs_to_base_year",
+    "v20_layer_b_c_chronology": "intraday_cyclic, 504 representative timepoints, evidence_bounded portfolio",
+    "full8760_distance_components": "ideal_firm_capacity_repair_mw + ideal_surplus_absorption_capacity_repair_mw",
+    "full8760_chronology": "unchanged_full_year_cyclic_8760_nonleap"
+  },
+  "postprocess_adapter_match": true,
+  "scientific_inputs_or_results_modified": false
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "version": "NLR_2025_DIRECT_4H_CPIU_2010USD_V1",
+  "case": "NLR_2025_mid",
+  "source": "Cole, Ramasamy and Turan (2025), NREL/TP-6A40-93281, Appendix Table 2",
+  "doi": "10.2172/2583471",
+  "source_units": "2024 USD/kWh, complete 4-hour utility-scale lithium-ion system",
+  "model_units": "2010 USD/MW complete four-hour power block; energy CAPEX is zero to avoid double counting",
+  "source_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+  "cpi_u_2010": 218.056,
+  "cpi_u_2024": 313.689,
+  "deflator_2024_to_2010": 0.6951343528144117,
+  "battery_project_count": 32,
+  "updated_cost_row_count": 224,
+  "updated_build_years": [
+    2028,
+    2033,
+    2038,
+    2043,
+    2048,
+    2053,
+    2058
+  ],
+  "fixed_duration_h": 4.0,
+  "lifetime_years": 15,
+  "round_trip_efficiency": 0.85,
+  "fixed_om_share_of_power_capex": 0.04,
+  "reverse_calibration_used": false,
+  "capacity_target_used": false,
+  "arbitrary_cost_multiplier_used": false
+}

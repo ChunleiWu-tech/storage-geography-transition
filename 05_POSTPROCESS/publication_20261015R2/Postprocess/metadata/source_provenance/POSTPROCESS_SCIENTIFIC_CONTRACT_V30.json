@@ -1,0 +1,42 @@
+{
+  "version": "V30_POSTPROCESS_SUBMISSION_20260830",
+  "status": "LOCKED",
+  "input_mode": "four distinct read-only upstream result roots",
+  "required_result_sets": {
+    "main_upstream": 16,
+    "targetyear_sensitivity": 8,
+    "full8760_certificates": 4,
+    "future_storage": {
+      "layer_a": 8,
+      "layer_b": 16,
+      "layer_c": 2,
+      "total": 26
+    }
+  },
+  "release_output": {
+    "main_figures": 7,
+    "supplementary_figures": 14,
+    "formats_per_figure": ["pdf", "svg", "png"],
+    "png_dpi": 600,
+    "figure_width_mm": 180
+  },
+  "unit_separation": {
+    "main_and_v20_dynamic": "multi-period present-value USD",
+    "targetyear_and_v20_layer_a": "annualized USD per year",
+    "full8760": "minimum ideal local flexibility robustness distance in MW/GW",
+    "cross_basis_addition_allowed": false
+  },
+  "claim_boundaries": [
+    "FULL8760 positive robustness distance is not actual technology build, system cost, or original fixed-portfolio feasibility PASS.",
+    "V20 Layer B/C representative chronology does not support seasonal or continuous-8760 operation claims.",
+    "Expanded CAES/H2 cases are pressure tests and do not support headline province-siting claims.",
+    "Observed-minus-optimized differences are controlled model contrasts, not historical causal estimates."
+  ],
+  "failure_policy": "fail closed before plotting when any case, native status, lineage, unit, closure, physical audit, or certificate contract is incomplete or inconsistent",
+  "source_case_result_sha256_revalidation": true,
+  "zero_new_storage_policy": "A strict valid scenario with zero new storage is retained as an explicit scientific zero, not treated as missing data.",
+  "zero_denominator_relative_metric_policy": "Absolute observed, optimized and difference values must be finite. A relative difference is NA only when its optimized denominator is exactly zero; it is never imputed as zero or used to bypass a failed absolute-value audit.",
+  "signed_robustness_contrast_policy": "Observed-minus-optimized battery power and energy build contrasts are signed empirical model outputs. Their direction is never preconstrained; six-context completeness, finiteness and non-constancy are required, while the cost-penalty headline retains its positive-direction gate.",
+  "default_result_project_root": "C:\\Users\\Admin\\Desktop\\01_UPSTREAM_16PLUS8",
+  "upstream_write_performed": false
+}

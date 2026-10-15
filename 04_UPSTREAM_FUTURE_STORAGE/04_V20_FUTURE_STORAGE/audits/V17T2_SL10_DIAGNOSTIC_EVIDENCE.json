@@ -1,0 +1,21 @@
+{
+  "version": "V17T2",
+  "scenario": "SL10_CARBON_TIGHT_OBSERVED",
+  "diagnostic_source": "user-completed V17T1 hard homogeneous barrier with crossover attempt",
+  "barrier_phase": {
+    "status_text": "Barrier solved model",
+    "iterations": 171,
+    "seconds": 2815.38,
+    "optimal_objective_scaled": 3537653.15
+  },
+  "crossover_phase": {
+    "started": true,
+    "final_simplex_iterations": 1318090,
+    "final_elapsed_seconds": 21600.03,
+    "final_status": "TIME_LIMIT",
+    "primal_status": "NO_SOLUTION",
+    "dual_status": "NO_SOLUTION"
+  },
+  "scientific_inference": "The exact SL10 LP reached solver-reported barrier optimality; the publication failure arose in crossover. V17T2 therefore changes only Crossover from 1 to 0 for the otherwise identical hard homogeneous-barrier route.",
+  "final_release_requirement": "The rerun must independently return native OPTIMAL with primal and dual FEASIBLE_POINT and pass all original V17 physical/export/release gates."
+}

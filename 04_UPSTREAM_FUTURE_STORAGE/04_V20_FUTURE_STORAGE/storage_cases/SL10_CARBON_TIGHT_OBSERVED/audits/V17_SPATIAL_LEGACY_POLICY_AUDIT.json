@@ -1,0 +1,36 @@
+{
+  "version": "V17",
+  "mode": "observed_standardized",
+  "national_power_target_mw": 135930.0,
+  "national_energy_target_mwh": 351120.0,
+  "compiled_duration_sensitivity_energy_mwh": 351120.0,
+  "national_average_duration_h": 2.583094239682189,
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "province_inventory_status": "NEA-constrained model reconstruction; not an official 31-province inventory",
+  "empirical_cap_quantile": 0.95,
+  "empirical_cap_ratio_to_2023_peak": 0.4037964130589428,
+  "raw_empirical_cap_sum_mw": 535134.5847040975,
+  "publication_deployment_cap_sum_mw": 544822.6945485384,
+  "grandfathered_zone_count": 2,
+  "maximum_observed_ratio_to_peak": 0.7020237340829609,
+  "rows_added_to_predetermined": 32,
+  "sunk_capex_mutation": {
+    "rows": 32,
+    "power_capex_zero": true,
+    "energy_capex_zero": true,
+    "fixed_om_retained": true
+  },
+  "checks": {
+    "all_32_zones_present": true,
+    "national_power_closes_135930mw": true,
+    "national_standardized_energy_closes_351120mwh": true,
+    "compiled_duration_sensitivity_energy_closes_351120mwh": true,
+    "fixed_power_closure": true,
+    "fixed_energy_closure": true,
+    "fixed_allocation_nonnegative": true,
+    "optimized_cap_feasible": true,
+    "observed_reference_inside_optimized_envelope": true,
+    "sunk_capex_rows_complete": true
+  },
+  "identification_note": "The primary reconstructed-standardized versus optimized-reallocation comparison holds exact national legacy MW, MWh, common duration, technology and sunk-capital treatment constant; only model-zone location changes. The optimized feasible envelope is the p95 storage-to-peak rule with reconstructed-zone floors, so the reconstructed reference is always feasible under the optimized counterfactual."
+}

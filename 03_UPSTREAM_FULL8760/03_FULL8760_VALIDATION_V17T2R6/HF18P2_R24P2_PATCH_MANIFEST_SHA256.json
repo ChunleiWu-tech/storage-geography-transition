@@ -1,0 +1,132 @@
+{
+  "version": "V17T2R6R24P2_HF18P2",
+  "created_at": "2026-08-30",
+  "overlay_scope": "two OBSERVED quality-recovery cases only; two prior OPTIMAL certificates are read-only",
+  "scientific_inputs_included": false,
+  "scientific_model_changed": false,
+  "rerun_cases": [
+    "TY2033_FULL8760_LDES_OBSERVED",
+    "TY2033_FULL8760_OBSERVED"
+  ],
+  "protected_success_cases": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "files": [
+    {
+      "path": "audits/HF18P2_R24P2_STATIC_SCOPE_GATE.json",
+      "size_bytes": 878,
+      "sha256": "fd108c1615c85b47dd6e5d8bf7b0b70e59c7890b46988d6819811b7f22ebc153"
+    },
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "size_bytes": 571146,
+      "sha256": "f4824408efea09f8df5a985f2ad8ff67fd8de7f2fc0176582722e5c461acff24"
+    },
+    {
+      "path": "base_model_v39/full8760_hf17_restricted_pdhg_warmstart.jl",
+      "size_bytes": 18797,
+      "sha256": "72650bd28d88b12528b59664a3c8cb74c851b41ee4ad92652a8f99ddbf5fa36f"
+    },
+    {
+      "path": "base_model_v39/full8760_hf18_fixed_portfolio_validation.jl",
+      "size_bytes": 23738,
+      "sha256": "1d6b4b42a3fdb7fc8d1f4b6b7d5f530aa9515edddc73325a8177a148be96b29c"
+    },
+    {
+      "path": "base_model_v39/full8760_hf4_objective_continuation.jl",
+      "size_bytes": 69287,
+      "sha256": "34e559b2e9bb6380a27952aabc200d2bb66cdac59bfa6a490c08713f331dd951"
+    },
+    {
+      "path": "base_model_v39/full8760_hf7_compat.jl",
+      "size_bytes": 31877,
+      "sha256": "6dcc77aeb6c8728bbc0a23ab0ab661faf84ee76fdc7ccc5a28aa801516a635bd"
+    },
+    {
+      "path": "CHECK_V17T2R6R24P2_HF18P2_QUALITY_RECOVERY.bat",
+      "size_bytes": 2708,
+      "sha256": "481097d0abffd2970e4e13c6c958e6c0df2bda0eac8d4c7a8a2a6efa503eb6cc"
+    },
+    {
+      "path": "R24P2_ROOT_CAUSE_AND_SCIENTIFIC_CORRECTION.md",
+      "size_bytes": 2393,
+      "sha256": "6e339d96d58e75e4276a53c500bf417169b18f16226e6543c8085cb7243e1cbf"
+    },
+    {
+      "path": "README_R24P2_仅补跑两个OBSERVED_运行说明.md",
+      "size_bytes": 2171,
+      "sha256": "255a4491f73272b67dc77e745b426aa1c52cc42aeeea156d9cc1d0c039534f81"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R24P2_HF18P2.md",
+      "size_bytes": 620,
+      "sha256": "fca31a5099608b483693af1818994910f52fa9793818483fbd1b3aed2c7fc161"
+    },
+    {
+      "path": "RUN_V17T2R6R24P2_HF18P2_QUALITY_RECOVERY_OBSERVED_2X10.bat",
+      "size_bytes": 2412,
+      "sha256": "fe32625af2c6481855b1f92fe3caf80be7486c0a5f86e34cd63aa3295d0e290f"
+    },
+    {
+      "path": "storage_runner/run_targetyear_one.jl",
+      "size_bytes": 5167,
+      "sha256": "ed0f3617abeb618f8bb85008f688aae3bf02b37938ccd973660da1b508dd22e3"
+    },
+    {
+      "path": "tools/audit_hf15_exact_fuel_elimination_inputs.py",
+      "size_bytes": 5622,
+      "sha256": "2bbf46cf7c8b464d6ad2a6a0771680f31163d40938c2477548a5d081ce20b933"
+    },
+    {
+      "path": "tools/audit_hf16_exact_commitment_projection_inputs.py",
+      "size_bytes": 5067,
+      "sha256": "efd95ba02a4123d1fbdf9c5c25fce2c6b157e32ccb052bb550e8beb6a4dcc737"
+    },
+    {
+      "path": "tools/audit_hf17_exact_scaling_and_hydro_projection_inputs.py",
+      "size_bytes": 5148,
+      "sha256": "77674898048eed9d104ed5410fb5c78c26be08b087f2090aa2b22e5e4de51ff4"
+    },
+    {
+      "path": "tools/audit_hf18p2_cross_resolution_contract.py",
+      "size_bytes": 6500,
+      "sha256": "7ab9982fd94234ad5e874bac391121ba454610ff82f41fbba740cccdcc081a80"
+    },
+    {
+      "path": "tools/audit_targetyear_pair_identity.py",
+      "size_bytes": 6667,
+      "sha256": "5d678222ec8c31398647ba9fd51c08aade07e43af2ea0db47b3d6f383681c35e"
+    },
+    {
+      "path": "tools/check_hf18p2_gurobi1302_runtime.jl",
+      "size_bytes": 2397,
+      "sha256": "053e0962970a3c8e98bd91f3a6a3387237aa639541ebe0af7a482206493a760a"
+    },
+    {
+      "path": "tools/check_julia_delimiters.py",
+      "size_bytes": 1613,
+      "sha256": "4c1ad3c5c84a39a0ad80d7dc3aed67daf3d9cdfcbe895df8aad55b8ea2a2000d"
+    },
+    {
+      "path": "tools/check_v17t2r6r24p2_hf18p2_quality_recovery.py",
+      "size_bytes": 7672,
+      "sha256": "b6c7e04a4640e5a17afc820ef034a1d19594eaa5f54cff099ed90c22dcd2b845"
+    },
+    {
+      "path": "tools/run_hf18p2_quality_recovery_two_parallel.py",
+      "size_bytes": 26504,
+      "sha256": "1d1f139eef09e4b4351b2e69481733b00ac199cf5465f0dbc222044918bfe037"
+    },
+    {
+      "path": "tools/verify_hf18p2_r24p2_patch_manifest.py",
+      "size_bytes": 1383,
+      "sha256": "819749fd999ce1d7b41ab5f572aa5e51977fd456e77b1f1b7d960beec94b8b1d"
+    },
+    {
+      "path": "VERSION_V17T2R6_FULL8760.txt",
+      "size_bytes": 181,
+      "sha256": "ed026a0e82e65c61b7f3af4248ba4b419d0226a42c7acffd5cea1fe315f1085e"
+    }
+  ]
+}

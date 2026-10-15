@@ -1,0 +1,178 @@
+{
+  "version": "V17T1",
+  "checks": 13,
+  "passed": 13,
+  "all_pass": true,
+  "checks_detail": [
+    {
+      "check": "sixteen_declared_cases_prepared",
+      "pass": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "check": "SL08_PH_CONSERVATIVE_OBSERVED:no_future_pumped_hydro_policy_floor",
+      "pass": true,
+      "detail": {
+        "remaining_rows": 0
+      }
+    },
+    {
+      "check": "SL08_PH_CONSERVATIVE_OBSERVED:historical_anchor_retained",
+      "pass": true,
+      "detail": {
+        "rows": 31,
+        "sum_mw": 30153.5
+      }
+    },
+    {
+      "check": "SL08_PH_CONSERVATIVE_OBSERVED:capacity_ceiling_equals_predetermined_stock",
+      "pass": true,
+      "detail": {
+        "ceiling_mw": 31490.0,
+        "predetermined_mw": 31489.999999999996
+      }
+    },
+    {
+      "check": "SL08_PH_CONSERVATIVE_OBSERVED:mutation_audit_pass",
+      "pass": true,
+      "detail": [
+        {
+          "check": "spatial_legacy_pre_solve_policy_closure",
+          "pass": true,
+          "mode": "observed_standardized"
+        },
+        {
+          "check": "pumped_hydro_conservative_future_policy_floors_retired",
+          "pass": true,
+          "historical_anchor_period": 2023,
+          "retained_anchor_rows": 31,
+          "retained_anchor_sum_mw": 30153.5,
+          "removed_future_rows": 217,
+          "removed_future_sum_mw": 1517726.1666673,
+          "removed_future_sum_mw_by_period": {
+            "2028": 60307.0,
+            "2033": 100511.66666730001,
+            "2038": 150767.5,
+            "2043": 301535.0,
+            "2048": 301535.0,
+            "2053": 301535.0,
+            "2058": 301535.0
+          },
+          "future_hydro_pumped_rows_remaining": 0
+        },
+        {
+          "check": "pumped_hydro_historical_anchor_not_above_surviving_stock",
+          "pass": true,
+          "historical_anchor_sum_mw": 30153.5,
+          "surviving_predetermined_stock_mw": 31490.0
+        },
+        {
+          "check": "pumped_hydro_capacity_ceiling_not_below_predetermined_floor",
+          "pass": true,
+          "minimum_margin_mw": 0.0
+        },
+        {
+          "check": "pumped_hydro_national_target_closure",
+          "pass": true,
+          "allocated_total_mw": 31490.0,
+          "target_mw": 31490.0
+        }
+      ]
+    },
+    {
+      "check": "SL09_PH_CONSERVATIVE_OPTIMAL:no_future_pumped_hydro_policy_floor",
+      "pass": true,
+      "detail": {
+        "remaining_rows": 0
+      }
+    },
+    {
+      "check": "SL09_PH_CONSERVATIVE_OPTIMAL:historical_anchor_retained",
+      "pass": true,
+      "detail": {
+        "rows": 31,
+        "sum_mw": 30153.5
+      }
+    },
+    {
+      "check": "SL09_PH_CONSERVATIVE_OPTIMAL:capacity_ceiling_equals_predetermined_stock",
+      "pass": true,
+      "detail": {
+        "ceiling_mw": 31490.0,
+        "predetermined_mw": 31489.999999999996
+      }
+    },
+    {
+      "check": "SL09_PH_CONSERVATIVE_OPTIMAL:mutation_audit_pass",
+      "pass": true,
+      "detail": [
+        {
+          "check": "spatial_legacy_pre_solve_policy_closure",
+          "pass": true,
+          "mode": "optimized_reallocation"
+        },
+        {
+          "check": "pumped_hydro_conservative_future_policy_floors_retired",
+          "pass": true,
+          "historical_anchor_period": 2023,
+          "retained_anchor_rows": 31,
+          "retained_anchor_sum_mw": 30153.5,
+          "removed_future_rows": 217,
+          "removed_future_sum_mw": 1517726.1666673,
+          "removed_future_sum_mw_by_period": {
+            "2028": 60307.0,
+            "2033": 100511.66666730001,
+            "2038": 150767.5,
+            "2043": 301535.0,
+            "2048": 301535.0,
+            "2053": 301535.0,
+            "2058": 301535.0
+          },
+          "future_hydro_pumped_rows_remaining": 0
+        },
+        {
+          "check": "pumped_hydro_historical_anchor_not_above_surviving_stock",
+          "pass": true,
+          "historical_anchor_sum_mw": 30153.5,
+          "surviving_predetermined_stock_mw": 31490.0
+        },
+        {
+          "check": "pumped_hydro_capacity_ceiling_not_below_predetermined_floor",
+          "pass": true,
+          "minimum_margin_mw": 0.0
+        },
+        {
+          "check": "pumped_hydro_national_target_closure",
+          "pass": true,
+          "allocated_total_mw": 31490.0,
+          "target_mw": 31490.0
+        }
+      ]
+    },
+    {
+      "check": "hard_scenario_set_exact",
+      "pass": true,
+      "detail": [
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL"
+      ]
+    },
+    {
+      "check": "standard_v17_routes_retained",
+      "pass": true,
+      "detail": "standard route tree"
+    },
+    {
+      "check": "hard_routes_isolated",
+      "pass": true,
+      "detail": "three hard profiles"
+    },
+    {
+      "check": "no_cleanup_in_official_fallback",
+      "pass": true,
+      "detail": "stage 2 remains diagnostic-only"
+    }
+  ]
+}

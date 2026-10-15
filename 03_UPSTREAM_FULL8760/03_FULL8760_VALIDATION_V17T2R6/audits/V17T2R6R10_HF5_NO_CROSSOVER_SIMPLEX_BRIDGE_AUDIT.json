@@ -1,0 +1,90 @@
+{
+  "version": "V17T2R6R10_HF5_NO_CROSSOVER_SIMPLEX_BRIDGE",
+  "status": "PASS",
+  "scope": "only the temporary basis-construction algorithm is changed; the final 8760 target LP, inputs, constraints, RHS, bounds, objective and strict release gate remain unchanged",
+  "scientific_change": false,
+  "final_target_model_changed": false,
+  "checks": [
+    {
+      "check": "python_syntax",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "julia_utf8_and_balanced_delimiters",
+      "pass": true,
+      "detail": {
+        "model": [],
+        "helper": []
+      }
+    },
+    {
+      "check": "scientific_tolerances_and_exact_projection_retained",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf5_direct_simplex_bridge_is_present_and_crossover_path_removed",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "old_barrier_crossover_profile_present": false
+      }
+    },
+    {
+      "check": "no_matrix_rhs_constraint_or_final_objective_intervention",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "32_coordinate_temporary_bridge_and_exact_restoration_retained",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "model_final_release_requires_hf5_no_crossover_evidence",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "orchestrator_records_separate_hf5_attempt_and_fails_closed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "resume_launcher_is_single_case_and_non_destructive",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "ldes_hf5_resume_launcher_is_explicitly_deferred_and_non_destructive",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "optimized_pair_coordinator_uses_hf5_only_and_waits_for_live_ldes_lease",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "optimized_pair_launcher_is_non_destructive_and_does_not_start_observed_cases",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "hf5_payload_files_match_manifest",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failed": []
+}

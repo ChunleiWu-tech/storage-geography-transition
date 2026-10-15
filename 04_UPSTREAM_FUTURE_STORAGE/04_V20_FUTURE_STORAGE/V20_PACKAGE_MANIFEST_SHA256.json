@@ -1,0 +1,10 @@
+{
+  "version": "V20_HF3_PACKAGE_MANIFEST_R1",
+  "algorithm": "SHA-256",
+  "excluded_self_files": [
+    "V20_PACKAGE_MANIFEST_SHA256.csv",
+    "V20_PACKAGE_MANIFEST_SHA256.json"
+  ],
+  "file_count": 1856,
+  "total_bytes": 432182969
+}

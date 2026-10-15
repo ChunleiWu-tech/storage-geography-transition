@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "national_power_mw": 135930.0,
+  "national_energy_mwh": 351120.0,
+  "national_closure_pass": true,
+  "official_evidence_boundary": {
+    "official_exact": "national power and energy; North and Northwest report values; Inner Mongolia, Xinjiang, Shandong, Gansu and Guizhou power",
+    "official_threshold": "seven additional provinces reported only as above 5 GW",
+    "model_reconstruction": "all remaining provincial point estimates and the East/South/Central/Northeast exact closure derived from rounded official shares and a frozen prior"
+  },
+  "main_input_interpretation": "NEA-constrained model reconstruction with a common exact national duration; not an official exact 31-province inventory",
+  "publication_language_lock": "Use model-reconstructed or NEA-constrained allocation. Never call the complete 31-province vector an official provincial census."
+}

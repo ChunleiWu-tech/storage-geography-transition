@@ -1,0 +1,109 @@
+{
+  "version": "V17T2R5R4_OBSERVED_FEASIBLE_START_FULL_OPTIMAL_CONTINUATION_20260813",
+  "status": "PASS",
+  "errors": [],
+  "checks": {
+    "r5_supersedes_r4_core_hash_lock": true,
+    "core_payload_hashes": "SKIPPED_SUPERSEDED_BY_R5",
+    "model::String(solver_profile) == \"r4_observed_seed_primal_continuation\"": true,
+    "model::basename(case_dir) != \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "model::r4_seed_source_scenario = \"TY2033_CHRONO_1H_OBSERVED\"": true,
+    "model::r4_seed_values = [r4_observed_power_by_project[g] for g in legacy_projects]": true,
+    "model::r4_seed_source_pair_identity_pass": true,
+    "model::r4_seed_national_power_residual_mw": true,
+    "model::r4_seed_national_energy_residual_mwh": true,
+    "model::r4_seed_minimum_lower_bound_slack_mw": true,
+    "model::r4_seed_minimum_cap_slack_mw": true,
+    "model::apply_r4_seed_profile!(mod)": true,
+    "model::r4_seed_gurobi_status == 2": true,
+    "model::r4_seed_gurobi_objval_gate_pass": true,
+    "model::r4_seed_objective_scale_gate_pass": true,
+    "model::r4_seed_term == JuMP.MOI.OPTIMAL": true,
+    "model::r4_pstart_values = [value(v) for v in r4_pstart_vars]": true,
+    "model::JuMP.unfix(legacy_vars[i])": true,
+    "model::JuMP.set_lower_bound(legacy_vars[i], r4_original_lower_bounds[i])": true,
+    "model::JuMP.set_upper_bound(legacy_vars[i], r4_original_upper_bounds[i])": true,
+    "model::r4_final_bounds_restored": true,
+    "model::r4_seed_full_pstart_max_bound_violation": true,
+    "model::_v17_apply_raw_pstart!(mod, r4_pstart_vars, r4_pstart_values)": true,
+    "model::lp_warm_start = 2": true,
+    "model::method = 0": true,
+    "model::\"gurobi_V17T2R5R4_full_optimal_primal_simplex_after_strict_observed_seed\"": true,
+    "model::const SOLVER_FEASIBILITY_TOL = 1.0e-7": true,
+    "model::const SOLVER_OPTIMALITY_TOL = 1.0e-7": true,
+    "model::const SOLVER_BAR_CONV_TOL = 1.0e-8": true,
+    "model::\"V17T2R5R3_equivalent_hourly_coordinate_projection_v1\"": true,
+    "model:::total_omitted_hourly_columns": true,
+    "model_forbidden_absent::r4_seed_values = [legacy_fixed_power_by_project[g] for g in legacy_projects]": true,
+    "model_forbidden_absent::R4_OBSERVED_SEED_PRIMAL_CONTINUATION_ACTIVE = true": true,
+    "runner::\"r4_continuation\": R4_CONTINUATION_ROUTE": true,
+    "runner::10_targetyear_r4_observed_seed_primal_continuation": true,
+    "runner::args.route in {\"r3_reduced\", \"r4_continuation\", \"r5_continuation\"}": true,
+    "runner::args.scenario != \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "runner::\"r4_seed_source_scenario\": \"TY2033_CHRONO_1H_OBSERVED\"": true,
+    "runner::\"r4_seed_source_pair_identity_pass\": \"true\"": true,
+    "runner::\"r4_seed_gurobi_objval_gate_pass\": \"true\"": true,
+    "runner::\"r4_seed_objective_scale_gate_pass\": \"true\"": true,
+    "runner::\"r4_final_bounds_restored\": \"true\"": true,
+    "runner::\"r4_seed_full_pstart_set_pass\": \"true\"": true,
+    "runner::r4 full PStart count does not equal the reduced model variable count": true,
+    "runner::r4 full PStart violates a restored final-model bound": true,
+    "launcher::--scenario TY2033_CHRONO_1H_OPTIMAL": true,
+    "launcher::--route r4_continuation": true,
+    "launcher::--skip-prepare": true,
+    "launcher::--force-rerun": true,
+    "launcher::V17T2R5R4_SEED_TIME_LIMIT_SECONDS": true,
+    "launcher::V17T2R5R4_FINAL_TIME_LIMIT_SECONDS": true,
+    "paired_non_geographic_input_identity": {
+      "status": "PASS",
+      "errors": [],
+      "allowed_differences": [
+        "gen_build_predetermined.csv",
+        "legacy_storage_policy.csv"
+      ]
+    },
+    "observed_seed_contract": {
+      "observed_mode": [
+        "observed_standardized"
+      ],
+      "optimal_mode": [
+        "optimized_reallocation"
+      ],
+      "observed_rows": 32,
+      "optimal_rows": 32,
+      "project_sets_equal": true,
+      "power_target_mw": 135930.0,
+      "observed_power_sum_mw": 135930.0,
+      "power_residual_mw": 0.0,
+      "energy_target_mwh": 351120.0,
+      "observed_energy_sum_mwh": 351119.99999999994,
+      "energy_residual_mwh": -5.820766091346741e-11,
+      "standardized_duration_h": 2.583094239682189,
+      "maximum_project_duration_residual_mwh": 3.637978807091713e-12,
+      "minimum_lower_bound_slack_mw": 205.87333333333336,
+      "minimum_cap_slack_mw": 0.0
+    },
+    "scenario_lock": {
+      "controlled_case_count": 8,
+      "paired_rows": 2,
+      "pair_ids": [
+        "TY2033_CHRONO_1H"
+      ],
+      "time_resolution_h": [
+        1
+      ],
+      "chronology": [
+        "monthly_linked"
+      ]
+    }
+  },
+  "scientific_inputs_changed": false,
+  "objective_changed": false,
+  "final_feasible_set_changed": false,
+  "solver_tolerances_relaxed": false,
+  "publication_gates_relaxed": false,
+  "other_seven_cases_rerun_or_cleaned": false,
+  "strict_seed_solution_required": true,
+  "final_full_optimal_model_solver_native_optimal_required": true,
+  "dynamic_julia_gurobi_solve_executed": false
+}

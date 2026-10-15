@@ -1,0 +1,26 @@
+{
+  "version": "V17T2R5R2_EQUIVALENT_PROJECTED_LEGACY_ENERGY_20260812",
+  "status": "PASS",
+  "errors": [],
+  "checks": {
+    "model_token::basename(case_dir) == \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "model_token::\"V17T2R5R2_equivalent_projected_legacy_allocation_v2\"": true,
+    "model_token::STORAGE_ENERGY_VARIABLE_BLD_YRS": true,
+    "model_token::PROJECTED_LEGACY_STORAGE_ENERGY_BLD_YRS": true,
+    "model_token::function storage_energy_build(g, bld_yr)": true,
+    "model_token::storage_energy_build(g, bld_yr)": true,
+    "model_token:::legacy_energy_variable_projection_active": true,
+    "model_token:::legacy_energy_variable_projection_count": true,
+    "model_token:::legacy_projected_energy_output_reconstruction": true,
+    "legacy_project_count": 32,
+    "national_power_target_mw": 135930.0,
+    "national_energy_target_mwh": 351120.0,
+    "standardized_duration_h": 2.583094239682189,
+    "energy_identity_residual_mwh": 0.0,
+    "energy_identity_tolerance_mwh": 1e-06,
+    "zone_power_cap_sum_mw": 544822.6945485384,
+    "scenario_legacy_mode": "optimized_reallocation",
+    "scenario_time_resolution_h": 1
+  },
+  "dynamic_julia_gurobi_solve_executed": false
+}

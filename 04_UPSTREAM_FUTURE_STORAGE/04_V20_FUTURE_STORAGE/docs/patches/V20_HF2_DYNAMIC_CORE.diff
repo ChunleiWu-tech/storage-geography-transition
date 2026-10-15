@@ -1,0 +1,92 @@
+--- HF1/dynamic_core.diff
++++ HF2/dynamic_core.diff
+@@ -157,7 +157,7 @@
+ )
+ const STORAGE_CDR_MODULES_COMPILED = false
+ const REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED = 504
+-const STORAGE_CHRONOLOGY_SCOPE = "2028_2060_monthly_representative_days_with_intermonth_soc_linkage_2023_stock_only"
++const STORAGE_CHRONOLOGY_SCOPE_LEGACY_DEFAULT = "2028_2060_monthly_representative_days_with_intermonth_soc_linkage_2023_stock_only"
+ # V18 supports inter-month energy shifting inside each modeled year through linked monthly representative days.
+ # This is stronger than V17 intraday cycling but is still NOT a full multi-weather-year chronological claim.
+ const STORAGE_LONG_DURATION_CLAIM_SUPPORTED = true
+@@ -929,6 +929,9 @@
+ v18_storage_portfolio_mode in valid_v18_storage_portfolio_modes ||
+     error("Unknown v18_storage_portfolio_mode=$(v18_storage_portfolio_mode). Valid modes: $(valid_v18_storage_portfolio_modes)")
+ storage_intermonth_soc_linked = storage_chronology_mode == "monthly_linked"
++storage_chronology_scope = storage_intermonth_soc_linked ?
++    "2028_2060_monthly_representative_days_with_intermonth_soc_linkage_2023_stock_only" :
++    "2028_2060_representative_days_intraday_cyclic_2023_stock_only"
+ storage_long_duration_claim_supported = STORAGE_LONG_DURATION_CLAIM_SUPPORTED && storage_intermonth_soc_linked
+ storage_full_chronological_claim_supported = STORAGE_FULL_CHRONOLOGICAL_CLAIM_SUPPORTED
+ storage_multiweather_claim_supported = STORAGE_MULTIWEATHER_CLAIM_SUPPORTED
+@@ -2243,7 +2246,11 @@
+     @constraint(mod, Disable_Unvalidated_CAS_Build[(g, y) in GEN_BLD_YRS; g in CAS_GENS], BuildGen[(g, y)] == 0)
+ end
+ if !allow_new_battery
+-    @constraint(mod, Disable_New_Battery_Build[(g, y) in GEN_BLD_YRS; g in BATTERY_GENS && !((g, y) in PREDETERMINED_GEN_BLD_YRS)], BuildGen[(g, y)] == 0)
++    @constraint(mod, Disable_New_Battery_Build[(g, y) in GEN_BLD_YRS;
++        g in BATTERY_GENS &&
++        !((g, y) in PREDETERMINED_GEN_BLD_YRS) &&
++        !(LEGACY_OPTIMIZED_REALLOCATION && y == INITIALIZATION_TRANSITION_PERIOD)
++    ], BuildGen[(g, y)] == 0)
+ end
+ if !allow_new_pumped_hydro
+     @constraint(mod, Disable_New_PumpedHydro_Build[(g, y) in GEN_BLD_YRS; g in PUMPED_HYDRO_BUILD_GENS && !((g, y) in PREDETERMINED_GEN_BLD_YRS)], BuildGen[(g, y)] == 0)
+@@ -2252,8 +2259,16 @@
+ # Hydro_Pumped rows remain the observed-stock carriers and are not duplicated as
+ # alternative future projects when a V18 portfolio is active.
+ if v18_storage_portfolio_mode != "disabled"
+-    @constraint(mod, V18_Disable_Legacy_Battery_Future_Build[(g, y) in GEN_BLD_YRS; g in BATTERY_GENS && !((g, y) in PREDETERMINED_GEN_BLD_YRS)], BuildGen[(g, y)] == 0)
+-    @constraint(mod, V18_Disable_Legacy_PSH_Future_Build[(g, y) in GEN_BLD_YRS; g in PUMPED_HYDRO_BUILD_GENS && !((g, y) in PREDETERMINED_GEN_BLD_YRS)], BuildGen[(g, y)] == 0)
++    @constraint(mod, V18_Disable_Legacy_Battery_Future_Build[(g, y) in GEN_BLD_YRS;
++        g in BATTERY_GENS &&
++        y > INITIALIZATION_TRANSITION_PERIOD &&
++        !((g, y) in PREDETERMINED_GEN_BLD_YRS)
++    ], BuildGen[(g, y)] == 0)
++    @constraint(mod, V18_Disable_Legacy_PSH_Future_Build[(g, y) in GEN_BLD_YRS;
++        g in PUMPED_HYDRO_BUILD_GENS &&
++        y > INITIALIZATION_TRANSITION_PERIOD &&
++        !((g, y) in PREDETERMINED_GEN_BLD_YRS)
++    ], BuildGen[(g, y)] == 0)
+ end
+ if !allow_new_battery
+     @constraint(mod, V18_Disable_BatteryFamily_Build[(g, y) in GEN_BLD_YRS; g in union(V18_LFP_GENS, V18_VRFB_GENS)], BuildGen[(g, y)] == 0)
+@@ -2781,14 +2796,26 @@
+     @constraint(mod, Disable_Unvalidated_CAS_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS; g in CAS_GENS], BuildStorageEnergy[(g, y)] == 0)
+ end
+ if !allow_new_battery
+-    @constraint(mod, Disable_New_Battery_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS; g in BATTERY_GENS && !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS)], BuildStorageEnergy[(g, y)] == 0)
++    @constraint(mod, Disable_New_Battery_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS;
++        g in BATTERY_GENS &&
++        !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS) &&
++        !(LEGACY_OPTIMIZED_REALLOCATION && y == INITIALIZATION_TRANSITION_PERIOD)
++    ], BuildStorageEnergy[(g, y)] == 0)
+ end
+ if !allow_new_pumped_hydro
+     @constraint(mod, Disable_New_PumpedHydro_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS; g in PUMPED_HYDRO_BUILD_GENS && !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS)], BuildStorageEnergy[(g, y)] == 0)
+ end
+ if v18_storage_portfolio_mode != "disabled"
+-    @constraint(mod, V18_Disable_Legacy_Battery_Future_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS; g in BATTERY_GENS && !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS)], BuildStorageEnergy[(g, y)] == 0)
+-    @constraint(mod, V18_Disable_Legacy_PSH_Future_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS; g in PUMPED_HYDRO_BUILD_GENS && !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS)], BuildStorageEnergy[(g, y)] == 0)
++    @constraint(mod, V18_Disable_Legacy_Battery_Future_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS;
++        g in BATTERY_GENS &&
++        y > INITIALIZATION_TRANSITION_PERIOD &&
++        !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS)
++    ], BuildStorageEnergy[(g, y)] == 0)
++    @constraint(mod, V18_Disable_Legacy_PSH_Future_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS;
++        g in PUMPED_HYDRO_BUILD_GENS &&
++        y > INITIALIZATION_TRANSITION_PERIOD &&
++        !((g, y) in PREDETERMINED_STORAGE_GEN_BLD_YRS)
++    ], BuildStorageEnergy[(g, y)] == 0)
+ end
+ if !allow_new_battery
+     @constraint(mod, V18_Disable_BatteryFamily_Energy_Build[(g, y) in STORAGE_GEN_BLD_YRS; g in union(V18_LFP_GENS, V18_VRFB_GENS)], BuildStorageEnergy[(g, y)] == 0)
+@@ -5141,7 +5168,7 @@
+     :stock_anchor_period_count => [length(STOCK_ANCHOR_PERIODS)],
+     :empty_collection_safety_version => [EMPTY_COLLECTION_SAFETY_VERSION],
+     :representative_timepoint_count_expected => [REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED],
+-    :storage_chronology_scope => [STORAGE_CHRONOLOGY_SCOPE],
++    :storage_chronology_scope => [storage_chronology_scope],
+     :storage_chronology_mode => [storage_chronology_mode],
+     :v18_storage_portfolio_mode => [v18_storage_portfolio_mode],
+     :storage_intermonth_soc_linked => [storage_intermonth_soc_linked],

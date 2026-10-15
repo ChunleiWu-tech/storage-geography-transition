@@ -1,0 +1,23 @@
+figure_id,kind,file_stem,scientific_question,primary_table,claim_scope
+Fig1,main,Fig1_storage_legacy_and_identification,What is the observed storage legacy and how is the spatial effect identified?,fig1a_legacy_nodes.csv,Input evidence and counterfactual design
+Fig2,main,Fig2_observed_vs_optimal_spatial_allocation,Where would the same national storage fleet be placed under system optimization?,fig2_spatial_allocation.csv,Equal-total spatial reallocation
+Fig3,main,Fig3_system_cost_of_spatial_misalignment,What is the long-term system cost of spatial misalignment?,fig3_system_value.csv,Cost infrastructure and curtailment effects
+Fig4,main,Fig4_installed_storage_and_delivered_flexibility,How does zone-level installed storage translate into delivered flexibility?,fig4_delivered_flexibility.csv,Representative-day operation and planning reserve
+Fig5,main,Fig5_storage_legacy_redirects_transition,How does the initial spatial legacy redirect future investment paths?,fig5_transition_paths.csv,2028 onward transition paths
+Fig6,main,Fig6_robustness_of_spatial_legacy_effect,Does the spatial legacy effect persist under system-boundary uncertainty?,fig6_robustness.csv,Paired robustness comparisons
+FigS01,supplementary,FigS01_model_zone_network,Model-zone network and display coordinates,fig1a_legacy_nodes.csv,Schematic nodes not administrative boundaries
+FigS02,supplementary,FigS02_storage_load_resource_inputs,Reconstructed storage against load and VRE inputs,fig1a_legacy_nodes.csv,Input diagnostics
+FigS03,supplementary,FigS03_observed_storage_power_energy_validation,Power-energy consistency of the observed fleet,fig1a_legacy_nodes.csv,Input diagnostics
+FigS04,supplementary,FigS04_duration_composition,Reconstructed duration composition and standardization,fig1a_legacy_nodes.csv,Duration-composition diagnostic
+FigS05,supplementary,FigS05_empirical_deployment_envelope,Empirical envelope for optimized reallocation,fig1a_legacy_nodes.csv,2023 legacy allocation only
+FigS06,supplementary,FigS06_core_scenario_matrix,Core counterfactual matrix,fig1c_scenario_design.csv,Scenario design
+FigS07,supplementary,FigS07_solver_and_physical_audits,Solver and audit release gates,figS07_solver_audit.csv,Reproducibility
+FigS08,supplementary,FigS08_storage_spatial_concentration,Concentration of existing storage power,fig1a_legacy_nodes.csv,Input evidence
+FigS09,supplementary,FigS09_rule_based_allocations,Load- and VRE-rule allocations,fig2_spatial_allocation.csv,Policy-rule counterfactuals
+FigS10,supplementary,FigS10_full_province_reallocation,Full zone reallocation ranking,figS10_province_allocation_deltas.csv,Equal-total spatial reallocation
+FigS11,supplementary,FigS11_system_cost_decomposition,Cost-component trajectories,figS11_cost_decomposition.csv,2028 onward
+FigS12,supplementary,FigS12_curtailment_and_emissions,Curtailment and emissions trajectories,figS12_curtailment_emissions.csv,2028 onward
+FigS13,supplementary,FigS13_storage_operation_distribution,Distribution of battery operation,figS13_storage_operation.csv,Representative-day operation
+FigS14,supplementary,FigS14_transmission_sensitivity,Fixed-transmission paired test,figS14_transmission_sensitivity.csv,Robustness
+FigS15,supplementary,FigS15_pumped-hydro_carbon_and_cost_robustness,Other paired robustness tests,figS15_ph_carbon_cost_robustness.csv,Robustness
+FigS16,supplementary,FigS16_temporal_scope_and_claim_boundary,Temporal evidence and claim boundary,figS16_temporal_scope.csv,No chronological multi-day claim

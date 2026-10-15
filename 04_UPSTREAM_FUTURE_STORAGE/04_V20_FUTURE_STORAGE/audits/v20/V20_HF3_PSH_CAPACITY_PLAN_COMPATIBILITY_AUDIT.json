@@ -1,0 +1,73 @@
+{
+  "version": "V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_AUDIT_R1",
+  "status": "PASS",
+  "scenarios": 16,
+  "rows": 3472,
+  "rows_requiring_future_psh_to_meet_floor": 2656,
+  "max_future_psh_gap_mw": 21600.0,
+  "all_floors_within_shared_resource_ceiling": true,
+  "all_zones_have_10h_and_24h_candidates": true,
+  "example_hf2_conflict": [
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "zone": "Fujian",
+      "period": 2028,
+      "planned_psh_floor_mw": 2210.0,
+      "max_alive_legacy_psh_mw_without_future_legacy_builds": 1800.0,
+      "future_psh_gap_mw": 410.0,
+      "shared_psh_resource_ceiling_mw": 12870.0,
+      "floor_within_resource_ceiling": true,
+      "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+      "has_10h_and_24h_candidates": true
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "zone": "Gansu",
+      "period": 2028,
+      "planned_psh_floor_mw": 3670.0,
+      "max_alive_legacy_psh_mw_without_future_legacy_builds": 0.0,
+      "future_psh_gap_mw": 3670.0,
+      "shared_psh_resource_ceiling_mw": 18370.0,
+      "floor_within_resource_ceiling": true,
+      "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+      "has_10h_and_24h_candidates": true
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "zone": "Guangxi",
+      "period": 2028,
+      "planned_psh_floor_mw": 3440.0,
+      "max_alive_legacy_psh_mw_without_future_legacy_builds": 0.0,
+      "future_psh_gap_mw": 3440.0,
+      "shared_psh_resource_ceiling_mw": 17220.0,
+      "floor_within_resource_ceiling": true,
+      "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+      "has_10h_and_24h_candidates": true
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "zone": "Heilongjiang",
+      "period": 2028,
+      "planned_psh_floor_mw": 2640.0,
+      "max_alive_legacy_psh_mw_without_future_legacy_builds": 300.0,
+      "future_psh_gap_mw": 2340.0,
+      "shared_psh_resource_ceiling_mw": 13520.0,
+      "floor_within_resource_ceiling": true,
+      "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+      "has_10h_and_24h_candidates": true
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "zone": "Henan",
+      "period": 2028,
+      "planned_psh_floor_mw": 2180.0,
+      "max_alive_legacy_psh_mw_without_future_legacy_builds": 120.0,
+      "future_psh_gap_mw": 2060.0,
+      "shared_psh_resource_ceiling_mw": 11040.0,
+      "floor_within_resource_ceiling": true,
+      "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+      "has_10h_and_24h_candidates": true
+    }
+  ],
+  "interpretation": "When the V20 portfolio is active, future legacy Hydro_Pumped builds are intentionally disabled. Any positive gap between the inherited Hydro_Pumped floor and surviving legacy PSH must therefore be satisfiable by V18_PSH_10h/24h and counted toward the same physical PSH floor. HF3 implements that mapping while preserving the shared provincial resource ceiling."
+}

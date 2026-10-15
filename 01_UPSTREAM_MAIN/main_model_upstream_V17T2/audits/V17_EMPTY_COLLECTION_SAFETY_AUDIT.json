@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "version": "V17",
+    "checks": 8,
+    "passed": 8,
+    "all_pass": true
+  },
+  "checks": [
+    {
+      "check": "all_generator_reductions_define_identity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_direct_first_index_on_period_timepoints",
+      "pass": true,
+      "detail": "TPS_IN_PERIOD[p][1]"
+    },
+    {
+      "check": "operational_period_partition_present",
+      "pass": true,
+      "detail": "period partition"
+    },
+    {
+      "check": "stock_anchor_reserve_skipped",
+      "pass": true,
+      "detail": "planning reserve logic"
+    },
+    {
+      "check": "hours_reduction_is_empty_safe",
+      "pass": true,
+      "detail": "hours_in_period"
+    },
+    {
+      "check": "peak_load_reduction_is_empty_safe",
+      "pass": true,
+      "detail": "peak load"
+    },
+    {
+      "check": "biomass_shadow_empty_guard",
+      "pass": true,
+      "detail": "empty biomass shadow table"
+    },
+    {
+      "check": "empty_safety_token_exported",
+      "pass": true,
+      "detail": "solve status metadata"
+    }
+  ]
+}

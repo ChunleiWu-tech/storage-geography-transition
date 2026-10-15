@@ -1,0 +1,7 @@
+layer,file,contents,interpretation
+Layer A,future_correction_metrics.csv,legacy penalty; correction value; repair fraction,primary mechanism
+Layer A,future_storage_build_by_zone_tech.csv,2033 incremental MW/MWh by model zone and technology,technology/siting mechanism
+Layer A,future_correction_tx_build.csv,transmission build response,storage-transmission substitution
+Layer B,V19_PATHWAY_BUILD_BY_SCENARIO_YEAR_ZONE_TECH.csv,new MW/MWh by scenario/year/zone/technology,long-term pathway
+Layer B,V19_PATHWAY_TECH_DURATION_MIX.csv,technology-duration portfolio shares over time,long-term technology transition
+Bridge,*_2033_TO_03_8760_HANDOFF.csv,fixed 2033 build portfolio for full-8760 replay,validation handoff; not validation result

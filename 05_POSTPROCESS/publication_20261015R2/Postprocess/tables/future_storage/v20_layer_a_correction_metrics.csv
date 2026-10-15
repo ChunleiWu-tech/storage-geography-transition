@@ -1,0 +1,5 @@
+metric,value,unit
+Baseline residual legacy lock-in,2454.1601158310546,million USD yr-1
+Adaptive residual legacy lock-in,2454.1601163101805,million USD yr-1
+Adaptive correction value,-4.791259765625e-07,million USD yr-1
+Repair fraction,-1.952301210796318e-10,fraction

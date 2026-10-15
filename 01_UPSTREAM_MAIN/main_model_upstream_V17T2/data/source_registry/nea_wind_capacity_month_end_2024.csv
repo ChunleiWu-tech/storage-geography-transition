@@ -1,0 +1,13 @@
+observation_date,wind_capacity_gw,value_status,source_title,source_url,derivation_note,accessed_date
+2023-12-31,441.34,official_exact,"National Energy Administration, 2023 national power industry statistics",https://www.nea.gov.cn/2024-01/26/c_1310762246.htm,year-end table,2026-08-03
+2024-02-29,450.35,official_exact,"National Energy Administration, Jan-Feb 2024 power industry statistics",https://www.nea.gov.cn/2024-03/25/c_1310768833.htm,month-end table,2026-08-03
+2024-03-31,456.64,official_exact,"National Energy Administration, Q1 2024 power industry statistics",https://www.nea.gov.cn/2024-04/22/c_1310772067.htm,month-end table,2026-08-03
+2024-04-30,458.18,official_derived,"National Energy Administration, Jan-Apr 2024 renewable build statistics",https://www.nea.gov.cn/2024-05/31/c_1310776691.htm,441.34 GW end-2023 plus official 16.84 GW cumulative wind additions,2026-08-03
+2024-05-31,461.04,official_exact,"National Energy Administration, Jan-May 2024 power industry statistics",https://www.nea.gov.cn/2024-06/28/c_1310779865.htm,month-end table,2026-08-03
+2024-06-30,466.71,official_exact,"National Energy Administration, H1 2024 power industry statistics",https://www.nea.gov.cn/2024-07/20/c_1310782235.htm,month-end table,2026-08-03
+2024-07-31,470.53,official_exact,"National Energy Administration, Jan-Jul 2024 power industry statistics",https://www.nea.gov.cn/2024-08/23/c_1310785026.htm,month-end table,2026-08-03
+2024-08-31,474.03,official_exact,"National Energy Administration, Jan-Aug 2024 power industry statistics",https://www.nea.gov.cn/2024-09/23/c_1212399359.htm,month-end table,2026-08-03
+2024-09-30,479.55,official_exact,"National Energy Administration, Q1-Q3 2024 power industry statistics",https://www.nea.gov.cn/2024-10/21/c_1212405574.htm,month-end table,2026-08-03
+2024-10-31,486.17,official_exact,"National Energy Administration, Jan-Oct 2024 power industry statistics",https://www.nea.gov.cn/2024-11/22/c_1310787342.htm,month-end table,2026-08-03
+2024-11-30,492.18,official_exact,"National Energy Administration, Jan-Nov 2024 power industry statistics",https://www.nea.gov.cn/20241220/73f189cc6e6540caafac2b819623fc08/c.html,month-end table,2026-08-03
+2024-12-31,520.68,official_exact,"National Energy Administration, 2024 national power industry statistics",https://www.nea.gov.cn/20250121/097bfd7c1cd3498897639857d86d5dac/c.html,year-end table,2026-08-03

@@ -1,0 +1,3 @@
+scenario,source_scenario,case_dir,cost_regime,status
+V20EH01_OBSERVED,SL01_OBSERVED_STANDARDIZED,storage_cases/V20EH01_OBSERVED,equal_evidence_horizon_2030_hold,PASS
+V20EH02_OPTIMAL,SL02_OPTIMAL_REALLOCATION,storage_cases/V20EH02_OPTIMAL,equal_evidence_horizon_2030_hold,PASS

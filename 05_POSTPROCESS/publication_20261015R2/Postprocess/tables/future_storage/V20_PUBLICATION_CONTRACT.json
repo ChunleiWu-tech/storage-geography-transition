@@ -1,0 +1,23 @@
+{
+  "version": "V30_V20_HF5_PUBLICATION_CONTRACT",
+  "status": "PASS",
+  "v20_root": "C:\\Users\\Admin\\Desktop\\01_UPSTREAM_16PLUS8\\04_V20_FUTURE_STORAGE",
+  "layer_a_root": "C:\\Users\\Admin\\Desktop\\01_UPSTREAM_16PLUS8\\04_V20_FUTURE_STORAGE\\modules\\correction2033",
+  "required_cases": 26,
+  "layer_a_strict": 8,
+  "layer_b_strict": 16,
+  "layer_c_strict": 2,
+  "layer_a_cost_basis": "2033 annualized system cost; matched observed-minus-optimized comparison",
+  "layer_b_cost_basis": "multi-period present-value objective; never added to Layer-A annualized cost",
+  "chronology_boundary": "Layer A monthly-linked target year; Layer B/C V17-native intraday-cyclic representative chronology; FULL8760 handled only by the separate R24P3 certificate pipeline",
+  "technology_claim_boundary": "Evidence-direct technology interpretation must remain qualitatively robust under equal-evidence-horizon and low/high battery-cost matched comparisons.",
+  "expanded_portfolio_boundary": "CAES/H2 expanded case is pressure-test-only and not headline province siting evidence.",
+  "unit_alignment": {
+    "BuildGen": "upstream MW; divided exactly once by 1000 to report GW",
+    "BuildStorageEnergy_MWh": "upstream MWh; divided exactly once by 1000 to report GWh",
+    "duration": "upstream MWh divided by upstream MW, yielding hours",
+    "layer_a_cost": "SystemCost_annualized_usd_per_yr; observed minus optimized; divided by 1e6 for million USD/yr",
+    "layer_b_c_cost": "stage1_economic_objective_usd present value; observed minus optimized; divided by 1e9 for billion USD PV",
+    "zero_build_policy": "A valid strict scenario with zero new storage remains an explicit zero, not missing data"
+  }
+}

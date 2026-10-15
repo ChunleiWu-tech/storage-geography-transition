@@ -1,0 +1,99 @@
+{
+  "version": "V17T1",
+  "baseline": "User-supplied, locally solver-validated V17",
+  "release_scope": "Minimal repair of SL08, SL09, SL10 and SL13 only",
+  "custom_audits": {
+    "V17T1_FOUR_SCENARIO_REPAIR_AUDIT.json": {
+      "version": "V17T1",
+      "checks": 13,
+      "passed": 13,
+      "all_pass": true
+    },
+    "V17T1_INPUT_DIFF_SCOPE_AUDIT.json": {
+      "version": "V17T1",
+      "passed": 16,
+      "scenario_count": 16,
+      "all_pass": true
+    },
+    "V17T1_SOURCE_CHANGE_SCOPE_AUDIT.json": {
+      "version": "V17T1",
+      "all_pass": true
+    },
+    "V17T1_STAGE1_GATE_REGRESSION_AUDIT.json": {
+      "version": "V17T1",
+      "checks": 6,
+      "passed": 6,
+      "all_pass": true
+    },
+    "V17T1_ROUTE_ISOLATION_AUDIT.json": {
+      "version": "V17T1",
+      "checks": 5,
+      "passed": 5,
+      "all_pass": true
+    }
+  },
+  "base_v17_audits": {
+    "V17_STATIC_RELEASE_AUDIT.json": {
+      "version": "V17",
+      "hard_checks": 64,
+      "hard_passed": 64,
+      "hard_all_pass": true
+    },
+    "V17_WINDOWS_LAUNCHER_AUDIT.json": {
+      "version": "V17",
+      "checks": 92,
+      "passed": 92,
+      "all_pass": true
+    },
+    "V17_EMPTY_COLLECTION_SAFETY_AUDIT.json": {
+      "version": "V17",
+      "checks": 8,
+      "passed": 8,
+      "all_pass": true
+    },
+    "V17_JULIA_SYNTAX_AUDIT.json": {
+      "version": "V17",
+      "checks": 26,
+      "passed": 26,
+      "all_pass": true
+    },
+    "V17_NUMERICAL_STABILITY_AUDIT.json": {
+      "version": "V17",
+      "checks": 25,
+      "passed": 25,
+      "all_pass": true
+    },
+    "V17_OBJECTIVE_CERTIFICATE_AUDIT.json": {
+      "version": "V17",
+      "checks": 21,
+      "passed": 21,
+      "all_pass": true
+    },
+    "V17_RELEASE_POLICY_AUDIT.json": {
+      "version": "V17",
+      "checks": 12,
+      "passed": 12,
+      "all_pass": true
+    },
+    "V17_RUN_READINESS_AUDIT.json": {
+      "version": "V17",
+      "checks": 26,
+      "passed": 26,
+      "all_pass": true
+    },
+    "V17_PRE_SOLVE_CASE_SUMMARY.json": {
+      "version": "V17",
+      "passed": 16,
+      "all_pass": true,
+      "expected": 16,
+      "prepared": 16
+    }
+  },
+  "large_solver_run_executed_in_build_environment": false,
+  "runtime_validation_requires_user_local_julia_gurobi": true,
+  "required_local_sequence": [
+    "RUN_V17T1_UPSTREAM_FULL_16_1x10.bat",
+    "RUN_V17T1_POSTPROCESS.bat after PUBLICATION BATCH PASSED"
+  ],
+  "all_build_audits_pass": true
+}

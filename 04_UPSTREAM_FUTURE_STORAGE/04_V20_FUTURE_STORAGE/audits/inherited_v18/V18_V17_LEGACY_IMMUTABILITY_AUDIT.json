@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "version": "V18_V17_LEGACY_IMMUTABILITY_CROSSCHECK_R2",
+  "source_v17_uploaded_zip": "01_MAIN_UPSTREAM_V17T4R3_CURRENT_CONSOLIDATED_FINAL_20260809(1).zip",
+  "source_v17_uploaded_zip_sha256": "2878b00e1619798703af317707038327bea00285ceb0a06a22bce88c44738e8b",
+  "scenarios_checked": 16,
+  "scope": "For every official scenario: all pre-existing gen_info rows, all pre-existing gen_build_costs rows, and predetermined MW/MWh are unchanged by V18 candidate injection. V18_* additions are excluded from the identity comparison.",
+  "checks": [
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL00_OBSERVED_ACTUAL",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL02_OPTIMAL_REALLOCATION",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL03_NO_LEGACY",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL04_RULE_LOAD",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL05_RULE_VRE",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL06_TX_FIXED_OBSERVED",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL07_TX_FIXED_OPTIMAL",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL08_PH_CONSERVATIVE_OBSERVED",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL10_CARBON_TIGHT_OBSERVED",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL11_CARBON_TIGHT_OPTIMAL",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL12_COST_LOW_OBSERVED",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL13_COST_LOW_OPTIMAL",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL14_COST_HIGH_OBSERVED",
+      "pass": true
+    },
+    {
+      "non_v18_gen_info_identical": true,
+      "non_v18_gen_build_costs_identical": true,
+      "predetermined_mw_mwh_numerically_identical": true,
+      "scenario": "SL15_COST_HIGH_OPTIMAL",
+      "pass": true
+    }
+  ]
+}

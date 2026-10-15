@@ -1,0 +1,20 @@
+{
+  "case_dir": "./base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "rows": 67392,
+  "changed_rows": 18264,
+  "offshore_cf_rows_zeroed": 12096,
+  "numerical_cf_zero_threshold": 1e-06,
+  "tiny_positive_cf_rows_zeroed": 0,
+  "tiny_positive_cf_sum_before_zeroing": 0.0,
+  "minimum_nonzero_cf_after_zeroing": 1.0628593871063736e-06,
+  "source_profile_hours_per_province": 8760,
+  "optimization_representative_timepoints": 576,
+  "scope": "NEA-calibrated national onshore-wind proxy plus supplied solar; offshore wind zeroed",
+  "cf_file": "./data/processed/vre_cf_hourly_by_province_publication_calibrated.csv",
+  "cf_file_sha256": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096",
+  "benchmark_file_sha256": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5",
+  "publication_source_fingerprint_sha256": "42fb35e0960104796e9a4eb8fae89401989b697735dc90359a7687e4e3e1d1c1",
+  "wind_target_cf_8760": 0.2532072175254301,
+  "raw_cf_file_retained_for_sensitivity": "./data/processed/vre_cf_hourly_by_province.csv"
+}

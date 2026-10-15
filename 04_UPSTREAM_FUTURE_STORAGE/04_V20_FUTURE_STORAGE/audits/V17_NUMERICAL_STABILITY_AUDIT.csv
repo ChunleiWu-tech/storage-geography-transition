@@ -1,0 +1,26 @@
+check,pass,detail
+economic_objective_scaled,True,economic objective scaling only
+stage1_barrier_no_crossover,True,primary stage-1 algorithm
+strict_solver_tolerances,True,no tolerance relaxation
+solver_native_certificate,True,native certificate is formal proof
+external_diagnostics_nonblocking,True,ObjBound and reconstructed dual are diagnostics
+official_profile_default,True,formal run does not invoke cleanup
+official_route_branch,True,stage 1 selected as publication result
+solve_gate_uses_stage1,True,cleanup convergence is not a release condition
+cleanup_nonblocking_fields,True,diagnostic state is explicit
+degeneracy_disclosure,True,gross-flow interpretation is restricted
+diagnostic_audits_not_hard_gate,True,degeneracy review cannot block release
+row_level_restrictions,True,labels survive downstream separation
+optional_cleanup_routes_retained,True,sparse-face experiments remain available
+pstart_ephemeral,True,diagnostic PStart is memory-only
+no_basis_or_dual_start,True,basis-independent architecture
+official_batch_stage1_only,True,official fallback changes only stage-1 solver
+certified_stage1_stops_retry,True,downstream failures are not hidden by algorithm changes
+batch_requires_interpretation_policy,True,promotion verifies restriction policy
+preflight_stage1_source,True,postprocessing accepts official stage 1 only
+preflight_gross_flow_labels,True,postprocessing validates row-level restrictions
+runtime_cleanup_is_probe,True,optional algorithm/API route remains testable
+numerical_version_synchronized,True,cross-layer version string
+cleanup_policy_version_synchronized,True,cross-layer policy string
+pure_lp_and_no_cdr,True,scope unchanged
+json_safe_diagnostics,True,failed diagnostics cannot be masked by NaN serialization

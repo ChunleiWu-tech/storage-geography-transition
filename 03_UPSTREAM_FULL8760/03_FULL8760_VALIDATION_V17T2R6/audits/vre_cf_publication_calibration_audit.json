@@ -1,0 +1,62 @@
+{
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "benchmark_year": 2024,
+  "technology": "national_total_wind_proxy_applied_to_onshore_profile",
+  "final_wind_generation_twh": 996.8,
+  "integrated_average_wind_capacity_gw": 468.6075000000001,
+  "observed_net_full_load_hours": 2127.1533212763343,
+  "reported_utilization_rate_fraction": 0.959,
+  "derived_gross_availability_full_load_hours": 2218.095225522768,
+  "derived_gross_availability_cf": 0.25320721752543013,
+  "raw_model_capacity_weighted_cf": 0.09635179598697848,
+  "raw_model_capacity_weighted_full_load_hours": 844.0417328459314,
+  "calibrated_model_capacity_weighted_cf": 0.25320721752543,
+  "calibrated_model_capacity_weighted_full_load_hours": 2218.095225522767,
+  "monotonic_transform_alpha": 3.4659506305538015,
+  "weight_source": "retained_template_zip",
+  "official_source": "National Energy Administration",
+  "official_source_url": "https://www.nea.gov.cn/20251113/cc1fb0298a2944f8bd5441f67c9be9b3/c.html",
+  "monthly_capacity_source_file": "data/source_registry/nea_wind_capacity_month_end_2024.csv",
+  "generation_utilization_source_file": "data/source_registry/nea_wind_generation_utilization_2024.csv",
+  "source_accessed_date": "2026-08-03",
+  "scientific_scope_note": "National total-wind anchor used only for a monotonic level correction of the onshore-wind proxy. It is not province-specific validation and does not imply that the national statistic excludes offshore wind.",
+  "raw_file": "data/processed/vre_cf_hourly_by_province.csv",
+  "publication_file": "data/processed/vre_cf_hourly_by_province_publication_calibrated.csv",
+  "summary_file": "data/processed/vre_cf_validation_summary_publication_calibrated.csv",
+  "raw_file_sha256": "0eb04734772c8fcbde43f3e9f8aead8aa5779ccd52518e9307e823da9f57808e",
+  "publication_file_sha256": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096",
+  "summary_file_sha256": "324f4da9ed05a7aee1acec6eb16c22c561b252db6256df16afda751fc9ad7fa1",
+  "benchmark_file_sha256": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5",
+  "monthly_source_sha256": "3824d2aa1a24f0ee260022ad8188ed6f0efb89d2ea1ba09dec744ea9ed028acd",
+  "anchor_source_sha256": "9771fd4cf2abd92689488d95d421172589be9129f8bd5a403811db49349507c5",
+  "template_sha256": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f",
+  "bounded_0_1": true,
+  "original_zero_hours_remain_zero": true,
+  "support_change_policy": "Only original zeros and explicitly declared tiny positive values below the numerical CF threshold may be zero after calibration.",
+  "hourly_rank_preserved_above_declared_zero_threshold": true,
+  "numerical_cf_zero_threshold": 1e-06,
+  "tiny_positive_rows_zeroed": {
+    "solar_cf": 1038,
+    "onshore_wind_cf": 22
+  },
+  "tiny_positive_cf_sum_before_zeroing": {
+    "solar_cf": 0.0003006776200564505,
+    "onshore_wind_cf": 1.0225931960206047e-05
+  },
+  "calibration_dependency_sha256": {
+    "raw_profile_sha256": "0eb04734772c8fcbde43f3e9f8aead8aa5779ccd52518e9307e823da9f57808e",
+    "monthly_anchor_sha256": "3824d2aa1a24f0ee260022ad8188ed6f0efb89d2ea1ba09dec744ea9ed028acd",
+    "generation_utilization_anchor_sha256": "9771fd4cf2abd92689488d95d421172589be9129f8bd5a403811db49349507c5",
+    "zone_mapping_sha256": "6a7c4af302152fbd3149edc76116f7f07410bcfc98d04913d234c9891d2aef5b",
+    "template_sha256": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f"
+  },
+  "scientific_source_lock": {
+    "wind_generation_and_utilization": "National Energy Administration final 2024 monitoring statistics only",
+    "wind_capacity_path": "National Energy Administration month-end installed-capacity series with declared daily interpolation",
+    "hourly_shape": "supplied 2024 province-level ERA5-derived onshore-wind and solar profile",
+    "commercial_annual_report_source_used": false,
+    "scope": "national total-wind proxy level-corrects the onshore-wind profile; it is neither province validation nor an official onshore-only statistic"
+  },
+  "commercial_annual_report_source_used": false,
+  "results_status": "RERUN_REQUIRED_16_PLUS_8"
+}

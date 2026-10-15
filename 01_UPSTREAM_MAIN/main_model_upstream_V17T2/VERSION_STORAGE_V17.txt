@@ -1,0 +1,10 @@
+Package: China storage planning main upstream
+Compatibility code line: V17T2
+Publication data version: NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2
+Prepared scenario count: 16
+Source gate at delivery: PASS
+Prepared-case gate at delivery: PASS
+Solved-result gate at delivery: FAIL_RERUN_REQUIRED
+Required action: clean local Julia-Gurobi rerun of all 16 scenarios
+Active launcher: RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat
+Legacy V17/V17T1 entry points and notes are retained only for provenance.

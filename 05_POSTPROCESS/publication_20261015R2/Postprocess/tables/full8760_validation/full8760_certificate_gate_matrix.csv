@@ -1,0 +1,43 @@
+scenario,case_label,gate,passed
+TY2033_FULL8760_OBSERVED,Observed inheritance,Native OPTIMAL,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Primal/dual feasible,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Route,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Source lineage,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Objective readback,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Native quality,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Pure LP,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Certificate,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Componentwise native quality,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,MaxVio decomposition,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Scaled residuals,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Core physical audit,True
+TY2033_FULL8760_OBSERVED,Observed inheritance,Physical audit,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Native OPTIMAL,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Primal/dual feasible,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Route,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Source lineage,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Objective readback,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Native quality,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Pure LP,True
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Certificate,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Native OPTIMAL,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Primal/dual feasible,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Route,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Source lineage,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Objective readback,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Native quality,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Pure LP,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Certificate,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Componentwise native quality,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,MaxVio decomposition,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Scaled residuals,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Core physical audit,True
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Physical audit,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Native OPTIMAL,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Primal/dual feasible,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Route,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Source lineage,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Objective readback,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Native quality,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Pure LP,True
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Certificate,True

@@ -1,0 +1,325 @@
+{
+  "version": "V31R6_PUBLICATION_FIGURES_LAYOUT_AUDITED_20260902",
+  "status": "PASS",
+  "figures": [
+    {
+      "figure_id": "Fig1",
+      "kind": "main",
+      "file_stem": "Fig1_inherited_storage_geography",
+      "scientific_question": "Where is inherited storage located, and how concentrated and demand-mismatched is it?",
+      "source_tables": [
+        "tables/main/fig1a_legacy_nodes.csv",
+        "tables/main/fig1b_model_network_edges.csv",
+        "tables/main/fig1c_scenario_design.csv",
+        "tables/main/fig1d_legacy_concentration.csv"
+      ],
+      "claim_scope": "Input evidence and controlled counterfactual identification.",
+      "source_sha256": {
+        "tables/main/fig1a_legacy_nodes.csv": "b0279c5c0582d8791d07275fbc1e5c84b021cfd845f87bbe8cc952e1da61e597",
+        "tables/main/fig1b_model_network_edges.csv": "8e8ab335521c8d3f914199f3bb005592103e9bc626fc155774854f4960625449",
+        "tables/main/fig1c_scenario_design.csv": "b87a297e5718dfb70641d29a0d94f160313f46b28e67add86b7b48ef6b0a6944",
+        "tables/main/fig1d_legacy_concentration.csv": "1e50fcc133be37f2993b936293659f14f3ef095b3f91b5915a7b22e3c19f9e87"
+      }
+    },
+    {
+      "figure_id": "Fig2",
+      "kind": "main",
+      "file_stem": "Fig2_equal_stock_unequal_spatial_value",
+      "scientific_question": "What spatial reallocation and system value arise when the same national inherited fleet is relocated?",
+      "source_tables": [
+        "tables/main/fig2_spatial_allocation.csv",
+        "tables/main/fig2b_legacy_value_ladder.csv"
+      ],
+      "claim_scope": "Equal-total spatial reallocation and system-value mechanism.",
+      "source_sha256": {
+        "tables/main/fig2_spatial_allocation.csv": "75862ef82cecc5eda70774837af2e4d3d49d46c9684f6600c7f61e3e03821595",
+        "tables/main/fig2b_legacy_value_ladder.csv": "fb6cc8af9f98439559d9038fe895eba055bd3e160acdaa790c7c87c5d49a7a45"
+      }
+    },
+    {
+      "figure_id": "Fig3",
+      "kind": "main",
+      "file_stem": "Fig3_compensatory_investment_cost",
+      "scientific_question": "How does the system absorb inherited spatial misalignment?",
+      "source_tables": [
+        "tables/main/fig3a_compensatory_investment.csv",
+        "tables/main/fig5_transition_paths.csv",
+        "tables/main/fig4_future_storage_spatial_reconfiguration.csv"
+      ],
+      "claim_scope": "Annual cost components, battery power, non-storage capacity and spatial compensation.",
+      "source_sha256": {
+        "tables/main/fig3a_compensatory_investment.csv": "e47b979ea584648fe3ee1a5cb84ee792d1e85d8b268e6f4d9b35644d0b05f328",
+        "tables/main/fig5_transition_paths.csv": "a08ec24c0c330c8a423add03aae321e24c1a00f603140f9a0dca34920dd4d0f2",
+        "tables/main/fig4_future_storage_spatial_reconfiguration.csv": "bba4a3cc83c872994e10d9f8271333ba2d01e5edc8dc8a15a93a80dcf4bd21b9"
+      }
+    },
+    {
+      "figure_id": "Fig4",
+      "kind": "main",
+      "file_stem": "Fig4_spatial_path_dependence",
+      "scientific_question": "How quickly is inherited mismatch corrected, where does it persist, and which correction classes emerge?",
+      "source_tables": [
+        "tables/main/fig4a_mismatch_persistence.csv",
+        "tables/main/fig4b_zone_period_deltas.csv",
+        "tables/main/fig4c_zone_correction.csv"
+      ],
+      "claim_scope": "Temporal persistence and spatial correction, without interpreting ribbons as physical flows.",
+      "source_sha256": {
+        "tables/main/fig4a_mismatch_persistence.csv": "9a597007f8b9c3511ec66115b7f756a6f6f73d9b1e509ea985849bf18b82d46f",
+        "tables/main/fig4b_zone_period_deltas.csv": "de95bc5123503dfddb1cce9fa7fed7ca1b4a35e41677bc485eeb28b7ea91a499",
+        "tables/main/fig4c_zone_correction.csv": "71cbea7a6e1d1994b18c4cfac2335bacd99bc93ddf24498d8779460d2a1e2c67"
+      }
+    },
+    {
+      "figure_id": "Fig5",
+      "kind": "main",
+      "file_stem": "Fig5_robustness_boundary_conditions",
+      "scientific_question": "Does the direction of the legacy effect persist under boundary uncertainty?",
+      "source_tables": [
+        "tables/main/fig5_robustness_effects.csv"
+      ],
+      "claim_scope": "Exact reconstructed-standardized versus optimized robustness pairs.",
+      "source_sha256": {
+        "tables/main/fig5_robustness_effects.csv": "8d7dc31e6da0a80e1d73bf16307d729ba05fba6b6ab8f20b5c0cf82ecb7bbb1b"
+      }
+    },
+    {
+      "figure_id": "Fig6",
+      "kind": "main",
+      "file_stem": "Fig6_future_storage_correction_of_spatial_lockin",
+      "scientific_question": "How do 2033 future-storage options compensate for inherited spatial lock-in?",
+      "source_tables": [
+        "tables/future_storage_v31/fig6_layer_a_pair_metrics.csv",
+        "tables/future_storage_v31/fig6_adaptive_zone_portfolios.csv"
+      ],
+      "claim_scope": "Annual target-year matched correction; Expanded is a pressure test, not the headline siting claim.",
+      "source_sha256": {
+        "tables/future_storage_v31/fig6_layer_a_pair_metrics.csv": "3825c65662cc5c82f39f7973844b703cd67c979ece6205b9d5f6becd04874c32",
+        "tables/future_storage_v31/fig6_adaptive_zone_portfolios.csv": "3387fceb04adc8b70e2aeb019cc814ea2fd88c97698627b5bacb099d02fac19b"
+      }
+    },
+    {
+      "figure_id": "Fig7",
+      "kind": "main",
+      "file_stem": "Fig7_future_pathway_and_validation_boundaries",
+      "scientific_question": "When, where and under which contexts does future storage adapt, and what full-year hourly feasibility gap remains?",
+      "source_tables": [
+        "tables/future_storage_v31/fig7_core_timing_by_technology.csv",
+        "tables/future_storage_v31/fig7_core_zone_difference.csv",
+        "tables/future_storage_v31/fig7_context_pair_metrics.csv",
+        "tables/full8760_validation/full8760_certificate_summary.csv"
+      ],
+      "claim_scope": "Representative-period pathway plus a separately labelled full-year hourly feasibility diagnostic.",
+      "source_sha256": {
+        "tables/future_storage_v31/fig7_core_timing_by_technology.csv": "24eb6a95f5fb9fa9ef0f8684de23f55ae0a66844f134dbfbb15e959e15fff8d9",
+        "tables/future_storage_v31/fig7_core_zone_difference.csv": "33c18932c7f6dfd988d2bc822b050c55f517b6a85c47581db1ac067f2bdadb29",
+        "tables/future_storage_v31/fig7_context_pair_metrics.csv": "b7121dea6d50f768f9076678e38631fed2def4115cce2c3a026d7355a562bea1",
+        "tables/full8760_validation/full8760_certificate_summary.csv": "55cc464af478b6fd67a2b8545102c564b9fa4940e7aff7fb3472de10a89f0c9a"
+      }
+    },
+    {
+      "figure_id": "FigS01",
+      "kind": "supplementary",
+      "file_stem": "FigS01_model_zone_network_inputs",
+      "scientific_question": "Which demand and VRE inputs underlie the model-zone geography?",
+      "source_tables": [
+        "tables/main/fig1a_legacy_nodes.csv",
+        "tables/main/fig1b_model_network_edges.csv"
+      ],
+      "claim_scope": "Input evidence.",
+      "source_sha256": {
+        "tables/main/fig1a_legacy_nodes.csv": "b0279c5c0582d8791d07275fbc1e5c84b021cfd845f87bbe8cc952e1da61e597",
+        "tables/main/fig1b_model_network_edges.csv": "8e8ab335521c8d3f914199f3bb005592103e9bc626fc155774854f4960625449"
+      }
+    },
+    {
+      "figure_id": "FigS02",
+      "kind": "supplementary",
+      "file_stem": "FigS02_storage_power_energy_duration_validation",
+      "scientific_question": "Is inherited power-energy-duration accounting internally consistent?",
+      "source_tables": [
+        "tables/main/fig1a_legacy_nodes.csv"
+      ],
+      "claim_scope": "Input validation.",
+      "source_sha256": {
+        "tables/main/fig1a_legacy_nodes.csv": "b0279c5c0582d8791d07275fbc1e5c84b021cfd845f87bbe8cc952e1da61e597"
+      }
+    },
+    {
+      "figure_id": "FigS03",
+      "kind": "supplementary",
+      "file_stem": "FigS03_empirical_deployment_envelope",
+      "scientific_question": "How is the empirical deployment envelope constructed and used?",
+      "source_tables": [
+        "tables/main/fig1a_legacy_nodes.csv",
+        "tables/main/fig2_spatial_allocation.csv"
+      ],
+      "claim_scope": "Empirical allocation boundary reconstructed directly from the audited node inventory and optimized allocation.",
+      "source_sha256": {
+        "tables/main/fig1a_legacy_nodes.csv": "b0279c5c0582d8791d07275fbc1e5c84b021cfd845f87bbe8cc952e1da61e597",
+        "tables/main/fig2_spatial_allocation.csv": "75862ef82cecc5eda70774837af2e4d3d49d46c9684f6600c7f61e3e03821595"
+      }
+    },
+    {
+      "figure_id": "FigS04",
+      "kind": "supplementary",
+      "file_stem": "FigS04_full_scenario_matrix",
+      "scientific_question": "What is the complete confirmatory and robustness scenario design?",
+      "source_tables": [
+        "tables/supplementary/figS06_scenario_matrix.csv"
+      ],
+      "claim_scope": "Scenario design.",
+      "source_sha256": {
+        "tables/supplementary/figS06_scenario_matrix.csv": "137144134238e7de32c60b1b891a929675c1b2299c2e414c6e102a36c7328182"
+      }
+    },
+    {
+      "figure_id": "FigS05",
+      "kind": "supplementary",
+      "file_stem": "FigS05_rule_based_allocation_diagnostics",
+      "scientific_question": "How do transparent load and VRE allocation rules differ spatially from optimized reallocation?",
+      "source_tables": [
+        "tables/main/fig2_spatial_allocation.csv"
+      ],
+      "claim_scope": "Rule-based spatial benchmarks.",
+      "source_sha256": {
+        "tables/main/fig2_spatial_allocation.csv": "75862ef82cecc5eda70774837af2e4d3d49d46c9684f6600c7f61e3e03821595"
+      }
+    },
+    {
+      "figure_id": "FigS06",
+      "kind": "supplementary",
+      "file_stem": "FigS06_full_reallocation_and_duration_deltas",
+      "scientific_question": "What are the complete zone-level power-reallocation and duration-standardization effects?",
+      "source_tables": [
+        "tables/main/fig2_spatial_allocation.csv"
+      ],
+      "claim_scope": "Full zone ranking.",
+      "source_sha256": {
+        "tables/main/fig2_spatial_allocation.csv": "75862ef82cecc5eda70774837af2e4d3d49d46c9684f6600c7f61e3e03821595"
+      }
+    },
+    {
+      "figure_id": "FigS07",
+      "kind": "supplementary",
+      "file_stem": "FigS07_period_system_cost_penalties",
+      "scientific_question": "When do core-scenario cost penalties arise?",
+      "source_tables": [
+        "tables/main/fig5_transition_paths.csv"
+      ],
+      "claim_scope": "Period present-value evidence.",
+      "source_sha256": {
+        "tables/main/fig5_transition_paths.csv": "a08ec24c0c330c8a423add03aae321e24c1a00f603140f9a0dca34920dd4d0f2"
+      }
+    },
+    {
+      "figure_id": "FigS08",
+      "kind": "supplementary",
+      "file_stem": "FigS08_technology_and_curtailment_adaptation",
+      "scientific_question": "Which non-battery capacity and curtailment responses accompany the storage legacy?",
+      "source_tables": [
+        "tables/supplementary/figS09_technology_capacity_differences.csv",
+        "tables/main/fig5_transition_paths.csv"
+      ],
+      "claim_scope": "Adaptation evidence without repeated absolute trajectories.",
+      "source_sha256": {
+        "tables/supplementary/figS09_technology_capacity_differences.csv": "e25fe4e3ce2e485d3e7898dbafa221f76c9e62b95927816b32862a933e02042b",
+        "tables/main/fig5_transition_paths.csv": "a08ec24c0c330c8a423add03aae321e24c1a00f603140f9a0dca34920dd4d0f2"
+      }
+    },
+    {
+      "figure_id": "FigS09",
+      "kind": "supplementary",
+      "file_stem": "FigS09_transmission_line_differences",
+      "scientific_question": "Which transmission additions differ between paired cases?",
+      "source_tables": [
+        "tables/supplementary/figS11_transmission_line_differences.csv"
+      ],
+      "claim_scope": "Transmission-investment evidence, not directional dispatch.",
+      "source_sha256": {
+        "tables/supplementary/figS11_transmission_line_differences.csv": "43e08d8e6db871ed8e59ff68a152bf2a70ccb394fd3f22fecb52e88301986404"
+      }
+    },
+    {
+      "figure_id": "FigS10",
+      "kind": "supplementary",
+      "file_stem": "FigS10_final_storage_power_energy_duration",
+      "scientific_question": "Where is final storage power reallocated and how concentrated is that reallocation?",
+      "source_tables": [
+        "tables/main/fig4_future_storage_spatial_reconfiguration.csv"
+      ],
+      "claim_scope": "Signed zone changes and concentration; redundant exact-4-hour power-energy views are omitted.",
+      "source_sha256": {
+        "tables/main/fig4_future_storage_spatial_reconfiguration.csv": "bba4a3cc83c872994e10d9f8271333ba2d01e5edc8dc8a15a93a80dcf4bd21b9"
+      }
+    },
+    {
+      "figure_id": "FigS11",
+      "kind": "supplementary",
+      "file_stem": "FigS11_extended_robustness_metrics",
+      "scientific_question": "How do secondary transmission, curtailment and coupled network-curtailment responses vary?",
+      "source_tables": [
+        "tables/main/fig5_robustness_effects.csv"
+      ],
+      "claim_scope": "Secondary robustness diagnostics; repeated 4-hour points are replaced by a physical coupling view.",
+      "source_sha256": {
+        "tables/main/fig5_robustness_effects.csv": "8d7dc31e6da0a80e1d73bf16307d729ba05fba6b6ab8f20b5c0cf82ecb7bbb1b"
+      }
+    },
+    {
+      "figure_id": "FigS12",
+      "kind": "supplementary",
+      "file_stem": "FigS12_targetyear_linked_chronology_ldes",
+      "scientific_question": "Does the location effect persist under linked chronology, technology-specific LDES and one-hour discretization?",
+      "source_tables": [
+        "tables/targetyear_sensitivity/targetyear_pairwise_observed_minus_optimal.csv",
+        "tables/targetyear_sensitivity/figS12b_cost_component_decomposition.csv",
+        "tables/targetyear_sensitivity/figS12c_compensatory_investment.csv",
+        "tables/targetyear_sensitivity/figS12d_operational_response.csv"
+      ],
+      "claim_scope": "Annual single-target-year sensitivity evidence.",
+      "source_sha256": {
+        "tables/targetyear_sensitivity/targetyear_pairwise_observed_minus_optimal.csv": "2560832bc23591f7f863324f75bc2e91c97ef102ad2ce391f5b5dc8e99dccd3f",
+        "tables/targetyear_sensitivity/figS12b_cost_component_decomposition.csv": "c006da31219d40d631acc9912ab8a718e368d674c84d8c2fa0b726658673147a",
+        "tables/targetyear_sensitivity/figS12c_compensatory_investment.csv": "bcf8b2795b18d3c56b70a8a0a4db8bcee6cf0e2fd07c1ad1f896d42f4bcfff8a",
+        "tables/targetyear_sensitivity/figS12d_operational_response.csv": "a57fe3fab9aaf94f403a9f40e0c4d00c05e139184874508e76fc032dfa776484"
+      }
+    },
+    {
+      "figure_id": "FigS13",
+      "kind": "supplementary",
+      "file_stem": "FigS13_full8760_robustness_certificates",
+      "scientific_question": "What minimum additional technology-neutral balancing capacity separates each fixed portfolio from full-year hourly feasibility?",
+      "source_tables": [
+        "tables/full8760_validation/full8760_certificate_summary.csv",
+        "tables/full8760_validation/full8760_robustness_components.csv",
+        "tables/full8760_validation/full8760_zone_robustness.csv",
+        "tables/full8760_validation/full8760_certificate_gate_matrix.csv"
+      ],
+      "claim_scope": "Lower-bound hourly feasibility diagnostic; never an actual build or economic cost.",
+      "source_sha256": {
+        "tables/full8760_validation/full8760_certificate_summary.csv": "55cc464af478b6fd67a2b8545102c564b9fa4940e7aff7fb3472de10a89f0c9a",
+        "tables/full8760_validation/full8760_robustness_components.csv": "d15f5d7c7ab5b92d96740453b51aed36cf58a69328f43d3905186ee044ef39ef",
+        "tables/full8760_validation/full8760_zone_robustness.csv": "928b2a1a0dd5410fc8cc41609072d79672d782cf990a64f9823fcd94dc989b56",
+        "tables/full8760_validation/full8760_certificate_gate_matrix.csv": "1326fe52314296ecc950c6ffab56a6288cb9636ef77585a363e4baed37ff10a6"
+      }
+    },
+    {
+      "figure_id": "FigS14",
+      "kind": "supplementary",
+      "file_stem": "FigS14_future_storage_extended_robustness",
+      "scientific_question": "How do scale, duration, technology and timing vary across all 26 future-storage cases?",
+      "source_tables": [
+        "tables/future_storage_v31/figS14_all26_case_metrics.csv",
+        "tables/future_storage_v31/figS14_all26_technology_shares.csv",
+        "tables/future_storage_v31/figS14_all26_timing_shares.csv"
+      ],
+      "claim_scope": "Complete 8 + 16 + 2 future-storage evidence without duplicating headline panels.",
+      "source_sha256": {
+        "tables/future_storage_v31/figS14_all26_case_metrics.csv": "90a1ea65584f4645998bcbea40298688927ffd97be36a488ab8baeb54a3fc0ed",
+        "tables/future_storage_v31/figS14_all26_technology_shares.csv": "dd44af83c3338cac745bfb72bb58020efe7c64b02e124161fd6024a0ae7fb78f",
+        "tables/future_storage_v31/figS14_all26_timing_shares.csv": "66854297c281e80ec53df8cbc0aa42ba80696aecd6581efa1b5f6d13f442ba4f"
+      }
+    }
+  ]
+}

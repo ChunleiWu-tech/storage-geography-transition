@@ -1,0 +1,662 @@
+{
+  "version": "20260914R2",
+  "scope": "frozen postprocessing source tables",
+  "table_count": 74,
+  "tables_sha256": {
+    "tables/full8760_validation/full8760_certificate_gate_matrix.csv": "1326fe52314296ecc950c6ffab56a6288cb9636ef77585a363e4baed37ff10a6",
+    "tables/full8760_validation/full8760_certificate_summary.csv": "55cc464af478b6fd67a2b8545102c564b9fa4940e7aff7fb3472de10a89f0c9a",
+    "tables/full8760_validation/full8760_numerical_quality.csv": "5f6b6ee2d95c7799c2544999417e224e5dd27febdc23eab9ce8a5cb3792d7db2",
+    "tables/full8760_validation/FULL8760_PUBLICATION_CONTRACT.json": "0ed3c94bac32a800cb4f110683d139be9f095866264fe59b606c480262e5afc4",
+    "tables/full8760_validation/full8760_robustness_components.csv": "d15f5d7c7ab5b92d96740453b51aed36cf58a69328f43d3905186ee044ef39ef",
+    "tables/full8760_validation/full8760_zone_robustness.csv": "928b2a1a0dd5410fc8cc41609072d79672d782cf990a64f9823fcd94dc989b56",
+    "tables/future_storage/v20_equal_horizon_build_by_year_zone_tech.csv": "49a897e1788427884f7f8364122661138fa1eef024e4588866b4e5c1e173e1da",
+    "tables/future_storage/v20_evidence_direct_build_by_year_zone_tech.csv": "65e5b37a168275930a570f4791022e888b3560699c8283b21fe3606fc7e59658",
+    "tables/future_storage/v20_evidence_horizon_penalty.csv": "c2b58ad5479f109ec140f0c9d9725ffbcef37578fcf271c2353bdc9fb69d193f",
+    "tables/future_storage/v20_layer_a_8_strict_summary.csv": "a13cbeef0d796f8272a35f030aaddb8b52e7f1f49f49a0ae252820df211ff435",
+    "tables/future_storage/v20_layer_a_correction_metrics.csv": "c0a2bf8374c03a5591b2f86e7958bba1512c11742d2def46c03a958714b32985",
+    "tables/future_storage/v20_layer_a_pair_costs.csv": "70c1329a3ea92a984010b05829209d2da72c9799f3d3650c2e4f762cd8be89fe",
+    "tables/future_storage/v20_layer_a_storage_build_presence.csv": "42c583a00c6e6e6a84a3b895de99a17e88e6c315df087ee02df82349de62ab40",
+    "tables/future_storage/v20_layer_a_storage_builds.csv": "9e9729228ed5e7a8db858aaaabee8deddc55df1fd73e28d96c2cc5f6f34daec4",
+    "tables/future_storage/v20_layer_b_16_strict_summary.csv": "bcd6cfa2ac7860444121d90d35c3961c2a8cd6c9629a52089db666246e55a503",
+    "tables/future_storage/v20_layer_b_context_penalties.csv": "a9cbf2b265202b9753b2f744810fae95820a2b4e8c5dd0aa32712f2f87d0cfc2",
+    "tables/future_storage/v20_layer_c_2_strict_summary.csv": "d3a3bda45d25f472c009cf51a48597156441e7fc52c79800e0b45ba5c5375099",
+    "tables/future_storage/V20_PUBLICATION_CONTRACT.json": "bf08b4315a0f891df1bd3740ba162e2c1a362c149de7563377fb71ed9e1ec0d5",
+    "tables/future_storage_v31/fig6_adaptive_zone_portfolios.csv": "3387fceb04adc8b70e2aeb019cc814ea2fd88c97698627b5bacb099d02fac19b",
+    "tables/future_storage_v31/fig6_layer_a_pair_metrics.csv": "3825c65662cc5c82f39f7973844b703cd67c979ece6205b9d5f6becd04874c32",
+    "tables/future_storage_v31/fig7_context_pair_metrics.csv": "b7121dea6d50f768f9076678e38631fed2def4115cce2c3a026d7355a562bea1",
+    "tables/future_storage_v31/fig7_core_timing_by_technology.csv": "24eb6a95f5fb9fa9ef0f8684de23f55ae0a66844f134dbfbb15e959e15fff8d9",
+    "tables/future_storage_v31/fig7_core_zone_difference.csv": "33c18932c7f6dfd988d2bc822b050c55f517b6a85c47581db1ac067f2bdadb29",
+    "tables/future_storage_v31/figS14_all26_case_metrics.csv": "90a1ea65584f4645998bcbea40298688927ffd97be36a488ab8baeb54a3fc0ed",
+    "tables/future_storage_v31/figS14_all26_technology_shares.csv": "dd44af83c3338cac745bfb72bb58020efe7c64b02e124161fd6024a0ae7fb78f",
+    "tables/future_storage_v31/figS14_all26_timing_shares.csv": "66854297c281e80ec53df8cbc0aa42ba80696aecd6581efa1b5f6d13f442ba4f",
+    "tables/future_storage_v31/figS14_timing_display.csv": "a10eea4247464cb2e9bd6a5d17e732cb83b9a0b95b21f52223adbdc60838e2ff",
+    "tables/main/fig1a_legacy_nodes.csv": "b0279c5c0582d8791d07275fbc1e5c84b021cfd845f87bbe8cc952e1da61e597",
+    "tables/main/fig1b_model_network_edges.csv": "8e8ab335521c8d3f914199f3bb005592103e9bc626fc155774854f4960625449",
+    "tables/main/fig1b_storage_demand_resource_match.csv": "e4373452daa9bc0e8a15488597be3f89ae8f8682fd64e33f48c16940c0205f3c",
+    "tables/main/fig1c_scenario_design.csv": "b87a297e5718dfb70641d29a0d94f160313f46b28e67add86b7b48ef6b0a6944",
+    "tables/main/fig1c_storage_lorenz.csv": "b1d7317a72a896221d000124b39b335c15ee56d95948b51a9f736e4625cd4a9d",
+    "tables/main/fig1d_legacy_concentration.csv": "1e50fcc133be37f2993b936293659f14f3ef095b3f91b5915a7b22e3c19f9e87",
+    "tables/main/fig2_spatial_allocation.csv": "75862ef82cecc5eda70774837af2e4d3d49d46c9684f6600c7f61e3e03821595",
+    "tables/main/fig2b_legacy_value_ladder.csv": "fb6cc8af9f98439559d9038fe895eba055bd3e160acdaa790c7c87c5d49a7a45",
+    "tables/main/fig3_system_value.csv": "2935097917929081d54e7ba930372b856b6f13263ab48321685308141cbcf182",
+    "tables/main/fig3a_compensatory_investment.csv": "e47b979ea584648fe3ee1a5cb84ee792d1e85d8b268e6f4d9b35644d0b05f328",
+    "tables/main/fig3b_spatial_burden_2028.csv": "73ebc64b0bc7609e8f43fa0830db06ea612492850d7f7c3f06e03140b459a06f",
+    "tables/main/fig4_future_storage_spatial_reconfiguration.csv": "bba4a3cc83c872994e10d9f8271333ba2d01e5edc8dc8a15a93a80dcf4bd21b9",
+    "tables/main/fig4a_mismatch_persistence.csv": "9a597007f8b9c3511ec66115b7f756a6f6f73d9b1e509ea985849bf18b82d46f",
+    "tables/main/fig4b_zone_period_deltas.csv": "de95bc5123503dfddb1cce9fa7fed7ca1b4a35e41677bc485eeb28b7ea91a499",
+    "tables/main/fig4c_zone_correction.csv": "71cbea7a6e1d1994b18c4cfac2335bacd99bc93ddf24498d8779460d2a1e2c67",
+    "tables/main/fig5_robustness_effects.csv": "8d7dc31e6da0a80e1d73bf16307d729ba05fba6b6ab8f20b5c0cf82ecb7bbb1b",
+    "tables/main/fig5_transition_paths.csv": "a08ec24c0c330c8a423add03aae321e24c1a00f603140f9a0dca34920dd4d0f2",
+    "tables/main/fig6_robustness.csv": "d79b403865432562bee0e67f1bfc3e5011ba901fbf6f8350664a5dc38ea603dc",
+    "tables/supplementary/figS06_scenario_matrix.csv": "137144134238e7de32c60b1b891a929675c1b2299c2e414c6e102a36c7328182",
+    "tables/supplementary/figS07_solver_audit.csv": "1267b194a2704d5c3ca92e16ebd6f4a6c6630035d666f03977cc5b0d6b021b79",
+    "tables/supplementary/figS09_technology_capacity_differences.csv": "e25fe4e3ce2e485d3e7898dbafa221f76c9e62b95927816b32862a933e02042b",
+    "tables/supplementary/figS10_province_allocation_deltas.csv": "bc42fe3d7e1bd2747e1124e1cc3a52a36407122d0098dad6ff3e7bbbd45ef550",
+    "tables/supplementary/figS11_cost_decomposition.csv": "a8e09e33297ef3df4bd69e9bf013fda1d0ce9c0570b87249618d98e8e8f82a70",
+    "tables/supplementary/figS11_transmission_line_differences.csv": "43e08d8e6db871ed8e59ff68a152bf2a70ccb394fd3f22fecb52e88301986404",
+    "tables/supplementary/figS12_curtailment_emissions.csv": "b62d9aa0a5a8bf9f41477951ad2997eb7455f948bb7399d08c8bb429123914df",
+    "tables/supplementary/figS13_storage_capacity_duration.csv": "bba4a3cc83c872994e10d9f8271333ba2d01e5edc8dc8a15a93a80dcf4bd21b9",
+    "tables/supplementary/figS14_transmission_sensitivity.csv": "2d14c1fb8cea5b27ffa82aa5aa8a9e80477120bf4114268d49167d59c95ffd65",
+    "tables/supplementary/figS15_ph_carbon_cost_robustness.csv": "e8e222b5dfe6b34a15b3b5b1565d4fcd623560c5f1f42469f18c41f7bea30b5e",
+    "tables/supplementary/figS16_temporal_scope.csv": "de3ca79d22dfc763940819c74d5024bb7948ac2c7c9990e4d8eb9b780e3d7d16",
+    "tables/supplementary/installed_energy_by_zone_period.csv": "b402bd45e546239125f95328052a727ddce4a458894e2fffd98e2de357ec6335",
+    "tables/supplementary/installed_power_by_zone_period.csv": "187bf6e6ae0b6e74c07861fbd125bdc8a3f6b66db41d3168e78292247f413a1b",
+    "tables/supplementary/physical_audit_detail.csv": "fc1dc2b5fca7f49e201790e05d2ebefc57ea92c487174348f3c5882a3df33976",
+    "tables/targetyear_sensitivity/figS12a_targetyear_cost_penalty.csv": "a2a568e450c43d4d104ff3aebc92f98a53c9ff9823159056d2a921febb965b91",
+    "tables/targetyear_sensitivity/figS12b_cost_component_decomposition.csv": "c006da31219d40d631acc9912ab8a718e368d674c84d8c2fa0b726658673147a",
+    "tables/targetyear_sensitivity/figS12c_compensatory_investment.csv": "bcf8b2795b18d3c56b70a8a0a4db8bcee6cf0e2fd07c1ad1f896d42f4bcfff8a",
+    "tables/targetyear_sensitivity/figS12c_ldes_technology_mix.csv": "996ef0fbb7b91a4a00887ae21d3e44c8bb950e01fcfbf30df748e570f3628385",
+    "tables/targetyear_sensitivity/figS12d_operational_response.csv": "a57fe3fab9aaf94f403a9f40e0c4d00c05e139184874508e76fc032dfa776484",
+    "tables/targetyear_sensitivity/targetyear_all_scenario_metrics.csv": "5af3c1ed9c29a0aaa6baf032beb567208742715eb0607c211904f1bdb7c64a1a",
+    "tables/targetyear_sensitivity/targetyear_generation_build_by_technology.csv": "a4ee86e99f7ebf58777ac010e8f4a48ca20bf1ed59a377130e83278371e002d8",
+    "tables/targetyear_sensitivity/targetyear_ldes_attenuation.csv": "8dca8cfae0713e4a40315a5d2c4a1ab01b666e310367aae13d73d0ef4354c044",
+    "tables/targetyear_sensitivity/targetyear_legacy_allocation_all_scenarios.csv": "49b0834829ac34ca42ab315e90bfd3c9a1844cf1d358a103b4f21d20d58bbf25",
+    "tables/targetyear_sensitivity/targetyear_one_hour_discretization.csv": "0cf690282879a8baf2ccc20bef36f60209df69fa6d83ffb636302d5fe07c5c59",
+    "tables/targetyear_sensitivity/targetyear_pairwise_observed_minus_optimal.csv": "2560832bc23591f7f863324f75bc2e91c97ef102ad2ce391f5b5dc8e99dccd3f",
+    "tables/targetyear_sensitivity/targetyear_reallocation_by_zone.csv": "7c28c2b89b37ee0d853e1fc36d55986a7b8536a8c38bdf325730331ab5addd90",
+    "tables/targetyear_sensitivity/targetyear_soc_chronology_summary.csv": "4498ff65e8f1c17ae7019457c16547ca02ce4eb526e4e2e144ce75d6dfb5a053",
+    "tables/targetyear_sensitivity/targetyear_storage_energy_build_by_technology.csv": "0e493801065f6324f029d0205dfa5c91cdc8cddca6b9f40137e8b5274339324a",
+    "tables/targetyear_sensitivity/targetyear_summary.json": "10f60a5288cfd721291aa57cd56f0a448f6a584a9dbecc09149f6de6a89773ce"
+  },
+  "scenario_lists": {
+    "tables/full8760_validation/full8760_certificate_gate_matrix.csv": {
+      "scenario": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    "tables/full8760_validation/full8760_certificate_summary.csv": {
+      "scenario": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    "tables/full8760_validation/full8760_numerical_quality.csv": {
+      "scenario": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    "tables/full8760_validation/full8760_robustness_components.csv": {
+      "scenario": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    "tables/full8760_validation/full8760_zone_robustness.csv": {
+      "scenario": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_equal_horizon_build_by_year_zone_tech.csv": {
+      "scenario": [
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_evidence_direct_build_by_year_zone_tech.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_layer_a_8_strict_summary.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_layer_a_storage_build_presence.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_layer_a_storage_builds.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_layer_b_16_strict_summary.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/future_storage/v20_layer_c_2_strict_summary.csv": {
+      "scenario": [
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    "tables/future_storage_v31/figS14_all26_case_metrics.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL",
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL",
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    "tables/future_storage_v31/figS14_all26_technology_shares.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL",
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL",
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    "tables/future_storage_v31/figS14_all26_timing_shares.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL",
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL",
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    "tables/future_storage_v31/figS14_timing_display.csv": {
+      "scenario": [
+        "FC01_BASE_OBSERVED",
+        "FC02_BASE_OPTIMAL",
+        "FC03_ADAPTIVE_OBSERVED",
+        "FC04_ADAPTIVE_OPTIMAL",
+        "FC05_ADAPTIVE_TXFIXED_OBSERVED",
+        "FC06_ADAPTIVE_TXFIXED_OPTIMAL",
+        "FC07_EXPANDED_OBSERVED",
+        "FC08_EXPANDED_OPTIMAL",
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL",
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    "tables/main/fig1c_scenario_design.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE"
+      ]
+    },
+    "tables/main/fig2_spatial_allocation.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE"
+      ]
+    },
+    "tables/main/fig2b_legacy_value_ladder.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE"
+      ]
+    },
+    "tables/main/fig3_system_value.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/main/fig4_future_storage_spatial_reconfiguration.csv": {
+      "scenario": [
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION"
+      ]
+    },
+    "tables/main/fig5_transition_paths.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE"
+      ]
+    },
+    "tables/supplementary/figS06_scenario_matrix.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/supplementary/figS07_solver_audit.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL__stage1_official",
+        "SL01_OBSERVED_STANDARDIZED__stage1_official",
+        "SL02_OPTIMAL_REALLOCATION__stage1_official",
+        "SL03_NO_LEGACY__stage1_official",
+        "SL04_RULE_LOAD__stage1_official",
+        "SL05_RULE_VRE__stage1_official",
+        "SL06_TX_FIXED_OBSERVED__stage1_official",
+        "SL07_TX_FIXED_OPTIMAL__stage1_official",
+        "SL08_PH_CONSERVATIVE_OBSERVED__stage1_official",
+        "SL09_PH_CONSERVATIVE_OPTIMAL__stage1_official",
+        "SL10_CARBON_TIGHT_OBSERVED__v17t3_scaled_barrier_nocrossover_long",
+        "SL11_CARBON_TIGHT_OPTIMAL__stage1_official",
+        "SL12_COST_LOW_OBSERVED__stage1_official",
+        "SL13_COST_LOW_OPTIMAL__v17t3_scaled_barrier_nocrossover_long",
+        "SL14_COST_HIGH_OBSERVED__stage1_official",
+        "SL15_COST_HIGH_OPTIMAL__stage1_official"
+      ]
+    },
+    "tables/supplementary/figS10_province_allocation_deltas.csv": {
+      "scenario": [
+        "SL02_OPTIMAL_REALLOCATION"
+      ]
+    },
+    "tables/supplementary/figS11_cost_decomposition.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/supplementary/figS12_curtailment_emissions.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/supplementary/figS13_storage_capacity_duration.csv": {
+      "scenario": [
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION"
+      ]
+    },
+    "tables/supplementary/installed_energy_by_zone_period.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/supplementary/installed_power_by_zone_period.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/supplementary/physical_audit_detail.csv": {
+      "scenario": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    "tables/targetyear_sensitivity/figS12c_ldes_technology_mix.csv": {
+      "scenario": [
+        "TY2033_CHRONO_LDES_OBSERVED",
+        "TY2033_CHRONO_LDES_OPTIMAL"
+      ]
+    },
+    "tables/targetyear_sensitivity/targetyear_all_scenario_metrics.csv": {
+      "scenario": [
+        "TY2028_CHRONO_OBSERVED",
+        "TY2028_CHRONO_OPTIMAL",
+        "TY2033_CHRONO_1H_OBSERVED",
+        "TY2033_CHRONO_1H_OPTIMAL",
+        "TY2033_CHRONO_LDES_OBSERVED",
+        "TY2033_CHRONO_LDES_OPTIMAL",
+        "TY2033_CHRONO_OBSERVED",
+        "TY2033_CHRONO_OPTIMAL"
+      ]
+    },
+    "tables/targetyear_sensitivity/targetyear_legacy_allocation_all_scenarios.csv": {
+      "scenario": [
+        "TY2028_CHRONO_OBSERVED",
+        "TY2028_CHRONO_OPTIMAL",
+        "TY2033_CHRONO_1H_OBSERVED",
+        "TY2033_CHRONO_1H_OPTIMAL",
+        "TY2033_CHRONO_LDES_OBSERVED",
+        "TY2033_CHRONO_LDES_OPTIMAL",
+        "TY2033_CHRONO_OBSERVED",
+        "TY2033_CHRONO_OPTIMAL"
+      ]
+    },
+    "tables/targetyear_sensitivity/targetyear_soc_chronology_summary.csv": {
+      "scenario": [
+        "TY2028_CHRONO_OBSERVED",
+        "TY2028_CHRONO_OPTIMAL",
+        "TY2033_CHRONO_1H_OBSERVED",
+        "TY2033_CHRONO_1H_OPTIMAL",
+        "TY2033_CHRONO_LDES_OBSERVED",
+        "TY2033_CHRONO_LDES_OPTIMAL",
+        "TY2033_CHRONO_OBSERVED",
+        "TY2033_CHRONO_OPTIMAL"
+      ]
+    }
+  },
+  "figure_table_map": "FIGURE_TABLE_MAP.json",
+  "source_run": {
+    "run_id": null,
+    "successful_completion_time": null,
+    "complete_log": null,
+    "actual_successful_output_directory": null,
+    "latest_successful_run_certified": false
+  },
+  "local_search": {
+    "locations": [
+      "0908/01_UPSTREAM_MAIN",
+      "0908/02_UPSTREAM_TARGETYEAR_SENSITIVITY",
+      "0908/03_UPSTREAM_FULL8760",
+      "0908/04_UPSTREAM_FUTURE_STORAGE",
+      "../0831",
+      "../0908_最近备份"
+    ],
+    "finding": "Clean reproduction packages and input fingerprints, not complete successful solve outputs/logs.",
+    "baseline_status": "UNINITIALIZED_RERUN_REQUIRED",
+    "historical_result_machine": "C:/Users/Admin/Desktop/01_UPSTREAM_16PLUS8",
+    "interpretation": "This records the earlier inspection of cleaned local reproduction packages. Their uninitialized fingerprint state does not describe the server solution status and is not evidence that the exported results are obsolete or infeasible."
+  },
+  "cache_policy": "render_ees.py reads this package tables and verifies SOURCE_TABLES_SHA256.json before rendering; no numerical result-cache preference. Font cache is not a results cache.",
+  "limitation": "The author confirms the server workflow. The local hash checks verify file identity and arithmetic; they do not independently timestamp the last server run. Model inventory reconstruction and hourly resource assumptions are described in Methods/SI.",
+  "author_reported_workflow": {
+    "evidence": "User confirmation in the current conversation",
+    "evidence_type": "author_reported",
+    "solution_and_numerical_postprocessing": "Completed on a server; exported tables organized from completed results",
+    "local_publication": "Local plotting reads those exported tables; no optimization rerun in this review",
+    "byte_copy_claim": "65 current source files match the archived export manifest byte for byte. Nine future_storage_v31 derived files are outside that historical manifest. No new server connection was made."
+  },
+  "current_review": {
+    "unchanged_source_files": 74,
+    "historical_export_manifest_matches": 65,
+    "historical_export_manifest_mismatches": [],
+    "derived_files_outside_historical_manifest": [
+      "tables/future_storage_v31/fig6_adaptive_zone_portfolios.csv",
+      "tables/future_storage_v31/fig6_layer_a_pair_metrics.csv",
+      "tables/future_storage_v31/fig7_context_pair_metrics.csv",
+      "tables/future_storage_v31/fig7_core_timing_by_technology.csv",
+      "tables/future_storage_v31/fig7_core_zone_difference.csv",
+      "tables/future_storage_v31/figS14_all26_case_metrics.csv",
+      "tables/future_storage_v31/figS14_all26_technology_shares.csv",
+      "tables/future_storage_v31/figS14_all26_timing_shares.csv",
+      "tables/future_storage_v31/figS14_timing_display.csv"
+    ],
+    "upstream_solver_rerun": false,
+    "verification_log": "../核查记录/scientific_verification_20260914R2.json"
+  },
+  "publication_note": "Methods report scientific implementation and numerical checks. Machine-location and export-identity evidence is retained in this provenance record rather than in the manuscript.",
+  "path_compatibility": "manifest_paths.py accepts POSIX and legacy Windows relative path separators; source bytes unchanged.",
+  "publication_release": "20261015R2",
+  "review_20261015": {
+    "status": "PASS_WITH_PROVENANCE_LIMITATION",
+    "audit": "../核查记录/DATA_PROVENANCE_AND_RECALCULATION_20261015.json",
+    "frozen_tables": 74,
+    "V31_derived_tables_rebuilt": 9,
+    "archived_exact_file_matches": 68,
+    "latest_successful_solve_independently_authenticated": false,
+    "raw_output_files_found_in_local_upstream_roots": 0,
+    "figures_edited": false,
+    "note": "Original version and historical run fields remain provenance history; this review verifies local frozen-source identity and downstream computations only."
+  },
+  "review_20261015R2": {
+    "status": "PASS_WITH_PROVENANCE_LIMITATION",
+    "audit": "../核查记录/0830数据追溯/0830_main_trace_report.md",
+    "source_tables": 74,
+    "source_values_modified": false,
+    "figures_regenerated": 21,
+    "layout_changes": "36 lollipop labels offset; Fig. 2e and Fig. 7b numerical callouts added",
+    "raw_solve_archive_authenticated": false
+  }
+}

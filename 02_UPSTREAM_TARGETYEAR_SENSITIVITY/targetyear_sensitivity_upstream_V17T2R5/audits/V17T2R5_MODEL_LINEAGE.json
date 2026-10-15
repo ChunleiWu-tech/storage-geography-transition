@@ -1,0 +1,34 @@
+{
+  "version": "V17T2R5",
+  "status": "PASS",
+  "lineage": {
+    "v17t2r1_frozen": {
+      "path": "docs/baseline_reference/cheer_power_storage_chronology_ldes_v2r1_frozen.jl",
+      "sha256": "c9499d786a49a6de46da4884a8b8597e2e5fa6dafc02322d864a7a8d0bac5052"
+    },
+    "v17t2r4_solveronly_frozen": {
+      "path": "docs/baseline_reference/cheer_power_storage_chronology_ldes_v2r4_solveronly_frozen.jl",
+      "sha256": "1106204f5f41cf138e1b20b10a5b2ea66443d32889b978c746731067a6e71d71"
+    },
+    "v17t2r5_targetyear": {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl",
+      "sha256": "b20c1323be8c85822dde4eaa0fd3576d0f204f40b45f58d8516f4a4269bc9cbd"
+    }
+  },
+  "derivation": "V17T2R5 target-year model is derived from the frozen V17T2R4 solver-only source, whose scientific equations descend from frozen V17T2R1.",
+  "r5_declared_changes": [
+    "restricts each prepared case to a 2023 stock anchor plus one 2028 or 2033 operating period",
+    "requires exactly 12 month-specific representative days and 72 four-hour timepoints",
+    "adds explicit target-year scope and no-transition-path claim locks",
+    "adds a 2 h deterministic-concurrent primary profile and a 4 h homogeneous-barrier dual-crossover fallback profile",
+    "retains strict solver-native optimality and all physical, chronology, identification and export gates",
+    "treats an unset optional generator capacity limit explicitly and rejects non-finite or negative supplied limits",
+    "removes the optimized-legacy national-energy equality only after asserting it is exactly implied by national-power closure and common duration",
+    "encodes optimized-legacy province deployment envelopes as equivalent variable upper bounds to reduce rank and basis degeneracy without changing the feasible set",
+    "for TY2033_CHRONO_1H_OPTIMAL only, exactly projects 32 legacy Battery energy-build coordinates onto E=duration*P and reconstructs the unchanged output schema and audits"
+  ],
+  "main_multiperiod_results_changed": false,
+  "full_transition_path_claim_supported": false,
+  "full_8760_hour_claim_supported": false,
+  "dynamic_solve_executed_in_build_environment": false
+}

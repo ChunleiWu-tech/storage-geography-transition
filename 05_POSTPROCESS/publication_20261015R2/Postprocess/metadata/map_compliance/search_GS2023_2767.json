@@ -1,0 +1,44 @@
+{
+  "type": 1,
+  "message": {
+    "pageSize": 12,
+    "currentPageNum": 1,
+    "totalNum": 1,
+    "pageNum": 1,
+    "pageClick": 0,
+    "result": [
+      {
+        "id": "4o28b0625501ad13015501ad2bfc2187",
+        "name": "中国地图 1∶740万 对开",
+        "content": "界线版 无邻国 线划一",
+        "scale": "1:740万",
+        "size": "对开",
+        "superclass": "中国全图",
+        "subclass": "中国地图",
+        "smallclass": "横板",
+        "border": "线划",
+        "use": "1",
+        "jpgPath": "https://bzdt-sbsm.obs.cn-north-4.myhuaweicloud.com/thumbnail/对开/4o28b0625501ad13015501ad2bfc2187.jpg",
+        "browseNum": 880593,
+        "downloadNum": 304125,
+        "telBrowseNum": 0,
+        "telDownloadNum": 0,
+        "catalogs": "对开",
+        "largeclass": "",
+        "sequenceNum": 1,
+        "midclass": "",
+        "isImg": "",
+        "mapNumber": "GS(2023)2767号",
+        "mapYear": "2023",
+        "orderId": "-2",
+        "countyOder": "",
+        "neighbouringCountry": 0,
+        "provinceColor": 0,
+        "illustration": 1
+      }
+    ],
+    "startLineNum": 0,
+    "previousPage": 0,
+    "nextPage": 0
+  }
+}

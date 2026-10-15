@@ -1,0 +1,161 @@
+{
+  "version": "V17T2R5R5_PRIMAL_DUAL_SUPPORTED_EXACT_OBJECTIVE_CONTINUATION_20260814",
+  "status": "PASS",
+  "errors": [],
+  "checks": {
+    "core_payload_hashes": {
+      "base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl": {
+        "pass": true,
+        "expected_sha256": "fffcca77edefe882bd8187974a8aec493f9d0aae37f8cffc1af9b5bb86d9ec67",
+        "actual_sha256": "fffcca77edefe882bd8187974a8aec493f9d0aae37f8cffc1af9b5bb86d9ec67"
+      },
+      "tools/run_targetyear_batch.py": {
+        "pass": true,
+        "expected_sha256": "2ed0e7bc47ba3f392f611bae0ed9e3a48432a384619ac6ec44ecaa5a583ccf6c",
+        "actual_sha256": "2ed0e7bc47ba3f392f611bae0ed9e3a48432a384619ac6ec44ecaa5a583ccf6c"
+      },
+      "tools/check_v17t2r5_package.py": {
+        "pass": true,
+        "expected_sha256": "7b339abcb357c9a8696eb9e434723298833e6b1247e73423f771639dea35576e",
+        "actual_sha256": "7b339abcb357c9a8696eb9e434723298833e6b1247e73423f771639dea35576e"
+      },
+      "tools/check_v17t2r5r3_projection.py": {
+        "pass": true,
+        "expected_sha256": "4a40a7fd7f9ef08b0408caa0f814be3c0873de971845a2d0c4879213a9f68e08",
+        "actual_sha256": "4a40a7fd7f9ef08b0408caa0f814be3c0873de971845a2d0c4879213a9f68e08"
+      },
+      "tools/check_v17t2r5r4_continuation.py": {
+        "pass": true,
+        "expected_sha256": "85d61c3fb739579d50a08c9517bf012473087f3c480471dabc38a2168d4766c2",
+        "actual_sha256": "85d61c3fb739579d50a08c9517bf012473087f3c480471dabc38a2168d4766c2"
+      },
+      "tools/check_v17t2r5r5_continuation.py": {
+        "pass": true,
+        "expected_sha256": "705594e894a3b2a047175926c087d8042f66c862ccbc4250be80b3525ac0d9fc",
+        "actual_sha256": "705594e894a3b2a047175926c087d8042f66c862ccbc4250be80b3525ac0d9fc"
+      },
+      "RUN_V17T2R5R5_2033_1H_OPTIMAL_ONLY.bat": {
+        "pass": true,
+        "expected_sha256": "affc24a95afca33ad0c3ea0c4c7191c0b38f64ab059f94d9e5029ca870c019e8",
+        "actual_sha256": "affc24a95afca33ad0c3ea0c4c7191c0b38f64ab059f94d9e5029ca870c019e8"
+      },
+      "CHECK_V17T2R5R5_PATCH.bat": {
+        "pass": true,
+        "expected_sha256": "44304ef4c6578745ead2c4b7b5c63343fc8aca5b8cdad04dffd813a39eb65cbf",
+        "actual_sha256": "44304ef4c6578745ead2c4b7b5c63343fc8aca5b8cdad04dffd813a39eb65cbf"
+      },
+      "VERSION_V17T2R5R5.txt": {
+        "pass": true,
+        "expected_sha256": "f79aac260b49625be742358f665a262f004192bf24219ac4dc256eedfc431a3a",
+        "actual_sha256": "f79aac260b49625be742358f665a262f004192bf24219ac4dc256eedfc431a3a"
+      },
+      "README_R5_PATCH_ZH.md": {
+        "pass": true,
+        "expected_sha256": "2fd156dd2c8c044282cb99d54411002bd38df7e987945cd43b5945f71d7d4550",
+        "actual_sha256": "2fd156dd2c8c044282cb99d54411002bd38df7e987945cd43b5945f71d7d4550"
+      },
+      "docs/V17T2R5R5_PRIMAL_DUAL_SUPPORTED_OBJECTIVE_CONTINUATION.md": {
+        "pass": true,
+        "expected_sha256": "f4dfd382e7a018d9a82ff7257b3baad728951c86a4ecbcc53455fb0934d134d0",
+        "actual_sha256": "f4dfd382e7a018d9a82ff7257b3baad728951c86a4ecbcc53455fb0934d134d0"
+      }
+    },
+    "model::String(solver_profile) == \"r5_primal_dual_supported_objective_continuation\"": true,
+    "model::basename(case_dir) != \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "model::r4_seed_source_scenario = \"TY2033_CHRONO_1H_OBSERVED\"": true,
+    "model::r4_seed_source_pair_identity_pass": true,
+    "model::r4_seed_strict_optimal ||": true,
+    "model::_v17_raw_get_double_array(r5_grb, \"X\"": true,
+    "model::_v17_raw_get_double_array(r5_grb, \"Pi\"": true,
+    "model::_v17_raw_get_double_array(r5_grb, \"RC\"": true,
+    "model::r5_support_objective =": true,
+    "model::r5_legacy_original_objective .- r5_legacy_reduced_costs": true,
+    "model::_v17_raw_set_double_list!(\n                r5_grb, \"Obj\"": true,
+    "model::_v17_raw_set_double_array!(grb, \"PStart\", primal_start)": true,
+    "model::_v17_raw_set_double_array!(grb, \"DStart\", dual_start)": true,
+    "model::apply_r5_bridge_profile!(mod)": true,
+    "model::set_optimizer_attribute(mod, \"LPWarmStart\", 2)": true,
+    "model::set_optimizer_attribute(mod, \"Crossover\", 3)": true,
+    "model::set_optimizer_attribute(mod, \"CrossoverBasis\", 1)": true,
+    "model::_v17_raw_get_int_array(\n                r5_grb, \"VBasis\"": true,
+    "model::_v17_raw_get_int_array(\n                r5_grb, \"CBasis\"": true,
+    "model::V17T2R5R5_OBJECTIVE_HOMOTOPY_LEVELS = (0.001, 0.003, 0.01, 0.03, 0.10, 0.25, 0.50, 0.75)": true,
+    "model::(1.0 - theta) .* r5_legacy_reduced_costs": true,
+    "model::apply_r5_continuation_profile!(mod; final_stage=false)": true,
+    "model::set_optimizer_attribute(mod, \"Method\", settings.method)": true,
+    "model::set_optimizer_attribute(mod, \"Presolve\", 0)": true,
+    "model::set_optimizer_attribute(mod, \"LPWarmStart\", 1)": true,
+    "model::r5_final_max_objective_coefficient_error == 0.0": true,
+    "model::apply_r5_continuation_profile!(mod; final_stage=true)": true,
+    "model::\"gurobi_V17T2R5R5_full_optimal_primal_simplex_after_primal_dual_supported_objective_continuation\"": true,
+    "model::const SOLVER_FEASIBILITY_TOL = 1.0e-7": true,
+    "model::const SOLVER_OPTIMALITY_TOL = 1.0e-7": true,
+    "model::const SOLVER_BAR_CONV_TOL = 1.0e-8": true,
+    "model::\"V17T2R5R3_equivalent_hourly_coordinate_projection_v1\"": true,
+    "model_forbidden_absent::SOLVER_FEASIBILITY_TOL = 1.0e-3": true,
+    "model_forbidden_absent::SOLVER_OPTIMALITY_TOL = 1.0e-3": true,
+    "model_forbidden_absent::R5_PRIMAL_DUAL_SUPPORTED_OBJECTIVE_CONTINUATION_ACTIVE = true": true,
+    "runner::\"r5_continuation\": R5_CONTINUATION_ROUTE": true,
+    "runner::11_targetyear_r5_primal_dual_supported_objective_continuation": true,
+    "runner::args.route in {\"r3_reduced\", \"r4_continuation\", \"r5_continuation\"}": true,
+    "runner::args.scenario != \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "runner::\"r5_primal_dual_start_set_pass\": \"true\"": true,
+    "runner::\"r5_bridge_strict_optimal\": \"true\"": true,
+    "runner::\"r5_bridge_basis_available\": \"true\"": true,
+    "runner::\"r5_homotopy_all_strict_optimal\": \"true\"": true,
+    "runner::\"r5_final_objective_restored\": \"true\"": true,
+    "runner::r5 final objective coefficients were not restored exactly": true,
+    "runner::r5 homotopy schedule did not complete": true,
+    "runner::gurobi_V17T2R5R5_full_optimal_primal_simplex_after_primal_dual_supported_objective_continuation": true,
+    "launcher::--scenario TY2033_CHRONO_1H_OPTIMAL": true,
+    "launcher::--route r5_continuation": true,
+    "launcher::--skip-prepare": true,
+    "launcher::--force-rerun": true,
+    "launcher::V17T2R5R4_SEED_TIME_LIMIT_SECONDS": true,
+    "launcher::V17T2R5R5_BRIDGE_TIME_LIMIT_SECONDS": true,
+    "launcher::V17T2R5R5_STAGE_TIME_LIMIT_SECONDS": true,
+    "launcher::V17T2R5R5_FINAL_TIME_LIMIT_SECONDS": true,
+    "launcher_forbidden_absent::--clean-central": true,
+    "launcher_forbidden_absent::--pair ": true,
+    "launcher_forbidden_absent::--continue-after-failure": true,
+    "paired_non_geographic_input_identity": {
+      "status": "PASS",
+      "errors": [],
+      "allowed_differences": [
+        "gen_build_predetermined.csv",
+        "legacy_storage_policy.csv"
+      ]
+    },
+    "seed_contract": {
+      "rows": 32,
+      "power_residual_mw": 0.0,
+      "energy_residual_mwh": -5.820766091346741e-11,
+      "maximum_duration_residual_mwh": 3.637978807091713e-12,
+      "minimum_cap_slack_mw": 0.0
+    },
+    "scenario_lock": {
+      "controlled_case_count": 8,
+      "pair_rows": 2,
+      "pair_ids": [
+        "TY2033_CHRONO_1H"
+      ],
+      "time_resolution_h": [
+        1
+      ],
+      "chronology": [
+        "monthly_linked"
+      ]
+    },
+    "julia_lexical_audit_return_code": 0
+  },
+  "scientific_inputs_changed": false,
+  "final_constraints_or_rhs_changed": false,
+  "final_bounds_changed": false,
+  "final_objective_changed": false,
+  "temporary_objective_continuation_only": true,
+  "solver_tolerances_relaxed": false,
+  "publication_gates_relaxed": false,
+  "other_seven_cases_rerun_or_cleaned": false,
+  "strict_seed_bridge_each_stage_and_final_optimal_required": true,
+  "dynamic_julia_gurobi_solve_executed": false
+}

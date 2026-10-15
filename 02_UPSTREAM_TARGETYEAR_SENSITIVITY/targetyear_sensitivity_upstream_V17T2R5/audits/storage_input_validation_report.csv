@@ -1,0 +1,75 @@
+check,passed,detail
+publication_source_fingerprint_exists,True,audits/PUBLICATION_SOURCE_FINGERPRINT.json
+data_version,True,NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2
+switch_china_raw_snapshot_exists,True,shared_source_snapshots/SWITCH_China_inputs_v2.0.9.zip
+switch_china_raw_snapshot_sha256,True,95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3
+raw_vre_snapshot_exists,True,shared_source_snapshots/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz
+raw_vre_snapshot_sha256,True,fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70
+study_template_exists,True,base_model_v39/storage_base_template_v17.zip
+study_template_sha256,True,e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f
+switch_china_lineage_audit_exists,True,SWITCH_CHINA_INPUT_LINEAGE_AUDIT.json
+switch_china_declared_version,True,2.0.9
+switch_china_no_false_byte_identity_claim,True,"The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+province_reconstruction_exists,True,data/processed/new_storage_existing_by_province_2025_nea_constrained_reconstruction.csv
+zone_storage_input_exists,True,data/processed/existing_new_storage_allocated_to_model_zones_2025.csv
+province_source_ledger_exists,True,data/source_registry/provincial_storage_source_ledger_2025.csv
+regional_constraints_exists,True,data/source_registry/nea_new_storage_national_regional_constraints_2025.csv
+province_constraints_exists,True,data/source_registry/nea_new_storage_provincial_constraints_2025.csv
+province_required_columns,True,[]
+province_count_31,True,"(31, 31)"
+province_version_lock,True,{'NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2'}
+province_power_closure,True,135930.0
+province_standardized_energy_closure,True,351120.0
+province_compiled_duration_sensitivity_energy_closure,True,351120.00000000006
+province_nonnegative,True,
+province_interpretation_lock,True,
+six_region_coverage,True,"(['Central', 'East', 'North', 'Northeast', 'Northwest', 'South'], ['Central', 'East', 'North', 'Northeast', 'Northwest', 'South'])"
+region_North_power_closure,True,44131.0
+region_Northwest_power_closure,True,38382.0
+region_East_power_closure,True,19572.641221374044
+region_South_power_closure,True,17805.666666666664
+region_Central_power_closure,True,15087.24427480916
+region_Northeast_power_closure,True,951.4478371501268
+official_exact_Inner_Mongolia,True,20260.0
+official_exact_Xinjiang,True,18800.0
+official_exact_Shandong,True,11210.0
+official_exact_Gansu,True,8405.8
+official_exact_Guizhou,True,2450.0
+official_threshold_Hebei,True,7424.660493827161
+official_threshold_Jiangsu,True,7589.917302798982
+official_threshold_Ningxia,True,5000.0
+official_threshold_Yunnan,True,5341.101449275361
+official_threshold_Zhejiang,True,5000.0
+official_threshold_Henan,True,6095.856272650165
+official_threshold_Guangdong,True,5007.282608695651
+model_zone_count_32,True,"(32, 32)"
+zone_version_lock,True,{'NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2'}
+zone_power_closure,True,135930.0
+zone_energy_closure,True,351120.0
+zone_storage_hash_lock,True,0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc
+source_ledger_31_rows,True,"(31, 31)"
+source_ledger_language_lock,True,
+source_ledger_hash_lock,True,e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862
+raw_vre_processed_exists,True,data/processed/vre_cf_hourly_by_province.csv
+calibrated_vre_exists,True,data/processed/vre_cf_hourly_by_province_publication_calibrated.csv
+wind_benchmark_exists,True,data/processed/vre_cf_national_benchmark_2024.csv
+wind_calibration_audit_exists,True,audits/vre_cf_publication_calibration_audit.json
+raw_vre_31x8760,True,"(271560, 31, 8760)"
+raw_solar_cf_bounded,True,solar_cf
+raw_onshore_wind_cf_bounded,True,onshore_wind_cf
+raw_offshore_wind_cf_bounded,True,offshore_wind_cf
+raw_offshore_scope_zero,True,
+calibrated_vre_31x8760,True,"(271560, 31, 8760)"
+calibrated_vre_bounded,True,
+calibrated_profile_hash_lock,True,03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096
+wind_benchmark_one_row,True,1
+wind_target_closure,True,"(0.2532072175254301, 0.25320721752543)"
+wind_target_fingerprint,True,0.2532072175254301
+wind_benchmark_hash_lock,True,4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5
+wind_audit_version,True,NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2
+wind_official_source_lock,True,National Energy Administration
+commercial_annual_report_excluded,True,False
+wind_audit_hash_lock,True,899ab53b02fed6b6c476d9eb443b612eb38a409b239cca693918b1023d3c776d
+template_no_nbccs,True,
+template_no_daccs,True,
+template_beccs_physical_factor_one,True,1.0

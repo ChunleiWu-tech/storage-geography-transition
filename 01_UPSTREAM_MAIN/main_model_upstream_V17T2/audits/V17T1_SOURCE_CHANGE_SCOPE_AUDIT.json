@@ -1,0 +1,42 @@
+{
+  "version": "V17T1",
+  "declared_modified_runtime_source_files": [
+    {
+      "file": "tools/apply_scenario_mutations.py",
+      "v17_sha256": "4f9ab5b0725cfa22d74d522b61af8f49345bff22aef3bde23527bdbf5844a97e",
+      "v17t1_sha256": "fa4404ea7d87c1e8c1c7018afa948878ebe7f2ff2c104b7f4ef95ba6c9224ee5"
+    },
+    {
+      "file": "tools/run_official_batch.py",
+      "v17_sha256": "1fc0502448add5b2442914c71eba8d8ea0b091d75ac70ba617bfba22eb10c386",
+      "v17t1_sha256": "550a40550468688708cf3223a781b2b3240579dde1e95eea099ff0e533d9a08f"
+    },
+    {
+      "file": "base_model_v39/cheer_power_storage_v1.jl",
+      "v17_sha256": "109a727ef3520c2e845924e1173c8c2b6d08a6035ce0abd15432bdeacb1f9111",
+      "v17t1_sha256": "27b2bcdfa53f5646683fffa3470c7831719c8ba288e3f5b663f687ecf6cc2506"
+    },
+    {
+      "file": "storage_runner/run_storage_one_solver_task.jl",
+      "v17_sha256": "28ca65b94209b642c633745135e155cfb7106911c1a34bdf25a67bd56eeee74d",
+      "v17t1_sha256": "c053b181ae5689ed5c64dcc3c81967927ad40c7afcf6115adda02b34eed393c0"
+    },
+    {
+      "file": "storage_runner/check_v17_runtime.jl",
+      "v17_sha256": "f641e7a882d099ddec54d8477a89b63876b48da1148a18fc32d985f1ee72bace",
+      "v17t1_sha256": "507eb6a617b72572fae9012847c41f381e7d9259d657d2523e94bf75f3a4cf00"
+    },
+    {
+      "file": "V17_ENV_DEFAULTS.bat",
+      "v17_sha256": "6f8637963a81bc083a8c60954a73168b115277422f9cf1af1b3fbbc6b3303142",
+      "v17t1_sha256": "1910f89122a756271679950afca3f1a0d8b79dc80bb77b6619833226d23dde5e"
+    }
+  ],
+  "non_model_metadata_fix": "Batch summary preserves canonical scenario name and stores suffixed solver tag separately.",
+  "scientific_boundary": {
+    "SL08_SL09": "Only capacity_plans.csv differs from prepared V17 inputs; future Hydro_Pumped policy floors are retired while 2023 stock and predetermined projects remain.",
+    "SL10_SL13": "Prepared inputs are byte-identical to V17; only isolated solver algorithms/time budgets differ.",
+    "other_12_scenarios": "Prepared inputs and standard route tree are identical to V17."
+  },
+  "all_pass": true
+}

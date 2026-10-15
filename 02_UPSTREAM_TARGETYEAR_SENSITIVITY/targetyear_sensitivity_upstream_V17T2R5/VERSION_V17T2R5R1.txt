@@ -1,0 +1,6 @@
+V17T2R5R1_EQUIVALENT_REDUCED_RANK_20260811
+
+This revision removes one algebraically dependent optimized-legacy energy
+closure row and represents the equivalent province deployment rows as variable
+bounds. Inputs, feasible set, objective, strict solver-native optimality gate,
+physical audits, and the seven existing official scenario outputs are unchanged.

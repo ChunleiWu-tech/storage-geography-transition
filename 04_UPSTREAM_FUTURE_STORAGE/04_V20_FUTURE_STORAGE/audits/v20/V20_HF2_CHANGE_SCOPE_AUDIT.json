@@ -1,0 +1,20 @@
+{
+  "version": "V20_HF2_CHANGE_SCOPE_AUDIT_R1",
+  "parent_hf1_dynamic_core_sha256": "1469b3168e5040486b091732bc58782d69501f014d5579bc1a638a920ec99eab",
+  "hf2_dynamic_core_sha256": "da8e22f538b3fdcfb536b265a598fffd4ec51091246397191d23c742d67efdbf",
+  "layerA_targetyear_core_sha256_hf1": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84",
+  "layerA_targetyear_core_sha256_hf2": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84",
+  "layerB_C_case_input_files_compared": 720,
+  "layerB_C_case_input_drift_count": 0,
+  "layerB_C_case_input_drift": [],
+  "layerA_case_input_files_compared": 312,
+  "layerA_case_input_drift_count": 0,
+  "layerA_case_input_drift": [],
+  "deliberate_contract_changes": [
+    "Fix future-only legacy Battery/PSH disable constraints so they cannot zero the 2023 optimized-legacy stock anchor.",
+    "Make solve_status chronology scope reflect actual runtime mode.",
+    "Layer B/C official scenario/runtime/claim contract uses V17-native intraday_cyclic + evidence_bounded; linked-month is diagnostic-only.",
+    "No cost, technology candidate, policy, network, load, VRE, hydro, carbon, or objective input CSV changes."
+  ],
+  "status": "PASS"
+}

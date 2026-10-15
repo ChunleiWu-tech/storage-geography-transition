@@ -1,0 +1,32 @@
+--- HF2/base_model_v39/cheer_power_storage_v1.jl
++++ HF3/base_model_v39/cheer_power_storage_v1.jl
+@@ -3886,8 +3886,27 @@
+ 
+ CAPACITY_PLAN_INDEX = [(tc, r, p) for (tc, r, p) in eachrow(Array(df_capacity_plans[!, [:gen_tech, :load_zones, :period]]))]
+ capacity_plan_mw = Dict((tc, r, p) => subset(df_capacity_plans, :gen_tech => ByRow(==(tc)), :load_zones => ByRow(==(r)), :period => ByRow(==(p)))[1, "planned_capacity_mw"] for (tc, r, p) in CAPACITY_PLAN_INDEX)
+-@expression(mod, CapByTech[(tc, r, p) in CAPACITY_PLAN_INDEX], sum(GenCapacity[g, p] for g in GENS_BY_TECHNOLOGY[tc] if g in GENS_IN_ZONE[r]; init=0.0))
+-@constraint(mod, Enforce_Capacity_Plan[(tc, r, p) in CAPACITY_PLAN_INDEX; p >= PUBLICATION_HEADLINE_PERIOD_MIN], CapByTech[(tc, r, p)] >= capacity_plan_mw[(tc, r, p)])
++
++# V20-HF3 compatibility rule for the inherited pumped-hydro planning floor:
++# capacity_plans.csv is inherited from V17 and names the technology class
++# "Hydro_Pumped".  In an active V18/V20 portfolio, endogenous *future*
++# Hydro_Pumped builds are intentionally replaced by explicit PSH duration
++# designs (V18_PSH_10h / V18_PSH_24h), while the legacy Hydro_Pumped project
++# remains the historical-stock carrier.  Therefore the inherited provincial
++# Hydro_Pumped floor must be satisfied by the physical PSH family as a whole,
++# not by the disabled legacy build row alone.  This is a bookkeeping mapping,
++# not a relaxation: the shared provincial PSH resource ceiling above still
++# applies to legacy + all V18 PSH designs together.
++function capacity_plan_project_set(tc::AbstractString)
++    if tc == "Hydro_Pumped" && v18_storage_portfolio_mode != "disabled"
++        return union(GENS_BY_TECHNOLOGY[tc], V18_PSH_GENS)
++    end
++    return GENS_BY_TECHNOLOGY[tc]
++end
++@expression(mod, CapByTech[(tc, r, p) in CAPACITY_PLAN_INDEX],
++    sum(GenCapacity[g, p] for g in capacity_plan_project_set(tc) if g in GENS_IN_ZONE[r]; init=0.0))
++@constraint(mod, Enforce_Capacity_Plan[(tc, r, p) in CAPACITY_PLAN_INDEX; p >= PUBLICATION_HEADLINE_PERIOD_MIN],
++    CapByTech[(tc, r, p)] >= capacity_plan_mw[(tc, r, p)])
+ 
+ # ---------------------------------------------
+ # 19 capacity factor policy on coal power

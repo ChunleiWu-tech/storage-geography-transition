@@ -1,0 +1,2 @@
+scenario,source_scenario,technology,anchor_year,anchor_2024usd_per_kwh,hold_model_2010usd_per_mw,hold_fom_2010usd_per_mw_year,changed_rows,changed_years
+V20EH02_OPTIMAL,SL02_OPTIMAL_REALLOCATION,V18_LFP_4h,2030,279.0,775769.9377408836,31030.797509635344,192,2033;2038;2043;2048;2053;2058

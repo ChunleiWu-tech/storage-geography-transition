@@ -1,0 +1,15 @@
+{
+  "version": "V17T2R6R24P3_HF18P2",
+  "recorded_on": "2026-08-30",
+  "evidence_source": "user-provided server console transcript",
+  "server_success_signals": [
+    "POSTSOLVE COMPLEMENTARITY RECOVERY PASS",
+    "COMBINED ALL FOUR CERTIFICATES COMPLETED"
+  ],
+  "all_four_robustness_distance_certificates_completed": true,
+  "scientific_model_changed_by_r24p3": false,
+  "gurobi_invoked_by_r24p3": false,
+  "raw_server_outputs_included": false,
+  "postprocess_authority": "server combined summary and four referenced __main result directories",
+  "claim_boundary": "certificate completion does not assert original fixed-portfolio feasibility; read per-case classification and robustness distance"
+}

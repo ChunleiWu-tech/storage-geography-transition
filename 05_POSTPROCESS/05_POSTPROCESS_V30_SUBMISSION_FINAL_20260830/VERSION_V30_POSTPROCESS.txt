@@ -1,0 +1,4 @@
+V30_POSTPROCESS_SUBMISSION_20260830
+Four-root read-only publication postprocessor
+16 main + 8 target-year + 4 FULL8760 certificates + 26 V20 future-storage cases
+7 main figures + 14 supplementary figures; PDF/SVG/600-dpi PNG

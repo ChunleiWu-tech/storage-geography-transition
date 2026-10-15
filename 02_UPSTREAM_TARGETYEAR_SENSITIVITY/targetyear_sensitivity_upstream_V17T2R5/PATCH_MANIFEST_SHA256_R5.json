@@ -1,0 +1,30 @@
+{
+  "version": "V17T2R5R5_PRIMAL_DUAL_SUPPORTED_EXACT_OBJECTIVE_CONTINUATION_20260814",
+  "scope": "TY2033_CHRONO_1H_OPTIMAL only",
+  "archive_layout": "extract into the existing targetyear_sensitivity_upstream_V17T2R5 root",
+  "scientific_inputs_in_archive": false,
+  "solver_results_in_archive": false,
+  "logs_in_archive": false,
+  "core_payload_sha256": {
+    "base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl": "fffcca77edefe882bd8187974a8aec493f9d0aae37f8cffc1af9b5bb86d9ec67",
+    "tools/run_targetyear_batch.py": "2ed0e7bc47ba3f392f611bae0ed9e3a48432a384619ac6ec44ecaa5a583ccf6c",
+    "tools/check_v17t2r5_package.py": "7b339abcb357c9a8696eb9e434723298833e6b1247e73423f771639dea35576e",
+    "tools/check_v17t2r5r3_projection.py": "4a40a7fd7f9ef08b0408caa0f814be3c0873de971845a2d0c4879213a9f68e08",
+    "tools/check_v17t2r5r4_continuation.py": "85d61c3fb739579d50a08c9517bf012473087f3c480471dabc38a2168d4766c2",
+    "tools/check_v17t2r5r5_continuation.py": "705594e894a3b2a047175926c087d8042f66c862ccbc4250be80b3525ac0d9fc",
+    "RUN_V17T2R5R5_2033_1H_OPTIMAL_ONLY.bat": "affc24a95afca33ad0c3ea0c4c7191c0b38f64ab059f94d9e5029ca870c019e8",
+    "CHECK_V17T2R5R5_PATCH.bat": "44304ef4c6578745ead2c4b7b5c63343fc8aca5b8cdad04dffd813a39eb65cbf",
+    "VERSION_V17T2R5R5.txt": "f79aac260b49625be742358f665a262f004192bf24219ac4dc256eedfc431a3a",
+    "README_R5_PATCH_ZH.md": "2fd156dd2c8c044282cb99d54411002bd38df7e987945cd43b5945f71d7d4550",
+    "docs/V17T2R5R5_PRIMAL_DUAL_SUPPORTED_OBJECTIVE_CONTINUATION.md": "f4dfd382e7a018d9a82ff7257b3baad728951c86a4ecbcc53455fb0934d134d0"
+  },
+  "generated_audit_files_are_not_part_of_core_payload_hashes": [
+    "audits/V17T2R5R5_CONTINUATION_AUDIT.json",
+    "audits/V17T2R5R4_CONTINUATION_AUDIT.json",
+    "audits/V17T2R5R3_EQUIVALENCE_AUDIT.json",
+    "audits/JULIA_LEXICAL_AUDIT_V17T2R5.json",
+    "audits/STATIC_PACKAGE_AUDIT_V17T2R5.json",
+    "PACKAGE_MANIFEST_SHA256.json",
+    "PATCH_MANIFEST_SHA256_R5.json"
+  ]
+}

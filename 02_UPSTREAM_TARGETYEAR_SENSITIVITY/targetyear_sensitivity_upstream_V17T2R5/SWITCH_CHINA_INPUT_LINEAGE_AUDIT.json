@@ -1,0 +1,81 @@
+{
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "switch_china_snapshot": {
+    "path": "shared_source_snapshots/SWITCH_China_inputs_v2.0.9.zip",
+    "sha256": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3",
+    "declared_version": "2.0.9",
+    "source_repository": "https://github.com/switch-model/switch-china-open-model",
+    "file_count": 28
+  },
+  "study_template": {
+    "path": "main_model_upstream_V17T2/base_model_v39/storage_base_template_v17.zip",
+    "sha256": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f",
+    "csv_file_count": 38
+  },
+  "compatibility": {
+    "load_zone_overlap": [
+      "Anhui",
+      "Beijing",
+      "Chongqing",
+      "East_Inner_Mongolia",
+      "Fujian",
+      "Gansu",
+      "Guangdong",
+      "Guangxi",
+      "Guizhou",
+      "Hainan",
+      "Hebei",
+      "Heilongjiang",
+      "Henan",
+      "Hubei",
+      "Hunan",
+      "Jiangsu",
+      "Jiangxi",
+      "Jilin",
+      "Liaoning",
+      "Ningxia",
+      "Qinghai",
+      "Shaanxi",
+      "Shandong",
+      "Shanghai",
+      "Shanxi",
+      "Sichuan",
+      "Tianjin",
+      "Tibet",
+      "West_Inner_Mongolia",
+      "Xinjiang",
+      "Yunnan",
+      "Zhejiang"
+    ],
+    "raw_generator_rows": 6095,
+    "study_template_generator_rows": 371,
+    "exact_generation_project_name_overlap_count": 0,
+    "raw_variable_cf_rows": 535248,
+    "study_template_variable_cf_rows": 67392,
+    "raw_period_count": 6,
+    "study_template_period_count": 8
+  },
+  "scientific_lineage_statement": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed.",
+  "core_citations": [
+    {
+      "citation": "He et al., Environmental Science & Technology 50, 5467-5473 (2016)",
+      "doi": "10.1021/acs.est.6b01345"
+    },
+    {
+      "citation": "He et al., Nature Communications 11, 2486 (2020)",
+      "doi": "10.1038/s41467-020-16184-x"
+    },
+    {
+      "citation": "Zhang et al., Journal of Cleaner Production 329, 129765 (2021)",
+      "doi": "10.1016/j.jclepro.2021.129765"
+    },
+    {
+      "citation": "Peng et al., Nature Communications 14, 4858 (2023)",
+      "doi": "10.1038/s41467-023-40337-3"
+    }
+  ],
+  "file_level_audit": "SWITCH_CHINA_INPUT_LINEAGE_FILE_AUDIT.csv",
+  "switch_china_version": "2.0.9",
+  "study_template_is_byte_identical_to_raw_snapshot": false,
+  "lineage_interpretation": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+}

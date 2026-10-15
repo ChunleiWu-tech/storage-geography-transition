@@ -1,0 +1,135 @@
+{
+  "summary": {
+    "version": "V17",
+    "checks": 25,
+    "passed": 25,
+    "all_pass": true
+  },
+  "checks": [
+    {
+      "check": "economic_objective_scaled",
+      "pass": true,
+      "detail": "economic objective scaling only"
+    },
+    {
+      "check": "stage1_barrier_no_crossover",
+      "pass": true,
+      "detail": "primary stage-1 algorithm"
+    },
+    {
+      "check": "strict_solver_tolerances",
+      "pass": true,
+      "detail": "no tolerance relaxation"
+    },
+    {
+      "check": "solver_native_certificate",
+      "pass": true,
+      "detail": "native certificate is formal proof"
+    },
+    {
+      "check": "external_diagnostics_nonblocking",
+      "pass": true,
+      "detail": "ObjBound and reconstructed dual are diagnostics"
+    },
+    {
+      "check": "official_profile_default",
+      "pass": true,
+      "detail": "formal run does not invoke cleanup"
+    },
+    {
+      "check": "official_route_branch",
+      "pass": true,
+      "detail": "stage 1 selected as publication result"
+    },
+    {
+      "check": "solve_gate_uses_stage1",
+      "pass": true,
+      "detail": "cleanup convergence is not a release condition"
+    },
+    {
+      "check": "cleanup_nonblocking_fields",
+      "pass": true,
+      "detail": "diagnostic state is explicit"
+    },
+    {
+      "check": "degeneracy_disclosure",
+      "pass": true,
+      "detail": "gross-flow interpretation is restricted"
+    },
+    {
+      "check": "diagnostic_audits_not_hard_gate",
+      "pass": true,
+      "detail": "degeneracy review cannot block release"
+    },
+    {
+      "check": "row_level_restrictions",
+      "pass": true,
+      "detail": "labels survive downstream separation"
+    },
+    {
+      "check": "optional_cleanup_routes_retained",
+      "pass": true,
+      "detail": "sparse-face experiments remain available"
+    },
+    {
+      "check": "pstart_ephemeral",
+      "pass": true,
+      "detail": "diagnostic PStart is memory-only"
+    },
+    {
+      "check": "no_basis_or_dual_start",
+      "pass": true,
+      "detail": "basis-independent architecture"
+    },
+    {
+      "check": "official_batch_stage1_only",
+      "pass": true,
+      "detail": "official fallback changes only stage-1 solver"
+    },
+    {
+      "check": "certified_stage1_stops_retry",
+      "pass": true,
+      "detail": "downstream failures are not hidden by algorithm changes"
+    },
+    {
+      "check": "batch_requires_interpretation_policy",
+      "pass": true,
+      "detail": "promotion verifies restriction policy"
+    },
+    {
+      "check": "preflight_stage1_source",
+      "pass": true,
+      "detail": "postprocessing accepts official stage 1 only"
+    },
+    {
+      "check": "preflight_gross_flow_labels",
+      "pass": true,
+      "detail": "postprocessing validates row-level restrictions"
+    },
+    {
+      "check": "runtime_cleanup_is_probe",
+      "pass": true,
+      "detail": "optional algorithm/API route remains testable"
+    },
+    {
+      "check": "numerical_version_synchronized",
+      "pass": true,
+      "detail": "cross-layer version string"
+    },
+    {
+      "check": "cleanup_policy_version_synchronized",
+      "pass": true,
+      "detail": "cross-layer policy string"
+    },
+    {
+      "check": "pure_lp_and_no_cdr",
+      "pass": true,
+      "detail": "scope unchanged"
+    },
+    {
+      "check": "json_safe_diagnostics",
+      "pass": true,
+      "detail": "failed diagnostics cannot be masked by NaN serialization"
+    }
+  ]
+}

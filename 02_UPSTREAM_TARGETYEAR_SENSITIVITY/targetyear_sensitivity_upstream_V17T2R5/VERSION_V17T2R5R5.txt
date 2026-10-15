@@ -1,0 +1,10 @@
+V17T2R5R5_PRIMAL_DUAL_SUPPORTED_EXACT_OBJECTIVE_CONTINUATION_20260814
+
+Scope: TY2033_CHRONO_1H_OPTIMAL only
+Scientific inputs changed: no
+Final constraints or bounds changed: no
+Final objective changed: no
+Solver feasibility/optimality tolerances relaxed: no
+Publication gates relaxed: no
+Other seven cases cleaned or rerun: no
+Dynamic Julia/Gurobi solve bundled: no

@@ -1,0 +1,13 @@
+{
+  "package_id": "02_TARGETYEAR_SENSITIVITY_V17T2R5R5_SUBMISSION_FINAL_20260830",
+  "assembled_on": "2026-08-30",
+  "case_count": 8,
+  "result_status": "8/8 user-confirmed strict completion; runtime outputs intentionally excluded",
+  "scientific_change": false,
+  "clean_package": true,
+  "primary_launcher": "RUN_CLEAN_REPRODUCE_SUCCESSFUL_METHODS_8.bat",
+  "method_document": "CASE_SUCCESS_METHODS_ZH.md",
+  "manifest": "CLEAN_PACKAGE_MANIFEST_SHA256.csv",
+  "submission_status": "FINAL_REPRODUCIBLE_METHOD_AND_INPUT_PACKAGE",
+  "runtime_outputs_included": false
+}

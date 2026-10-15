@@ -1,0 +1,24 @@
+check,pass,detail
+required_input_files,True,[]
+legacy_policy_file_present,True,storage_cases/SL02_OPTIMAL_REALLOCATION/inputs/legacy_storage_policy.csv
+legacy_policy_required_columns,True,[]
+legacy_policy_32_unique_zones,True,"{'rows': 32, 'zones': 32}"
+legacy_policy_single_mode,True,['optimized_reallocation']
+legacy_zone_caps_nonnegative,True,479.8877152019188
+legacy_optimized_target_feasible_under_caps,True,"{'cap_sum_mw': 544822.6945485384, 'target_mw': 135930.0}"
+legacy_endogenous_or_none_has_no_predetermined_2023_battery,True,0
+legacy_2023_power_and_energy_capex_are_sunk,True,"{'rows': 32, 'max_power_cost': 0.0, 'max_energy_cost': 0.0}"
+representative_timepoint_count_504,True,504
+timeseries_count_84,True,84
+six_timepoints_per_representative_day,True,[np.float64(6.0)]
+four_hour_timepoints,True,[np.int64(4)]
+operations_start_in_2028,True,"[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+no_2023_operational_timeseries,True,"[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+representative_weights_positive,True,"{2028: 43800.0, 2033: 43800.0, 2038: 43800.0, 2043: 43800.0, 2048: 43800.0, 2053: 43800.0, 2058: 43800.0}"
+seven_operational_planning_periods,True,"[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+deep_decarbonization_final_cap_matches_scenario,True,"{'input_final_cap': 200000000.0, 'solver_multiplier': 1.0, 'effective_expected_final_cap': 200000000.0}"
+official_storage_scenario_has_no_cdr,True,"{'allow_beccs': False, 'NBCCS': False, 'DACCS': False}"
+pumped_hydro_ceiling_above_predetermined_floor,True,[]
+generation_capacity_limit_uses_explicit_unset_sentinel,True,{'missing_or_blank': 0}
+nonnegative_generation_capacity_limits,True,0.0
+capacity_factors_in_unit_interval,True,"{'min': 0.0, 'max': 1.0}"

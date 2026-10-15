@@ -1,0 +1,247 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "2033 1H optimized case: structural non-convergence diagnostic",
+    "description": "Code- and log-backed diagnosis of the isolated target-year sensitivity failure.",
+    "generatedAt": "2026-08-13T14:40:00+08:00",
+    "charts": [
+      {
+        "id": "coordinate_reduction_chart",
+        "title": "Exact coordinate reductions by formulation block",
+        "subtitle": "Prepared TY2033_CHRONO_1H_OPTIMAL input; logarithmic magnitude is not used",
+        "type": "bar",
+        "dataset": "coordinate_reductions",
+        "sourceId": "targetyear_code_inputs",
+        "encodings": {
+          "x": {"field": "block", "type": "nominal", "label": "Exact formulation block"},
+          "y": {"field": "omittable_columns", "type": "quantitative", "label": "Columns"},
+          "tooltip": [
+            {"field": "omittable_columns", "type": "quantitative", "label": "Columns"},
+            {"field": "basis", "type": "text", "label": "Proof basis"},
+            {"field": "status", "type": "text", "label": "Status"}
+          ]
+        },
+        "yAxisTitle": "Exactly removable LP columns",
+        "valueFormat": "compact",
+        "layout": "full",
+        "maxRows": 3,
+        "surface": {"legend": false, "valueLabels": true}
+      }
+    ],
+    "tables": [
+      {
+        "id": "evidence_table",
+        "title": "Diagnostic evidence and interpretation",
+        "subtitle": "Static source inspection plus supplied completed attempt logs",
+        "dataset": "diagnostic_evidence",
+        "sourceId": "targetyear_logs",
+        "defaultSort": {"field": "order", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "evidence", "label": "Evidence", "type": "text"},
+          {"field": "value", "label": "Observed value", "type": "text"},
+          {"field": "interpretation", "label": "Interpretation", "type": "text"}
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "targetyear_code_inputs",
+        "label": "Target-year model source and prepared 1 h input tables",
+        "query": {
+          "engine": "local-static-audit",
+          "language": "powershell",
+          "sql": "Import-Csv gen_info.csv; Import-Csv ccs_install_costs.csv; Import-Csv timepoints.csv; group generators by CCS eligibility and by startup/minimum-time activity; multiply exact set sizes by representative timepoint count.",
+          "description": "Counts the coordinates created by the Julia index sets and proves which families are fixed zero or objective-neutral.",
+          "tables_used": [
+            "sensitivity_cases/TY2033_CHRONO_1H_OPTIMAL/inputs/gen_info.csv",
+            "sensitivity_cases/TY2033_CHRONO_1H_OPTIMAL/inputs/ccs_install_costs.csv",
+            "sensitivity_cases/TY2033_CHRONO_1H_OPTIMAL/inputs/timepoints.csv",
+            "base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl"
+          ],
+          "filters": ["scenario = TY2033_CHRONO_1H_OPTIMAL"],
+          "metric_definitions": [
+            "fixed-zero CCS columns = non-CCS generators times timepoints times two CCS families",
+            "neutral startup/shutdown columns = zero-startup-and-zero-minimum-time generators times timepoints times two families"
+          ]
+        }
+      },
+      {
+        "id": "targetyear_logs",
+        "label": "Supplied TY2033_CHRONO_1H_OPTIMAL solver logs",
+        "query": {
+          "engine": "local-log-audit",
+          "language": "text",
+          "sql": "Read attempt logs 01 through 04; extract model size, presolved size, coefficient ranges, termination status, iteration counts, and final Barrier residuals.",
+          "description": "Reconciles independent solver-route outcomes for the same prepared LP.",
+          "tables_used": [
+            "TY2033_CHRONO_1H_OPTIMAL/01_targetyear_concurrent_official.log",
+            "TY2033_CHRONO_1H_OPTIMAL/02_targetyear_homogeneous_dual_crossover_official.log",
+            "TY2033_CHRONO_1H_OPTIMAL/03_targetyear_scaled_barrier_nocrossover_rescue.log",
+            "TY2033_CHRONO_1H_OPTIMAL/04_targetyear_dual_simplex_rescue.log"
+          ],
+          "filters": ["completed supplied logs only"]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "report_title",
+        "type": "markdown",
+        "body": "# 2033 1H optimized case: structural non-convergence diagnostic"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "body": "## Technical summary\n\nThe evidence points to an under-reduced and highly degenerate LP, not merely a poor algorithm choice. R2 is algebraically correct but removes only 32 coordinates from a 1,032,659-variable model. The prepared input and model index sets expose 316,800 additional hourly columns that can be removed by exact substitution without changing the scientific feasible set, economic objective, or strict release gates."
+      },
+      {
+        "id": "key_findings",
+        "type": "markdown",
+        "body": "## The dominant reduction is 9,900 times larger than R2\n\nThe chart compares the current 32-coordinate legacy-energy projection with two larger, exactly provable hourly reductions. The scale starts at zero and uses the raw coordinate counts. Eliminating these coordinates is a representation change; it does not certify that the reduced LP will finish within a chosen time limit."
+      },
+      {
+        "id": "coordinate_reduction_block",
+        "type": "chart",
+        "chartId": "coordinate_reduction_chart"
+      },
+      {
+        "id": "scope_definitions",
+        "type": "markdown",
+        "body": "## Scope and metric definitions\n\nThe population is the prepared TY2033_CHRONO_1H_OPTIMAL case: 371 generators and 288 representative one-hour timepoints. A removable coordinate is counted only when source logic proves it is fixed to zero or an auxiliary coordinate can be eliminated while preserving the projection onto every scientific variable. Solver status is strict: TIME_LIMIT and stable-looking objective values are failures unless Gurobi returns status 2 and all existing publication gates pass."
+      },
+      {
+        "id": "methodology",
+        "type": "markdown",
+        "body": "## Methodology\n\nThe diagnostic reconciles four completed solver routes, maps Barrier primal, dual, and complementarity residuals to their configured tolerances, then traces the variables responsible for those equations in the Julia source. Counts are reproduced directly from gen_info.csv, ccs_install_costs.csv, and timepoints.csv. The optimized member is compared with its observed mate at the legacy-policy boundary: observed provincial allocations are fixed, while optimized allocations form a 31-dimensional face under one national closure equality."
+      },
+      {
+        "id": "evidence_intro",
+        "type": "markdown",
+        "body": "## Independent routes fail before a native optimal certificate\n\nBarrier, direct dual simplex, and deterministic concurrent optimization all fail on the same LP. This route independence is why extending only the runtime or rotating algorithms has lower expected value than removing the proven redundant coordinates first."
+      },
+      {
+        "id": "evidence_table_block",
+        "type": "table",
+        "tableId": "evidence_table"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## Limitations and robustness\n\nVerified: the model is a continuous LP; the 316,800 coordinates are exactly omittable for this input; tolerances need not be loosened. Likely: these coordinates dominate the observed dual stagnation and the optimized allocation face amplifies it. Unresolved: only a fresh numerical solve can prove that this reduction is sufficient for Gurobi status 2 within the time budget. Static equivalence checks are not numerical certification."
+      },
+      {
+        "id": "recommended_next",
+        "type": "markdown",
+        "body": "## Recommended next step\n\nRetain the current log as diagnostic evidence, but do not publish it. Build a one-case R3 formulation that keeps R2, creates CCS dispatch/commit only for CCS-eligible pairs, creates startup/shutdown only for generators with active startup or minimum-time logic, reconstructs omitted zeros on export, preserves all seven completed outputs, and retains every existing input, scientific constraint, objective coefficient, tolerance, and publication gate."
+      },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## Further questions\n\nAfter R3 presolve, how many rows and columns remain relative to R2? Does the dual residual enter a monotone descent regime? If not, which remaining disabled technology or repeated representative-time block contributes the next exact rank reduction?"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-13T14:40:00+08:00",
+    "status": "ready",
+    "datasets": {
+      "coordinate_reductions": [
+        {
+          "block": "R2 legacy energy projection",
+          "omittable_columns": 32,
+          "basis": "E = duration * P for 32 legacy batteries",
+          "status": "already implemented"
+        },
+        {
+          "block": "Non-CCS dispatch + commit",
+          "omittable_columns": 158400,
+          "basis": "275 non-CCS generators * 288 hours * 2 families",
+          "status": "verified exact reduction"
+        },
+        {
+          "block": "Neutral startup + shutdown",
+          "omittable_columns": 158400,
+          "basis": "275 zero-cost/zero-minimum-time generators * 288 hours * 2 families",
+          "status": "verified exact reduction"
+        }
+      ],
+      "diagnostic_evidence": [
+        {
+          "order": 1,
+          "evidence": "Original LP size",
+          "value": "1,733,793 rows; 1,032,659 columns; 15,837,846 nonzeros",
+          "interpretation": "R2's 32 columns are immaterial to global scale"
+        },
+        {
+          "order": 2,
+          "evidence": "Scaled Barrier presolve",
+          "value": "620,595 rows; 598,172 columns",
+          "interpretation": "A very large numerical core remains"
+        },
+        {
+          "order": 3,
+          "evidence": "12 h Barrier endpoint",
+          "value": "15,234 iterations; primal residual 8.35e-3; dual residual 7.44e-2; complementarity 8.40e-5",
+          "interpretation": "Not close to the configured strict convergence gate"
+        },
+        {
+          "order": 4,
+          "evidence": "Direct dual simplex endpoint",
+          "value": "1,606,513 iterations; TIME_LIMIT",
+          "interpretation": "Failure is not unique to Barrier"
+        },
+        {
+          "order": 5,
+          "evidence": "Coefficient ranges",
+          "value": "matrix 1e-7 to 2e2; bounds/RHS up to 1e7",
+          "interpretation": "Scaling and degeneracy interact; no basis for loosening tolerances"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "targetyear_code_inputs",
+      "label": "Target-year model source and prepared 1 h input tables",
+      "query": {
+        "engine": "local-static-audit",
+        "language": "powershell",
+        "sql": "Import-Csv gen_info.csv; Import-Csv ccs_install_costs.csv; Import-Csv timepoints.csv; group generators by CCS eligibility and by startup/minimum-time activity; multiply exact set sizes by representative timepoint count.",
+        "description": "Counts the coordinates created by the Julia index sets and proves which families are fixed zero or objective-neutral.",
+        "tables_used": [
+          "sensitivity_cases/TY2033_CHRONO_1H_OPTIMAL/inputs/gen_info.csv",
+          "sensitivity_cases/TY2033_CHRONO_1H_OPTIMAL/inputs/ccs_install_costs.csv",
+          "sensitivity_cases/TY2033_CHRONO_1H_OPTIMAL/inputs/timepoints.csv",
+          "base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl"
+        ],
+        "filters": ["scenario = TY2033_CHRONO_1H_OPTIMAL"],
+        "metric_definitions": [
+          "fixed-zero CCS columns = non-CCS generators times timepoints times two CCS families",
+          "neutral startup/shutdown columns = zero-startup-and-zero-minimum-time generators times timepoints times two families"
+        ]
+      }
+    },
+    {
+      "id": "targetyear_logs",
+      "label": "Supplied TY2033_CHRONO_1H_OPTIMAL solver logs",
+      "query": {
+        "engine": "local-log-audit",
+        "language": "text",
+        "sql": "Read attempt logs 01 through 04; extract model size, presolved size, coefficient ranges, termination status, iteration counts, and final Barrier residuals.",
+        "description": "Reconciles independent solver-route outcomes for the same prepared LP.",
+        "tables_used": [
+          "TY2033_CHRONO_1H_OPTIMAL/01_targetyear_concurrent_official.log",
+          "TY2033_CHRONO_1H_OPTIMAL/02_targetyear_homogeneous_dual_crossover_official.log",
+          "TY2033_CHRONO_1H_OPTIMAL/03_targetyear_scaled_barrier_nocrossover_rescue.log",
+          "TY2033_CHRONO_1H_OPTIMAL/04_targetyear_dual_simplex_rescue.log"
+        ],
+        "filters": ["completed supplied logs only"]
+      }
+    }
+  ]
+}

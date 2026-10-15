@@ -1,0 +1,52 @@
+{
+  "version": "V17T2R6R9_HF4P2_SCOPE_SAFE_3X15",
+  "scope": "HF4P2 fixes only an included-file helper scope defect and adds a non-destructive three-case 3x15 coordinator; no scientific input, model matrix, RHS, final bound, final objective or strict acceptance gate changes",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "base_model_v39/full8760_hf4_objective_continuation.jl",
+      "bytes": 29444,
+      "sha256": "f5c78166db3ad8f01bac5484417a9a6f95277b100ebbb77067f12464d8bfca4e"
+    },
+    {
+      "path": "tools/check_v17t2r6r9_hf4_continuation.py",
+      "bytes": 15660,
+      "sha256": "d9b76f0ac6601b5dfa157e87d8ffd49349b150368766b64c5f6a20b257827238"
+    },
+    {
+      "path": "HF4_PATCH_MANIFEST_SHA256.json",
+      "bytes": 1557,
+      "sha256": "ae1e610a21e674059078de212adc78cbb4f993e723785899e0b0356e8ce581cd"
+    },
+    {
+      "path": "HF4P1_PATCH_MANIFEST_SHA256.json",
+      "bytes": 1409,
+      "sha256": "6e4f396f11bb61c7a4f61167271306e6a01146e514a05d112c76993fcbfe9ce9"
+    },
+    {
+      "path": "tools/run_hf4p2_remaining_three_parallel.py",
+      "bytes": 4742,
+      "sha256": "df73f73b85ba965b8d948f6d2e27161eaface48eb8b080ce080b2c0ed7aaa688"
+    },
+    {
+      "path": "tools/check_v17t2r6r9_hf4p2_scope_safe_parallel.py",
+      "bytes": 7375,
+      "sha256": "1622dfd1c302ce0270bb6ff8edfddfb86b066e673ef02008d7635a52a69d738b"
+    },
+    {
+      "path": "RUN_V17T2R6R9_HF4P2_8760_REMAINING_3X15.bat",
+      "bytes": 1385,
+      "sha256": "2a777aab7b051e89ac37f27fabb3669c7c06c2985bbe16333feda2b0a0a13c28"
+    },
+    {
+      "path": "CHECK_V17T2R6R9_HF4P2_8760_3X15.bat",
+      "bytes": 416,
+      "sha256": "3e15cfb8d592fa18f93893b6e3abf28a81376f6839d427e0260061ec0e548ea6"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R9_HF4P2_SCOPE_SAFE_3X15.md",
+      "bytes": 1590,
+      "sha256": "e26a06d847857c7d05ab5b8f3cc0a02906496c439c8ee053115510c0737424dd"
+    }
+  ]
+}

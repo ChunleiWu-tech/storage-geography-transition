@@ -1,0 +1,18 @@
+{
+  "version": "V17T2R6R24P3_HF18P2",
+  "status": "PASS",
+  "checks_passed": 20,
+  "checks_total": 20,
+  "failed": [],
+  "recovery_scope": [
+    "TY2033_FULL8760_OBSERVED"
+  ],
+  "protected_scope": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OBSERVED",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "resolve_performed": false,
+  "scientific_change": false,
+  "gate_change": "replace only the failed unscaled absolute ComplVio check with ComplVio divided by the MW-valued robustness objective at the unchanged 1e-8 BarConvTol; retain every other native, scaled, physical, objective and lineage gate"
+}

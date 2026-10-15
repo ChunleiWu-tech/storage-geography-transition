@@ -1,0 +1,18 @@
+{
+  "version": "V17T2R6R24P2_HF18P2",
+  "status": "PASS",
+  "checks_passed": 40,
+  "checks_total": 40,
+  "failed": [],
+  "rerun_scope": [
+    "TY2033_FULL8760_LDES_OBSERVED",
+    "TY2033_FULL8760_OBSERVED"
+  ],
+  "protected_success_scope": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "scientific_scope": "unchanged fixed strict target-year portfolios, inputs, full-8760 chronology, original constraints, RHS and minimum-MW robustness-distance objective",
+  "gate_correction": "attribute unscaled MaxVio to all applicable continuous-LP quality components; require scaled residual limits and eight independent original-unit physical closures",
+  "claim_boundary": "zero distance certifies the original fixed portfolio; positive distance is a quantified robustness gap and never an original-model PASS or actual technology build"
+}

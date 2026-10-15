@@ -1,0 +1,22 @@
+{
+  "version": "V30_UPSTREAM_ALIGNMENT_AND_UNIT_AUDIT_R2",
+  "status": "PASS",
+  "default_desktop_root": "C:\\Users\\Admin\\Desktop",
+  "project_root": "C:\\Users\\Admin\\Desktop\\01_UPSTREAM_16PLUS8",
+  "four_upstream_roots_distinct": true,
+  "unit_contract": {
+    "BuildGen": {"source_unit": "MW", "report_unit": "GW", "factor": 0.001},
+    "BuildStorageEnergy_MWh": {"source_unit": "MWh", "report_unit": "GWh", "factor": 0.001},
+    "duration": {"formula": "MWh/MW", "report_unit": "h"},
+    "v20_layer_a_cost": {"source": "SystemCost_annualized_usd_per_yr", "source_unit": "USD/yr", "report_unit": "million USD/yr", "factor": 1e-6},
+    "v20_layer_b_c_cost": {"source": "stage1_economic_objective_usd", "source_unit": "present-value USD", "report_unit": "billion USD PV", "factor": 1e-9},
+    "full8760_distance": {"source_unit": "MW", "report_unit": "GW", "factor": 0.001}
+  },
+  "cross_basis_addition_allowed": false,
+  "source_case_result_sha256_required_for_v20": true,
+  "full8760_component_and_zone_closure_required": true,
+  "storage_build_numerical_zero_rule": "values below -1e-6 native MW/MWh fail; residual negatives within tolerance are canonicalized to zero",
+  "zero_new_storage_is_valid_zero_not_missing": true,
+  "actual_result_machine_revalidation_required": true,
+  "upstream_write_performed": false
+}

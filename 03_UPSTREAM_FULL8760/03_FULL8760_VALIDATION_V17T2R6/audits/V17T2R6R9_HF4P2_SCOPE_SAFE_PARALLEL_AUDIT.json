@@ -1,0 +1,60 @@
+{
+  "version": "V17T2R6R9_HF4P2_SCOPE_SAFE_3X15",
+  "status": "PASS",
+  "scope": "HF4 scope repair and operational 3x15 scheduling; scientific inputs, matrix, RHS, final bounds, final objective and strict gates unchanged",
+  "scientific_change": false,
+  "max_parallel_new_cases": 3,
+  "solver_threads_per_new_case": 15,
+  "checks": [
+    {
+      "check": "python_syntax",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf4_postsolve_helpers_are_file_scoped_and_resolved",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "unresolved": []
+      }
+    },
+    {
+      "check": "frozen_scientific_model_contract_retained",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_matrix_rhs_or_constraint_intervention",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "three_case_distinct_route_coordinator_and_resume_safety",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "launcher_is_exactly_3x15_and_non_destructive",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "per_scenario_lease_contract_retained",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf4p2_patch_files_match_manifest",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,120 @@
+{
+  "version": "V17T2",
+  "scope": "prepared scenario input bytes only; generated metadata/audit files excluded because they embed absolute package paths",
+  "scenario_count": 16,
+  "all_pass": true,
+  "rows": [
+    {
+      "scenario": "SL00_OBSERVED_ACTUAL",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL02_OPTIMAL_REALLOCATION",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL03_NO_LEGACY",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL04_RULE_LOAD",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL05_RULE_VRE",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL06_TX_FIXED_OBSERVED",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL07_TX_FIXED_OPTIMAL",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL08_PH_CONSERVATIVE_OBSERVED",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL10_CARBON_TIGHT_OBSERVED",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL11_CARBON_TIGHT_OPTIMAL",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL12_COST_LOW_OBSERVED",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL13_COST_LOW_OPTIMAL",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL14_COST_HIGH_OBSERVED",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    },
+    {
+      "scenario": "SL15_COST_HIGH_OPTIMAL",
+      "input_file_count_v17t1": 39,
+      "input_file_count_v17t2": 39,
+      "input_diff_count": 0,
+      "input_differences": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": "V20_FINAL_BUILD_VERIFICATION_R2",
+  "status": "PASS",
+  "solver_certified": false,
+  "solver_note": "Build-time static/evidence/prepared-case validation only. No V20 study case was solved here; local Julia/Gurobi strict solver-native certification is mandatory before scientific result claims.",
+  "release_static_package_gate": {
+    "status": "PASS",
+    "checks_passed": 34,
+    "checks_total": 34
+  },
+  "root_prepared_case_gate": {
+    "status": "PASS",
+    "checks_passed": 37,
+    "checks_total": 37
+  },
+  "layerA_prepared_case_gate": {
+    "status": "PASS",
+    "checks_passed": 29,
+    "checks_total": 29
+  },
+  "frozen_scientific_core_sha256": {
+    "dynamic_2028_2058": "1469b3168e5040486b091732bc58782d69501f014d5579bc1a638a920ec99eab",
+    "targetyear_2033": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84"
+  },
+  "required_case_contract": {
+    "total": 26,
+    "phase1_core": 8,
+    "phase2_remaining": 18,
+    "layer_A": 8,
+    "layer_B": 16,
+    "layer_C": 2
+  },
+  "authoritative_evidence_ledger_rows": 10,
+  "runtime_gate_present": true,
+  "manifest_verifier_present": true,
+  "figure_policy": "RUN-FIRST: no scientific Fig.6/Fig.7 is shipped. Decide one Fig.6 versus split Fig.6+Fig.7 only after 26/26 strict results.",
+  "package_file_count_before_manifest": 1841,
+  "maximum_relative_file_path_characters": 133,
+  "maximum_relative_file_path": "modules/correction2033/future_correction_cases/FC05_ADAPTIVE_TXFIXED_OBSERVED/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv"
+}

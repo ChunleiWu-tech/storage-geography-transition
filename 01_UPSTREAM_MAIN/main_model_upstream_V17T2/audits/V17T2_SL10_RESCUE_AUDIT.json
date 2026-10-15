@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "version": "V17T2",
+    "checks": 26,
+    "passed": 26,
+    "all_pass": true
+  },
+  "checks": [
+    {
+      "check": "python_compile:run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "python_compile:run_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/run_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "python_compile:audit_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/audit_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "profile_present",
+      "pass": true,
+      "detail": "dedicated profile"
+    },
+    {
+      "check": "profile_setting:method = 2",
+      "pass": true,
+      "detail": "method = 2"
+    },
+    {
+      "check": "profile_setting:crossover = 0",
+      "pass": true,
+      "detail": "crossover = 0"
+    },
+    {
+      "check": "profile_setting:numeric_focus = 3",
+      "pass": true,
+      "detail": "numeric_focus = 3"
+    },
+    {
+      "check": "profile_setting:scale_flag = 2",
+      "pass": true,
+      "detail": "scale_flag = 2"
+    },
+    {
+      "check": "profile_setting:aggregate = 0",
+      "pass": true,
+      "detail": "aggregate = 0"
+    },
+    {
+      "check": "profile_setting:pre_sparsify = 0",
+      "pass": true,
+      "detail": "pre_sparsify = 0"
+    },
+    {
+      "check": "profile_setting:quad = 1",
+      "pass": true,
+      "detail": "quad = 1"
+    },
+    {
+      "check": "profile_setting:bar_homogeneous = 1",
+      "pass": true,
+      "detail": "bar_homogeneous = 1"
+    },
+    {
+      "check": "profile_setting:bar_iter_limit = HARD_LP_BAR_ITER_LIMIT",
+      "pass": true,
+      "detail": "bar_iter_limit = HARD_LP_BAR_ITER_LIMIT"
+    },
+    {
+      "check": "profile_setting:time_limit_seconds = V17T2_SL10_BARRIER_TIME_LIMIT_SECONDS",
+      "pass": true,
+      "detail": "time_limit_seconds = V17T2_SL10_BARRIER_TIME_LIMIT_SECONDS"
+    },
+    {
+      "check": "profile_setting:route_role = \"hard_lp_homogeneous_barrier_no_crossover\"",
+      "pass": true,
+      "detail": "route_role = \"hard_lp_homogeneous_barrier_no_crossover\""
+    },
+    {
+      "check": "model_native_gate",
+      "pass": true,
+      "detail": "['solver_settings.profile == \"hard_homogeneous_barrier_no_crossover\"', 'solver_settings.crossover == 0', 'solver_settings.bar_homogeneous == 1', 'stage1_simplex_iterations == 0.0', '\"gurobi_hard_homogeneous_barrier_no_crossover_optimal_status\"']"
+    },
+    {
+      "check": "runner_profile_and_suffix",
+      "pass": true,
+      "detail": "runner whitelist"
+    },
+    {
+      "check": "batch_profile_gate",
+      "pass": true,
+      "detail": "outer gate"
+    },
+    {
+      "check": "postprocess_accepts_all_hard_native_sources",
+      "pass": true,
+      "detail": "hard-route certificates remain strict and postprocessable"
+    },
+    {
+      "check": "sl10_route_isolated",
+      "pass": true,
+      "detail": "SL10 only"
+    },
+    {
+      "check": "sl13_original_routes_retained",
+      "pass": true,
+      "detail": "SL13 unchanged"
+    },
+    {
+      "check": "no_model_or_scenario_relaxation",
+      "pass": true,
+      "detail": "rescue changes solver route only"
+    },
+    {
+      "check": "atomic_summary_replace",
+      "pass": true,
+      "detail": "atomic summary replacement"
+    },
+    {
+      "check": "protects_fifteen_outputs",
+      "pass": true,
+      "detail": "byte-level protection"
+    },
+    {
+      "check": "does_not_clean_outputs",
+      "pass": true,
+      "detail": "no global clean"
+    },
+    {
+      "check": "requires_barrier_then_crossover_evidence",
+      "pass": true,
+      "detail": "evidence-selected route"
+    }
+  ]
+}

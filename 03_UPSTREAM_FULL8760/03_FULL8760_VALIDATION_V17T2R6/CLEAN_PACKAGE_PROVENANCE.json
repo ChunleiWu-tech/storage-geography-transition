@@ -1,0 +1,19 @@
+{
+  "package_id": "03_FULL8760_V17T2R6R24P3_HF18P2_SUBMISSION_FINAL_20260830",
+  "assembled_on": "2026-08-30",
+  "case_count": 4,
+  "result_status": "all four HF18P2 robustness-distance certificates completed; final server signals: POSTSOLVE COMPLEMENTARITY RECOVERY PASS and COMBINED ALL FOUR CERTIFICATES COMPLETED; runtime outputs intentionally excluded",
+  "scientific_change": false,
+  "clean_package": true,
+  "primary_launcher": "RUN_SUBMISSION_REPRODUCE_AND_CERTIFY_ALL4_HF18P2_R24P3_2X10.bat",
+  "method_document": "CASE_METHODS_AND_STATUS_ZH.md",
+  "failure_history": "FULL8760_FAILURE_HISTORY_ZH.md",
+  "manifest": "CLEAN_PACKAGE_MANIFEST_SHA256.csv",
+  "resume_launcher": "RUN_V17T2R6R24P3_HF18P2_POSTSOLVE_RECERTIFY_ONLY.bat",
+  "solver_threads_per_case": 10,
+  "max_parallel_per_phase": 2,
+  "runtime_outputs_included": false,
+  "submission_status": "FINAL_REPRODUCIBLE_METHOD_AND_INPUT_PACKAGE",
+  "certificate_version": "V17T2R6R24P3_HF18P2",
+  "result_interpretation": "certificate success is not original fixed-portfolio feasibility; use each record's classification and robustness distance"
+}

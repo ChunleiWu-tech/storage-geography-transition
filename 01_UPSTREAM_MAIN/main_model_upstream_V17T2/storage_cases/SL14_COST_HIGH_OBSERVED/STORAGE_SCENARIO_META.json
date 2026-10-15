@@ -1,0 +1,374 @@
+{
+  "scenario": "SL14_COST_HIGH_OBSERVED",
+  "semantic_base_case": "Storage_NoNBCCS_NoDACCS_OnshoreWind_Solar_ExistingStorage2025",
+  "case_group": "Core",
+  "base_case": "storage_base_noNBCCS_noDACCS_onshorePV",
+  "carbon_cap_multiplier": 1.0,
+  "carbon_cap_nz_year": 0,
+  "allow_new_battery": true,
+  "allow_new_pumped_hydro": true,
+  "allow_cas": false,
+  "allow_genccs": true,
+  "allow_beccs": false,
+  "ccs_scope": "fossil_generator_CCS_allowed_BECCS_disabled_no_CDR",
+  "battery_cost_case": "NLR_2025_high",
+  "transmission_case": "TX_policy",
+  "storage_duration_case": "flexible_energy",
+  "description": "Reference-standardized legacy under high battery-cost sensitivity.",
+  "offshore_wind_in_main_case": false,
+  "nbccs_dac_genccs": "nbccs_daccs_beccs_disabled_fossil_generator_CCS_allowed",
+  "official_run": true,
+  "implementation_status": "V17_spatial_legacy_fully_wired",
+  "ne_tier": "A_publication_main",
+  "ne_role": "spatial_legacy_counterfactual",
+  "publication_use_note": "V17 Nature Energy spatial-legacy evidence chain; 2023 stock-only, operations 2028-2060, no CDR, 200 MtCO2/yr central residual cap, strict optimal and physical/legacy audits required.",
+  "ccs_geologic_cap_multiplier": 1.0,
+  "temporal_evidence_class": "2028_2060_representative_day_capacity_and_intraday_operation",
+  "publication_claim_scope": "eligible_after_strict_optimal_and_physical_audit",
+  "vre_cf_variant": "publication_calibrated",
+  "legacy_allocation_mode": "observed_standardized",
+  "legacy_cap_quantile": 0.95,
+  "legacy_story_set": "spatial_legacy_robustness",
+  "legacy_pair_id": "battery_cost_high",
+  "legacy_context": "battery_cost_high",
+  "pumped_hydro_case": null,
+  "v17_official_unique": true,
+  "v17_publication_role": "robustness_pair",
+  "v17_claim_scope": "2025 new-type storage spatial legacy under deep power-sector decarbonization; 2023 is stock-only; representative-day capacity and intraday-operation evidence; no multi-day storage or carbon-removal claim",
+  "base_case_copied_from": "C:\\Users\\吴春雷\\Desktop\\储能\\0727 - 副本\\储能_Nature_Energy_三包_0803科学升级_16加8待本地重跑_20260803\\01_UPSTREAM_16PLUS8\\main_model_upstream_V17T2\\base_model_v39\\storage_base_noNBCCS_noDACCS_onshorePV",
+  "publication_source_data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "publication_source_fingerprint_sha256": "52284ce78f0a8a39255ef11abb084d43dde877baddee15249acb4f9ee1ec86c7",
+  "publication_source_contract": {
+    "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+    "engineering_cost_sources": {
+      "battery_policy": "NLR 2025 direct annual low/mid/high complete four-hour system costs; no arbitrary multiplier or reverse calibration",
+      "ldes_2033_portfolio_sha256": "15292d6f9a5bd0c1b911440acefcf436e6cbd729a0d1a2d7eafed0495b9320b3",
+      "ldes_policy": "PNNL v2024 technology-specific discrete duration portfolio; 2033 linearly interpolated from 2030 and 2035 Point values",
+      "nlr_2025_battery_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+      "pnnl_v2024_workbook_sha256": "ef50e87012361e2a10d3df97cb61b93d38eae9255539ca76061e0c5feef501e9"
+    },
+    "latest_context_not_used_as_model_input": {
+      "as_of": "2026-03-31",
+      "new_storage_power_status": ">140 GW",
+      "reason_excluded": "No nationally closed energy and province distribution were released for that cut-off; mixing it with end-2025 energy/geography would create an incoherent stock vector."
+    },
+    "official_source_archive": {
+      "index_csv_sha256": "75d33d504d24d99bd240789f074c8febf0ad988ac13657920549690042d9d0b0",
+      "index_json_sha256": "e92bc1f35acb295eaba0f925cb86a6bd305ea4b5a64e5d63d5e5c700a83a81c5",
+      "nea_2024_renewable_monitoring_document_sha256": "b2c460a50a2bcd379b1a8c18b0b4c992fffff047dc8c5bb775aa7845ccd62449",
+      "nea_2026_storage_report_pdf_sha256": "ba6435f8790d901794c3ecd9e3eef0f5ad234a2c4bb0b72400fe3ff49e1fa4b2"
+    },
+    "publication_release_allowed": false,
+    "raw_vre_gzip_sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70",
+    "results_status": "RERUN_REQUIRED_16_PLUS_8",
+    "schema_version": "publication_source_fingerprint_v2",
+    "source_files": {
+      "../OFFICIAL_SOURCE_ARCHIVE_INDEX.csv": {
+        "sha256": "75d33d504d24d99bd240789f074c8febf0ad988ac13657920549690042d9d0b0",
+        "size_bytes": 4460
+      },
+      "../OFFICIAL_SOURCE_ARCHIVE_INDEX.json": {
+        "sha256": "e92bc1f35acb295eaba0f925cb86a6bd305ea4b5a64e5d63d5e5c700a83a81c5",
+        "size_bytes": 6973
+      },
+      "../SWITCH_CHINA_INPUT_LINEAGE_AUDIT.json": {
+        "sha256": "ecee1e5add940627b3965306871f87457edb959e32f912303896e523101ce287",
+        "size_bytes": 3005
+      },
+      "../SWITCH_CHINA_INPUT_LINEAGE_FILE_AUDIT.csv": {
+        "sha256": "5088eed95f527144b213e19bebe64bdeb4f9047114751d28901aaa1fb791dd74",
+        "size_bytes": 11391
+      },
+      "../shared_source_snapshots/NEA_2024_Renewable_Energy_Monitoring_Evaluation.doc": {
+        "sha256": "b2c460a50a2bcd379b1a8c18b0b4c992fffff047dc8c5bb775aa7845ccd62449",
+        "size_bytes": 186880
+      },
+      "../shared_source_snapshots/NEA_China_New_Energy_Storage_Development_Report_2026.pdf": {
+        "sha256": "ba6435f8790d901794c3ecd9e3eef0f5ad234a2c4bb0b72400fe3ff49e1fa4b2",
+        "size_bytes": 2371899
+      },
+      "../shared_source_snapshots/SWITCH_China_inputs_v2.0.9.zip": {
+        "sha256": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3",
+        "size_bytes": 3330846
+      },
+      "../shared_source_snapshots/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz": {
+        "sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70",
+        "size_bytes": 6209422
+      },
+      "../shared_source_snapshots/official/PNNL_ESGC_Cost_Performance_Database_v2024.xlsx": {
+        "sha256": "ef50e87012361e2a10d3df97cb61b93d38eae9255539ca76061e0c5feef501e9",
+        "size_bytes": 862630
+      },
+      "audits/vre_cf_ingest_audit.json": {
+        "sha256": "44b4468d0399cc674984ba86598a500df95d8d2b1927ecf3566fa8ed8ad035ed",
+        "size_bytes": 638
+      },
+      "audits/vre_cf_publication_calibration_audit.json": {
+        "sha256": "5896250e313b9e5d9180e40d1ac0b17c48c5e6fbfbbd996071a9bb673205955e",
+        "size_bytes": 4183
+      },
+      "base_model_v39/storage_base_template_v17.zip": {
+        "sha256": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f",
+        "size_bytes": 1765274
+      },
+      "data/processed/existing_new_storage_allocated_to_model_zones_2025.csv": {
+        "sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc",
+        "size_bytes": 10571
+      },
+      "data/processed/ldes_technology_portfolio_2033.csv": {
+        "sha256": "15292d6f9a5bd0c1b911440acefcf436e6cbd729a0d1a2d7eafed0495b9320b3",
+        "size_bytes": 1331
+      },
+      "data/processed/new_storage_existing_by_model_zone_2025_nea_scope.csv": {
+        "sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc",
+        "size_bytes": 10571
+      },
+      "data/processed/new_storage_existing_by_province_2025_nea_constrained_reconstruction.csv": {
+        "sha256": "015304681c3bbf2f15270d06742973a798e1e592201ed6adc3f13d3dc6ac7f19",
+        "size_bytes": 21886
+      },
+      "data/processed/new_storage_existing_by_province_2025_nea_scope.csv": {
+        "sha256": "015304681c3bbf2f15270d06742973a798e1e592201ed6adc3f13d3dc6ac7f19",
+        "size_bytes": 21886
+      },
+      "data/processed/new_storage_table_validation_summary.csv": {
+        "sha256": "c2127cae48378cf611fda1d80241495bb8ee7a0edd1a0f54c79513d49b0f7f2d",
+        "size_bytes": 2734
+      },
+      "data/processed/nlr_2025_battery_4h_costs.csv": {
+        "sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+        "size_bytes": 691
+      },
+      "data/processed/vre_cf_hourly_by_province.csv": {
+        "sha256": "0eb04734772c8fcbde43f3e9f8aead8aa5779ccd52518e9307e823da9f57808e",
+        "size_bytes": 59260874
+      },
+      "data/processed/vre_cf_hourly_by_province_publication_calibrated.csv": {
+        "sha256": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096",
+        "size_bytes": 59503759
+      },
+      "data/processed/vre_cf_national_benchmark_2024.csv": {
+        "sha256": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5",
+        "size_bytes": 1330
+      },
+      "data/processed/vre_cf_validation_summary_2024.csv": {
+        "sha256": "bcbfb76d9a359f72384ff021d0f6ad5193f3d49e0109628f136214347fbaa20c",
+        "size_bytes": 8178
+      },
+      "data/processed/vre_cf_validation_summary_publication_calibrated.csv": {
+        "sha256": "324f4da9ed05a7aee1acec6eb16c22c561b252db6256df16afda751fc9ad7fa1",
+        "size_bytes": 9508
+      },
+      "data/raw/vre_cf/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz": {
+        "sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70",
+        "size_bytes": 6209422
+      },
+      "data/source_registry/data_source_registry.csv": {
+        "sha256": "0ae137d75b231182e94c3cc5ed26b6343db040f2bcb35a418d06aa74113385c1",
+        "size_bytes": 5769
+      },
+      "data/source_registry/nea_new_storage_national_regional_constraints_2025.csv": {
+        "sha256": "2ec2a59d89161685ee5d86d35f6ebe0f973572203cdfed29fef8b9d8003abb31",
+        "size_bytes": 3744
+      },
+      "data/source_registry/nea_new_storage_provincial_constraints_2025.csv": {
+        "sha256": "53438b21d1f97cdb5e79a5ef8f6c28a855c8884e5c0cb78f176d04091ed536bb",
+        "size_bytes": 4129
+      },
+      "data/source_registry/nea_wind_capacity_month_end_2024.csv": {
+        "sha256": "3824d2aa1a24f0ee260022ad8188ed6f0efb89d2ea1ba09dec744ea9ed028acd",
+        "size_bytes": 2394
+      },
+      "data/source_registry/nea_wind_generation_utilization_2024.csv": {
+        "sha256": "9771fd4cf2abd92689488d95d421172589be9129f8bd5a403811db49349507c5",
+        "size_bytes": 1406
+      },
+      "data/source_registry/provincial_storage_source_ledger_2025.csv": {
+        "sha256": "e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862",
+        "size_bytes": 25971
+      }
+    },
+    "storage_stock": {
+      "cutoff_date": "2025-12-31",
+      "model_input_interpretation": "NEA-constrained 31-province reconstruction with exact national common duration; not an official exact provincial census",
+      "national_energy_mwh": 351120.0,
+      "national_power_mw": 135930.0,
+      "province_input_sha256": "015304681c3bbf2f15270d06742973a798e1e592201ed6adc3f13d3dc6ac7f19",
+      "province_ledger_sha256": "e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862",
+      "zone_input_sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc"
+    },
+    "switch_china": {
+      "lineage_interpretation": "foundational source snapshot plus explicit study-derived aggregation/extension layer; no byte-identical claim",
+      "raw_inputs_version": "2.0.9",
+      "raw_inputs_zip_sha256": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3",
+      "study_template_sha256": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f"
+    },
+    "wind_calibration": {
+      "audit_sha256": "5896250e313b9e5d9180e40d1ac0b17c48c5e6fbfbbd996071a9bb673205955e",
+      "benchmark_sha256": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5",
+      "benchmark_year": 2024,
+      "calibrated_profile_sha256": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096",
+      "final_wind_generation_twh": 996.8,
+      "integrated_average_capacity_gw": 468.6075000000001,
+      "method": "NEA-final national total-wind anchor; monotonic level correction of supplied province-level onshore profile",
+      "raw_processed_profile_sha256": "0eb04734772c8fcbde43f3e9f8aead8aa5779ccd52518e9307e823da9f57808e",
+      "scope_lock": "national proxy only; not province validation and not an official onshore-only statistic",
+      "target_cf_8760": 0.2532072175254301,
+      "utilization_rate_fraction": 0.959
+    }
+  },
+  "scope_lock": "V17: NBCCS/DACCS disabled; offshore wind excluded; onshore wind + solar CF applied; generator CCS follows scenario flags; only unique publication scenarios are run; long-duration and unvalidated CAS cases remain diagnostic.",
+  "v17_mutations_applied": [
+    {
+      "name": "spatial_storage_legacy",
+      "mode": "observed_standardized",
+      "cap_quantile": 0.95,
+      "national_power_target_mw": 135930.0,
+      "national_energy_target_mwh": 351120.0,
+      "identification": "same national legacy MW and MWh; spatial allocation changes"
+    },
+    {
+      "name": "battery_cost_case",
+      "case": "NLR_2025_high",
+      "storage_techs": "Battery only",
+      "source": "Cole, Ramasamy and Turan (2025), NREL/TP-6A40-93281, Appendix Table 2",
+      "source_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+      "fixed_duration_h": 4.0,
+      "direct_annual_cost_trajectory": true,
+      "multiplicative_factor": null,
+      "reverse_calibration_used": false
+    }
+  ],
+  "v17_prepared_case_validation": {
+    "scenario": "SL14_COST_HIGH_OBSERVED",
+    "case_dir": "C:\\Users\\吴春雷\\Desktop\\储能\\0727 - 副本\\储能_Nature_Energy_三包_0803科学升级_16加8待本地重跑_20260803\\01_UPSTREAM_16PLUS8\\main_model_upstream_V17T2\\storage_cases\\SL14_COST_HIGH_OBSERVED",
+    "pass": true,
+    "checks": [
+      {
+        "check": "required_input_files",
+        "pass": true,
+        "detail": "[]"
+      },
+      {
+        "check": "legacy_policy_file_present",
+        "pass": true,
+        "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0727 - 副本\\储能_Nature_Energy_三包_0803科学升级_16加8待本地重跑_20260803\\01_UPSTREAM_16PLUS8\\main_model_upstream_V17T2\\storage_cases\\SL14_COST_HIGH_OBSERVED\\inputs\\legacy_storage_policy.csv"
+      },
+      {
+        "check": "legacy_policy_required_columns",
+        "pass": true,
+        "detail": "[]"
+      },
+      {
+        "check": "legacy_policy_32_unique_zones",
+        "pass": true,
+        "detail": "{'rows': 32, 'zones': 32}"
+      },
+      {
+        "check": "legacy_policy_single_mode",
+        "pass": true,
+        "detail": "['observed_standardized']"
+      },
+      {
+        "check": "legacy_zone_caps_nonnegative",
+        "pass": true,
+        "detail": "479.8877152019188"
+      },
+      {
+        "check": "legacy_optimized_target_feasible_under_caps",
+        "pass": true,
+        "detail": "{'cap_sum_mw': 544822.6945485384, 'target_mw': 135930.0}"
+      },
+      {
+        "check": "legacy_fixed_predetermined_32_rows",
+        "pass": true,
+        "detail": "32"
+      },
+      {
+        "check": "legacy_fixed_power_national_closure",
+        "pass": true,
+        "detail": "{'pred': 135930.0, 'target': 135930.0}"
+      },
+      {
+        "check": "legacy_fixed_energy_national_closure",
+        "pass": true,
+        "detail": "{'pred': 351119.99999999994, 'target': 351120.0}"
+      },
+      {
+        "check": "legacy_2023_power_and_energy_capex_are_sunk",
+        "pass": true,
+        "detail": "{'rows': 32, 'max_power_cost': 0.0, 'max_energy_cost': 0.0}"
+      },
+      {
+        "check": "representative_timepoint_count_504",
+        "pass": true,
+        "detail": "504"
+      },
+      {
+        "check": "timeseries_count_84",
+        "pass": true,
+        "detail": "84"
+      },
+      {
+        "check": "six_timepoints_per_representative_day",
+        "pass": true,
+        "detail": "[np.float64(6.0)]"
+      },
+      {
+        "check": "four_hour_timepoints",
+        "pass": true,
+        "detail": "[np.int64(4)]"
+      },
+      {
+        "check": "operations_start_in_2028",
+        "pass": true,
+        "detail": "[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+      },
+      {
+        "check": "no_2023_operational_timeseries",
+        "pass": true,
+        "detail": "[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+      },
+      {
+        "check": "representative_weights_positive",
+        "pass": true,
+        "detail": "{2028: 43800.0, 2033: 43800.0, 2038: 43800.0, 2043: 43800.0, 2048: 43800.0, 2053: 43800.0, 2058: 43800.0}"
+      },
+      {
+        "check": "seven_operational_planning_periods",
+        "pass": true,
+        "detail": "[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+      },
+      {
+        "check": "deep_decarbonization_final_cap_matches_scenario",
+        "pass": true,
+        "detail": "{'input_final_cap': 200000000.0, 'solver_multiplier': 1.0, 'effective_expected_final_cap': 200000000.0}"
+      },
+      {
+        "check": "official_storage_scenario_has_no_cdr",
+        "pass": true,
+        "detail": "{'allow_beccs': False, 'NBCCS': False, 'DACCS': False}"
+      },
+      {
+        "check": "pumped_hydro_ceiling_above_predetermined_floor",
+        "pass": true,
+        "detail": "[]"
+      },
+      {
+        "check": "generation_capacity_limit_uses_explicit_unset_sentinel",
+        "pass": true,
+        "detail": "{'missing_or_blank': 0}"
+      },
+      {
+        "check": "nonnegative_generation_capacity_limits",
+        "pass": true,
+        "detail": "0.0"
+      },
+      {
+        "check": "capacity_factors_in_unit_interval",
+        "pass": true,
+        "detail": "{'min': 0.0, 'max': 1.0}"
+      }
+    ]
+  }
+}

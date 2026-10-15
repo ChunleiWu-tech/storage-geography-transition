@@ -1,0 +1,39 @@
+{
+  "version": "04_FUTURE_STORAGE_PLANNING_V18_RELEASE_GATE_R1",
+  "date": "2026-08-09",
+  "status": "STATIC_AND_PREPARED_PASS_SOLVER_NOT_RUN",
+  "package_role": "additive_04_future_storage_planning; 01/02/03 frozen parents are not modified",
+  "static_science": {
+    "status": "PASS",
+    "version": "V18_STATIC_SCIENCE_AUDIT_R3",
+    "checks_passed": 23,
+    "checks_total": 23
+  },
+  "prepared_case_count": 16,
+  "legacy_immutability": {
+    "status": "PASS",
+    "version": "V18_V17_LEGACY_IMMUTABILITY_CROSSCHECK_R2",
+    "scenarios_checked": 16
+  },
+  "julia_static_syntax": {
+    "passed": 26,
+    "total": 26
+  },
+  "empty_collection_safety": {
+    "passed": 8,
+    "total": 8
+  },
+  "numerical_stability_static": {
+    "passed": 25,
+    "total": 25
+  },
+  "solver_runtime_available_in_build_container": false,
+  "solver_certified_16of16": false,
+  "solver_status_note": "Not run in build container; local Julia/Gurobi execution is mandatory before numerical V18 results are treated as publication outputs.",
+  "core_sha256": "1469b3168e5040486b091732bc58782d69501f014d5579bc1a638a920ec99eab",
+  "portfolio_sha256": "d4b3d736304e84ae71b926db0325244af439a1505bbd4a9194c14cb1a291b8f0",
+  "nrel_4h_cost_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+  "pnnl_selected_slice_sha256": "3fa9fc8ffae7fa0fa70250f0724f8088c9bdea18d2d0b7e3b9d3943f70998170",
+  "nrel_2025_report_sha256": "90a33468917abf4284fae5296df6c85a87a52594c1da4acf3a8783fde558e150",
+  "pnnl_v2024_workbook_sha256": "ef50e87012361e2a10d3df97cb61b93d38eae9255539ca76061e0c5feef501e9"
+}

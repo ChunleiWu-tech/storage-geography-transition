@@ -1,0 +1,43 @@
+{
+  "version": "V17T2R6R12_HF7_RESTRICTED_FACE_20260817",
+  "scientific_change": false,
+  "target_scenarios": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OBSERVED",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "files": [
+    {
+      "path": "base_model_v39/full8760_hf4_objective_continuation.jl",
+      "sha256": "5F8368BDEF32EA545B87233097D6F0D344C08D2623448A8FCC4F072D77BC6235"
+    },
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "sha256": "4360F2C4B24DD9AF867228B0E5D035A981DFCEDADE290C0CF4CD779617B351F2"
+    },
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "sha256": "89F3518092A503DAA8B8A113D87758583AE09A0CA9C7E8D588E73E9DC9D4B7A7"
+    },
+    {
+      "path": "tools/run_hf7_unresolved_three_parallel.py",
+      "sha256": "6FE0E4A0562ED60F687F4FAE52CC5E64C1890667AE0A208FD7597A265A9202A4"
+    },
+    {
+      "path": "tools/check_v17t2r6r12_hf7_restricted_face.py",
+      "sha256": "BC3275972A0B05F99961409D5A2F8B7FDCA210EADD2A106B7DC43EF0707E5369"
+    },
+    {
+      "path": "RUN_V17T2R6R12_HF7_8760_UNRESOLVED_3X15.bat",
+      "sha256": "D69157B46FF4D5E3E6E2F6DD7D5AAC7FAF8BA1DC115EC66B122D446BDB4E9922"
+    },
+    {
+      "path": "CHECK_V17T2R6R12_HF7_8760.bat",
+      "sha256": "F6B50AF34606524AB3C72EC69C246E77FE2E10144064E412F9DEB171EE7D17E6"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R12_HF7_RESTRICTED_FACE.md",
+      "sha256": "BBCF68EDBD715A816FD0BF72282CB65843066AE3C37F7BEC89F48363CC34F4F6"
+    }
+  ]
+}

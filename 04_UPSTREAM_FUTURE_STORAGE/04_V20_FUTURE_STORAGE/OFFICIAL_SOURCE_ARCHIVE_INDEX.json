@@ -1,0 +1,105 @@
+{
+  "version": "V20_OFFICIAL_SOURCE_ARCHIVE_INDEX_R2",
+  "entries": [
+    {
+      "source_id": "NLR_BESS_2025",
+      "institution": "National Laboratory of the Rockies / former NREL",
+      "title": "Cost Projections for Utility-Scale Battery Storage: 2025 Update",
+      "year": 2025,
+      "archive_path": "shared_source_snapshots/official/NLR_Cost_Projections_Utility_Scale_Battery_Storage_2025_Update.pdf",
+      "sha256": "90a33468917abf4284fae5296df6c85a87a52594c1da4acf3a8783fde558e150",
+      "role": "Direct evidence for LFP 4 h annual trajectory in evidence-direct primary pathway; 2030 mid anchor for equal-horizon sensitivity",
+      "claim_boundary": "Does not provide VRFB/PSH learning trajectories or province-specific siting potential."
+    },
+    {
+      "source_id": "PNNL_ESGC_V2024",
+      "institution": "Pacific Northwest National Laboratory",
+      "title": "Energy Storage Cost and Performance Database v2024",
+      "year": 2024,
+      "archive_path": "shared_source_snapshots/official/PNNL_ESGC_Cost_Performance_Database_v2024.xlsx",
+      "sha256": "ef50e87012361e2a10d3df97cb61b93d38eae9255539ca76061e0c5feef501e9",
+      "role": "Direct 2030 Point / 100 MW benchmark for VRFB and PSH; CAES/H2 pressure-test benchmarks only",
+      "claim_boundary": "Gravitational and hydrogen values remain older estimates in v2024; CAES/H2 lack province-level geology/resource ledgers and cannot support headline provincial siting claims."
+    },
+    {
+      "source_id": "DOE_SI2030_FLOW_2023",
+      "institution": "U.S. Department of Energy, Office of Electricity",
+      "title": "Findings from Storage Innovations 2030: Flow Batteries",
+      "year": 2023,
+      "archive_path": "data/source_documents/DOE_SI2030_Flow_Batteries_2023.pdf",
+      "sha256": "bf7e3af68facfeabe84b9ee335386b05a1ce928a3d2dcddce74a461f68cfba11",
+      "role": "Evidence context and claim boundary only; supports why flow batteries remain a plausible LDES design option",
+      "claim_boundary": "SI2030 LCOS/innovation portfolio results combine multiple cost/performance mechanisms and are not used as a direct CAPEX multiplier."
+    },
+    {
+      "source_id": "DOE_SI2030_PSH_2023",
+      "institution": "U.S. Department of Energy, Office of Electricity",
+      "title": "Findings from Storage Innovations 2030: Pumped Storage Hydropower",
+      "year": 2023,
+      "archive_path": "data/source_documents/DOE_SI2030_PSH_2023.pdf",
+      "sha256": "aa9fcf219ee5c4b7e389a071ada84ecc6f8ef260fd62faf57950f19918b83ef6",
+      "role": "Evidence context and performance cross-check; V20 still enforces inherited zone PSH resource ceiling",
+      "claim_boundary": "PSH cost/resource feasibility is site-specific; model-zone result is not station-level engineering siting."
+    },
+    {
+      "source_id": "DOE_LDES_SUMMARY_2024",
+      "institution": "U.S. Department of Energy, Office of Electricity",
+      "title": "Achieving the Promise of Low-Cost Long Duration Energy Storage",
+      "year": 2024,
+      "archive_path": "data/source_documents/DOE_LDES_Summary_2024.pdf",
+      "sha256": "abdedc8070b51ceaaaa9123edc815aed9884ce1f343bc6ffef724c676a49658d",
+      "role": "Evidence tier firewall only; documents innovation upside but is not a deterministic deployment-cost forecast",
+      "claim_boundary": "Report explicitly addresses innovation/RD&D pathways; V20 does not treat LCOS reduction as a whole-system CAPEX learning factor."
+    },
+    {
+      "source_id": "CNESA_2025",
+      "institution": "China Energy Storage Alliance",
+      "title": "China energy-storage industry/data source snapshot packaged with V19",
+      "year": 2025,
+      "archive_path": "data/source_documents/CNESA_2025_storage_report.pdf",
+      "sha256": "e782b1012edf48255b470281e68bc197ede3590e20bd8013340f961d9c477224",
+      "role": "Context and provenance; no unsupported technology learning extrapolation",
+      "claim_boundary": "Not used to infer generic post-2030 technology cost declines."
+    },
+    {
+      "source_id": "CHINA_PSH_2024",
+      "institution": "China hydropower / pumped-storage industry report source snapshot",
+      "title": "Pumped-storage industry development report 2024",
+      "year": 2024,
+      "archive_path": "data/source_documents/China_PSH_Industry_Report_2024.pdf",
+      "sha256": "ebc0a8a851c2362580fabe044cbd757d67a3222277fc38e23ed9898129380aff",
+      "role": "Domestic context/resource provenance only",
+      "claim_boundary": "Does not replace site-level PSH feasibility or create generic cost learning curves."
+    },
+    {
+      "source_id": "DOE_SI2030_METHODOLOGY_2023",
+      "institution": "U.S. Department of Energy, Office of Electricity",
+      "title": "Technology Strategy Assessment Methodology: Storage Innovations 2030 Technical Process",
+      "year": 2023,
+      "archive_path": "data/source_documents/DOE_SI2030_Methodology_2023.pdf",
+      "sha256": "ef30ac0c7129c092db040929de61c07afe306c3cb744d0a8dc1f5b6c3cc16006",
+      "role": "Evidence-methodology firewall only; not a deterministic CAPEX forecast and not a numerical model-input trajectory",
+      "claim_boundary": "RD&D pathway methodology is used to interpret innovation evidence; it does not justify converting LCOS or innovation targets into BAU CAPEX multipliers."
+    },
+    {
+      "source_id": "DOE_SI2030_CAES_2023",
+      "institution": "U.S. Department of Energy, Office of Electricity",
+      "title": "Findings from Storage Innovations 2030: Compressed Air Energy Storage",
+      "year": 2023,
+      "archive_path": "data/source_documents/DOE_SI2030_CAES_2023.pdf",
+      "sha256": "1b838ba1d85e60f255609c60012dbd1a23d8e4486eebfd48193fbbb062ffc32b",
+      "role": "Pressure-test evidence context only; not used as a direct CAPEX learning curve or province-level resource supply curve",
+      "claim_boundary": "CAES requires location/geology-specific feasibility; without a 32-zone geologic resource ledger V20 cannot make headline provincial deployment claims."
+    },
+    {
+      "source_id": "DOE_SI2030_HYDROGEN_2023",
+      "institution": "U.S. Department of Energy, Office of Electricity",
+      "title": "Findings from Storage Innovations 2030: Bidirectional Hydrogen Storage",
+      "year": 2023,
+      "archive_path": "data/source_documents/DOE_SI2030_Hydrogen_2023.pdf",
+      "sha256": "0b376e69b29e9528e746a69cc13ddc08470c4984c3a8b9bf43735b82786fd50e",
+      "role": "Pressure-test evidence context only; not used as a direct CAPEX learning curve or province-level hydrogen-resource prescription",
+      "claim_boundary": "Hydrogen LCOS depends strongly on electricity and infrastructure assumptions; V20 does not convert SI2030 innovation results into deterministic BAU CAPEX or provincial siting claims."
+    }
+  ]
+}

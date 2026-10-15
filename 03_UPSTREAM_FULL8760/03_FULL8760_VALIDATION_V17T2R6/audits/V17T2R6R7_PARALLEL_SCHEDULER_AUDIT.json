@@ -1,0 +1,23 @@
+{
+  "version": "V17T2R6R7_FULL8760",
+  "status": "PASS",
+  "runner_sha256": "3937df326da9d53967e56e4ac0fe37278b52c6b1e742e2a3fcf1af1734dcc646",
+  "checks": {
+    "wave_membership_exact": true,
+    "maximum_simultaneous_workers_exactly_two": true,
+    "wave2_waits_for_wave1_completion": true,
+    "result_order_deterministic": true,
+    "parallel_cap_rejects_three": true
+  },
+  "wave_names": [
+    [
+      "TY2033_FULL8760_OBSERVED",
+      "TY2033_FULL8760_OPTIMAL"
+    ],
+    [
+      "TY2033_FULL8760_LDES_OBSERVED",
+      "TY2033_FULL8760_LDES_OPTIMAL"
+    ]
+  ],
+  "max_active_observed": 2
+}

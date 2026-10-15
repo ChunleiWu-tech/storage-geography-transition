@@ -1,0 +1,30 @@
+{
+  "version": "V17T4R3_STANDALONE_FINAL_20260808",
+  "science_changed": false,
+  "model_or_input_changed": false,
+  "official_scenario_count": 16,
+  "official_scenario_unique_count": 16,
+  "lineage_current_policy_filename_fix": true,
+  "lineage_no_active_legacy_filename_reference": true,
+  "robust_runner_present": true,
+  "robust_clean_launcher_present": true,
+  "robust_resume_launcher_present": true,
+  "empirical_hard_pair_names_present": true,
+  "empirical_hard_pair_uses_scaled_barrier": true,
+  "empirical_hard_pair_no_model_relaxation_tokens": true,
+  "static_validation_observed_in_build": {
+    "python_ast_parse": "PASS",
+    "audit_windows_launchers_v17": "175/175 PASS",
+    "audit_v17t2_sl10_rescue": "26/26 PASS",
+    "check_v17_ne_config": "64/64 PASS",
+    "audit_julia_empty_collection_safety": "8/8 PASS",
+    "audit_julia_syntax_v17": "26/26 PASS",
+    "audit_numerical_stability_v17": "25/25 PASS",
+    "audit_objective_certificate_v17": "21/21 PASS",
+    "audit_v17_release_policy": "12/12 PASS",
+    "check_v17_run_readiness": "26/26 PASS"
+  },
+  "gurobi_solve_executed_in_build_environment": false,
+  "note": "Static package validation only; full Gurobi recomputation remains a local Windows run.",
+  "all_static_checks_pass": true
+}

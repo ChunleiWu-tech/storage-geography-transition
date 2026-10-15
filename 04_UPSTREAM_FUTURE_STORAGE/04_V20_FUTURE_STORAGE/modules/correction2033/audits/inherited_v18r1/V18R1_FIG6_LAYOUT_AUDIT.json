@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "version": "V18R1",
+  "figure": "Fig6_future_correction_of_storage_spatial_lockin",
+  "synthetic_render_test_only": true,
+  "scientific_result_values_used": false,
+  "panel_count": 6,
+  "native_width_mm": 180.0,
+  "layout": "3x2",
+  "formats_tested": [
+    "PDF",
+    "SVG",
+    "PNG"
+  ],
+  "png_dpi": 600,
+  "png_pixel_dimensions": [
+    4251,
+    4470
+  ],
+  "visual_review": "PASS after shortening panel-f category labels and adding right margin to panel-b annotations",
+  "publication_style": {
+    "font_policy": "Arial-first with controlled fallbacks",
+    "panel_labels": "a-f upper-left",
+    "suptitle": false,
+    "legend_policy": "top/direct labels where possible",
+    "grid_policy": "low contrast",
+    "zero_information_filtering": true
+  },
+  "note": "Synthetic test outputs are not shipped. Final Fig. 6 can be generated only from strict promoted V18R1 results."
+}

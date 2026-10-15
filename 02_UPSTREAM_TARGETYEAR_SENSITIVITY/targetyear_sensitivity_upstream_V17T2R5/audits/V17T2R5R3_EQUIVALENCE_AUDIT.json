@@ -1,0 +1,62 @@
+{
+  "version": "V17T2R5R3_EXACT_HOURLY_COORDINATE_REDUCTION_20260813",
+  "status": "PASS",
+  "errors": [],
+  "checks": {
+    "model::basename(case_dir) == \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "model::\"V17T2R5R3_equivalent_hourly_coordinate_projection_v1\"": true,
+    "model::CCS_GEN_TPS = R3_HOURLY_COORDINATE_PROJECTION_ACTIVE ?": true,
+    "model::STARTUP_SHUTDOWN_GENS = R3_HOURLY_COORDINATE_PROJECTION_ACTIVE ?": true,
+    "model::dispatch_gen_ccs_or_zero(g, t)": true,
+    "model::dispatch_gen_ccs_value_or_zero(g, t)": true,
+    "model::startup_gen_capacity_value_or_zero(g, t)": true,
+    "model:::algebraic_reduction_preserves_scientific_inputs => [true]": true,
+    "model:::algebraic_reduction_preserves_objective_and_projected_feasible_set => [true]": true,
+    "model:::total_omitted_hourly_columns": true,
+    "model::const SOLVER_FEASIBILITY_TOL = 1.0e-7": true,
+    "model::const SOLVER_OPTIMALITY_TOL = 1.0e-7": true,
+    "model::const SOLVER_BAR_CONV_TOL = 1.0e-8": true,
+    "model::STORAGE_ENERGY_VARIABLE_BLD_YRS": true,
+    "model::PROJECTED_LEGACY_STORAGE_ENERGY_BLD_YRS": true,
+    "model::function storage_energy_build(g, bld_yr)": true,
+    "forbidden_direct_export_absent:::DispatchGenCCS_MW => [val_DispatchGenCCS[(g, t)]": true,
+    "forbidden_direct_export_absent:::StartupGenCapacity_OM_Costs_per_period => [gen_startup_om[g] * val_StartupGenCapacity[(g, t)]": true,
+    "derived_reduction_counts": {
+      "generator_count": 371,
+      "representative_timepoint_count": 288,
+      "ccs_generator_count": 96,
+      "startup_shutdown_active_generator_count": 96,
+      "full_gen_timepoint_count": 106848,
+      "active_ccs_gen_timepoint_count": 27648,
+      "active_startup_shutdown_gen_timepoint_count": 27648,
+      "omitted_fixed_zero_ccs_columns": 158400,
+      "omitted_objective_neutral_startup_shutdown_columns": 158400,
+      "total_omitted_hourly_columns": 316800
+    },
+    "legacy_projection": {
+      "project_count": 32,
+      "identity_residual_mwh": 0.0,
+      "identity_tolerance_mwh": 1e-06
+    },
+    "scenario_lock": {
+      "scenario": "TY2033_CHRONO_1H_OPTIMAL",
+      "legacy_allocation_mode": "optimized_reallocation",
+      "time_resolution_h": 1,
+      "storage_chronology_mode": "monthly_linked"
+    },
+    "runner::\"r3_reduced\": R3_REDUCED_ROUTE": true,
+    "runner::08_targetyear_r3_hourly_reduced_scaled_barrier": true,
+    "runner::09_targetyear_r3_hourly_reduced_dual_simplex": true,
+    "runner::args.route in {\"r3_reduced\", \"r4_continuation\", \"r5_continuation\"} and args.scenario != \"TY2033_CHRONO_1H_OPTIMAL\"": true,
+    "runner::\"total_omitted_hourly_columns\": 316800": true,
+    "launcher::--scenario TY2033_CHRONO_1H_OPTIMAL": true,
+    "launcher::--route r3_reduced": true,
+    "launcher::--skip-prepare": true,
+    "launcher::--force-rerun": true
+  },
+  "scientific_inputs_changed": false,
+  "solver_tolerances_relaxed": false,
+  "publication_gates_relaxed": false,
+  "other_seven_cases_rerun": false,
+  "dynamic_julia_gurobi_solve_executed": false
+}

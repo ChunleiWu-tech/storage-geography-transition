@@ -1,0 +1,44 @@
+{
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "status": "PASS",
+  "inventory_interpretation": "NEA-constrained model reconstruction; not an official exact 31-province inventory",
+  "national_power_mw": 135930.0,
+  "national_energy_mwh": 351120.0,
+  "national_average_duration_h": 2.583094239682189,
+  "province_rows": 31,
+  "model_zone_rows": 32,
+  "exact_province_count": 5,
+  "official_threshold_province_count": 7,
+  "model_reconstructed_province_count": 19,
+  "files": {
+    "province": {
+      "path": "data/processed/new_storage_existing_by_province_2025_nea_constrained_reconstruction.csv",
+      "sha256": "015304681c3bbf2f15270d06742973a798e1e592201ed6adc3f13d3dc6ac7f19"
+    },
+    "zone": {
+      "path": "data/processed/existing_new_storage_allocated_to_model_zones_2025.csv",
+      "sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc"
+    },
+    "ledger": {
+      "path": "data/source_registry/provincial_storage_source_ledger_2025.csv",
+      "sha256": "e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862"
+    },
+    "validation": {
+      "path": "data/processed/new_storage_table_validation_summary.csv",
+      "sha256": "c2127cae48378cf611fda1d80241495bb8ee7a0edd1a0f54c79513d49b0f7f2d"
+    },
+    "prior": {
+      "path": "data/raw/storage/provincial_storage_prior_user_compiled_2025.csv",
+      "sha256": "9562b8455664d0fe1c74b31a206080b87f09dc4b52dcd1a19d9d124a4e20356f"
+    },
+    "regional_constraints": {
+      "path": "data/source_registry/nea_new_storage_national_regional_constraints_2025.csv",
+      "sha256": "2ec2a59d89161685ee5d86d35f6ebe0f973572203cdfed29fef8b9d8003abb31"
+    },
+    "provincial_constraints": {
+      "path": "data/source_registry/nea_new_storage_provincial_constraints_2025.csv",
+      "sha256": "53438b21d1f97cdb5e79a5ef8f6c28a855c8884e5c0cb78f176d04091ed536bb"
+    }
+  },
+  "results_status": "RERUN_REQUIRED_16_PLUS_8"
+}

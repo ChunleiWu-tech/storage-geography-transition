@@ -1,0 +1,15 @@
+{
+  "case_dir": "C:\\Users\\吴春雷\\Desktop\\储能\\0727 - 副本\\储能_Nature_Energy_三包_0803科学升级_16加8待本地重跑_20260803\\01_UPSTREAM_16PLUS8\\main_model_upstream_V17T2\\base_model_v39\\storage_base_noNBCCS_noDACCS_onshorePV",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "allocation_file": "data/processed/existing_new_storage_allocated_to_model_zones_2025.csv",
+  "allocation_sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc",
+  "publication_source_fingerprint_sha256": "52284ce78f0a8a39255ef11abb084d43dde877baddee15249acb4f9ee1ec86c7",
+  "existing_storage_removed": false,
+  "power_scale": 1.0,
+  "energy_scale": 1.0,
+  "battery_power_added_mw": 135930.0,
+  "battery_energy_added_mwh": 351119.99999999994,
+  "rows_added": 32,
+  "input_scope": "NEA-constrained provincial power reconstruction; common national duration; pumped hydro excluded",
+  "province_values_official_31_row_inventory": false
+}

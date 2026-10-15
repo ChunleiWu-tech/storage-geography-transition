@@ -1,0 +1,2 @@
+representative_timepoints,operational_period_count,dispatch_block_hours,representative_days_per_period,soc_linkage,supported_claim,unsupported_claim
+504,7,4.0,12,intraday cyclic within each representative day,"capacity expansion, annual aggregate accounting and intraday representative-block feasibility","chronological multi-day, weekly or seasonal shifting and unique operating-mechanism attribution"

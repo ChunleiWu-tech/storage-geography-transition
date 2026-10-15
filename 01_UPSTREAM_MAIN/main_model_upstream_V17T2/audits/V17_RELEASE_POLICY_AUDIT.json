@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "version": "V17",
+    "checks": 12,
+    "passed": 12,
+    "all_pass": true
+  },
+  "checks": [
+    {
+      "check": "official_default",
+      "pass": true,
+      "detail": "formal default"
+    },
+    {
+      "check": "official_source",
+      "pass": true,
+      "detail": "source label"
+    },
+    {
+      "check": "single_stage1_source_label",
+      "pass": true,
+      "detail": "all certified stage-1 points use one canonical source label"
+    },
+    {
+      "check": "release_gate_stage1",
+      "pass": true,
+      "detail": "formal gate"
+    },
+    {
+      "check": "cleanup_diagnostic_nonblocking",
+      "pass": true,
+      "detail": "separate diagnostic state"
+    },
+    {
+      "check": "no_cleanup_official_fallback",
+      "pass": true,
+      "detail": "official route tree"
+    },
+    {
+      "check": "stage1_solver_fallbacks",
+      "pass": true,
+      "detail": "controlled alternatives"
+    },
+    {
+      "check": "gross_dispatch_disclosure",
+      "pass": true,
+      "detail": "interpretation restriction"
+    },
+    {
+      "check": "policy_file_exported",
+      "pass": true,
+      "detail": "machine-readable policy"
+    },
+    {
+      "check": "restricted_files_labeled",
+      "pass": true,
+      "detail": "row labels"
+    },
+    {
+      "check": "preflight_policy_enforced",
+      "pass": true,
+      "detail": "downstream enforcement"
+    },
+    {
+      "check": "docs_disclose_limits",
+      "pass": true,
+      "detail": "human-readable interpretation boundary"
+    }
+  ]
+}

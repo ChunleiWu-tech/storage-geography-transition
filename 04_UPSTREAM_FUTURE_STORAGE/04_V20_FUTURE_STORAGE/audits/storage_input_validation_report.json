@@ -1,0 +1,398 @@
+{
+  "status": "PASS",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "checks": [
+    {
+      "check": "publication_source_fingerprint_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\audits\\PUBLICATION_SOURCE_FINGERPRINT.json"
+    },
+    {
+      "check": "data_version",
+      "passed": true,
+      "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+    },
+    {
+      "check": "switch_china_raw_snapshot_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\shared_source_snapshots\\SWITCH_China_inputs_v2.0.9.zip"
+    },
+    {
+      "check": "switch_china_raw_snapshot_sha256",
+      "passed": true,
+      "detail": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3"
+    },
+    {
+      "check": "raw_vre_snapshot_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\shared_source_snapshots\\hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz"
+    },
+    {
+      "check": "raw_vre_snapshot_sha256",
+      "passed": true,
+      "detail": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70"
+    },
+    {
+      "check": "study_template_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\base_model_v39\\storage_base_template_v17.zip"
+    },
+    {
+      "check": "study_template_sha256",
+      "passed": true,
+      "detail": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f"
+    },
+    {
+      "check": "switch_china_lineage_audit_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\SWITCH_CHINA_INPUT_LINEAGE_AUDIT.json"
+    },
+    {
+      "check": "switch_china_declared_version",
+      "passed": true,
+      "detail": "2.0.9"
+    },
+    {
+      "check": "switch_china_no_false_byte_identity_claim",
+      "passed": true,
+      "detail": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+    },
+    {
+      "check": "province_reconstruction_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\processed\\new_storage_existing_by_province_2025_nea_constrained_reconstruction.csv"
+    },
+    {
+      "check": "zone_storage_input_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\processed\\existing_new_storage_allocated_to_model_zones_2025.csv"
+    },
+    {
+      "check": "province_source_ledger_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\source_registry\\provincial_storage_source_ledger_2025.csv"
+    },
+    {
+      "check": "regional_constraints_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\source_registry\\nea_new_storage_national_regional_constraints_2025.csv"
+    },
+    {
+      "check": "province_constraints_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\source_registry\\nea_new_storage_provincial_constraints_2025.csv"
+    },
+    {
+      "check": "province_required_columns",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "province_count_31",
+      "passed": true,
+      "detail": "(31, 31)"
+    },
+    {
+      "check": "province_version_lock",
+      "passed": true,
+      "detail": "{'NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2'}"
+    },
+    {
+      "check": "province_power_closure",
+      "passed": true,
+      "detail": "135930.0"
+    },
+    {
+      "check": "province_standardized_energy_closure",
+      "passed": true,
+      "detail": "351120.0"
+    },
+    {
+      "check": "province_compiled_duration_sensitivity_energy_closure",
+      "passed": true,
+      "detail": "351120.00000000006"
+    },
+    {
+      "check": "province_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "province_interpretation_lock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "six_region_coverage",
+      "passed": true,
+      "detail": "(['Central', 'East', 'North', 'Northeast', 'Northwest', 'South'], ['Central', 'East', 'North', 'Northeast', 'Northwest', 'South'])"
+    },
+    {
+      "check": "region_North_power_closure",
+      "passed": true,
+      "detail": "44131.0"
+    },
+    {
+      "check": "region_Northwest_power_closure",
+      "passed": true,
+      "detail": "38382.0"
+    },
+    {
+      "check": "region_East_power_closure",
+      "passed": true,
+      "detail": "19572.641221374044"
+    },
+    {
+      "check": "region_South_power_closure",
+      "passed": true,
+      "detail": "17805.666666666664"
+    },
+    {
+      "check": "region_Central_power_closure",
+      "passed": true,
+      "detail": "15087.24427480916"
+    },
+    {
+      "check": "region_Northeast_power_closure",
+      "passed": true,
+      "detail": "951.4478371501268"
+    },
+    {
+      "check": "official_exact_Inner_Mongolia",
+      "passed": true,
+      "detail": "20260.0"
+    },
+    {
+      "check": "official_exact_Xinjiang",
+      "passed": true,
+      "detail": "18800.0"
+    },
+    {
+      "check": "official_exact_Shandong",
+      "passed": true,
+      "detail": "11210.0"
+    },
+    {
+      "check": "official_exact_Gansu",
+      "passed": true,
+      "detail": "8405.8"
+    },
+    {
+      "check": "official_exact_Guizhou",
+      "passed": true,
+      "detail": "2450.0"
+    },
+    {
+      "check": "official_threshold_Hebei",
+      "passed": true,
+      "detail": "7424.660493827161"
+    },
+    {
+      "check": "official_threshold_Jiangsu",
+      "passed": true,
+      "detail": "7589.917302798982"
+    },
+    {
+      "check": "official_threshold_Ningxia",
+      "passed": true,
+      "detail": "5000.0"
+    },
+    {
+      "check": "official_threshold_Yunnan",
+      "passed": true,
+      "detail": "5341.101449275361"
+    },
+    {
+      "check": "official_threshold_Zhejiang",
+      "passed": true,
+      "detail": "5000.0"
+    },
+    {
+      "check": "official_threshold_Henan",
+      "passed": true,
+      "detail": "6095.856272650165"
+    },
+    {
+      "check": "official_threshold_Guangdong",
+      "passed": true,
+      "detail": "5007.282608695651"
+    },
+    {
+      "check": "model_zone_count_32",
+      "passed": true,
+      "detail": "(32, 32)"
+    },
+    {
+      "check": "zone_version_lock",
+      "passed": true,
+      "detail": "{'NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2'}"
+    },
+    {
+      "check": "zone_power_closure",
+      "passed": true,
+      "detail": "135930.0"
+    },
+    {
+      "check": "zone_energy_closure",
+      "passed": true,
+      "detail": "351120.0"
+    },
+    {
+      "check": "zone_storage_hash_lock",
+      "passed": true,
+      "detail": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc"
+    },
+    {
+      "check": "source_ledger_31_rows",
+      "passed": true,
+      "detail": "(31, 31)"
+    },
+    {
+      "check": "source_ledger_language_lock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_ledger_hash_lock",
+      "passed": true,
+      "detail": "e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862"
+    },
+    {
+      "check": "raw_vre_processed_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\processed\\vre_cf_hourly_by_province.csv"
+    },
+    {
+      "check": "calibrated_vre_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\processed\\vre_cf_hourly_by_province_publication_calibrated.csv"
+    },
+    {
+      "check": "wind_benchmark_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\data\\processed\\vre_cf_national_benchmark_2024.csv"
+    },
+    {
+      "check": "wind_calibration_audit_exists",
+      "passed": true,
+      "detail": "C:\\Users\\吴春雷\\Desktop\\储能\\0808\\UPSTREAM_4PACK_BUILD_20260817_202856\\04_V20_FUTURE_STORAGE\\audits\\vre_cf_publication_calibration_audit.json"
+    },
+    {
+      "check": "raw_vre_31x8760",
+      "passed": true,
+      "detail": "(271560, 31, 8760)"
+    },
+    {
+      "check": "raw_solar_cf_bounded",
+      "passed": true,
+      "detail": "solar_cf"
+    },
+    {
+      "check": "raw_onshore_wind_cf_bounded",
+      "passed": true,
+      "detail": "onshore_wind_cf"
+    },
+    {
+      "check": "raw_offshore_wind_cf_bounded",
+      "passed": true,
+      "detail": "offshore_wind_cf"
+    },
+    {
+      "check": "raw_offshore_scope_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "calibrated_vre_31x8760",
+      "passed": true,
+      "detail": "(271560, 31, 8760)"
+    },
+    {
+      "check": "calibrated_vre_bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "calibrated_profile_hash_lock",
+      "passed": true,
+      "detail": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096"
+    },
+    {
+      "check": "wind_benchmark_one_row",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "wind_target_closure",
+      "passed": true,
+      "detail": "(0.2532072175254301, 0.25320721752543)"
+    },
+    {
+      "check": "wind_target_fingerprint",
+      "passed": true,
+      "detail": "0.2532072175254301"
+    },
+    {
+      "check": "wind_benchmark_hash_lock",
+      "passed": true,
+      "detail": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5"
+    },
+    {
+      "check": "wind_audit_version",
+      "passed": true,
+      "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+    },
+    {
+      "check": "wind_official_source_lock",
+      "passed": true,
+      "detail": "National Energy Administration"
+    },
+    {
+      "check": "commercial_annual_report_excluded",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "wind_audit_hash_lock",
+      "passed": true,
+      "detail": "5896250e313b9e5d9180e40d1ac0b17c48c5e6fbfbbd996071a9bb673205955e"
+    },
+    {
+      "check": "template_no_nbccs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "template_no_daccs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "template_beccs_physical_factor_one",
+      "passed": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "expanded_base_power",
+      "passed": true,
+      "detail": "135930.0"
+    },
+    {
+      "check": "expanded_base_energy",
+      "passed": true,
+      "detail": "351120.0"
+    },
+    {
+      "check": "official_main_scenario_count_16",
+      "passed": true,
+      "detail": "(16, 16)"
+    },
+    {
+      "check": "cdr_disabled_all_official",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

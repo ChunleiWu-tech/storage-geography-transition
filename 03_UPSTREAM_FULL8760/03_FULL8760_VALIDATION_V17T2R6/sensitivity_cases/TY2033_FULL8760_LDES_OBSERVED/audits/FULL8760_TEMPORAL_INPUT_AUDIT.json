@@ -1,0 +1,684 @@
+{
+  "version": "V17T2R6_FULL8760",
+  "scenario": "TY2033_FULL8760_LDES_OBSERVED",
+  "template_scenario": "TY2033_CHRONO_LDES_OBSERVED",
+  "chronology": "continuous 8760-hour non-leap year with year-end cyclic SOC and unit commitment",
+  "target_period": 2033,
+  "calendar_timestamp_year": 2035,
+  "source_load_year": 2024,
+  "source_load_scope": "reconstructed provincial hourly curves; used only for normalized within-province shape",
+  "source_load_workbook_sha256": "a93ff6d4a2f4f8c36538fdc4704e2e88bef16347d217c456a99a7a97d56a19e0",
+  "processed_load_shape_sha256": "74944cc8d707561ac1b6e3210cfa7035eaa5d0e84a391d42c012de17304291ab",
+  "source_vre_year": 2024,
+  "source_vre_scope": "study-supplied ERA5-derived provincial solar and onshore-wind profiles; onshore wind nationally level-calibrated to the frozen NEA benchmark",
+  "source_vre_sha256": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096",
+  "vre_alignment": "ERA5 UTC -> China Standard Time by deterministic +8 h circular shift",
+  "hydro_scope": "V17T2R5 monthly hydro average and minimum flow envelopes held fixed and applied to every actual hour in each calendar month",
+  "cross_source_limit": "Load and VRE are independently reconstructed 2024 sources; this is a chronological robustness test, not a single-dataset historical replay.",
+  "annual_energy_lock": "Every model-zone annual demand is exactly preserved from its matching 2033 four-hour template.",
+  "loads": [
+    {
+      "model_zone": "Anhui",
+      "source_province": "Anhui",
+      "template_annual_energy_mwh": 350862574.7594951,
+      "full8760_annual_energy_mwh": 350862574.759495,
+      "shape_scaling_factor": 0.9779257252061563,
+      "minimum_load_mw": 29746.493738582078,
+      "maximum_load_mw": 60384.50044808997,
+      "annual_energy_residual_mwh": -5.960464477539063e-08
+    },
+    {
+      "model_zone": "Beijing",
+      "source_province": "Beijing",
+      "template_annual_energy_mwh": 204316481.85574248,
+      "full8760_annual_energy_mwh": 204316481.8557425,
+      "shape_scaling_factor": 1.4755545142141488,
+      "minimum_load_mw": 12857.515080771,
+      "maximum_load_mw": 40393.02587768531,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Chongqing",
+      "source_province": "Chongqing",
+      "template_annual_energy_mwh": 164141185.67560244,
+      "full8760_annual_energy_mwh": 164141185.6756024,
+      "shape_scaling_factor": 1.0209879045861423,
+      "minimum_load_mw": 11674.5982152809,
+      "maximum_load_mw": 37174.23431680763,
+      "annual_energy_residual_mwh": -2.9802322387695312e-08
+    },
+    {
+      "model_zone": "East_Inner_Mongolia",
+      "source_province": "Inner_Mongolia",
+      "template_annual_energy_mwh": 138622096.3313079,
+      "full8760_annual_energy_mwh": 138622096.3313079,
+      "shape_scaling_factor": 0.2676925761574589,
+      "minimum_load_mw": 14683.983668851295,
+      "maximum_load_mw": 17338.884901034016,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Fujian",
+      "source_province": "Fujian",
+      "template_annual_energy_mwh": 531499593.14553726,
+      "full8760_annual_energy_mwh": 531499593.1455373,
+      "shape_scaling_factor": 1.5997586637542012,
+      "minimum_load_mw": 48074.81877232818,
+      "maximum_load_mw": 85914.671342437,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Gansu",
+      "source_province": "Gansu",
+      "template_annual_energy_mwh": 233445549.3836897,
+      "full8760_annual_energy_mwh": 233445549.38368967,
+      "shape_scaling_factor": 1.3409533471771402,
+      "minimum_load_mw": 22548.49229324289,
+      "maximum_load_mw": 34162.37468741107,
+      "annual_energy_residual_mwh": -2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Guangdong",
+      "source_province": "Guangdong",
+      "template_annual_energy_mwh": 1389823816.0484076,
+      "full8760_annual_energy_mwh": 1389823816.0484078,
+      "shape_scaling_factor": 1.5275973728680277,
+      "minimum_load_mw": 116305.36925667971,
+      "maximum_load_mw": 234675.9215125074,
+      "annual_energy_residual_mwh": 2.384185791015625e-07
+    },
+    {
+      "model_zone": "Guangxi",
+      "source_province": "Guangxi",
+      "template_annual_energy_mwh": 261984274.14734346,
+      "full8760_annual_energy_mwh": 261984274.1473435,
+      "shape_scaling_factor": 1.025153350068657,
+      "minimum_load_mw": 21697.379892710327,
+      "maximum_load_mw": 40401.97685322149,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Guizhou",
+      "source_province": "Guizhou",
+      "template_annual_energy_mwh": 194860389.41158524,
+      "full8760_annual_energy_mwh": 194860389.41158524,
+      "shape_scaling_factor": 1.027885842971344,
+      "minimum_load_mw": 13591.382308944801,
+      "maximum_load_mw": 37635.228116362705,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Hainan",
+      "source_province": "Hainan",
+      "template_annual_energy_mwh": 58866617.92730341,
+      "full8760_annual_energy_mwh": 58866617.92730342,
+      "shape_scaling_factor": 1.1371676788122016,
+      "minimum_load_mw": 4954.997118576265,
+      "maximum_load_mw": 9070.90022989605,
+      "annual_energy_residual_mwh": 7.450580596923828e-09
+    },
+    {
+      "model_zone": "Hebei",
+      "source_province": "Hebei",
+      "template_annual_energy_mwh": 643244302.4990487,
+      "full8760_annual_energy_mwh": 643244302.4990487,
+      "shape_scaling_factor": 1.293574058870184,
+      "minimum_load_mw": 56724.41559930944,
+      "maximum_load_mw": 106603.61215121216,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Heilongjiang",
+      "source_province": "Heilongjiang",
+      "template_annual_energy_mwh": 121014071.58046444,
+      "full8760_annual_energy_mwh": 121014071.58046445,
+      "shape_scaling_factor": 1.0048428546727788,
+      "minimum_load_mw": 9504.641898166192,
+      "maximum_load_mw": 19209.070210868333,
+      "annual_energy_residual_mwh": 1.4901161193847656e-08
+    },
+    {
+      "model_zone": "Henan",
+      "source_province": "Henan",
+      "template_annual_energy_mwh": 521271498.8595592,
+      "full8760_annual_energy_mwh": 521271498.8595591,
+      "shape_scaling_factor": 1.2100009521818562,
+      "minimum_load_mw": 43641.7246666817,
+      "maximum_load_mw": 108782.90361880159,
+      "annual_energy_residual_mwh": -5.960464477539063e-08
+    },
+    {
+      "model_zone": "Hubei",
+      "source_province": "Hubei",
+      "template_annual_energy_mwh": 277847511.2260641,
+      "full8760_annual_energy_mwh": 277847511.2260641,
+      "shape_scaling_factor": 0.946392188031806,
+      "minimum_load_mw": 23792.30102820527,
+      "maximum_load_mw": 51662.329314471914,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Hunan",
+      "source_province": "Hunan",
+      "template_annual_energy_mwh": 304607007.26855373,
+      "full8760_annual_energy_mwh": 304607007.26855373,
+      "shape_scaling_factor": 1.287030664269619,
+      "minimum_load_mw": 21688.864653358956,
+      "maximum_load_mw": 58194.725542712775,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Jiangsu",
+      "source_province": "Jiangsu",
+      "template_annual_energy_mwh": 902731678.4514248,
+      "full8760_annual_energy_mwh": 902731678.4514248,
+      "shape_scaling_factor": 1.0666761446204593,
+      "minimum_load_mw": 79665.42693246633,
+      "maximum_load_mw": 149308.35417102987,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Jiangxi",
+      "source_province": "Jiangxi",
+      "template_annual_energy_mwh": 264241913.84550458,
+      "full8760_annual_energy_mwh": 264241913.84550458,
+      "shape_scaling_factor": 1.215624331330794,
+      "minimum_load_mw": 20979.463396608342,
+      "maximum_load_mw": 44178.39610852846,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Jilin",
+      "source_province": "Jilin",
+      "template_annual_energy_mwh": 98510451.06690425,
+      "full8760_annual_energy_mwh": 98510451.06690425,
+      "shape_scaling_factor": 1.0403032624753823,
+      "minimum_load_mw": 6941.891750750085,
+      "maximum_load_mw": 16726.46656745069,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Liaoning",
+      "source_province": "Liaoning",
+      "template_annual_energy_mwh": 331551201.3415771,
+      "full8760_annual_energy_mwh": 331551201.3415771,
+      "shape_scaling_factor": 1.216382577090055,
+      "minimum_load_mw": 31171.813763626273,
+      "maximum_load_mw": 48052.53964600152,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Ningxia",
+      "source_province": "Ningxia",
+      "template_annual_energy_mwh": 181189576.22988164,
+      "full8760_annual_energy_mwh": 181189576.22988164,
+      "shape_scaling_factor": 1.3071882553489897,
+      "minimum_load_mw": 19155.787826756816,
+      "maximum_load_mw": 23072.197147826417,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Qinghai",
+      "source_province": "Qinghai",
+      "template_annual_energy_mwh": 129388403.40265231,
+      "full8760_annual_energy_mwh": 129388403.40265232,
+      "shape_scaling_factor": 1.2312053496602922,
+      "minimum_load_mw": 13269.461410969172,
+      "maximum_load_mw": 17409.570653591385,
+      "annual_energy_residual_mwh": 1.4901161193847656e-08
+    },
+    {
+      "model_zone": "Shaanxi",
+      "source_province": "Shaanxi",
+      "template_annual_energy_mwh": 273605921.7091101,
+      "full8760_annual_energy_mwh": 273605921.70911,
+      "shape_scaling_factor": 1.0554609834317839,
+      "minimum_load_mw": 22500.09233331063,
+      "maximum_load_mw": 48174.37883781384,
+      "annual_energy_residual_mwh": -5.960464477539063e-08
+    },
+    {
+      "model_zone": "Shandong",
+      "source_province": "Shandong",
+      "template_annual_energy_mwh": 1374314808.1563995,
+      "full8760_annual_energy_mwh": 1374314808.1563997,
+      "shape_scaling_factor": 1.6565100667041939,
+      "minimum_load_mw": 129887.53540370933,
+      "maximum_load_mw": 221453.96141610583,
+      "annual_energy_residual_mwh": 2.384185791015625e-07
+    },
+    {
+      "model_zone": "Shanghai",
+      "source_province": "Shanghai",
+      "template_annual_energy_mwh": 285413892.98466223,
+      "full8760_annual_energy_mwh": 285413892.98466223,
+      "shape_scaling_factor": 1.4426602145977032,
+      "minimum_load_mw": 20464.241871278788,
+      "maximum_load_mw": 58043.95250302142,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Shanxi",
+      "source_province": "Shanxi",
+      "template_annual_energy_mwh": 361971008.41879886,
+      "full8760_annual_energy_mwh": 361971008.4187988,
+      "shape_scaling_factor": 1.2215699226342696,
+      "minimum_load_mw": 33988.54220576448,
+      "maximum_load_mw": 52905.76885453283,
+      "annual_energy_residual_mwh": -5.960464477539063e-08
+    },
+    {
+      "model_zone": "Sichuan",
+      "source_province": "Sichuan",
+      "template_annual_energy_mwh": 361018119.7940727,
+      "full8760_annual_energy_mwh": 361018119.79407275,
+      "shape_scaling_factor": 0.9010567296338192,
+      "minimum_load_mw": 28533.433518071135,
+      "maximum_load_mw": 69429.29914413078,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Tianjin",
+      "source_province": "Tianjin",
+      "template_annual_energy_mwh": 131518499.73191018,
+      "full8760_annual_energy_mwh": 131518499.73191017,
+      "shape_scaling_factor": 1.2156458445737335,
+      "minimum_load_mw": 10566.227509766308,
+      "maximum_load_mw": 24415.779247468898,
+      "annual_energy_residual_mwh": -1.4901161193847656e-08
+    },
+    {
+      "model_zone": "Tibet",
+      "source_province": "Tibet",
+      "template_annual_energy_mwh": 12219654.191408705,
+      "full8760_annual_energy_mwh": 12219654.191408705,
+      "shape_scaling_factor": 0.795923342378475,
+      "minimum_load_mw": 874.4339478989614,
+      "maximum_load_mw": 2009.8913683310543,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "West_Inner_Mongolia",
+      "source_province": "Inner_Mongolia",
+      "template_annual_energy_mwh": 405654105.9155068,
+      "full8760_annual_energy_mwh": 405654105.91550684,
+      "shape_scaling_factor": 0.7833570225474035,
+      "minimum_load_mw": 42970.19323838106,
+      "maximum_load_mw": 50739.31240579784,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Xinjiang",
+      "source_province": "Xinjiang",
+      "template_annual_energy_mwh": 503468798.6615964,
+      "full8760_annual_energy_mwh": 503468798.6615965,
+      "shape_scaling_factor": 1.1927323610561096,
+      "minimum_load_mw": 52148.61143724654,
+      "maximum_load_mw": 71181.23445945886,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Yunnan",
+      "source_province": "Yunnan",
+      "template_annual_energy_mwh": 282136217.95745265,
+      "full8760_annual_energy_mwh": 282136217.95745265,
+      "shape_scaling_factor": 1.0133458904905601,
+      "minimum_load_mw": 24178.235016314215,
+      "maximum_load_mw": 43865.727775303756,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Zhejiang",
+      "source_province": "Zhejiang",
+      "template_annual_energy_mwh": 1006238377.5324359,
+      "full8760_annual_energy_mwh": 1006238377.5324358,
+      "shape_scaling_factor": 1.4881652039377198,
+      "minimum_load_mw": 84072.9712779093,
+      "maximum_load_mw": 175493.6880917111,
+      "annual_energy_residual_mwh": -1.1920928955078125e-07
+    }
+  ],
+  "loads_new_compatibility_table": [
+    {
+      "model_zone": "Anhui",
+      "source_province": "Anhui",
+      "template_annual_energy_mwh": 231859599.33179483,
+      "full8760_annual_energy_mwh": 231859599.33179477,
+      "shape_scaling_factor": 0.646240104057773,
+      "minimum_load_mw": 19657.297802369092,
+      "maximum_load_mw": 39903.73179397024,
+      "annual_energy_residual_mwh": -5.960464477539063e-08
+    },
+    {
+      "model_zone": "Beijing",
+      "source_province": "Beijing",
+      "template_annual_energy_mwh": 109174262.84336177,
+      "full8760_annual_energy_mwh": 109174262.84336177,
+      "shape_scaling_factor": 0.7884463108965618,
+      "minimum_load_mw": 6870.271640305891,
+      "maximum_load_mw": 21583.568707505063,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Chongqing",
+      "source_province": "Chongqing",
+      "template_annual_energy_mwh": 114154402.79363197,
+      "full8760_annual_energy_mwh": 114154402.79363199,
+      "shape_scaling_factor": 0.710061061322506,
+      "minimum_load_mw": 8119.271111851626,
+      "maximum_load_mw": 25853.36824684869,
+      "annual_energy_residual_mwh": 1.4901161193847656e-08
+    },
+    {
+      "model_zone": "East_Inner_Mongolia",
+      "source_province": "Inner_Mongolia",
+      "template_annual_energy_mwh": 61443528.68457789,
+      "full8760_annual_energy_mwh": 61443528.68457789,
+      "shape_scaling_factor": 0.11865335265503837,
+      "minimum_load_mw": 6508.599968107445,
+      "maximum_load_mw": 7685.371235687086,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Fujian",
+      "source_province": "Fujian",
+      "template_annual_energy_mwh": 240391969.16177398,
+      "full8760_annual_energy_mwh": 240391969.161774,
+      "shape_scaling_factor": 0.7235549007432194,
+      "minimum_load_mw": 21743.761426757785,
+      "maximum_load_mw": 38858.34963986459,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Gansu",
+      "source_province": "Gansu",
+      "template_annual_energy_mwh": 129425253.17159109,
+      "full8760_annual_energy_mwh": 129425253.17159109,
+      "shape_scaling_factor": 0.7434420013912658,
+      "minimum_load_mw": 12501.177818104634,
+      "maximum_load_mw": 18940.065486508054,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Guangdong",
+      "source_province": "Guangdong",
+      "template_annual_energy_mwh": 674037315.0622506,
+      "full8760_annual_energy_mwh": 674037315.0622506,
+      "shape_scaling_factor": 0.7408547902364123,
+      "minimum_load_mw": 56405.82490807277,
+      "maximum_load_mw": 113813.223100316,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Guangxi",
+      "source_province": "Guangxi",
+      "template_annual_energy_mwh": 192031703.2780173,
+      "full8760_annual_energy_mwh": 192031703.27801734,
+      "shape_scaling_factor": 0.7514265677799117,
+      "minimum_load_mw": 15903.950078789941,
+      "maximum_load_mw": 29614.221907684776,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Guizhou",
+      "source_province": "Guizhou",
+      "template_annual_energy_mwh": 144989100.40864626,
+      "full8760_annual_energy_mwh": 144989100.4086463,
+      "shape_scaling_factor": 0.7648154873611149,
+      "minimum_load_mw": 10112.893134589702,
+      "maximum_load_mw": 28003.114869795063,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Hainan",
+      "source_province": "Hainan",
+      "template_annual_energy_mwh": 34225065.01137361,
+      "full8760_annual_energy_mwh": 34225065.01137361,
+      "shape_scaling_factor": 0.661149546322565,
+      "minimum_load_mw": 2880.8364483223504,
+      "maximum_load_mw": 5273.823450555034,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Hebei",
+      "source_province": "Hebei",
+      "template_annual_energy_mwh": 371784597.86731184,
+      "full8760_annual_energy_mwh": 371784597.8673119,
+      "shape_scaling_factor": 0.7476644712128624,
+      "minimum_load_mw": 32785.776665124395,
+      "maximum_load_mw": 61615.12961850121,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Heilongjiang",
+      "source_province": "Heilongjiang",
+      "template_annual_energy_mwh": 67167231.11582653,
+      "full8760_annual_energy_mwh": 67167231.11582652,
+      "shape_scaling_factor": 0.5577244974359566,
+      "minimum_load_mw": 5275.423516535535,
+      "maximum_load_mw": 10661.735792565589,
+      "annual_energy_residual_mwh": -1.4901161193847656e-08
+    },
+    {
+      "model_zone": "Henan",
+      "source_province": "Henan",
+      "template_annual_energy_mwh": 327059163.8613905,
+      "full8760_annual_energy_mwh": 327059163.86139053,
+      "shape_scaling_factor": 0.7591857612739056,
+      "minimum_load_mw": 27381.942059332658,
+      "maximum_load_mw": 68253.19546113342,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Hubei",
+      "source_province": "Hubei",
+      "template_annual_energy_mwh": 204949669.3017431,
+      "full8760_annual_energy_mwh": 204949669.30174312,
+      "shape_scaling_factor": 0.6980907085003849,
+      "minimum_load_mw": 17550.00145994026,
+      "maximum_load_mw": 38107.87169421124,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Hunan",
+      "source_province": "Hunan",
+      "template_annual_energy_mwh": 180601778.0424273,
+      "full8760_annual_energy_mwh": 180601778.04242727,
+      "shape_scaling_factor": 0.7630816784109338,
+      "minimum_load_mw": 12859.34803418608,
+      "maximum_load_mw": 34503.7069237179,
+      "annual_energy_residual_mwh": -2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Jiangsu",
+      "source_province": "Jiangsu",
+      "template_annual_energy_mwh": 621538020.5191509,
+      "full8760_annual_energy_mwh": 621538020.5191507,
+      "shape_scaling_factor": 0.7344151039428424,
+      "minimum_load_mw": 54850.28712447309,
+      "maximum_load_mw": 102800.00260722845,
+      "annual_energy_residual_mwh": -1.1920928955078125e-07
+    },
+    {
+      "model_zone": "Jiangxi",
+      "source_province": "Jiangxi",
+      "template_annual_energy_mwh": 157124977.3544002,
+      "full8760_annual_energy_mwh": 157124977.35440016,
+      "shape_scaling_factor": 0.7228412130086391,
+      "minimum_load_mw": 12474.923690671085,
+      "maximum_load_mw": 26269.600409285515,
+      "annual_energy_residual_mwh": -2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Jilin",
+      "source_province": "Jilin",
+      "template_annual_energy_mwh": 74990455.80836692,
+      "full8760_annual_energy_mwh": 74990455.80836692,
+      "shape_scaling_factor": 0.7919242576503583,
+      "minimum_load_mw": 5284.471047722009,
+      "maximum_load_mw": 12732.91654206975,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Liaoning",
+      "source_province": "Liaoning",
+      "template_annual_energy_mwh": 232205895.68913668,
+      "full8760_annual_energy_mwh": 232205895.68913668,
+      "shape_scaling_factor": 0.8519082563144273,
+      "minimum_load_mw": 21831.55695394582,
+      "maximum_load_mw": 33654.17758550673,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Ningxia",
+      "source_province": "Ningxia",
+      "template_annual_energy_mwh": 98448670.905689,
+      "full8760_annual_energy_mwh": 98448670.905689,
+      "shape_scaling_factor": 0.7102557941818888,
+      "minimum_load_mw": 10408.224860037895,
+      "maximum_load_mw": 12536.191051055273,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Qinghai",
+      "source_province": "Qinghai",
+      "template_annual_energy_mwh": 70639074.29009663,
+      "full8760_annual_energy_mwh": 70639074.29009664,
+      "shape_scaling_factor": 0.672171569273997,
+      "minimum_load_mw": 7244.408662204787,
+      "maximum_load_mw": 9504.684518987724,
+      "annual_energy_residual_mwh": 1.4901161193847656e-08
+    },
+    {
+      "model_zone": "Shaanxi",
+      "source_province": "Shaanxi",
+      "template_annual_energy_mwh": 162049401.2355379,
+      "full8760_annual_energy_mwh": 162049401.2355379,
+      "shape_scaling_factor": 0.6251210475423626,
+      "minimum_load_mw": 13326.197282505313,
+      "maximum_load_mw": 28532.3840829055,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Shandong",
+      "source_province": "Shandong",
+      "template_annual_energy_mwh": 539477977.2943275,
+      "full8760_annual_energy_mwh": 539477977.2943275,
+      "shape_scaling_factor": 0.6502518162866008,
+      "minimum_load_mw": 50986.473011476286,
+      "maximum_load_mw": 86930.25386871985,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Shanghai",
+      "source_province": "Shanghai",
+      "template_annual_energy_mwh": 155753570.49695107,
+      "full8760_annual_energy_mwh": 155753570.4969511,
+      "shape_scaling_factor": 0.7872758998790749,
+      "minimum_load_mw": 11167.566882023379,
+      "maximum_load_mw": 31675.237507050348,
+      "annual_energy_residual_mwh": 2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Shanxi",
+      "source_province": "Shanxi",
+      "template_annual_energy_mwh": 219943146.59102994,
+      "full8760_annual_energy_mwh": 219943146.59102994,
+      "shape_scaling_factor": 0.7422581541510788,
+      "minimum_load_mw": 20652.336090211655,
+      "maximum_load_mw": 32146.94272205512,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Sichuan",
+      "source_province": "Sichuan",
+      "template_annual_energy_mwh": 263700514.46505648,
+      "full8760_annual_energy_mwh": 263700514.46505648,
+      "shape_scaling_factor": 0.6581639816366374,
+      "minimum_load_mw": 20841.837807093303,
+      "maximum_load_mw": 50713.6370709008,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Tianjin",
+      "source_province": "Tianjin",
+      "template_annual_energy_mwh": 85528827.8573492,
+      "full8760_annual_energy_mwh": 85528827.8573492,
+      "shape_scaling_factor": 0.7905561908627973,
+      "minimum_load_mw": 6871.4063468374725,
+      "maximum_load_mw": 15878.01704335543,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Tibet",
+      "source_province": "Tibet",
+      "template_annual_energy_mwh": 7817388.759002926,
+      "full8760_annual_energy_mwh": 7817388.759002929,
+      "shape_scaling_factor": 0.5091831644558379,
+      "minimum_load_mw": 559.4094569060671,
+      "maximum_load_mw": 1285.8057964238408,
+      "annual_energy_residual_mwh": 2.7939677238464355e-09
+    },
+    {
+      "model_zone": "West_Inner_Mongolia",
+      "source_province": "Inner_Mongolia",
+      "template_annual_energy_mwh": 278542150.76821303,
+      "full8760_annual_energy_mwh": 278542150.7682131,
+      "shape_scaling_factor": 0.537891634024741,
+      "minimum_load_mw": 29505.457652232904,
+      "maximum_load_mw": 34840.118711765135,
+      "annual_energy_residual_mwh": 5.960464477539063e-08
+    },
+    {
+      "model_zone": "Xinjiang",
+      "source_province": "Xinjiang",
+      "template_annual_energy_mwh": 295599105.9099971,
+      "full8760_annual_energy_mwh": 295599105.9099971,
+      "shape_scaling_factor": 0.7002829578622688,
+      "minimum_load_mw": 30617.75219492615,
+      "maximum_load_mw": 41792.28051414676,
+      "annual_energy_residual_mwh": 0.0
+    },
+    {
+      "model_zone": "Yunnan",
+      "source_province": "Yunnan",
+      "template_annual_energy_mwh": 180690791.42493606,
+      "full8760_annual_energy_mwh": 180690791.42493603,
+      "shape_scaling_factor": 0.6489853456799314,
+      "minimum_load_mw": 15484.663585498081,
+      "maximum_load_mw": 28093.284603913307,
+      "annual_energy_residual_mwh": -2.9802322387695312e-08
+    },
+    {
+      "model_zone": "Zhejiang",
+      "source_province": "Zhejiang",
+      "template_annual_energy_mwh": 479921622.03456265,
+      "full8760_annual_energy_mwh": 479921622.0345626,
+      "shape_scaling_factor": 0.7097748152685261,
+      "minimum_load_mw": 40098.28848299796,
+      "maximum_load_mw": 83701.05665452685,
+      "annual_energy_residual_mwh": -5.960464477539063e-08
+    }
+  ],
+  "vre": {
+    "projects": 117,
+    "rows": 1024920,
+    "timepoints": 8760,
+    "utc_to_cst_circular_shift_hours": 8,
+    "offshore_rows_fixed_to_zero": 183960,
+    "offshore_scope": "unchanged from V17T2R5; no audited offshore hourly profile",
+    "tiny_positive_rows_zeroed": 0,
+    "numerical_zero_threshold": 1e-06,
+    "minimum_cf": 0.0,
+    "maximum_cf": 1.0
+  },
+  "temporal_file_sha256": {
+    "timepoints.csv": "b1b6fa322503be0dd09dda0a8d1902919c664102b3cf6785bb62491b1255e587",
+    "timeseries.csv": "0bbfd4ac24815836920c934a4acc6ffd2d3c1daaddb0cd7cd41fc4f0caba5adb",
+    "loads.csv": "7ba77af4cd224935fad043056d2efb4c552cdb5e563e5ef76cadc9c4b4928590",
+    "loads_new.csv": "94e56522ea9b131093545359e5b0e7fe2b66858311b5d85c9af52c19eb554920",
+    "variable_capacity_factors.csv": "63a501bd0b5ec256ecf4961da8fb572c861ea294ade24ece6359eb195ca88a4b",
+    "hydro_timeseries.csv": "aa3677420b27ecbb371a437ee1005989309b51a433900f8c7c62f94f832ee4fc",
+    "zone_coincident_peak_demand.csv": "716959755a59116517f03eb8ec03db831602482143b513d9a6746ef10c122f41"
+  }
+}

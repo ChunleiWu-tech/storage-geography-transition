@@ -1,0 +1,149 @@
+{
+  "Fig1_inherited_storage_geography": {
+    "reallocate": "compare",
+    "Load and renewables rules: transparent heuristic benchmarks": "Load and renewables rules",
+    "Optimized reallocation": "Reference layout",
+    "No legacy: zero-stock benchmark": "No inherited storage",
+    "standardized stock  vs  optimized reallocation": "existing layout  vs  reference layout",
+    "Standardized stock": "Existing layout"
+  },
+  "Fig2_equal_stock_unequal_spatial_value": {
+    "No legacy": "No inherited storage",
+    "Optimized minus observed storage power (GW)": "Reference − existing storage power (GW)",
+    "Standardized": "Existing layout",
+    "Optimized": "Reference",
+    "Optimized − observed (GW)": "Reference − existing (GW)"
+  },
+  "Fig3_compensatory_investment_cost": {
+    "Observed − optimized annual cost": "Existing − reference annual cost",
+    "Observed − optimized battery power (GW)": "Existing − reference battery power (GW)"
+  },
+  "Fig4_spatial_path_dependence": {
+    "Stock-anchor mismatch (GW)": "Initial power difference (GW)",
+    "Surplus": "Reference > existing",
+    "Ribbon width = absolute stock-anchor mismatch; not a physical capacity flow": "Ribbon width = absolute initial zonal power difference",
+    "Deficit": "Reference < existing",
+    "anchor": "stock",
+    "Energy persistence interpretation": "Energy persistence reflects the later 4 h power–energy relation relative to the initial approximately 2.583 h normalization; it is not independent evidence of technology mix.",
+    "Sign-reversal accounting": "The source classification and the direct zero-tolerance sign test are reported as separate accounting rules."
+  },
+  "Fig5_robustness_boundary_conditions": {
+    "Present-value cost penalty (billion US$)": "Discounted cost difference (billion US$)",
+    "Observed − optimized battery energy build (GWh)": "Existing − reference battery additions (GWh)",
+    "Extra battery energy build (GWh)": "Battery-energy difference (GWh)",
+    "Observed − optimized battery power build (GW)": "Existing − reference battery additions (GW)"
+  },
+  "Fig6_future_storage_correction_of_spatial_lockin": {
+    "Spatial correction and residual penalty": "Regional power difference and annual cost",
+    "Observed": "Existing",
+    "Observed 2033: location, scale and duration": "Existing-layout scenario, 2033",
+    "Optimized − observed reallocation": "Reference − existing new-storage power",
+    "Expanded* is a boundary-condition scenario; the primary comparison uses Baseline and Adaptive.": "Expanded* denotes the resource-unconstrained technology sensitivity.",
+    "Equivalent spatial reallocation (GW)": "Half-sum of absolute regionalpower differences (GW)",
+    "Optimized": "Reference",
+    "Adaptive technology choice": "At reported precision, Baseline and Adaptive use the same effective storage build; the wider candidate set did not change the cost-optimal technology choice in this matched comparison.",
+    "19.84 GW wording": "The system-cost-optimal reference solution configures 19.84 GW less new storage power."
+  },
+  "Fig7_future_pathway_and_validation_boundaries": {
+    "5.40 billion US$ penalty": "5.40 billion US$ cost difference",
+    "6.60 billion US$ penalty": "6.60 billion US$ cost difference",
+    "The metric minimizes technology-neutral firm-supply and surplus-absorption capacity added only for diagnosis; it is not an actual build or cost (Fig. S13).": "Added capacity is the minimized sum of ideal firm supply and surplus absorption.",
+    "Observed − optimized (GW)": "Existing − reference (GW)",
+    "Reference": "Baseline",
+    "Observed − optimized cumulative new power (GW)": "Existing − reference cumulative additions (GW)",
+    "6.63 billion US$ penalty": "6.63 billion US$ cost difference",
+    "6.22 billion US$ penalty": "6.22 billion US$ cost difference",
+    "Observed": "Existing",
+    "Zero would certify an unaugmented fixed portfolio": "",
+    "6.18 billion US$ penalty": "6.18 billion US$ cost difference",
+    "Optimized": "Reference",
+    "Full-year hourly feasibility gap of fixed portfolios": "Full-year balancing needs of fixed portfolios",
+    "6.05 billion US$ penalty": "6.05 billion US$ cost difference",
+    "6.27 billion US$ penalty": "6.27 billion US$ cost difference"
+  },
+  "FigS01_model_zone_network_inputs": {},
+  "FigS02_storage_power_energy_duration_validation": {},
+  "FigS03_empirical_deployment_envelope": {
+    "Optimized allocation / empirical cap (%)": "Reference allocation / deployment limit (%)"
+  },
+  "FigS04_full_scenario_matrix": {
+    "No legacy": "No inherited storage",
+    "High battery cost: reconstructed": "High battery cost: existing",
+    "Optimized": "Reference",
+    "Optimized reallocation": "Reference layout",
+    "Fixed transmission: optimized": "Fixed transmission: reference",
+    "Low battery cost: optimized": "Low battery cost: reference",
+    "Standardized stock": "Existing layout",
+    "Low battery cost: reconstructed": "Low battery cost: existing",
+    "Reconstructed duration": "Variable duration",
+    "High battery cost: optimized": "High battery cost: reference",
+    "Fixed transmission: reconstructed": "Fixed transmission: existing",
+    "Reconstructed standardized": "Existing layout",
+    "Conservative pumped storage: reconstructed": "Conservative pumped storage: existing",
+    "Conservative pumped storage: optimized": "Conservative pumped storage: reference",
+    "Tighter carbon cap: optimized": "Tighter carbon cap: reference",
+    "Tighter carbon cap: reconstructed": "Tighter carbon cap: existing"
+  },
+  "FigS05_rule_based_allocation_diagnostics": {
+    "Load rule minus optimized": "Load rule − reference",
+    "Rule minus optimized (GW)": "Rule − reference (GW)",
+    "Renewables rule minus optimized": "Renewables rule − reference"
+  },
+  "FigS06_full_reallocation_and_duration_deltas": {
+    "Optimized minus observed power (GW)": "Reference − existing power (GW)",
+    "Actual minus standardized legacy energy (GWh)": "Reconstructed − standardized energy (GWh)"
+  },
+  "FigS07_period_system_cost_penalties": {
+    "Reconstructed standardized": "Existing layout",
+    "Discounted period cost penalty (billion US$)": "Discounted period cost difference (billion US$)"
+  },
+  "FigS08_technology_and_curtailment_adaptation": {},
+  "FigS09_transmission_line_differences": {},
+  "FigS10_final_storage_power_energy_duration": {
+    "Concentration of final reallocation": "Concentration of regional power differences",
+    "Zones ranked by absolute reallocation": "Zones ranked by absolute power difference",
+    "Optimized − observed final power (GW)": "Reference − existing final power (GW)",
+    "Largest 2058 spatial reallocations": "Largest regional power differences in 2058"
+  },
+  "FigS11_extended_robustness_metrics": {
+    "Marker area = |battery-power response|": "Marker area increases with the magnitude of the cumulative battery-power additions difference.",
+    "Network–curtailment coupling": "Transmission and curtailment responses"
+  },
+  "FigS12_targetyear_linked_chronology_ldes": {},
+  "FigS13_full8760_robustness_certificates": {
+    "Optimized": "Reference",
+    "Observed": "Existing",
+    "Observed + LDES": "Existing + LDES",
+    "An unavailable optional quality field for two solver routes does not alter the reported optimality or feasibility evidence.": "Gray cells denote optional physical checks unavailable for the two reference-layout portfolios.",
+    "Largest zonal contributions to the feasibility gap": "Largest regional balancing requirements",
+    "Optimized + LDES": "Reference + LDES",
+    "Full-year hourly feasibility gap of fixed portfolios": "Full-year balancing needs of fixed portfolios"
+  },
+  "FigS14_future_storage_extended_robustness": {
+    "Carbon cap, optimized": "Carbon cap, reference",
+    "Equal horizon, observed": "Equal horizon, existing",
+    "2033 expanded*, optimized": "2033 expanded*, reference",
+    "Carbon cap, observed": "Carbon cap, existing",
+    "Reference, observed": "Baseline, existing",
+    "Reference, optimized": "Baseline, reference",
+    "High cost, observed": "High cost, existing",
+    "2033 transmission fixed, optimized": "2033 fixed transmission, reference",
+    "2033 adaptive, observed": "2033 adaptive, existing",
+    "Pumped-storage constraint, observed": "Pumped-storage limit, existing",
+    "2033 transmission fixed, observed": "2033 fixed transmission, existing",
+    "High cost, optimized": "High cost, reference",
+    "Low cost, observed": "Low cost, existing",
+    "Transmission fixed, optimized": "Fixed transmission, reference",
+    "2033 expanded*, observed": "2033 expanded*, existing",
+    "Transmission fixed, observed": "Fixed transmission, existing",
+    "2033 adaptive, optimized": "2033 adaptive, reference",
+    "Low cost, optimized": "Low cost, reference",
+    "2033 base, optimized": "2033 base, reference",
+    "Without inherited stock": "Without inherited storage",
+    "Pumped-storage constraint, optimized": "Pumped-storage limit, reference",
+    "Expanded* is a boundary-condition scenario.": "Expanded* denotes the resource-unconstrained technology sensitivity.",
+    "Actual inherited stock": "Reconstructed duration",
+    "2033 base, observed": "2033 base, existing",
+    "Equal horizon, optimized": "Equal horizon, reference"
+  }
+}

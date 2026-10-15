@@ -1,0 +1,2 @@
+province_en,province_cn,project_name,status,capacity_mw,duration_h,energy_mwh,commission_year,source
+Hebei,河北,example,commissioned,0,6,0,2025,replace_if_project_list_found

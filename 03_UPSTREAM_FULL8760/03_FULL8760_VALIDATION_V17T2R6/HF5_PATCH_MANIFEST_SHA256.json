@@ -1,0 +1,57 @@
+{
+  "version": "V17T2R6R10_HF5_NO_CROSSOVER_SIMPLEX_BRIDGE",
+  "scope": "Replaces only the temporary Gurobi barrier-crossover basis bridge with an auditable complete-PStart/DStart primal-simplex no-crossover bridge; scientific inputs, model matrix, RHS, final bounds, final objective, tolerances and strict publication requirements are unchanged.",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "base_model_v39/full8760_hf4_objective_continuation.jl",
+      "bytes": 31111,
+      "sha256": "ddc4ffb534e2a4de277150ae470e58b35918563be760dda04ed452b09fc35cfc"
+    },
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "bytes": 429686,
+      "sha256": "c974e1e26190cbddc807fae623adcbb1edc732b860002857c6567dbc46a3b500"
+    },
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "bytes": 43189,
+      "sha256": "dc4c7117eff29521f2d06838c844f2057ef01e7eb62863e03601e6b3d5058625"
+    },
+    {
+      "path": "tools/check_v17t2r6r10_hf5_simplex_bridge.py",
+      "bytes": 12075,
+      "sha256": "045f5d27723c9d5fe6c73b43af6e517478e9a90279a0ece567fda2ed8558edb4"
+    },
+    {
+      "path": "tools/run_hf5_optimized_pair_auto_resume.py",
+      "bytes": 4753,
+      "sha256": "9b675169e1f0766514fba15abe84e72bccec0a1d1c4f25db60ab4ee6a975d2c2"
+    },
+    {
+      "path": "CHECK_V17T2R6R10_HF5_8760_OPTIMAL_ONLY.bat",
+      "bytes": 340,
+      "sha256": "496e8d64f45c30a50dcaf56e1447688313a77e8fe763821823b3dbdd154914ef"
+    },
+    {
+      "path": "RUN_V17T2R6R10_HF5_8760_OPTIMAL_ONLY_15T_RESUME.bat",
+      "bytes": 1244,
+      "sha256": "1d7549bd59fc8081b0a991f1b3384b27546c39d2318f3b5078eac335d51eea4e"
+    },
+    {
+      "path": "RUN_V17T2R6R10_HF5_8760_LDES_OPTIMAL_ONLY_15T_RESUME.bat",
+      "bytes": 1181,
+      "sha256": "dd86a899e55452e1f9dea94ef92337717974838d046c5de5ff879f3ef29be819"
+    },
+    {
+      "path": "RUN_V17T2R6R10_HF5_8760_OPTIMIZED_PAIR_AUTO_RESUME_2X15.bat",
+      "bytes": 1243,
+      "sha256": "9ef617fc16cadfa5185cb523e69617323b8ef687077305afa04b10eb832d2d93"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R10_HF5_NO_CROSSOVER_SIMPLEX_BRIDGE.md",
+      "bytes": 2724,
+      "sha256": "bc0ff2cd9d344dd75e7a96cd04c862321f90602ee1a2de0ff1ae913e06b1097f"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "scientific_object": "end-2025 commissioned new-type-storage power geography used as a model input",
+  "national_power_mw": 135930.0,
+  "national_energy_mwh": 351120.0,
+  "national_totals_evidence": "official exact values from China New Energy Storage Development Report 2026",
+  "official_exact_province_power_values": [
+    "Inner_Mongolia",
+    "Xinjiang",
+    "Shandong",
+    "Gansu",
+    "Guizhou"
+  ],
+  "official_reported_above_5gw_set": [
+    "Hebei",
+    "Jiangsu",
+    "Ningxia",
+    "Yunnan",
+    "Zhejiang",
+    "Henan",
+    "Guangdong"
+  ],
+  "remaining_province_values": "official-constrained model reconstruction using a frozen, explicitly unverified within-region shape prior",
+  "primary_energy_assignment": "common national duration 351120/135930 h, so the primary comparison isolates power geography",
+  "separate_duration_sensitivity": "prior duration pattern rescaled to exact national energy; not represented as official province energy",
+  "forbidden_claim": "The 31 reconstructed province values are an official province-by-province inventory.",
+  "language_gate_pass": true,
+  "province_count": 31,
+  "model_reconstruction_count": 26,
+  "results_status": "RERUN_REQUIRED_16_PLUS_6"
+}

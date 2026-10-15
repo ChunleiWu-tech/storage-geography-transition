@@ -1,0 +1,12 @@
+{
+  "version": "V17T2R6R12_HF7_RESTRICTED_FACE",
+  "status": "PASS",
+  "scientific_change": false,
+  "target_count": 3,
+  "target_model_matrix_changed": false,
+  "target_rhs_changed": false,
+  "final_bounds_restored_exactly_required": true,
+  "final_objective_restored_exactly_required": true,
+  "strict_native_optimal_required_at_every_stage": true,
+  "errors": []
+}

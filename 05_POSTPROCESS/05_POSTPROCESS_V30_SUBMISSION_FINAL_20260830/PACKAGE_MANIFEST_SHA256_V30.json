@@ -1,0 +1,272 @@
+{
+  "version": "V30_POSTPROCESS_SUBMISSION_20260830",
+  "status": "PASS_STATIC_HASH_AND_LAYOUT_QA",
+  "package_root": "05_POSTPROCESS_V30_SUBMISSION_FINAL_20260830",
+  "file_count": 51,
+  "payload_bytes": 555773,
+  "max_relative_path_chars": 66,
+  "excluded_from_manifest": [
+    "PACKAGE_MANIFEST_SHA256_V30.json",
+    "STATIC_PACKAGE_CHECK_RESULT_V30.json",
+    "postprocess_outputs/**",
+    "__pycache__/**"
+  ],
+  "files": [
+    {
+      "path": "BASELINE_SCIENTIFIC_FINGERPRINT.json",
+      "bytes": 934,
+      "sha256": "305f67ab669eac2b2deab88a2ed11d008bcf52339d4fe2cc8538ad96ba4722db"
+    },
+    {
+      "path": "CHECK_V30_PACKAGE.bat",
+      "bytes": 159,
+      "sha256": "057ae1df3dee5ad5f535d9f79f542f9058593e880a35cc901ff9a91cb140142f"
+    },
+    {
+      "path": "CHECK_V30_PACKAGE.py",
+      "bytes": 15513,
+      "sha256": "02f0d41df6eb3f35c213ccd7a6da359d88b83975bd4db602a045b5b3e744d67d"
+    },
+    {
+      "path": "INSTALL_V30_PYTHON_DEPS.bat",
+      "bytes": 155,
+      "sha256": "9cf01ec4839639f767fa62d536b9bcd70e092db415dcd25ddf8363c10af80aa1"
+    },
+    {
+      "path": "LAYOUT_QA_V30.json",
+      "bytes": 551,
+      "sha256": "f6725f5e2d428c2d7e68bd3d6fc2dece51414a4971d27688f210a5951c773593"
+    },
+    {
+      "path": "POSTPROCESS_SCIENTIFIC_CONTRACT_V30.json",
+      "bytes": 2402,
+      "sha256": "81f522f324eeb14e70888dcba95d4f3bb7c916b9b14e5fd0420257dbb7f21651"
+    },
+    {
+      "path": "PRE_SOURCE_UPDATE_RESULT_REFERENCE.json",
+      "bytes": 1697,
+      "sha256": "f4aae288bb62fb80a1e99875df1a8741514e47e70026fecb4b570f2653e74596"
+    },
+    {
+      "path": "README_00_FIRST_ZH.md",
+      "bytes": 1286,
+      "sha256": "9a1eb11b4895d63dbb8e729187a41ea8f56b7fc8f2430c800a0729307ccb0908"
+    },
+    {
+      "path": "README_ZH.md",
+      "bytes": 8738,
+      "sha256": "1b3e45385560402843c65425801b830abb86b8e49a601b6de42041e7a6e2f973"
+    },
+    {
+      "path": "RUN_ON_RESULT_COMPUTER_EDIT_PATHS.bat",
+      "bytes": 619,
+      "sha256": "29ab99438d64cbd435ba4ea47233d0deae0c735bfd37388a93300845978898d9"
+    },
+    {
+      "path": "RUN_V30_BUILD_ALL_REAL_TABLES_AND_PACK.bat",
+      "bytes": 1085,
+      "sha256": "16d744a14550c035d5f02678f45fa47c3ddbc9eabe068e78e0def9f8ada8015c"
+    },
+    {
+      "path": "RUN_V30_POSTPROCESS.bat",
+      "bytes": 361,
+      "sha256": "5ac654a42323db884844d487b6cdefc56b2a82fc198d6310791fc0c21c9cb5d1"
+    },
+    {
+      "path": "RUN_V30_POSTPROCESS.ps1",
+      "bytes": 2246,
+      "sha256": "dfc1285181196a19e82488f26127a4d39f3b8f165e2deece8b91877d698ee3a3"
+    },
+    {
+      "path": "SOURCE_CURRENT_INPUT_INVARIANTS.json",
+      "bytes": 890,
+      "sha256": "531c5974db73568c19c7ee4162291c1f3520f35a22d413fdbba537aa338594e0"
+    },
+    {
+      "path": "STYLE_INHERITANCE_AUDIT.json",
+      "bytes": 628,
+      "sha256": "52b0d900e76f427e8327d9663154f3c39b822ad77475be6491765062d5ec1085"
+    },
+    {
+      "path": "UPSTREAM_ALIGNMENT_AND_UNIT_AUDIT_V30.json",
+      "bytes": 1325,
+      "sha256": "34ddd5454a1e3ae389324b1ddd78e2d89b1ccf9b14063f88030531e98cbc5396"
+    },
+    {
+      "path": "UPSTREAM_ALIGNMENT_AND_UNIT_AUDIT_V30.md",
+      "bytes": 2497,
+      "sha256": "00dbc8be8e58bfef9c015f558723299355e8e61e380f1d41259accd125b0c49d"
+    },
+    {
+      "path": "UPSTREAM_SOURCE_SCHEMA_CROSSCHECK_V30.json",
+      "bytes": 1538,
+      "sha256": "da740de20688c51fb98cfdbb4d50c3f8744788f440141a26560ba1e150e9e73f"
+    },
+    {
+      "path": "VERSION_V30_POSTPROCESS.txt",
+      "bytes": 225,
+      "sha256": "1cc5cdc7620f20107b22fc0fdb50919744a72a0500239bec09767cbc0302468c"
+    },
+    {
+      "path": "postprocess/audit_against_successful_baseline.py",
+      "bytes": 10482,
+      "sha256": "5f18b4c4995061627a5ff3f7668d7c2cebcf0d2e000d6662cb9377b0f57b69af"
+    },
+    {
+      "path": "postprocess/audit_scientific_consistency.py",
+      "bytes": 12100,
+      "sha256": "f49caa7599cf90d1665230c4d64c1c331abc82662adbbf75bd61b96dc926d23c"
+    },
+    {
+      "path": "postprocess/audit_targetyear_sensitivity.py",
+      "bytes": 17635,
+      "sha256": "5e12a485076b20c9be727ec92fd5027ef97d91fafd96ba25563b85123bb4bde4"
+    },
+    {
+      "path": "postprocess/audit_v17t5_postprocess_source.py",
+      "bytes": 10360,
+      "sha256": "b8c7664f7adc25fcdac11859629bf1372027023ead75416c398c34103f53ae28"
+    },
+    {
+      "path": "postprocess/build_full8760_validation_tables.py",
+      "bytes": 12072,
+      "sha256": "955ddf20ea91a12fed8adf4875b15003acde48005554b4109e3b3ac7f58bf99d"
+    },
+    {
+      "path": "postprocess/build_spatial_legacy_tables.py",
+      "bytes": 53352,
+      "sha256": "ac859132f3b7d4a4b0376f1a49696d50e1c1cebca94f79b5b0df3873db24a58f"
+    },
+    {
+      "path": "postprocess/build_targetyear_sensitivity_tables.py",
+      "bytes": 16143,
+      "sha256": "b87d1338faad0a0749e42e7a2838ce7c6c9fc5a3ce36d6149daaaca520e4f945"
+    },
+    {
+      "path": "postprocess/build_v20_publication_tables.py",
+      "bytes": 17783,
+      "sha256": "7f162d83235a2541ebbc9442b45d829fddc8db05e504fed9a44a7bb197a1a542"
+    },
+    {
+      "path": "postprocess/build_v30_all_real_tables_bundle.py",
+      "bytes": 9267,
+      "sha256": "c8184d83c77735fc83e3dbbdc435a1cad2fde334cde213e48bf22baad531a85f"
+    },
+    {
+      "path": "postprocess/check_upstream_source_fingerprints.py",
+      "bytes": 5023,
+      "sha256": "20595402ed7a1b00ba2e4726fa41bf1ee6bbb38490f38b6e8ce1e22a4f8316b7"
+    },
+    {
+      "path": "postprocess/figure_output_registry_v17t5.csv",
+      "bytes": 3626,
+      "sha256": "851be1ef083adf4ebbfc26754ef9a883dd8bdc282bdc7c9cea2198881d13f589"
+    },
+    {
+      "path": "postprocess/figure_output_registry_v30.csv",
+      "bytes": 4612,
+      "sha256": "5a84db94f217c140a33825c876407b176790f5bbdff0c6f4ecac3175857685de"
+    },
+    {
+      "path": "postprocess/ne_style.py",
+      "bytes": 4194,
+      "sha256": "a01c76b4e43487a5df249b02214cb12d147c370cbbc3430acbe48b0ee8c157f6"
+    },
+    {
+      "path": "postprocess/plot_full8760_validation.py",
+      "bytes": 5808,
+      "sha256": "e3acef22202ff5977347a49aaadeec4cec60d9bd8792f4c8eca77b8d630e5f99"
+    },
+    {
+      "path": "postprocess/plot_spatial_legacy_figures.py",
+      "bytes": 86078,
+      "sha256": "b8cb49942982607cc488e6c254c9eaa22403a9daa45130d856132f81a5ba7a44"
+    },
+    {
+      "path": "postprocess/plot_targetyear_sensitivity_figure.py",
+      "bytes": 12268,
+      "sha256": "02f0e75374eab41373788f964a04ed526db1ef800817d83a407ec39659613366"
+    },
+    {
+      "path": "postprocess/plot_v20_publication_figures.py",
+      "bytes": 23402,
+      "sha256": "e1be8661d93e1330c277cec37f7b8da88e8019f537e9f449d088a5ced567e52a"
+    },
+    {
+      "path": "postprocess/preflight_spatial_legacy_outputs.py",
+      "bytes": 18734,
+      "sha256": "59ff11364e969a2a76fb1194ee39bb8d7514e8b323e740e715391d383a94fb75"
+    },
+    {
+      "path": "postprocess/preflight_targetyear_sensitivity.py",
+      "bytes": 14193,
+      "sha256": "bc589116f111cefe650d960ab08f2f812a4f767d00b0546d2fdea40359d598da"
+    },
+    {
+      "path": "postprocess/preflight_v30_extended_results.py",
+      "bytes": 5077,
+      "sha256": "2e344ca60e6545d552579113bdc5040e303000f13d374ac4aed2f7550b816d45"
+    },
+    {
+      "path": "postprocess/run_v17t5_publication_postprocess.py",
+      "bytes": 8067,
+      "sha256": "e6b7919346100d859f44fbd2bb1c6fd76354a04030eb311a6d3cba527f721a91"
+    },
+    {
+      "path": "postprocess/run_v30_publication_postprocess.py",
+      "bytes": 8489,
+      "sha256": "6a2ff488affa3428f56e33f50951d9f5d3aaf6ce563a1abf69d458021fd22086"
+    },
+    {
+      "path": "postprocess/targetyear_sensitivity_common.py",
+      "bytes": 30768,
+      "sha256": "c1ebec077c08b414350d92a1b87bca9c996e982189dcb5ec4000f14b78c0db34"
+    },
+    {
+      "path": "postprocess/v17t5_paths.py",
+      "bytes": 1845,
+      "sha256": "29cdfe91d888048e7fb348c11977ccaed3f21d66140845ee3efdf8ad701a4fda"
+    },
+    {
+      "path": "postprocess/v30_common.py",
+      "bytes": 33403,
+      "sha256": "f521bdba915b7ac4138639e8e910922faf71fc58c6860246098f2afef1e0a1d6"
+    },
+    {
+      "path": "postprocess/validate_spatial_legacy_release.py",
+      "bytes": 8190,
+      "sha256": "136f27dd43eec7a9e224eed5baa33e27e2ef773e26965a01efcfa9c536948e9d"
+    },
+    {
+      "path": "postprocess/validate_v30_release.py",
+      "bytes": 4121,
+      "sha256": "546e965d924a1e43be09cd7ddcef7f409bb836397c162c2ce71ab911fe9ff531"
+    },
+    {
+      "path": "postprocess/write_targetyear_manuscript_text.py",
+      "bytes": 7832,
+      "sha256": "0907e1bdfa65ceb73dff4f8e7b3e1677c1c0dc83008333ac43f7f0bb643d7bb6"
+    },
+    {
+      "path": "postprocess/write_v30_manuscript_text.py",
+      "bytes": 4312,
+      "sha256": "388fd29156f5b457783aa860f45d55125849fc04aa678e6ba2d5d6ba88bdf725"
+    },
+    {
+      "path": "postprocess_assets/map_assets/china_provinces.geojson",
+      "bytes": 54426,
+      "sha256": "278464f0e47733664e68a4bde1be7c132fc4c990ea8c6ec14431544e46d6009b"
+    },
+    {
+      "path": "postprocess_assets/map_assets/nine_dash_line_geometry_only.geojson",
+      "bytes": 9198,
+      "sha256": "210eab063546c90f4f6fb4f371a22d18e9ec139ff964a34b91c9fac674a05411"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 64,
+      "sha256": "068d5b5f27dac5e465f38c593016c6d70c55b5ada942295a4dc14970f2ec6721"
+    }
+  ],
+  "ees_review_update": "2026-09-10: S12 display tolerance and S14 static-year mask"
+}

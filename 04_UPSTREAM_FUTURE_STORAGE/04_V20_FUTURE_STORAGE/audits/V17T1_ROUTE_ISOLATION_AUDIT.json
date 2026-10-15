@@ -1,0 +1,78 @@
+{
+  "version": "V17T1",
+  "checks": 5,
+  "passed": 5,
+  "all_pass": true,
+  "rows": [
+    {
+      "scenario": "SL00_OBSERVED_ACTUAL",
+      "got": [
+        "scaled_barrier",
+        "deterministic_concurrent",
+        "dual_simplex"
+      ],
+      "expected": [
+        "scaled_barrier",
+        "deterministic_concurrent",
+        "dual_simplex"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "SL08_PH_CONSERVATIVE_OBSERVED",
+      "got": [
+        "scaled_barrier",
+        "deterministic_concurrent",
+        "dual_simplex"
+      ],
+      "expected": [
+        "scaled_barrier",
+        "deterministic_concurrent",
+        "dual_simplex"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "SL10_CARBON_TIGHT_OBSERVED",
+      "got": [
+        "hard_deterministic_concurrent_simplex",
+        "hard_primal_simplex",
+        "hard_homogeneous_barrier"
+      ],
+      "expected": [
+        "hard_deterministic_concurrent_simplex",
+        "hard_primal_simplex",
+        "hard_homogeneous_barrier"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "SL13_COST_LOW_OPTIMAL",
+      "got": [
+        "hard_deterministic_concurrent_simplex",
+        "hard_primal_simplex",
+        "hard_homogeneous_barrier"
+      ],
+      "expected": [
+        "hard_deterministic_concurrent_simplex",
+        "hard_primal_simplex",
+        "hard_homogeneous_barrier"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "SL15_COST_HIGH_OPTIMAL",
+      "got": [
+        "scaled_barrier",
+        "deterministic_concurrent",
+        "dual_simplex"
+      ],
+      "expected": [
+        "scaled_barrier",
+        "deterministic_concurrent",
+        "dual_simplex"
+      ],
+      "pass": true
+    }
+  ]
+}

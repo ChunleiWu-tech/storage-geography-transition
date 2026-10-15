@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "source_file": "hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz",
+  "source_file_sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70",
+  "source_profile_quality": "era5_2024_china_province_ispo_potential_weighted_withSP",
+  "source_rows": 543120,
+  "processed_rows": 271560,
+  "provinces": 31,
+  "hours": 8760,
+  "technologies": [
+    "solar",
+    "onshore_wind"
+  ],
+  "exact_duplicate_keys": 0,
+  "null_capacity_factors": 0,
+  "offshore_wind_enabled": false,
+  "cf_min": 0.0,
+  "cf_max": 1.0
+}

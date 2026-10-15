@@ -1,0 +1,122 @@
+{
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "sources": [
+    {
+      "source_id": "switch_china_inputs_v2_0_9",
+      "source_class": "open_model_snapshot",
+      "publisher": "SWITCH Model / SWITCH-China open model",
+      "title": "SWITCH-China inputs v2.0.9 (user-supplied frozen snapshot)",
+      "official_url": "https://github.com/switch-model/switch-china-open-model",
+      "publication_or_cutoff_date": "version 2.0.9",
+      "accessed_date": "2026-08-03",
+      "archived_file": "shared_source_snapshots/SWITCH_China_inputs_v2.0.9.zip",
+      "sha256": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3",
+      "model_use": "foundational input lineage; study template is a documented aggregation and extension",
+      "evidence_boundary": "not byte-identical to the study template; no unsupported exact one-step transformation claim"
+    },
+    {
+      "source_id": "vre_hourly_2024_province",
+      "source_class": "study_supplied_meteorological_profile",
+      "publisher": "study-supplied ERA5-derived dataset",
+      "title": "2024 hourly province-level solar and onshore-wind capacity factors with solar potential weighting",
+      "official_url": "",
+      "publication_or_cutoff_date": "2024 weather year",
+      "accessed_date": "2026-08-03",
+      "archived_file": "shared_source_snapshots/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz",
+      "sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70",
+      "model_use": "31 provinces x 8,760-hour temporal-spatial shape",
+      "evidence_boundary": "wind level is nationally calibrated; not province-specific observational validation"
+    },
+    {
+      "source_id": "nea_renewable_monitoring_2024",
+      "source_class": "official_government_document",
+      "publisher": "National Energy Administration",
+      "title": "2024 national renewable-energy power development monitoring and evaluation results",
+      "official_url": "https://www.nea.gov.cn/20251113/cc1fb0298a2944f8bd5441f67c9be9b3/c.html",
+      "publication_or_cutoff_date": "2024 statistics; released 2025-11-13",
+      "accessed_date": "2026-08-03",
+      "archived_file": "shared_source_snapshots/NEA_2024_Renewable_Energy_Monitoring_Evaluation.doc",
+      "sha256": "b2c460a50a2bcd379b1a8c18b0b4c992fffff047dc8c5bb775aa7845ccd62449",
+      "model_use": "final 2024 wind generation 996.8 TWh and utilization 95.9%",
+      "evidence_boundary": "national total wind; not an onshore-only or provincial statistic"
+    },
+    {
+      "source_id": "nea_storage_report_2026",
+      "source_class": "official_government_report",
+      "publisher": "National Energy Administration",
+      "title": "China New-type Energy Storage Development Report 2026",
+      "official_url": "https://www.nea.gov.cn/20260730/0a1e9823b7a14e8ba16e82c34b3bea2b/c.html",
+      "publication_or_cutoff_date": "end-2025 stock; released 2026-07-30",
+      "accessed_date": "2026-08-03",
+      "archived_file": "shared_source_snapshots/NEA_China_New_Energy_Storage_Development_Report_2026.pdf",
+      "sha256": "ba6435f8790d901794c3ecd9e3eef0f5ad234a2c4bb0b72400fe3ff49e1fa4b2",
+      "model_use": "exact 135,930 MW / 351,120 MWh national stock and exact North/Northwest totals",
+      "evidence_boundary": "does not publish an exact complete 31-province point inventory"
+    },
+    {
+      "source_id": "nea_storage_press_2025",
+      "source_class": "official_government_press_conference",
+      "publisher": "National Energy Administration",
+      "title": "2025 new-type energy storage development press conference",
+      "official_url": "https://www.nea.gov.cn/20260130/50f657ce87f848e1a9a1861d1fd9aa23/c.html",
+      "publication_or_cutoff_date": "end-2025 stock; released 2026-01-30",
+      "accessed_date": "2026-08-03",
+      "archived_file": "",
+      "sha256": "",
+      "model_use": "regional shares; exact Inner Mongolia, Xinjiang and Shandong powers; seven additional >5 GW provinces after Gansu is replaced by an exact year-end source",
+      "evidence_boundary": "the seven provinces are threshold evidence only, not exact point values"
+    },
+    {
+      "source_id": "gansu_storage_year_end_2025",
+      "source_class": "official_government_portal",
+      "publisher": "Gansu Provincial Belt and Road portal / State Grid Gansu",
+      "title": "End-2025 Gansu new-type energy-storage commissioned capacity",
+      "official_url": "https://ydyl.gansu.gov.cn/gsydyl/gswt/myct/202602/t20260226_34006.html",
+      "publication_or_cutoff_date": "end-2025 stock; released 2026-02-26",
+      "accessed_date": "2026-08-03",
+      "archived_file": "",
+      "sha256": "",
+      "model_use": "exact Gansu commissioned power 8405.8 MW",
+      "evidence_boundary": "province power anchor only; energy remains standardized by the exact national average duration"
+    },
+    {
+      "source_id": "guizhou_storage_year_end_2025",
+      "source_class": "official_provincial_energy_bureau",
+      "publisher": "Guizhou Provincial Energy Administration",
+      "title": "End-December 2025 Guizhou commissioned/grid-connected new-type energy-storage capacity",
+      "official_url": "https://nyj.guizhou.gov.cn/ztzl/nygg/202603/t20260303_89598053.html",
+      "publication_or_cutoff_date": "end-2025 stock; released 2026-03-03",
+      "accessed_date": "2026-08-03",
+      "archived_file": "",
+      "sha256": "",
+      "model_use": "exact Guizhou commissioned/grid-connected power 2450 MW",
+      "evidence_boundary": "province power anchor only; energy remains standardized by the exact national average duration"
+    },
+    {
+      "source_id": "nea_storage_q1_2026_context",
+      "source_class": "official_government_status_update",
+      "publisher": "National Energy Administration",
+      "title": "NEA response noting more than 140 GW commissioned new-type storage at end-Q1 2026",
+      "official_url": "https://www.nea.gov.cn/20260720/70d98b9122a1466790f3c2a296d271dd/c.html",
+      "publication_or_cutoff_date": "2026-03-31 status; official response dated 2026-06-26",
+      "accessed_date": "2026-08-03",
+      "archived_file": "",
+      "sha256": "",
+      "model_use": "latest context only; excluded from model input",
+      "evidence_boundary": "no same-date nationally closed energy total or provincial vector"
+    },
+    {
+      "source_id": "ndrc_nea_storage_action_2025_2027",
+      "source_class": "official_joint_policy",
+      "publisher": "National Development and Reform Commission and National Energy Administration",
+      "title": "Special Action Plan for Large-scale New-type Energy Storage Construction (2025-2027)",
+      "official_url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202509/t20250912_1400425.html",
+      "publication_or_cutoff_date": "2025",
+      "accessed_date": "2026-08-03",
+      "archived_file": "",
+      "sha256": "",
+      "model_use": "policy context only",
+      "evidence_boundary": "not used as an observed provincial inventory"
+    }
+  ]
+}

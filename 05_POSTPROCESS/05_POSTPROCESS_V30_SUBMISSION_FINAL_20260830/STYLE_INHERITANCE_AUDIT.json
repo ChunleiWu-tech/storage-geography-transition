@@ -1,0 +1,11 @@
+{
+  "version": "V30_STYLE_INHERITANCE_20260830",
+  "status": "PASS",
+  "reference_package": "E:/桌面1/储能/0809/02_POSTPROCESS",
+  "reference_file": "postprocess/ne_style.py",
+  "reference_sha256": "a01c76b4e43487a5df249b02214cb12d147c370cbbc3430acbe48b0ee8c157f6",
+  "current_sha256": "a01c76b4e43487a5df249b02214cb12d147c370cbbc3430acbe48b0ee8c157f6",
+  "byte_identical": true,
+  "locked_outputs": ["PDF with editable TrueType fonts", "SVG with live text", "600 dpi PNG"],
+  "locked_layout": "180 mm Nature-family width, Arial-first, white background, quiet grids, restrained named palette, bold lowercase panel labels"
+}

@@ -1,0 +1,53 @@
+{
+  "version": "V17T2R6R7_HF2P1_FULL8760",
+  "patch_scope": "postsolve_membership_lookup_acceleration_only",
+  "base_hf2_model_sha256": "34d2e622bafdc33862b4748f19c469cb6ff4fe3b81ebdf6164d75cc51c60f45c",
+  "pre_postsolve_solve_and_gate_prefix_sha256": "6e692da02ecea112f6527fce0552dedb49af033b10a256ca3b9de6881d7303ea",
+  "files": [
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "bytes": 416539,
+      "sha256": "6c6aae7891fecb3405d20fca3cc8f585a44f258e8c6c9e0405d481ff80c66fe5"
+    },
+    {
+      "path": "tools/check_julia_8760_static.py",
+      "bytes": 16921,
+      "sha256": "5c48e70e306987dbacf78cc0afb7be184949f65d1ae9bde3df5110650fba678d"
+    },
+    {
+      "path": "tools/check_8760_package.py",
+      "bytes": 23434,
+      "sha256": "ea30e514f23a647da3aed3212b8307bf338300e9be01fcd4faf251a127d860ea"
+    },
+    {
+      "path": "tools/build_8760_package_manifest.py",
+      "bytes": 3853,
+      "sha256": "56d537a9c8d9d0f61a1e49c599227585f8ee2c25ac0d7fa51816ad6fa873b789"
+    },
+    {
+      "path": "tools/verify_hf2p1_patch.py",
+      "bytes": 2241,
+      "sha256": "7589b04ba6c1d4fe7e7b2d60d46dba199cb06c2c8d4968d3034a143f2f37c892"
+    },
+    {
+      "path": "VERSION_V17T2R6_FULL8760.txt",
+      "bytes": 71,
+      "sha256": "a34a886b6fb043eaca0567068f11206b23dbeb682d3bb5e220b143b15628f163"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R7_HF2P1.md",
+      "bytes": 1075,
+      "sha256": "7bf6651c88165949e4412a8884abc191bb959476028876433dfd5705f5cd3afb"
+    },
+    {
+      "path": "RUN_V17T2R6_8760_OBSERVED_ONLY_HF2P1.bat",
+      "bytes": 295,
+      "sha256": "d6d0f998166cacfdf264aa558cb7a6ce63fac78a05476fc1f49b2686ec041ae7"
+    },
+    {
+      "path": "CHECK_V17T2R6R7_HF2P1_PATCH.bat",
+      "bytes": 143,
+      "sha256": "c3a42f09aac544f6843cf3c8d38a0d8fd2bec376d671ddc2188fb6691fa21687"
+    }
+  ]
+}

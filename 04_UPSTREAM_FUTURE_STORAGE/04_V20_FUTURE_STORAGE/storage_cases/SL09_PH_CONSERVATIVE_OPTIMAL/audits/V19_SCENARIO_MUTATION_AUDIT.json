@@ -1,0 +1,118 @@
+{
+  "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+  "mutation_scope": "V19 evidence-tiered future-storage portfolio plus inherited V17 spatial-legacy mutations; frozen implementation core remains cheer_power_storage_v1.jl",
+  "mutations": [
+    {
+      "name": "spatial_storage_legacy",
+      "mode": "optimized_reallocation",
+      "cap_quantile": 0.95,
+      "national_power_target_mw": 135930.0,
+      "national_energy_target_mwh": 351120.0,
+      "identification": "same national legacy MW and MWh; spatial allocation changes"
+    },
+    {
+      "name": "battery_cost_case",
+      "case": "NLR_2025_mid",
+      "storage_techs": "Battery only",
+      "source": "Cole, Ramasamy and Turan (2025), NREL/TP-6A40-93281, Appendix Table 2",
+      "source_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+      "fixed_duration_h": 4.0,
+      "direct_annual_cost_trajectory": true,
+      "multiplicative_factor": null,
+      "reverse_calibration_used": false
+    },
+    {
+      "name": "v19_storage_technology_duration_portfolio",
+      "v19_scope": "primary",
+      "candidate_count": 5,
+      "headline_portfolio": [
+        "V18_LFP_4h",
+        "V18_VRFB_10h",
+        "V18_VRFB_24h",
+        "V18_PSH_10h",
+        "V18_PSH_24h"
+      ],
+      "duration_sensitivity_only_portfolio": [],
+      "pressure_test_only_portfolio": [],
+      "post_2030_non_lfp_cost_extrapolation_used": false,
+      "legacy_storage_rows_modified": false
+    },
+    {
+      "name": "pumped_hydro_boundary",
+      "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+      "pumped_hydro_case": "PH_conservative",
+      "baseline_ceiling_sum_mw": 333645.0,
+      "surviving_predetermined_floor_sum_mw": 31490.0,
+      "target_sum_mw": 31490.0,
+      "allocation_method": "predetermined floor plus proportional residual-resource allocation",
+      "future_policy_floor_treatment": "retire_2028plus_hydro_pumped_policy_expansion_floors_retain_2023_stock_anchor",
+      "policy_floor_audit": {
+        "historical_anchor_period": 2023,
+        "retained_anchor_rows": 31,
+        "retained_anchor_sum_mw": 30153.5,
+        "removed_future_rows": 217,
+        "removed_future_sum_mw": 1517726.1666673,
+        "removed_future_sum_mw_by_period": {
+          "2028": 60307.0,
+          "2033": 100511.66666730001,
+          "2038": 150767.5,
+          "2043": 301535.0,
+          "2048": 301535.0,
+          "2053": 301535.0,
+          "2058": 301535.0
+        },
+        "future_hydro_pumped_rows_remaining": 0
+      }
+    }
+  ],
+  "pre_solve_checks": [
+    {
+      "check": "spatial_legacy_pre_solve_policy_closure",
+      "pass": true,
+      "mode": "optimized_reallocation"
+    },
+    {
+      "check": "v19_storage_portfolio_prepared",
+      "pass": true,
+      "scope": "primary",
+      "candidate_count": 5
+    },
+    {
+      "check": "pumped_hydro_conservative_future_policy_floors_retired",
+      "pass": true,
+      "historical_anchor_period": 2023,
+      "retained_anchor_rows": 31,
+      "retained_anchor_sum_mw": 30153.5,
+      "removed_future_rows": 217,
+      "removed_future_sum_mw": 1517726.1666673,
+      "removed_future_sum_mw_by_period": {
+        "2028": 60307.0,
+        "2033": 100511.66666730001,
+        "2038": 150767.5,
+        "2043": 301535.0,
+        "2048": 301535.0,
+        "2053": 301535.0,
+        "2058": 301535.0
+      },
+      "future_hydro_pumped_rows_remaining": 0
+    },
+    {
+      "check": "pumped_hydro_historical_anchor_not_above_surviving_stock",
+      "pass": true,
+      "historical_anchor_sum_mw": 30153.5,
+      "surviving_predetermined_stock_mw": 31490.0
+    },
+    {
+      "check": "pumped_hydro_capacity_ceiling_not_below_predetermined_floor",
+      "pass": true,
+      "minimum_margin_mw": 0.0
+    },
+    {
+      "check": "pumped_hydro_national_target_closure",
+      "pass": true,
+      "allocated_total_mw": 31490.0,
+      "target_mw": 31490.0
+    }
+  ],
+  "all_pre_solve_checks_pass": true
+}

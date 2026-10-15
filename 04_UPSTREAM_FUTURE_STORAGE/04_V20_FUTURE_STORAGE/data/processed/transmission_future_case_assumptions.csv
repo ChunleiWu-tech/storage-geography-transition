@@ -1,0 +1,5 @@
+transmission_case,case_type,implementation_rule,source
+TX_fixed,existing_only,Existing interprovincial line capacities only; no new expansion except already in base dataset,existing Zenodo provincial transmission dataset
+TX_policy2030,policy,2030 policy expansion represented by national west-to-east / interprovincial mutual-aid boundary; allocate along existing and west-to-east corridors,NDRC/NEA grid high-quality development guidance and national energy planning
+TX_lit_mid2050,literature,Use 2050 UHV demand 843.3-917.0 GW as mid expansion envelope; allocate by existing corridors and source-sink classes,"Zhang and Chen, Applied Energy 2020"
+TX_lit_high2050,literature,Use 2050 UHV demand up to 1198 GW as high expansion envelope; sensitivity only,"Zhang and Chen, Applied Energy 2020"

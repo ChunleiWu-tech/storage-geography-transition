@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "version": "V18R1_FUTURE_CORRECTION",
+  "package_role": "separate corrective-planning layer on frozen V17T2R5 diagnostic core",
+  "scientific_core_changed": false,
+  "frozen_core_sha256": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84",
+  "target_year": 2033,
+  "chronology": {
+    "mode": "monthly_linked",
+    "time_resolution_h": 4,
+    "representative_months": 12,
+    "timepoints": 72,
+    "full_8760_claim_supported": false
+  },
+  "decision_scope": {
+    "future_storage_power_capacity_endogenous": true,
+    "future_storage_energy_capacity_endogenous": true,
+    "province_or_model_zone_siting_endogenous": true,
+    "technology_choice_endogenous_in_adaptive_cases": true,
+    "duration_choice": "discrete technology-duration candidates",
+    "future_transmission_endogenous_in_TX_policy": true,
+    "investment_timing_path_2025_2050_claim_supported": false,
+    "project_level_real_site_prediction_supported": false
+  },
+  "primary_pairs": [
+    "FC_BASE",
+    "FC_ADAPTIVE"
+  ],
+  "robustness_pairs": [
+    "FC_ADAPTIVE_TXFIXED"
+  ],
+  "pressure_test_pairs": [
+    "FC_EXPANDED_PRESSURE"
+  ],
+  "primary_portfolio": [
+    "Li-ion 4 h (frozen V17 option)",
+    "Base Hydro_Pumped (frozen V17 option)",
+    "LDES_VRFB_10h",
+    "LDES_VRFB_24h",
+    "LDES_PSH_10h",
+    "LDES_PSH_24h"
+  ],
+  "expanded_only_pressure_test": [
+    "LDES_CAES_10h",
+    "LDES_CAES_24h",
+    "LDES_CAES_100h",
+    "LDES_H2_100h"
+  ],
+  "main_figure": "Fig. 6 — Least-cost correction of inherited storage spatial lock-in",
+  "publication_rule": "only solver-native OPTIMAL + FEASIBLE_POINT primal/dual + physical/chronology/export/lineage gates may be promoted",
+  "interpretation_lock": "repair fraction is a matched model difference-in-differences metric, not an empirical historical causal estimate"
+}

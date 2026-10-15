@@ -1,0 +1,132 @@
+{
+  "scenario": "SL05_RULE_VRE",
+  "case_dir": "<PACKAGE_ROOT>/storage_cases/SL05_RULE_VRE",
+  "pass": true,
+  "checks": [
+    {
+      "check": "required_input_files",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "legacy_policy_file_present",
+      "pass": true,
+      "detail": "<PACKAGE_ROOT>/storage_cases/SL05_RULE_VRE/inputs/legacy_storage_policy.csv"
+    },
+    {
+      "check": "legacy_policy_required_columns",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "legacy_policy_32_unique_zones",
+      "pass": true,
+      "detail": "{'rows': 32, 'zones': 32}"
+    },
+    {
+      "check": "legacy_policy_single_mode",
+      "pass": true,
+      "detail": "['rule_vre']"
+    },
+    {
+      "check": "legacy_zone_caps_nonnegative",
+      "pass": true,
+      "detail": "479.8877152019188"
+    },
+    {
+      "check": "legacy_optimized_target_feasible_under_caps",
+      "pass": true,
+      "detail": "{'cap_sum_mw': 544822.6945485384, 'target_mw': 135930.0}"
+    },
+    {
+      "check": "legacy_fixed_predetermined_32_rows",
+      "pass": true,
+      "detail": "32"
+    },
+    {
+      "check": "legacy_fixed_power_national_closure",
+      "pass": true,
+      "detail": "{'pred': 135930.0, 'target': 135930.0}"
+    },
+    {
+      "check": "legacy_fixed_energy_national_closure",
+      "pass": true,
+      "detail": "{'pred': 351120.0, 'target': 351120.0}"
+    },
+    {
+      "check": "legacy_2023_power_and_energy_capex_are_sunk",
+      "pass": true,
+      "detail": "{'rows': 32, 'max_power_cost': 0.0, 'max_energy_cost': 0.0}"
+    },
+    {
+      "check": "representative_timepoint_count_504",
+      "pass": true,
+      "detail": "504"
+    },
+    {
+      "check": "timeseries_count_84",
+      "pass": true,
+      "detail": "84"
+    },
+    {
+      "check": "six_timepoints_per_representative_day",
+      "pass": true,
+      "detail": "[np.float64(6.0)]"
+    },
+    {
+      "check": "four_hour_timepoints",
+      "pass": true,
+      "detail": "[np.int64(4)]"
+    },
+    {
+      "check": "operations_start_in_2028",
+      "pass": true,
+      "detail": "[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+    },
+    {
+      "check": "no_2023_operational_timeseries",
+      "pass": true,
+      "detail": "[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+    },
+    {
+      "check": "representative_weights_positive",
+      "pass": true,
+      "detail": "{2028: 43800.0, 2033: 43800.0, 2038: 43800.0, 2043: 43800.0, 2048: 43800.0, 2053: 43800.0, 2058: 43800.0}"
+    },
+    {
+      "check": "seven_operational_planning_periods",
+      "pass": true,
+      "detail": "[2028, 2033, 2038, 2043, 2048, 2053, 2058]"
+    },
+    {
+      "check": "deep_decarbonization_final_cap_matches_scenario",
+      "pass": true,
+      "detail": "{'input_final_cap': 200000000.0, 'solver_multiplier': 1.0, 'effective_expected_final_cap': 200000000.0}"
+    },
+    {
+      "check": "official_storage_scenario_has_no_cdr",
+      "pass": true,
+      "detail": "{'allow_beccs': False, 'NBCCS': False, 'DACCS': False}"
+    },
+    {
+      "check": "pumped_hydro_ceiling_above_predetermined_floor",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "generation_capacity_limit_uses_explicit_unset_sentinel",
+      "pass": true,
+      "detail": "{'missing_or_blank': 0}"
+    },
+    {
+      "check": "nonnegative_generation_capacity_limits",
+      "pass": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "capacity_factors_in_unit_interval",
+      "pass": true,
+      "detail": "{'min': 0.0, 'max': 1.0}"
+    }
+  ]
+}

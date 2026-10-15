@@ -1,0 +1,854 @@
+{
+  "version": "V17T2R5",
+  "status": "PASS",
+  "pairs": [
+    {
+      "pair_id": "TY2028_CHRONO",
+      "observed_scenario": "TY2028_CHRONO_OBSERVED",
+      "optimized_scenario": "TY2028_CHRONO_OPTIMAL",
+      "status": "PASS",
+      "errors": [],
+      "allowed_input_differences": [
+        "gen_build_predetermined.csv",
+        "legacy_storage_policy.csv"
+      ],
+      "file_comparison": [
+        {
+          "file": "beccs_lifecycle_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "biomass_procure_case_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "build_tx_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "capacity_plans.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "carbon_policies.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_new_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "co2_injection_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "electricity_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "financials.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel supply curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_cost.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_supply_curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuels.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_predetermined.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "gen_ccs_energy_load.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_info.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "hydro_timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "legacy_storage_policy.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "load_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads_new.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "non_fuel_energy_sources.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "periods.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirement_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirements.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "provincial_biomass_procure_cost_usd_per_tco2.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "regional_fuel_markets.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timepoints.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_tech_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "trans_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "transmission_lines.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "variable_capacity_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_coincident_peak_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_to_regional_fuel_market.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        }
+      ],
+      "observed_fixed_legacy_power_mw": 135930.0,
+      "observed_fixed_legacy_energy_mwh": 351119.99999999994,
+      "optimized_fixed_2023_battery_row_count": 0,
+      "identification_statement": "All non-geographic inputs are byte-identical. The reference member fixes the standardized 2025 inherited Battery stock by model zone; the optimized member endogenizes only that same-total 2023-labelled allocation under the identical empirical deployment envelope."
+    },
+    {
+      "pair_id": "TY2033_CHRONO",
+      "observed_scenario": "TY2033_CHRONO_OBSERVED",
+      "optimized_scenario": "TY2033_CHRONO_OPTIMAL",
+      "status": "PASS",
+      "errors": [],
+      "allowed_input_differences": [
+        "gen_build_predetermined.csv",
+        "legacy_storage_policy.csv"
+      ],
+      "file_comparison": [
+        {
+          "file": "beccs_lifecycle_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "biomass_procure_case_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "build_tx_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "capacity_plans.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "carbon_policies.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_new_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "co2_injection_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "electricity_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "financials.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel supply curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_cost.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_supply_curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuels.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_predetermined.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "gen_ccs_energy_load.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_info.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "hydro_timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "legacy_storage_policy.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "load_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads_new.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "non_fuel_energy_sources.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "periods.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirement_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirements.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "provincial_biomass_procure_cost_usd_per_tco2.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "regional_fuel_markets.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timepoints.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_tech_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "trans_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "transmission_lines.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "variable_capacity_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_coincident_peak_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_to_regional_fuel_market.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        }
+      ],
+      "observed_fixed_legacy_power_mw": 135930.0,
+      "observed_fixed_legacy_energy_mwh": 351119.99999999994,
+      "optimized_fixed_2023_battery_row_count": 0,
+      "identification_statement": "All non-geographic inputs are byte-identical. The reference member fixes the standardized 2025 inherited Battery stock by model zone; the optimized member endogenizes only that same-total 2023-labelled allocation under the identical empirical deployment envelope."
+    },
+    {
+      "pair_id": "TY2033_CHRONO_1H",
+      "observed_scenario": "TY2033_CHRONO_1H_OBSERVED",
+      "optimized_scenario": "TY2033_CHRONO_1H_OPTIMAL",
+      "status": "PASS",
+      "errors": [],
+      "allowed_input_differences": [
+        "gen_build_predetermined.csv",
+        "legacy_storage_policy.csv"
+      ],
+      "file_comparison": [
+        {
+          "file": "beccs_lifecycle_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "biomass_procure_case_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "build_tx_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "capacity_plans.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "carbon_policies.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_new_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "co2_injection_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "electricity_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "financials.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel supply curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_cost.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_supply_curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuels.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_predetermined.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "gen_ccs_energy_load.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_info.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "hydro_timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "legacy_storage_policy.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "load_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads_new.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "non_fuel_energy_sources.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "periods.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirement_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirements.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "provincial_biomass_procure_cost_usd_per_tco2.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "regional_fuel_markets.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timepoints.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_tech_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "trans_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "transmission_lines.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "variable_capacity_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_coincident_peak_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_to_regional_fuel_market.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        }
+      ],
+      "observed_fixed_legacy_power_mw": 135930.0,
+      "observed_fixed_legacy_energy_mwh": 351119.99999999994,
+      "optimized_fixed_2023_battery_row_count": 0,
+      "identification_statement": "All non-geographic inputs are byte-identical. The reference member fixes the standardized 2025 inherited Battery stock by model zone; the optimized member endogenizes only that same-total 2023-labelled allocation under the identical empirical deployment envelope."
+    },
+    {
+      "pair_id": "TY2033_CHRONO_LDES",
+      "observed_scenario": "TY2033_CHRONO_LDES_OBSERVED",
+      "optimized_scenario": "TY2033_CHRONO_LDES_OPTIMAL",
+      "status": "PASS",
+      "errors": [],
+      "allowed_input_differences": [
+        "gen_build_predetermined.csv",
+        "legacy_storage_policy.csv"
+      ],
+      "file_comparison": [
+        {
+          "file": "beccs_lifecycle_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "biomass_procure_case_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "build_tx_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "capacity_plans.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "carbon_policies.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_install_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "ccs_new_predetermined.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "co2_injection_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "electricity_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "financials.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel supply curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_cost.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuel_supply_curves.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "fuels.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_costs.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_build_predetermined.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "gen_ccs_energy_load.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "gen_info.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "hydro_timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "legacy_storage_policy.csv",
+          "byte_identical": false,
+          "difference_allowed": true
+        },
+        {
+          "file": "load_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "loads_new.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "non_fuel_energy_sources.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "periods.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirement_zones.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "planning_reserve_requirements.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "provincial_biomass_procure_cost_usd_per_tco2.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "regional_fuel_markets.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timepoints.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "timeseries.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "total_capacity_tech_limits.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "trans_params.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "transmission_lines.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "variable_capacity_factors.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_coincident_peak_demand.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        },
+        {
+          "file": "zone_to_regional_fuel_market.csv",
+          "byte_identical": true,
+          "difference_allowed": false
+        }
+      ],
+      "observed_fixed_legacy_power_mw": 135930.0,
+      "observed_fixed_legacy_energy_mwh": 351119.99999999994,
+      "optimized_fixed_2023_battery_row_count": 0,
+      "identification_statement": "All non-geographic inputs are byte-identical. The reference member fixes the standardized 2025 inherited Battery stock by model zone; the optimized member endogenizes only that same-total 2023-labelled allocation under the identical empirical deployment envelope."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+check,pass,detail,severity
+python_compile,True,[],error
+scenario_master_columns,True,[],error
+sixteen_official_scenarios,True,16,error
+scenario_names_unique,True,"['SL00_OBSERVED_ACTUAL', 'SL01_OBSERVED_STANDARDIZED', 'SL02_OPTIMAL_REALLOCATION', 'SL03_NO_LEGACY', 'SL04_RULE_LOAD', 'SL05_RULE_VRE', 'SL06_TX_FIXED_OBSERVED', 'SL07_TX_FIXED_OPTIMAL', 'SL08_PH_CONSERVATIVE_OBSERVED', 'SL09_PH_CONSERVATIVE_OPTIMAL', 'SL10_CARBON_TIGHT_OBSERVED', 'SL11_CARBON_TIGHT_OPTIMAL', 'SL12_COST_LOW_OBSERVED', 'SL13_COST_LOW_OPTIMAL', 'SL14_COST_HIGH_OBSERVED', 'SL15_COST_HIGH_OPTIMAL']",error
+all_official_no_beccs,True,[],error
+all_official_declare_no_cdr,True,"NBCCS, DACCS and BECCS disabled; fossil generator CCS remains separately declared",error
+claim_scope_excludes_long_duration,True,representative-day evidence boundary,error
+model:scaled_economic_objective,True,ECONOMIC_OBJECTIVE_SCALE_USD = 1.0e6,error
+model:configurable_threads,True,V17_SOLVER_THREADS,error
+model:barrier_primary,True,"profile == ""scaled_barrier""",error
+model:barrier_no_crossover,True,crossover = 0,error
+model:native_solver_certificate,True,stage1_native_solver_certificate_pass,error
+model:native_barrier_proof_source,True,gurobi_barrier_optimal_status_barconvtol_no_crossover,error
+model:native_zero_iteration_proof_source,True,gurobi_zero_iteration_optimal_under_barrier_configuration,error
+model:presolve_safe_iteration_mode,True,stage1_zero_iteration_optimal,error
+model:native_gurobi_status,True,stage1_gurobi_status_gate_pass,error
+model:native_gurobi_objval,True,stage1_gurobi_objval_gate_pass,error
+model:external_diagnostic_tolerance,True,STAGE1_CERT_ACCEPT_REL_TOL,error
+model:safe_objbound,True,_safe_solve_float(() -> objective_bound(mod)),error
+model:safe_dual_objective,True,_safe_solve_float(() -> dual_objective_value(mod)),error
+model:certificate_grade,True,strict_solver_native,error
+model:external_diagnostic_only,True,stage1_dual_objective_diagnostic_only,error
+model:single_cleanup_route,True,cleanup_route_for_profile(cleanup_profile),error
+model:economic_cost_band,True,Enforce_Lexicographic_Economic_Cost_Band,error
+model:aggregate_generation_locks,True,gen_build_groups,error
+model:aggregate_storage_energy_locks,True,storage_energy_groups,error
+model:retirement_locks,True,retirement_groups,error
+model:ccs_locks,True,ccs_groups,error
+model:local_grid_locks,True,BuildLocalTD[idx],error
+model:explicit_gate_diagnostics,True,solve_gate_diagnostics.json,error
+model:publication_gate,True,PUBLICATION_SOLVE_GATE_FAILED,error
+model:cdr_compile_off,True,STORAGE_CDR_MODULES_COMPILED = false,error
+model:raw_pstart_reset,True,Gurobi.GRBreset,error
+model:raw_pstart_array,True,Gurobi.GRBsetdblattrarray,error
+model:raw_pstart_list,True,Gurobi.GRBsetdblattrlist,error
+model:raw_pstart_column_map,True,Gurobi.c_column,error
+model:raw_pstart_not_serialized,True,:cleanup_raw_pstart_serialized => [false],error
+model:optional_diagnostic_cleanup_pstart,True,diagnostic_primal_simplex_raw_pstart_sparse_face_selection,error
+forbidden_absent:crossover_basis_attribute_write,True,"""CrossoverBasis"",",error
+forbidden_absent:price_basis,True,price_basis,error
+forbidden_absent:capture_simplex_basis,True,capture_simplex_basis,error
+forbidden_absent:restore_simplex_basis,True,restore_simplex_basis!,error
+forbidden_absent:variable_basis_status,True,VariableBasisStatus,error
+forbidden_absent:constraint_basis_status,True,ConstraintBasisStatus,error
+forbidden_absent:dual_start_attribute_write,True,"""DStart"",",error
+forbidden_absent:set_start_value,True,set_start_value(,error
+forbidden_absent:old_cleanup_profile,True,two_stage_physical_cleanup,error
+forbidden_absent:old_objbound_tolerance,True,stage1_objective_bound_gap_tolerance_usd,error
+runner_hard_disables_cdr,True,runner arguments,error
+batch_fresh_process_attempts,True,fresh model per route,error
+batch_no_stage1_primal_diagnostic,True,stage-1 primal simplex remains diagnostic only,error
+bounded_stage1_route_tree,True,official fallback changes only the stage-1 solver algorithm,error
+stage1_official_primary,True,formal route publishes the certified stage-1 solution,error
+cleanup_absent_from_official_fallback,True,cleanup algorithms cannot replace or reject the official stage-1 result,error
+raw_pstart_only_ephemeral,True,no PStart persistence,error
+source_load_probe_present,True,production source is actually included before solve,error
+runtime_invokes_source_load,True,runtime validation cannot bypass production source lowering,error
+grb_error_constant_top_level,True,no local const declaration,error
+figure_registry_22,True,22,error
+six_main_figures,True,main figures,error
+figure_ids_unique,True,"['Fig1', 'Fig2', 'Fig3', 'Fig4', 'Fig5', 'Fig6', 'FigS01', 'FigS02', 'FigS03', 'FigS04', 'FigS05', 'FigS06', 'FigS07', 'FigS08', 'FigS09', 'FigS10', 'FigS11', 'FigS12', 'FigS13', 'FigS14', 'FigS15', 'FigS16']",error
+legacy_32_zones,True,"{'rows': 32, 'zones': 32}",error
+legacy_power_closure,True,135930.0,error
+legacy_energy_closure,True,351120.0,error

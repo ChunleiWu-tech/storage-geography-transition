@@ -1,0 +1,64 @@
+{
+  "scenario": "SL07_TX_FIXED_OPTIMAL",
+  "mutation_scope": "V19 evidence-tiered future-storage portfolio plus inherited V17 spatial-legacy mutations; frozen implementation core remains cheer_power_storage_v1.jl",
+  "mutations": [
+    {
+      "name": "spatial_storage_legacy",
+      "mode": "optimized_reallocation",
+      "cap_quantile": 0.95,
+      "national_power_target_mw": 135930.0,
+      "national_energy_target_mwh": 351120.0,
+      "identification": "same national legacy MW and MWh; spatial allocation changes"
+    },
+    {
+      "name": "battery_cost_case",
+      "case": "NLR_2025_mid",
+      "storage_techs": "Battery only",
+      "source": "Cole, Ramasamy and Turan (2025), NREL/TP-6A40-93281, Appendix Table 2",
+      "source_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+      "fixed_duration_h": 4.0,
+      "direct_annual_cost_trajectory": true,
+      "multiplicative_factor": null,
+      "reverse_calibration_used": false
+    },
+    {
+      "name": "v19_storage_technology_duration_portfolio",
+      "v19_scope": "primary",
+      "candidate_count": 5,
+      "headline_portfolio": [
+        "V18_LFP_4h",
+        "V18_VRFB_10h",
+        "V18_VRFB_24h",
+        "V18_PSH_10h",
+        "V18_PSH_24h"
+      ],
+      "duration_sensitivity_only_portfolio": [],
+      "pressure_test_only_portfolio": [],
+      "post_2030_non_lfp_cost_extrapolation_used": false,
+      "legacy_storage_rows_modified": false
+    },
+    {
+      "name": "transmission_case",
+      "case": "TX_fixed",
+      "action": "no new interprovincial transmission; existing capacity remains dispatchable"
+    }
+  ],
+  "pre_solve_checks": [
+    {
+      "check": "spatial_legacy_pre_solve_policy_closure",
+      "pass": true,
+      "mode": "optimized_reallocation"
+    },
+    {
+      "check": "v19_storage_portfolio_prepared",
+      "pass": true,
+      "scope": "primary",
+      "candidate_count": 5
+    },
+    {
+      "check": "tx_fixed_has_no_build_keys",
+      "pass": true
+    }
+  ],
+  "all_pre_solve_checks_pass": true
+}

@@ -1,0 +1,7 @@
+gen_tech,period,gen_ccs_energy_load
+Coal,2023,0.24
+Coal,2028,0.22
+Gas,2023,0.18
+Gas,2028,0.17
+Biomass,2023,0.51
+Biomass,2028,0.47

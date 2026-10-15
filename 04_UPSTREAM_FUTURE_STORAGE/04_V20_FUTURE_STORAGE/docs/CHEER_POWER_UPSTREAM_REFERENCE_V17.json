@@ -1,0 +1,17 @@
+{
+  "storage_extension_version": "V17",
+  "upstream_model": "CHEER/Power",
+  "study_scope": "China provincial storage planning; NBCCS, DACCS and BECCS disabled; fossil-generator CCS scenario controlled",
+  "solver_extensions": [
+    "Scaled Stage-1 economic optimization with Barrier/Crossover=0 primary route",
+    "Solver-native OPTIMAL certificate with optional non-blocking objective diagnostics",
+    "Stage-1 solution is the formal publication result after strict physical and export audits",
+    "Optional aggregate-lock/economic-band sparse-face cleanup diagnostics",
+    "Fresh Julia process for each controlled Stage-1 solver fallback",
+    "Machine-readable degeneracy restrictions for gross dispatch and directional flows",
+    "JSON-safe null serialization for non-finite failed-solve diagnostics"
+  ],
+  "basis_policy": "No VBasis, CBasis, CrossoverBasis, DStart, basis file or serialized PStart",
+  "release_policy": "Stage 2 is diagnostic-only and cannot approve, replace, or reject a certified Stage-1 result.",
+  "interpretation_policy": "Gross unit/timepoint and directional flows are degeneracy-sensitive and prohibited for operating-mechanism interpretation."
+}

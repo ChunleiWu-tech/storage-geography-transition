@@ -1,0 +1,14 @@
+# Only local machine state is excluded; all prepared research inputs and archives are included.
+.git/
+__pycache__/
+*.py[cod]
+.mplcache/
+.pytest_cache/
+.venv/
+venv/
+.env
+*.lic
+
+# Generated publication outputs are journal attachments, not code/data sources.
+05_POSTPROCESS/publication_20261015R2/Figures/
+05_POSTPROCESS/publication_20261015R2/核查记录/

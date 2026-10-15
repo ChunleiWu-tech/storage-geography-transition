@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "version": "V20_HF5_EQUIVALENT_REDUCED_RESUME_SAFE",
+  "formulation": "V20HF5_equivalent_reduced_formulation_v1",
+  "algebraic_reduction": "V20HF5_equivalent_hourly_coordinate_projection_v1",
+  "scope": "all unfinished Layer-A/B cases; strict existing __main outputs remain authoritative and are skipped",
+  "scientific_change": false,
+  "solver_certified": false,
+  "solver_note": "Static and algebraic audit only; publication still requires local Julia/Gurobi OPTIMAL plus all existing release gates.",
+  "fc08_exact_counts": {
+    "generators": 625,
+    "timepoints": 72,
+    "ccs": 96,
+    "startup_active": 96,
+    "omitted": 152352
+  },
+  "layer_b_omitted_hourly_columns_each": 872928,
+  "checks_passed": 89,
+  "checks_total": 89,
+  "parent_model_sha256": {
+    "base_model_v39/cheer_power_storage_v1.jl": "9aefc85c850165b17d69d4a7a66c386c0adc1c1fac2ee622422a892008a6781a",
+    "modules/correction2033/base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84"
+  }
+}

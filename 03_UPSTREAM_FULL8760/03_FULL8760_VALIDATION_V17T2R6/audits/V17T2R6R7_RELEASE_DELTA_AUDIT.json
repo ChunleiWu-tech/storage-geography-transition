@@ -1,0 +1,23 @@
+{
+  "version": "V17T2R6R7_FULL8760",
+  "comparison_baseline": "V17T2R6R6 standalone post-solve-export-hardened package",
+  "scope": "frozen scientific data, source snapshots/lineage indexes, 4 h templates, four prepared-case inputs, scenario registry and prepared-case index",
+  "scientific_file_count_r6": 384,
+  "scientific_file_count_r7": 384,
+  "scientific_byte_drift_count": 0,
+  "missing_from_r7": [],
+  "new_scientific_files": [],
+  "scientific_byte_drift": [],
+  "science_inputs_unchanged": true,
+  "active_julia_model_byte_identical": true,
+  "active_julia_model_sha256": "f41f3d05ddf0fea7049c4010656457044b4026d44d154569ebdddcd90b6f0939",
+  "julia_scenario_runner_byte_identical": true,
+  "julia_scenario_runner_sha256": "a8c4d37995cfda2454f9e5e66d966da09a682a049896b842dcda28cbe47c1e57",
+  "implementation_changes": [
+    "pair-preserving two-wave scheduler added to Python batch orchestrator",
+    "canonical execution limited to at most two simultaneous full-8760 cases with exactly 10 Gurobi threads per case",
+    "shared run-summary writes retained in parent process after worker completion",
+    "new 2x10 all-four/core/LDES launchers replace stale 1x10 launchers",
+    "release QA expanded for concurrency contract and cache exclusion"
+  ]
+}

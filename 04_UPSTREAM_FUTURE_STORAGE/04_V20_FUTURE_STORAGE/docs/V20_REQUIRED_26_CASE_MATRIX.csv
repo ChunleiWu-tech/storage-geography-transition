@@ -1,0 +1,27 @@
+﻿layer,scenario,matched_pair,run_phase,role,purpose
+A_2033_correction,FC01_BASE_OBSERVED,FC_BASE,PHASE1_CORE8,reference,Observed inherited storage geography with the frozen V17 future storage opportunity set (4 h lithium-ion plus base pumped hydro)
+A_2033_correction,FC02_BASE_OPTIMAL,FC_BASE,PHASE1_CORE8,reference,Optimized inherited storage geography with the frozen V17 future storage opportunity set
+A_2033_correction,FC03_ADAPTIVE_OBSERVED,FC_ADAPTIVE,PHASE1_CORE8,primary_correction,Observed inherited geography with adaptive 2033 storage technology capacity and siting choice across 4 h lithium-ion VRFB and resource-shared pumped hydro
+A_2033_correction,FC04_ADAPTIVE_OPTIMAL,FC_ADAPTIVE,PHASE1_CORE8,primary_correction,Optimized inherited geography with the same adaptive 2033 storage opportunity set
+A_2033_correction,FC05_ADAPTIVE_TXFIXED_OBSERVED,FC_ADAPTIVE_TXFIXED,PHASE2_REMAINING18,robustness,Observed inherited geography with adaptive storage but no new interprovincial transmission
+A_2033_correction,FC06_ADAPTIVE_TXFIXED_OPTIMAL,FC_ADAPTIVE_TXFIXED,PHASE2_REMAINING18,robustness,Optimized inherited geography with adaptive storage but no new interprovincial transmission
+A_2033_correction,FC07_EXPANDED_OBSERVED,FC_EXPANDED_PRESSURE,PHASE2_REMAINING18,pressure_test,Observed inherited geography with expanded PNNL storage portfolio including CAES and hydrogen
+A_2033_correction,FC08_EXPANDED_OPTIMAL,FC_EXPANDED_PRESSURE,PHASE2_REMAINING18,pressure_test,Optimized inherited geography with the same expanded PNNL storage portfolio
+B_2028_2058_dynamic,SL00_OBSERVED_ACTUAL,,PHASE2_REMAINING18,,NEA-constrained end-2025 provincial power reconstruction with a nationally closed heterogeneous-duration prior sensitivity; not an official province-level energy inventory.
+B_2028_2058_dynamic,SL01_OBSERVED_STANDARDIZED,,PHASE1_CORE8,,NEA-constrained 2025 model-zone storage reference with common national-average duration; primary spatial reference.
+B_2028_2058_dynamic,SL02_OPTIMAL_REALLOCATION,,PHASE1_CORE8,,"Same national 2025 storage MW and MWh, optimally reallocated across model zones under empirical deployment envelope."
+B_2028_2058_dynamic,SL03_NO_LEGACY,,PHASE2_REMAINING18,,No 2025 new-type storage legacy; future storage remains endogenous from 2028.
+B_2028_2058_dynamic,SL04_RULE_LOAD,,PHASE2_REMAINING18,,Same national 2025 storage MW and MWh allocated proportional to 2023 coincident peak under common envelope.
+B_2028_2058_dynamic,SL05_RULE_VRE,,PHASE2_REMAINING18,,Same national 2025 storage MW and MWh allocated proportional to surviving 2023 wind and solar capacity under common envelope.
+B_2028_2058_dynamic,SL06_TX_FIXED_OBSERVED,,PHASE2_REMAINING18,,Reference-standardized legacy under no new interprovincial transmission.
+B_2028_2058_dynamic,SL07_TX_FIXED_OPTIMAL,,PHASE2_REMAINING18,,Optimally reallocated equal-total legacy under no new interprovincial transmission.
+B_2028_2058_dynamic,SL08_PH_CONSERVATIVE_OBSERVED,,PHASE2_REMAINING18,,Reference-standardized legacy under pumped-hydro ceiling fixed to surviving predetermined stock.
+B_2028_2058_dynamic,SL09_PH_CONSERVATIVE_OPTIMAL,,PHASE2_REMAINING18,,Optimally reallocated equal-total legacy under pumped-hydro ceiling fixed to surviving predetermined stock.
+B_2028_2058_dynamic,SL10_CARBON_TIGHT_OBSERVED,,PHASE2_REMAINING18,,Reference-standardized legacy under 20% tighter carbon-cap trajectory.
+B_2028_2058_dynamic,SL11_CARBON_TIGHT_OPTIMAL,,PHASE2_REMAINING18,,Optimally reallocated equal-total legacy under 20% tighter carbon-cap trajectory.
+B_2028_2058_dynamic,SL12_COST_LOW_OBSERVED,,PHASE2_REMAINING18,,Reference-standardized legacy under low battery-cost sensitivity.
+B_2028_2058_dynamic,SL13_COST_LOW_OPTIMAL,,PHASE2_REMAINING18,,Optimally reallocated equal-total legacy under low battery-cost sensitivity.
+B_2028_2058_dynamic,SL14_COST_HIGH_OBSERVED,,PHASE2_REMAINING18,,Reference-standardized legacy under high battery-cost sensitivity.
+B_2028_2058_dynamic,SL15_COST_HIGH_OPTIMAL,,PHASE2_REMAINING18,,Optimally reallocated equal-total legacy under high battery-cost sensitivity.
+C_equal_evidence_horizon,V20EH01_OBSERVED,V20_EQUAL_HORIZON,PHASE1_CORE8,mandatory_evidence_horizon_sensitivity,"Observed legacy, dynamic core cloned from SL01; post-2030 LFP held at NLR 2030 mid evidence horizon."
+C_equal_evidence_horizon,V20EH02_OPTIMAL,V20_EQUAL_HORIZON,PHASE1_CORE8,mandatory_evidence_horizon_sensitivity,"Optimized legacy, dynamic core cloned from SL02; post-2030 LFP held at NLR 2030 mid evidence horizon."

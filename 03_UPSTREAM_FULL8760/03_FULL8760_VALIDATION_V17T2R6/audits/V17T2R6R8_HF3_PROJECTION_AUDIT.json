@@ -1,0 +1,148 @@
+{
+  "version": "V17T2R6R8_HF3_FULL8760_EQUIVALENT_PROJECTION_SERIAL_PRIMARY",
+  "status": "PASS",
+  "scope": "static scientific-invariance, exact-projection, input-fingerprint, route and patch-integrity audit",
+  "scientific_change": false,
+  "projection_active_cases": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "projection_inactive_cases": [
+    "TY2033_FULL8760_OBSERVED",
+    "TY2033_FULL8760_LDES_OBSERVED"
+  ],
+  "checks": [
+    {
+      "check": "python_syntax",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "exact_projection_code_contract",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "dependent_legacy_rows_not_emitted",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "projected_energy_used_by_cleanup_and_exports",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "solver_and_acceptance_contract_unchanged",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf3_route_and_fail_closed_result_gate",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "serial_uninterrupted_primary_launcher",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "four_case_registry_and_modes",
+      "pass": true,
+      "detail": {
+        "TY2033_FULL8760_OBSERVED": "observed_standardized",
+        "TY2033_FULL8760_OPTIMAL": "optimized_reallocation",
+        "TY2033_FULL8760_LDES_OBSERVED": "observed_standardized",
+        "TY2033_FULL8760_LDES_OPTIMAL": "optimized_reallocation"
+      }
+    },
+    {
+      "check": "legacy_identity_and_envelope_proof_all_four",
+      "pass": true,
+      "detail": {
+        "TY2033_FULL8760_OBSERVED": {
+          "pass": true,
+          "rows": 32,
+          "mode": [
+            "observed_standardized"
+          ],
+          "national_power_target_mw": 135930.0,
+          "national_energy_target_mwh": 351120.0,
+          "standardized_duration_h": 2.583094239682189,
+          "identity_residual_mwh": 0.0,
+          "identity_tolerance_mwh": 1e-06,
+          "zone_power_cap_sum_mw": 544822.6945485383,
+          "projection_expected": false,
+          "source_fingerprint_errors": []
+        },
+        "TY2033_FULL8760_OPTIMAL": {
+          "pass": true,
+          "rows": 32,
+          "mode": [
+            "optimized_reallocation"
+          ],
+          "national_power_target_mw": 135930.0,
+          "national_energy_target_mwh": 351120.0,
+          "standardized_duration_h": 2.583094239682189,
+          "identity_residual_mwh": 0.0,
+          "identity_tolerance_mwh": 1e-06,
+          "zone_power_cap_sum_mw": 544822.6945485383,
+          "projection_expected": true,
+          "source_fingerprint_errors": []
+        },
+        "TY2033_FULL8760_LDES_OBSERVED": {
+          "pass": true,
+          "rows": 32,
+          "mode": [
+            "observed_standardized"
+          ],
+          "national_power_target_mw": 135930.0,
+          "national_energy_target_mwh": 351120.0,
+          "standardized_duration_h": 2.583094239682189,
+          "identity_residual_mwh": 0.0,
+          "identity_tolerance_mwh": 1e-06,
+          "zone_power_cap_sum_mw": 544822.6945485383,
+          "projection_expected": false,
+          "source_fingerprint_errors": []
+        },
+        "TY2033_FULL8760_LDES_OPTIMAL": {
+          "pass": true,
+          "rows": 32,
+          "mode": [
+            "optimized_reallocation"
+          ],
+          "national_power_target_mw": 135930.0,
+          "national_energy_target_mwh": 351120.0,
+          "standardized_duration_h": 2.583094239682189,
+          "identity_residual_mwh": 0.0,
+          "identity_tolerance_mwh": 1e-06,
+          "zone_power_cap_sum_mw": 544822.6945485383,
+          "projection_expected": true,
+          "source_fingerprint_errors": []
+        }
+      }
+    },
+    {
+      "check": "all_prepared_scientific_inputs_match_frozen_case_fingerprints",
+      "pass": true,
+      "detail": {
+        "checked_input_files": 156
+      }
+    },
+    {
+      "check": "matched_pair_identity_audit",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "hf3_patch_files_match_manifest",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failed": []
+}

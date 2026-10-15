@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="content-type" name="content-type"
+        content="Access-control-allow-origin: * ; access-control-allow-credentials: true">
+    <meta http-equiv="X-UA-Compatible" content="IE=8,9,10,11,edge">
+    <!--百度云安全检测 zwx 2019-8-30-->
+    <meta baidu-gxt-verify-token="aaeb3f15e6daf61468fbad4598d9c7c3">
+    <meta name="Description"
+        content="标准地图依据中国和世界各国国界线画法标准编制而成，可用于新闻宣传用图、书刊报纸插图、广告展示背景图、工艺品设计底图等，也可作为编制公开版地图的参考底图。社会公众可以免费浏览、下载标准地图，直接使用标准地图时需要标注审图号。" />
+    <meta name="Keywords" content="标准地图 公益性地图 自助制图 世界地图 中国地图 专题地图 G20国家地图  长江经济带区域地图 京津冀一体化地图" />
+    <title>标准地图服务系统</title>
+    <!--调用百度API实现查询网站访问统计 zwx 2019-8-30-->
+    <!--
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0897861556722d67cb0ae64c6f60ca42";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    -->
+</head>
+<link rel="shortcut icon" href="image/sbsm.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/global/common.js"></script>
+
+<body>
+    <!--登录-->
+    <div class="global-html" linkHtml="login"></div>
+
+    <!--顶部-->
+    <div class="global-html" linkHtml="logo"> </div>
+    <!--搜索区-->
+    <div class="top-main">
+        <div class="search-wrapper">
+            <div class="search-box">
+                <i class="searchImg"></i>
+                <input class="searchInput" type="text" placeholder="请输入名称或者审图号" id="searchTextIndex" />
+                <a id="searchHref">
+                    <button class="searchBotton" onclick="showSearchPage()">搜 索</button>
+                </a>
+            </div>
+            <!--快速查询-->
+            <div class="other-search">
+                <a
+                    href="javascript:location.href='download.html?superclassName='+encodeURIComponent(encodeURIComponent('中国全图'))">中国全图</a>
+                <span>|</span>
+                <a
+                    href="javascript:location.href='download.html?superclassName='+encodeURIComponent(encodeURIComponent('世界地图'))">世界地图</a>
+                <span>|</span>
+                <a
+                    href="javascript:location.href='download.html?superclassName='+encodeURIComponent(encodeURIComponent('长江经济带区域'))">长江经济带区域</a>
+                <span>|</span>
+                <a
+                    href="javascript:location.href='download.html?superclassName='+encodeURIComponent(encodeURIComponent('G20国家'))">G20</a>
+                <!--新增审图号查询 add by 2020-1-10-->
+                <span>|</span>
+                <a
+                    href="javascript:location.href='download.html?superclassName='+encodeURIComponent(encodeURIComponent('审图号'))">审图号</a>
+            </div>
+        </div>
+    </div>
+
+    <!--菜单栏-->
+    <div class="global-html" linkHtml="menu"></div>
+
+    <!--轮播-->
+    <div class="children-html" linkHtml="silder"></div>
+
+    <!--排行页-->
+    <div class="children-html" linkHtml="rank"></div>
+
+    <!--友情链接-->
+    <div class="children-html" linkHtml="links"></div>
+
+    <!--底部提示栏-->
+    <div class="global-html" linkHtml="footer"></div>
+</body>
+<script src="./libs/sm2.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        loadDivHtml(this, "view/global/", "view/index/");
+    });
+    //全部关闭按钮点击事件
+    $(".close").click(function (e) {
+        e.stopPropagation();
+        $('#modal').modal('hide');
+    });
+
+    function showSearchPage() { //主页搜素执行事件
+        searchText = document.getElementById("searchTextIndex").value.replace(/<[^>]+>/g, ""); //去掉所有的html标记
+        var searchHref = document.getElementById("searchHref");
+        //          searchHref.href = "javascript:location.href='download.html?superclassName='+encodeURIComponent(encodeURIComponent(searchText))";
+        searchHref.href = "javascript:location.href='download.html?searchText='+encodeURIComponent(encodeURIComponent(searchText))";
+    }
+</script>
+
+</html>
+

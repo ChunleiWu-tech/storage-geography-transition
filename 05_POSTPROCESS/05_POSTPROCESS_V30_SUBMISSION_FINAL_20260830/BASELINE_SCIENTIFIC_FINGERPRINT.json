@@ -1,0 +1,21 @@
+{
+  "schema_version": "source_aware_scientific_baseline_v2",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "status": "UNINITIALIZED_RERUN_REQUIRED",
+  "reference": "No source-current numerical baseline is frozen before the mandatory 16+8 rerun. The first fully released source-current postprocess may be frozen explicitly with postprocess/freeze_current_source_baseline.py.",
+  "prior_reference_file": "PRE_SOURCE_UPDATE_RESULT_REFERENCE.json",
+  "prior_reference_use": "historical disclosure only; never a release gate for the updated source layer",
+  "tolerances": {
+    "relative": 1e-08,
+    "absolute": 1e-05
+  },
+  "metrics": {},
+  "correction_class_counts": {},
+  "required_source_contract": {
+    "storage_cutoff_date": "2025-12-31",
+    "national_power_mw": 135930.0,
+    "national_energy_mwh": 351120.0,
+    "wind_target_cf_8760": 0.2532072175254301,
+    "switch_china_raw_inputs_version": "2.0.9"
+  }
+}

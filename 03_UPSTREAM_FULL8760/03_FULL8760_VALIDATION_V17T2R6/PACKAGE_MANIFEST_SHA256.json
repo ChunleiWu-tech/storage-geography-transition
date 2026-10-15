@@ -1,0 +1,2636 @@
+{
+  "version": "V17T2R6R7_HF2P2_FULL8760",
+  "algorithm": "SHA-256",
+  "generated_utc": "2026-08-12T06:56:12.995932+00:00",
+  "scope": "immutable release files; regenerated cases, run state and reproducible audit artifacts are validated by semantic preflight gates",
+  "excluded_directories": [
+    "__pycache__",
+    "batch_logs",
+    "failed_diagnostics",
+    "outputs",
+    "sensitivity_outputs"
+  ],
+  "excluded_files": [
+    "PACKAGE_FILE_MANIFEST_SHA256.csv",
+    "PACKAGE_MANIFEST_SHA256.json",
+    "audits/FIGSHARE_2024_LOAD_DATA_QUALITY_AUDIT.csv",
+    "audits/PUBLICATION_RESULT_LINEAGE.json",
+    "audits/PUBLICATION_SOURCE_FINGERPRINT.json",
+    "audits/PUBLICATION_SOURCE_GATE_CASES.json",
+    "audits/PUBLICATION_SOURCE_GATE_RESULTS.json",
+    "audits/PUBLICATION_SOURCE_GATE_SOURCE.json",
+    "audits/V17T2R6R7_PARALLEL_SCHEDULER_AUDIT.json",
+    "audits/V17T2R6_8760_JULIA_STATIC_AUDIT.json",
+    "audits/V17T2R6_FULL8760_PACKAGE_QA.json",
+    "audits/V17T2R6_FULL8760_PAIR_IDENTITY_AUDIT.json",
+    "storage_runner/prepared_8760_cases_index.csv"
+  ],
+  "excluded_case_relative_files": [
+    "SENSITIVITY_SCENARIO_META.json",
+    "audits/CASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+    "audits/FULL8760_PREPARED_INPUT_VALIDATION.json",
+    "audits/FULL8760_TEMPORAL_INPUT_AUDIT.json",
+    "inputs/loads.csv",
+    "inputs/loads_new.csv",
+    "inputs/zone_coincident_peak_demand.csv"
+  ],
+  "file_count": 519,
+  "total_bytes": 412676678,
+  "files": [
+    {
+      "path": "BUILD_V17T2R6_8760_SUMMARY.bat",
+      "bytes": 146,
+      "sha256": "5119e7f1a08b654e5fea33b717b252e04abfb8e7ea796bfe69e5513ce3877098"
+    },
+    {
+      "path": "CHECK_V17T2R6R7_HF2P1_PATCH.bat",
+      "bytes": 143,
+      "sha256": "c3a42f09aac544f6843cf3c8d38a0d8fd2bec376d671ddc2188fb6691fa21687"
+    },
+    {
+      "path": "CHECK_V17T2R6_8760_JULIA_STATIC.bat",
+      "bytes": 148,
+      "sha256": "e57eea93f318ed48d864ca95d5472bd48e370a594f78a74e403eb5427b3571e5"
+    },
+    {
+      "path": "CHECK_V17T2R6_8760_PACKAGE.bat",
+      "bytes": 226,
+      "sha256": "e2191470b87b91a69d75088e404b7506d5a607b510af3869677edd648e233e59"
+    },
+    {
+      "path": "CHECK_V17T2R6_8760_PARALLEL_SCHEDULER.bat",
+      "bytes": 149,
+      "sha256": "5e241f233658073bd4b888fb867eb5a321cc93a363911107b378c6abdb0053f2"
+    },
+    {
+      "path": "CHECK_V17T2R6_8760_PREFLIGHT.bat",
+      "bytes": 580,
+      "sha256": "9aa02813aba6abfbdd1bcbf16192e053fd0e658e94992c1ca5c9de56c2ab99ad"
+    },
+    {
+      "path": "CHECK_V17T2R6_8760_RUNTIME.bat",
+      "bytes": 159,
+      "sha256": "dd597ee2d3a77209ad81e2ee98e4d7258c5bbc27b68580f7e4417c7777f19b62"
+    },
+    {
+      "path": "CHECK_V17T2R6_8760_SOURCE_GATE.bat",
+      "bytes": 151,
+      "sha256": "4ff92501dc02255fd01e35a1a664e06beaff51747507ee3159f57513d06a06c1"
+    },
+    {
+      "path": "FINALIZE_V17T2R6_8760_RESULTS.bat",
+      "bytes": 406,
+      "sha256": "e87962e2eebcc2f5de5bbeb8c667e3bae9a04e76e0ec74272d55045eb08c2a45"
+    },
+    {
+      "path": "HF2P1_PATCH_MANIFEST_SHA256.json",
+      "bytes": 1867,
+      "sha256": "bc36526937c07b985f93aecf095f3ba3994fb1d643a61f700aad40ae75fa3c45"
+    },
+    {
+      "path": "INSTALL_V17T2R6_8760_JULIA_DEPS.bat",
+      "bytes": 211,
+      "sha256": "4e43671afd915c676f2f4f21d047fe37798836da6ae9f1c4812f081caf680212"
+    },
+    {
+      "path": "INSTALL_V17T2R6_8760_PYTHON_DEPS.bat",
+      "bytes": 152,
+      "sha256": "8d03e781f91f09315e0519fe2eafcfd762ccff8bfe863632dd5570bff97e3f13"
+    },
+    {
+      "path": "OFFICIAL_SOURCE_ARCHIVE_INDEX.csv",
+      "bytes": 4460,
+      "sha256": "75d33d504d24d99bd240789f074c8febf0ad988ac13657920549690042d9d0b0"
+    },
+    {
+      "path": "OFFICIAL_SOURCE_ARCHIVE_INDEX.json",
+      "bytes": 6973,
+      "sha256": "e92bc1f35acb295eaba0f925cb86a6bd305ea4b5a64e5d63d5e5c700a83a81c5"
+    },
+    {
+      "path": "PREPARE_V17T2R6_8760_CASES.bat",
+      "bytes": 404,
+      "sha256": "ce796f154aaea22d215f005ac4cba0efe38d6a728b906f3a17cb107feaab1d57"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 2952,
+      "sha256": "ae71967255149b37e7c0bbc51597f7db0e667d049625807f5c611a5b2d1d05a6"
+    },
+    {
+      "path": "README_ZH.md",
+      "bytes": 9086,
+      "sha256": "79294fc30fbc319aab7f815c97de5c9f99e7c5a7c763936434ea84f78ff5db65"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R7.md",
+      "bytes": 2455,
+      "sha256": "02e34b79f6e2460a2471a5e43f3ddd5ad42f68ca917eab77c59abfc5beca9849"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R7_HF2.md",
+      "bytes": 3046,
+      "sha256": "901866999d3998331ea95cf1eb30819b607b3a62a6563f4d5f24754fe0cbaa65"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R7_HF2P1.md",
+      "bytes": 1075,
+      "sha256": "7bf6651c88165949e4412a8884abc191bb959476028876433dfd5705f5cd3afb"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R7_HF2P2.md",
+      "bytes": 1235,
+      "sha256": "9a41a0906af55fe4c24d9ac4d17a1316fa81902206c681ac3ecc4323596509ea"
+    },
+    {
+      "path": "RUN_V17T2R6_8760_ALL_4_2x10.bat",
+      "bytes": 1046,
+      "sha256": "3ed7f39eba96c8fd47d600c96a86f476ee8974e41c441a4d6668bcd44dcde27c"
+    },
+    {
+      "path": "RUN_V17T2R6_8760_CLEAN_REBUILD_AND_RUN_ALL_4_2x10.bat",
+      "bytes": 914,
+      "sha256": "9ffc79294f8879e6894bca333d3241da76f6f2c3a30e72eb59e6f94f6228823e"
+    },
+    {
+      "path": "RUN_V17T2R6_8760_CORE_PAIR_2x10.bat",
+      "bytes": 449,
+      "sha256": "717662290cc45f9f745fcbe73ef8b658e38c3827475d2685363162dfb3d4d546"
+    },
+    {
+      "path": "RUN_V17T2R6_8760_LDES_PAIR_2x10.bat",
+      "bytes": 454,
+      "sha256": "67c41324e418ac8ccddc73a26aa2d4dacd42f5efe48d17ca64fd3ddf2dfebc9f"
+    },
+    {
+      "path": "RUN_V17T2R6_8760_OBSERVED_ONLY_HF2P1.bat",
+      "bytes": 295,
+      "sha256": "d6d0f998166cacfdf264aa558cb7a6ce63fac78a05476fc1f49b2686ec041ae7"
+    },
+    {
+      "path": "SWITCH_CHINA_INPUT_LINEAGE_AUDIT.json",
+      "bytes": 3005,
+      "sha256": "ecee1e5add940627b3965306871f87457edb959e32f912303896e523101ce287"
+    },
+    {
+      "path": "SWITCH_CHINA_INPUT_LINEAGE_FILE_AUDIT.csv",
+      "bytes": 11391,
+      "sha256": "5088eed95f527144b213e19bebe64bdeb4f9047114751d28901aaa1fb791dd74"
+    },
+    {
+      "path": "V17T2R6_8760_ENV_DEFAULTS.bat",
+      "bytes": 901,
+      "sha256": "2878255434cb5e22089a1167f43b4936c700170a73f7915241a3c3d8207e9174"
+    },
+    {
+      "path": "VERSION_SOURCE_DATA.txt",
+      "bytes": 43,
+      "sha256": "7db743b4d5a34065b0853668b189689b79ced930a28c9f4e6277936aa8d09f4f"
+    },
+    {
+      "path": "VERSION_V17T2R6_FULL8760.txt",
+      "bytes": 71,
+      "sha256": "a34a886b6fb043eaca0567068f11206b23dbeb682d3bb5e220b143b15628f163"
+    },
+    {
+      "path": "audits/NEA_STORAGE_INPUT_RECONSTRUCTION_AUDIT.json",
+      "bytes": 1973,
+      "sha256": "fc4b96e3e57f2fb6788a6ceca538c909dbd8a3b075e9fc567700b1cdf5e8a388"
+    },
+    {
+      "path": "audits/V17T2R6R7_RELEASE_DELTA_AUDIT.json",
+      "bytes": 1260,
+      "sha256": "4290b3d2719680d45bbf2147eaf9fbfcee2b924b91e4688dd4437cda7d224492"
+    },
+    {
+      "path": "audits/V17_LEGACY_STORAGE_PROVENANCE_AUDIT.json",
+      "bytes": 1327,
+      "sha256": "f4cbb570e95a4f9b7857a70edbab2a3c26c9164eb21d2ed78a04b2547c4c10c6"
+    },
+    {
+      "path": "audits/V17_LEGACY_STORAGE_PROVENANCE_LEDGER.csv",
+      "bytes": 9271,
+      "sha256": "9d5fe60590343baf00a769b89556288853474d10aa4acb63b677fe711bb1164e"
+    },
+    {
+      "path": "audits/vre_cf_ingest_audit.json",
+      "bytes": 638,
+      "sha256": "44b4468d0399cc674984ba86598a500df95d8d2b1927ecf3566fa8ed8ad035ed"
+    },
+    {
+      "path": "audits/vre_cf_publication_calibration_audit.json",
+      "bytes": 4183,
+      "sha256": "5896250e313b9e5d9180e40d1ac0b17c48c5e6fbfbbd996071a9bb673205955e"
+    },
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "bytes": 416539,
+      "sha256": "6c6aae7891fecb3405d20fca3cc8f585a44f258e8c6c9e0405d481ff80c66fe5"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/build_tx_limits.csv",
+      "bytes": 132,
+      "sha256": "ee3c64344b059b4c15127849bc6265a9fd4ac7db928baab1bbd7056fce002d21"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/capacity_plans.csv",
+      "bytes": 8602,
+      "sha256": "435445607c46d57d078f946e98d905a2aef8a2509b20d5ebd72df78cbdabf263"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/carbon_policies.csv",
+      "bytes": 240,
+      "sha256": "5ff607a85157efc3be496ac29c2f29a6595d6935e8c8df3ab7f2724542e375d1"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/ccs_install_costs.csv",
+      "bytes": 226349,
+      "sha256": "134a04be01dc1c54fab049c7c260df495322ca7c5ce79db176ba01c2eedcbdca"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/co2_injection_limits.csv",
+      "bytes": 177,
+      "sha256": "76cb18b47ecd2b3a62e76cc2991826cfd8d2bdb7c9928697970927b4ad62d464"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/fuel supply curves.csv",
+      "bytes": 70327,
+      "sha256": "426e345a16475a2560ca2c5605d6a03fde68f61f3daa57862d2601a1e5daaeb3"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/fuel_cost.csv",
+      "bytes": 22705,
+      "sha256": "e89471c0edc8a9f4de644e49a51dd93f2c00eea5ca2b4e6f304f72716a590abc"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/fuel_supply_curves.csv",
+      "bytes": 70327,
+      "sha256": "426e345a16475a2560ca2c5605d6a03fde68f61f3daa57862d2601a1e5daaeb3"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/gen_build_costs.csv",
+      "bytes": 258453,
+      "sha256": "97eafc6edc0cd6c08a7edc7b19cad047aff87385bb7344e4c392032b7532d13f"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/gen_build_predetermined.csv",
+      "bytes": 33967,
+      "sha256": "c6dc1acb4b7fafc6892b25925d4f4acd7ef979f3f4de494fa673c0f9fe3a9f4a"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/gen_ccs_energy_load.csv",
+      "bytes": 435,
+      "sha256": "1631d452a9f60aa3e2402acd16f21e7e6cae2be684416c4be61c9a76eeb99959"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/gen_info.csv",
+      "bytes": 63839,
+      "sha256": "d8a75a9d622b67b855c171e3d5385291875cfb8210a590778ce2dc02ccd27aa2"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/hydro_timeseries.csv",
+      "bytes": 139433,
+      "sha256": "97b40b48a005c25af3cf1618dccaa0ca4ea670fc19df04fe361147113d709abe"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/loads.csv",
+      "bytes": 674809,
+      "sha256": "f5cc921866c5f6c65782de7735fe2b123e6a5026b7b17d648d3f2dd8f91ff5de"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/loads_new.csv",
+      "bytes": 641369,
+      "sha256": "56bddb3981183320745b707c29e7929e2afce8e878f90670f76e2a5653503831"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/periods.csv",
+      "bytes": 223,
+      "sha256": "136c1beb3e41be1de50a62db48b4a8a5ba32715dedf1ea6176dfb002e5fd1f96"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/timepoints.csv",
+      "bytes": 21707,
+      "sha256": "a1eb8bd0b03b51013acd99cc2ad65719d3247dd453954b2ef6a3ff9d8ff06626"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/timeseries.csv",
+      "bytes": 2506,
+      "sha256": "2d8b26755679702c56b661df55aa7f1fc6df806fc1da58aad57da4ec15cb8cd5"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/total_capacity_limits.csv",
+      "bytes": 230,
+      "sha256": "d57be07d3252388b7c2b88d4732e01bb84c0f7ec717dc17bed048e1e53f2b8f5"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/variable_capacity_factors.csv",
+      "bytes": 3054180,
+      "sha256": "faff359288924bd549b06a2691b5933975459faf73dde6c6270d897454f1e2ac"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/zone_coincident_peak_demand.csv",
+      "bytes": 9195,
+      "sha256": "60b8c562b7d874126f80e1446d375c69127cb888d78f531125c0755704406d99"
+    },
+    {
+      "path": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "base_model_v39/storage_base_template_v17.zip",
+      "bytes": 1765274,
+      "sha256": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f"
+    },
+    {
+      "path": "data/processed/existing_new_storage_allocated_to_model_zones_2025.csv",
+      "bytes": 10571,
+      "sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc"
+    },
+    {
+      "path": "data/processed/figshare_load_2024_31province_8760_nonleap.csv",
+      "bytes": 4804208,
+      "sha256": "74944cc8d707561ac1b6e3210cfa7035eaa5d0e84a391d42c012de17304291ab"
+    },
+    {
+      "path": "data/processed/ldes_technology_portfolio_2033.csv",
+      "bytes": 1331,
+      "sha256": "15292d6f9a5bd0c1b911440acefcf436e6cbd729a0d1a2d7eafed0495b9320b3"
+    },
+    {
+      "path": "data/processed/model_zone_to_province_mapping_v2.csv",
+      "bytes": 1845,
+      "sha256": "6a7c4af302152fbd3149edc76116f7f07410bcfc98d04913d234c9891d2aef5b"
+    },
+    {
+      "path": "data/processed/new_storage_existing_by_model_zone_2025_nea_scope.csv",
+      "bytes": 10571,
+      "sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc"
+    },
+    {
+      "path": "data/processed/new_storage_existing_by_province_2025_nea_constrained_reconstruction.csv",
+      "bytes": 21886,
+      "sha256": "015304681c3bbf2f15270d06742973a798e1e592201ed6adc3f13d3dc6ac7f19"
+    },
+    {
+      "path": "data/processed/new_storage_existing_by_province_2025_nea_scope.csv",
+      "bytes": 21886,
+      "sha256": "015304681c3bbf2f15270d06742973a798e1e592201ed6adc3f13d3dc6ac7f19"
+    },
+    {
+      "path": "data/processed/new_storage_table_validation_summary.csv",
+      "bytes": 2734,
+      "sha256": "c2127cae48378cf611fda1d80241495bb8ee7a0edd1a0f54c79513d49b0f7f2d"
+    },
+    {
+      "path": "data/processed/nlr_2025_battery_4h_costs.csv",
+      "bytes": 691,
+      "sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6"
+    },
+    {
+      "path": "data/processed/pumped_hydro_national_assumptions_2024_2025.csv",
+      "bytes": 2065,
+      "sha256": "98e3cd3e1aa7b3b854be4245fd92b0be03fc215e1c7e07de62bcc775b448b239"
+    },
+    {
+      "path": "data/processed/transmission_future_case_assumptions.csv",
+      "bytes": 793,
+      "sha256": "a654a221552d6720173677bb17d09948578ea64c68a8a2aa8c62eb76ef791799"
+    },
+    {
+      "path": "data/processed/vre_cf_hourly_by_province.csv",
+      "bytes": 59260874,
+      "sha256": "0eb04734772c8fcbde43f3e9f8aead8aa5779ccd52518e9307e823da9f57808e"
+    },
+    {
+      "path": "data/processed/vre_cf_hourly_by_province_publication_calibrated.csv",
+      "bytes": 59503759,
+      "sha256": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096"
+    },
+    {
+      "path": "data/processed/vre_cf_national_benchmark_2024.csv",
+      "bytes": 1330,
+      "sha256": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5"
+    },
+    {
+      "path": "data/processed/vre_cf_validation_summary_2024.csv",
+      "bytes": 8178,
+      "sha256": "bcbfb76d9a359f72384ff021d0f6ad5193f3d49e0109628f136214347fbaa20c"
+    },
+    {
+      "path": "data/processed/vre_cf_validation_summary_publication_calibrated.csv",
+      "bytes": 9508,
+      "sha256": "324f4da9ed05a7aee1acec6eb16c22c561b252db6256df16afda751fc9ad7fa1"
+    },
+    {
+      "path": "data/raw/load/figshare_29832701_Data_output.xlsx",
+      "bytes": 41867984,
+      "sha256": "a93ff6d4a2f4f8c36538fdc4704e2e88bef16347d217c456a99a7a97d56a19e0"
+    },
+    {
+      "path": "data/raw/storage/provincial_storage_prior_user_compiled_2025.csv",
+      "bytes": 8396,
+      "sha256": "9562b8455664d0fe1c74b31a206080b87f09dc4b52dcd1a19d9d124a4e20356f"
+    },
+    {
+      "path": "data/raw/vre_cf/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz",
+      "bytes": 6209422,
+      "sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70"
+    },
+    {
+      "path": "data/source_registry/FULL8760_SOURCE_AND_METHOD_LEDGER.md",
+      "bytes": 3573,
+      "sha256": "01dc022b41561674a32c66b64a0f93803f9b653b9533fc3139d78c13a95fd5e7"
+    },
+    {
+      "path": "data/source_registry/PROVINCIAL_STORAGE_OFFICIAL_SOURCE_SEARCH_AUDIT_20260803.md",
+      "bytes": 3271,
+      "sha256": "b71759dad011a308b2780872fa470b09436c7dc3998159d2b46ae355021df54d"
+    },
+    {
+      "path": "data/source_registry/data_source_registry.csv",
+      "bytes": 7142,
+      "sha256": "25729776125bae599ccded324480940769a32c94a8a4447b022877ea97c3435f"
+    },
+    {
+      "path": "data/source_registry/nea_new_storage_national_regional_constraints_2025.csv",
+      "bytes": 3744,
+      "sha256": "2ec2a59d89161685ee5d86d35f6ebe0f973572203cdfed29fef8b9d8003abb31"
+    },
+    {
+      "path": "data/source_registry/nea_new_storage_provincial_constraints_2025.csv",
+      "bytes": 4129,
+      "sha256": "53438b21d1f97cdb5e79a5ef8f6c28a855c8884e5c0cb78f176d04091ed536bb"
+    },
+    {
+      "path": "data/source_registry/nea_wind_capacity_month_end_2024.csv",
+      "bytes": 2394,
+      "sha256": "3824d2aa1a24f0ee260022ad8188ed6f0efb89d2ea1ba09dec744ea9ed028acd"
+    },
+    {
+      "path": "data/source_registry/nea_wind_generation_utilization_2024.csv",
+      "bytes": 1406,
+      "sha256": "9771fd4cf2abd92689488d95d421172589be9129f8bd5a403811db49349507c5"
+    },
+    {
+      "path": "data/source_registry/provincial_storage_source_ledger_2025.csv",
+      "bytes": 25971,
+      "sha256": "e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862"
+    },
+    {
+      "path": "docs/baseline_reference/cheer_power_storage_chronology_ldes_v2r1_frozen.jl",
+      "bytes": 393499,
+      "sha256": "c9499d786a49a6de46da4884a8b8597e2e5fa6dafc02322d864a7a8d0bac5052"
+    },
+    {
+      "path": "docs/baseline_reference/cheer_power_storage_chronology_ldes_v2r4_solveronly_frozen.jl",
+      "bytes": 395616,
+      "sha256": "1106204f5f41cf138e1b20b10a5b2ea66443d32889b978c746731067a6e71d71"
+    },
+    {
+      "path": "notebooks/V17T2R6_FULL8760_DATA_QUALITY_AUDIT.ipynb",
+      "bytes": 15874,
+      "sha256": "1e2448fc1e680d8823fc473a2a23e90690fdad267a745df68b9d8e5897d7c5eb"
+    },
+    {
+      "path": "requirements_v17.txt",
+      "bytes": 49,
+      "sha256": "2dd2774914a2d139655c34c763f796dda616688228b95b73ffc98dde9ab32ba3"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "91319849dd9a1fd71bb1f18a7665e7607c99d0326da83a7beed4285c35ab2f30"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/ldes_technology_portfolio_application.json",
+      "bytes": 4939,
+      "sha256": "97ff20108df23b6a6fc208d8b48abee40a63d0ff8722cfc9537f89e77a43fda0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/gen_build_costs.csv",
+      "bytes": 118281,
+      "sha256": "a9ad23c78c915846f2eb20a3b4cd067f0340fa72bbfff54dd6255d1f24c621d2"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/gen_build_predetermined.csv",
+      "bytes": 33969,
+      "sha256": "8d5aeb1faa0a9faed9cba2d6b3b26e30b6e1508ba0e3370db3abb2230a697c16"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/gen_info.csv",
+      "bytes": 115863,
+      "sha256": "2b08fed799146022970579642a18e9ea80ef42b50524eae9e86438582f3e5829"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/hydro_timeseries.csv",
+      "bytes": 18863,
+      "sha256": "aa3677420b27ecbb371a437ee1005989309b51a433900f8c7c62f94f832ee4fc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/legacy_storage_policy.csv",
+      "bytes": 14055,
+      "sha256": "42856b181e2cdc8b4382227be1ab290bd8c7b4db29d03f86f04b6b0e914ec854"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/timepoints.csv",
+      "bytes": 350435,
+      "sha256": "b1b6fa322503be0dd09dda0a8d1902919c664102b3cf6785bb62491b1255e587"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/timeseries.csv",
+      "bytes": 358,
+      "sha256": "0bbfd4ac24815836920c934a4acc6ffd2d3c1daaddb0cd7cd41fc4f0caba5adb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/variable_capacity_factors.csv",
+      "bytes": 53029163,
+      "sha256": "63a501bd0b5ec256ecf4961da8fb572c861ea294ade24ece6359eb195ca88a4b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OBSERVED/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "68a52ed85ebbb5238351816ede47752e5af0bc73350a50e0b07dc7066ad43ba0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/ldes_technology_portfolio_application.json",
+      "bytes": 4939,
+      "sha256": "97ff20108df23b6a6fc208d8b48abee40a63d0ff8722cfc9537f89e77a43fda0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/gen_build_costs.csv",
+      "bytes": 118281,
+      "sha256": "a9ad23c78c915846f2eb20a3b4cd067f0340fa72bbfff54dd6255d1f24c621d2"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/gen_build_predetermined.csv",
+      "bytes": 32139,
+      "sha256": "3f192d382a545b2c1e1cac55a755296077ada9903f94583a89675dbbf43cecb5"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/gen_info.csv",
+      "bytes": 115863,
+      "sha256": "2b08fed799146022970579642a18e9ea80ef42b50524eae9e86438582f3e5829"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/hydro_timeseries.csv",
+      "bytes": 18863,
+      "sha256": "aa3677420b27ecbb371a437ee1005989309b51a433900f8c7c62f94f832ee4fc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/legacy_storage_policy.csv",
+      "bytes": 12525,
+      "sha256": "517c802ad35e0b403327c4116435fe3c7f35fddd5486cc5c2841200e9a78954d"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/timepoints.csv",
+      "bytes": 350435,
+      "sha256": "b1b6fa322503be0dd09dda0a8d1902919c664102b3cf6785bb62491b1255e587"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/timeseries.csv",
+      "bytes": 358,
+      "sha256": "0bbfd4ac24815836920c934a4acc6ffd2d3c1daaddb0cd7cd41fc4f0caba5adb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/variable_capacity_factors.csv",
+      "bytes": 53029163,
+      "sha256": "63a501bd0b5ec256ecf4961da8fb572c861ea294ade24ece6359eb195ca88a4b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_LDES_OPTIMAL/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "91319849dd9a1fd71bb1f18a7665e7607c99d0326da83a7beed4285c35ab2f30"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/gen_build_costs.csv",
+      "bytes": 98645,
+      "sha256": "7e4194d779df4174e25a99e46c31595a3e7b643de793e66afeb30df4f7cc71a7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/gen_build_predetermined.csv",
+      "bytes": 33969,
+      "sha256": "8d5aeb1faa0a9faed9cba2d6b3b26e30b6e1508ba0e3370db3abb2230a697c16"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/gen_info.csv",
+      "bytes": 63967,
+      "sha256": "789f55f7f8c6ef8a06bd16c5ab3602d079317b8e108c9e75ca78011a54675500"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/hydro_timeseries.csv",
+      "bytes": 18863,
+      "sha256": "aa3677420b27ecbb371a437ee1005989309b51a433900f8c7c62f94f832ee4fc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/legacy_storage_policy.csv",
+      "bytes": 14055,
+      "sha256": "42856b181e2cdc8b4382227be1ab290bd8c7b4db29d03f86f04b6b0e914ec854"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/timepoints.csv",
+      "bytes": 350435,
+      "sha256": "b1b6fa322503be0dd09dda0a8d1902919c664102b3cf6785bb62491b1255e587"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/timeseries.csv",
+      "bytes": 358,
+      "sha256": "0bbfd4ac24815836920c934a4acc6ffd2d3c1daaddb0cd7cd41fc4f0caba5adb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/variable_capacity_factors.csv",
+      "bytes": 53029163,
+      "sha256": "63a501bd0b5ec256ecf4961da8fb572c861ea294ade24ece6359eb195ca88a4b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OBSERVED/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "68a52ed85ebbb5238351816ede47752e5af0bc73350a50e0b07dc7066ad43ba0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/gen_build_costs.csv",
+      "bytes": 98645,
+      "sha256": "7e4194d779df4174e25a99e46c31595a3e7b643de793e66afeb30df4f7cc71a7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/gen_build_predetermined.csv",
+      "bytes": 32139,
+      "sha256": "3f192d382a545b2c1e1cac55a755296077ada9903f94583a89675dbbf43cecb5"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/gen_info.csv",
+      "bytes": 63967,
+      "sha256": "789f55f7f8c6ef8a06bd16c5ab3602d079317b8e108c9e75ca78011a54675500"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/hydro_timeseries.csv",
+      "bytes": 18863,
+      "sha256": "aa3677420b27ecbb371a437ee1005989309b51a433900f8c7c62f94f832ee4fc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/legacy_storage_policy.csv",
+      "bytes": 12525,
+      "sha256": "517c802ad35e0b403327c4116435fe3c7f35fddd5486cc5c2841200e9a78954d"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/timepoints.csv",
+      "bytes": 350435,
+      "sha256": "b1b6fa322503be0dd09dda0a8d1902919c664102b3cf6785bb62491b1255e587"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/timeseries.csv",
+      "bytes": 358,
+      "sha256": "0bbfd4ac24815836920c934a4acc6ffd2d3c1daaddb0cd7cd41fc4f0caba5adb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/variable_capacity_factors.csv",
+      "bytes": 53029163,
+      "sha256": "63a501bd0b5ec256ecf4961da8fb572c861ea294ade24ece6359eb195ca88a4b"
+    },
+    {
+      "path": "sensitivity_cases/TY2033_FULL8760_OPTIMAL/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "shared_source_snapshots/NEA_2024_Renewable_Energy_Monitoring_Evaluation.doc",
+      "bytes": 186880,
+      "sha256": "b2c460a50a2bcd379b1a8c18b0b4c992fffff047dc8c5bb775aa7845ccd62449"
+    },
+    {
+      "path": "shared_source_snapshots/NEA_China_New_Energy_Storage_Development_Report_2026.pdf",
+      "bytes": 2371899,
+      "sha256": "ba6435f8790d901794c3ecd9e3eef0f5ad234a2c4bb0b72400fe3ff49e1fa4b2"
+    },
+    {
+      "path": "shared_source_snapshots/README_SOURCE_SNAPSHOTS.md",
+      "bytes": 759,
+      "sha256": "b626856927d966c5401b9344f25d265c6c6560aa00528c89b8b7a14d5ea7489b"
+    },
+    {
+      "path": "shared_source_snapshots/SWITCH_China_inputs_v2.0.9.zip",
+      "bytes": 3330846,
+      "sha256": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3"
+    },
+    {
+      "path": "shared_source_snapshots/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz",
+      "bytes": 6209422,
+      "sha256": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70"
+    },
+    {
+      "path": "shared_source_snapshots/official/PNNL_ESGC_Cost_Performance_Database_v2024.xlsx",
+      "bytes": 862630,
+      "sha256": "ef50e87012361e2a10d3df97cb61b93d38eae9255539ca76061e0c5feef501e9"
+    },
+    {
+      "path": "storage_runner/check_v17t2r6_8760_runtime.jl",
+      "bytes": 4606,
+      "sha256": "6ba7944cb89001b35991be3921a4adfa833961d01235bf076e49af394eece32c"
+    },
+    {
+      "path": "storage_runner/run_targetyear_one.jl",
+      "bytes": 3994,
+      "sha256": "a8c4d37995cfda2454f9e5e66d966da09a682a049896b842dcda28cbe47c1e57"
+    },
+    {
+      "path": "storage_runner/scenarios_targetyear_linked.csv",
+      "bytes": 3029,
+      "sha256": "528c3f1272eb2202d085a47ae1e688225b687750e3027ac0bd958be8f429073b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/SENSITIVITY_SCENARIO_META.json",
+      "bytes": 25973,
+      "sha256": "65f0f496fdf763c6f152404b0517f506e2254feffa9dc1f8d01deffadc7ed942"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/CASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 8712,
+      "sha256": "e76768619436049a0704dd79e0c3a07cbf75bba90f0e695c96ad9d668876fa8e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "91319849dd9a1fd71bb1f18a7665e7607c99d0326da83a7beed4285c35ab2f30"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/ldes_technology_portfolio_application.json",
+      "bytes": 4939,
+      "sha256": "97ff20108df23b6a6fc208d8b48abee40a63d0ff8722cfc9537f89e77a43fda0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/gen_build_costs.csv",
+      "bytes": 118281,
+      "sha256": "a9ad23c78c915846f2eb20a3b4cd067f0340fa72bbfff54dd6255d1f24c621d2"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/gen_build_predetermined.csv",
+      "bytes": 33969,
+      "sha256": "8d5aeb1faa0a9faed9cba2d6b3b26e30b6e1508ba0e3370db3abb2230a697c16"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/gen_info.csv",
+      "bytes": 115863,
+      "sha256": "2b08fed799146022970579642a18e9ea80ef42b50524eae9e86438582f3e5829"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/hydro_timeseries.csv",
+      "bytes": 19979,
+      "sha256": "625fbafcd7e0d840147a0b7411cd8b25c09182017471576a3e8df93e3da3d782"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/legacy_storage_policy.csv",
+      "bytes": 14055,
+      "sha256": "42856b181e2cdc8b4382227be1ab290bd8c7b4db29d03f86f04b6b0e914ec854"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/loads.csv",
+      "bytes": 96498,
+      "sha256": "e877ab53716091232eb02d726122d0b9393eb0e37773887bc13b8ffb5e9c1db3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/loads_new.csv",
+      "bytes": 91655,
+      "sha256": "b02101033b2e42aaff4355130a84b206b8b9854b32fbc1b6fbe91b851980e27b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/timepoints.csv",
+      "bytes": 3131,
+      "sha256": "bf48995558caa05bcdd4d0727f7a9634f85242caebcb0d9e4e7e3ff91bdfe08f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/timeseries.csv",
+      "bytes": 418,
+      "sha256": "734aacd4ee385dd28c7d0f12fcf2783006d3bbcd922bc6d3d70fd8b7ed37e605"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/variable_capacity_factors.csv",
+      "bytes": 436733,
+      "sha256": "acb5cc64e0d9609cf7372cc3b1a58da2dea079f0717229fbd2febf307e721991"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/zone_coincident_peak_demand.csv",
+      "bytes": 2067,
+      "sha256": "21aff812f9004493d23e99bdebd370c81d4da20506a0526bdaba8d5b40e5931e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OBSERVED/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/SENSITIVITY_SCENARIO_META.json",
+      "bytes": 25957,
+      "sha256": "d89854b161526300904aeae900702d12ed754b6ca246ff3a0d1b6207afd0d30a"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/CASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 8694,
+      "sha256": "2ddf851432e0fd5b5bd8c403a4aeb9bfe8f0e38160e638eb5ff76f5d6244e24a"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "68a52ed85ebbb5238351816ede47752e5af0bc73350a50e0b07dc7066ad43ba0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/ldes_technology_portfolio_application.json",
+      "bytes": 4939,
+      "sha256": "97ff20108df23b6a6fc208d8b48abee40a63d0ff8722cfc9537f89e77a43fda0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/gen_build_costs.csv",
+      "bytes": 118281,
+      "sha256": "a9ad23c78c915846f2eb20a3b4cd067f0340fa72bbfff54dd6255d1f24c621d2"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/gen_build_predetermined.csv",
+      "bytes": 32139,
+      "sha256": "3f192d382a545b2c1e1cac55a755296077ada9903f94583a89675dbbf43cecb5"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/gen_info.csv",
+      "bytes": 115863,
+      "sha256": "2b08fed799146022970579642a18e9ea80ef42b50524eae9e86438582f3e5829"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/hydro_timeseries.csv",
+      "bytes": 19979,
+      "sha256": "625fbafcd7e0d840147a0b7411cd8b25c09182017471576a3e8df93e3da3d782"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/legacy_storage_policy.csv",
+      "bytes": 12525,
+      "sha256": "517c802ad35e0b403327c4116435fe3c7f35fddd5486cc5c2841200e9a78954d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/loads.csv",
+      "bytes": 96498,
+      "sha256": "e877ab53716091232eb02d726122d0b9393eb0e37773887bc13b8ffb5e9c1db3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/loads_new.csv",
+      "bytes": 91655,
+      "sha256": "b02101033b2e42aaff4355130a84b206b8b9854b32fbc1b6fbe91b851980e27b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/timepoints.csv",
+      "bytes": 3131,
+      "sha256": "bf48995558caa05bcdd4d0727f7a9634f85242caebcb0d9e4e7e3ff91bdfe08f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/timeseries.csv",
+      "bytes": 418,
+      "sha256": "734aacd4ee385dd28c7d0f12fcf2783006d3bbcd922bc6d3d70fd8b7ed37e605"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/variable_capacity_factors.csv",
+      "bytes": 436733,
+      "sha256": "acb5cc64e0d9609cf7372cc3b1a58da2dea079f0717229fbd2febf307e721991"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/zone_coincident_peak_demand.csv",
+      "bytes": 2067,
+      "sha256": "21aff812f9004493d23e99bdebd370c81d4da20506a0526bdaba8d5b40e5931e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_LDES_OPTIMAL/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/SENSITIVITY_SCENARIO_META.json",
+      "bytes": 20262,
+      "sha256": "aa239ab3812c9c201acb3ab2bc6c6d2c5188f76150775f25316ba7ef41a3e611"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/CASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 8644,
+      "sha256": "33407b5fbfc2983187faeaa18ef7751b3e856d9e602993ac944ce04c8bcdc331"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "91319849dd9a1fd71bb1f18a7665e7607c99d0326da83a7beed4285c35ab2f30"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/gen_build_costs.csv",
+      "bytes": 98645,
+      "sha256": "7e4194d779df4174e25a99e46c31595a3e7b643de793e66afeb30df4f7cc71a7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/gen_build_predetermined.csv",
+      "bytes": 33969,
+      "sha256": "8d5aeb1faa0a9faed9cba2d6b3b26e30b6e1508ba0e3370db3abb2230a697c16"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/gen_info.csv",
+      "bytes": 63967,
+      "sha256": "789f55f7f8c6ef8a06bd16c5ab3602d079317b8e108c9e75ca78011a54675500"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/hydro_timeseries.csv",
+      "bytes": 19979,
+      "sha256": "625fbafcd7e0d840147a0b7411cd8b25c09182017471576a3e8df93e3da3d782"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/legacy_storage_policy.csv",
+      "bytes": 14055,
+      "sha256": "42856b181e2cdc8b4382227be1ab290bd8c7b4db29d03f86f04b6b0e914ec854"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/loads.csv",
+      "bytes": 96498,
+      "sha256": "e877ab53716091232eb02d726122d0b9393eb0e37773887bc13b8ffb5e9c1db3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/loads_new.csv",
+      "bytes": 91655,
+      "sha256": "b02101033b2e42aaff4355130a84b206b8b9854b32fbc1b6fbe91b851980e27b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/timepoints.csv",
+      "bytes": 3131,
+      "sha256": "bf48995558caa05bcdd4d0727f7a9634f85242caebcb0d9e4e7e3ff91bdfe08f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/timeseries.csv",
+      "bytes": 418,
+      "sha256": "734aacd4ee385dd28c7d0f12fcf2783006d3bbcd922bc6d3d70fd8b7ed37e605"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/variable_capacity_factors.csv",
+      "bytes": 436733,
+      "sha256": "acb5cc64e0d9609cf7372cc3b1a58da2dea079f0717229fbd2febf307e721991"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/zone_coincident_peak_demand.csv",
+      "bytes": 2067,
+      "sha256": "21aff812f9004493d23e99bdebd370c81d4da20506a0526bdaba8d5b40e5931e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OBSERVED/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/SENSITIVITY_SCENARIO_META.json",
+      "bytes": 20246,
+      "sha256": "29ceaeb5f81bc0c3c681bf843142deb5e1d469e57fc0d12b5fee7b7e025a3ec2"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/BASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 6965,
+      "sha256": "d1b2757c57622ea274a09a6c9ac595b1a64f618b921826ff106e38e382a09e34"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/CASE_PUBLICATION_SOURCE_FINGERPRINT.json",
+      "bytes": 8626,
+      "sha256": "62a5285246c6da4450fabbd1dd25866fd736dd70232c409640ef6d60cdbb5d3d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/V17_SPATIAL_LEGACY_POLICY_AUDIT.json",
+      "bytes": 1809,
+      "sha256": "68a52ed85ebbb5238351816ede47752e5af0bc73350a50e0b07dc7066ad43ba0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/existing_storage_application_audit.json",
+      "bytes": 810,
+      "sha256": "0e6f27a93d8d9a1f4dbef84828579d140bef03b46f19978dcbb2a8c42956d63b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/nlr_2025_battery_cost_application.csv",
+      "bytes": 213,
+      "sha256": "598a5076a4e71106bc38bb8db9aa34541505552a325ce44135018b29d9bfc064"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/nlr_2025_battery_cost_application.json",
+      "bytes": 962,
+      "sha256": "a94bbc88206b53696e851adc6225f527b2ed446b3cc962f64aa56895dbef07ba"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/storage_base_scope_audit.json",
+      "bytes": 1809,
+      "sha256": "4a8a6e87c064acf4bef334aa1200cc2645df48b0d537e8c2917690426662e264"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/audits/vre_cf_application_audit.json",
+      "bytes": 1127,
+      "sha256": "6f9c8887f0d81c13efca072c223c820cbd96680b6a86315ef39ce0967f84957e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/beccs_lifecycle_factors.csv",
+      "bytes": 134,
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/biomass_procure_case_params.csv",
+      "bytes": 327,
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/build_tx_limits.csv",
+      "bytes": 54,
+      "sha256": "9e9c8d6a686af8a7ee719b45ca129a16c31eac3bcbfa7d07c3d6825f54bab69d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/capacity_plans.csv",
+      "bytes": 2219,
+      "sha256": "729df9602055dceb28bc3f084e83cdcff76dfc176be8becf62e0bc373846791b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/carbon_policies.csv",
+      "bytes": 105,
+      "sha256": "877073297fe383de88327856d276188222e7f890f3e045ed13d0efe8d6640457"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/ccs_install_costs.csv",
+      "bytes": 40674,
+      "sha256": "6ba96de8de4ceea6bd2586472af258a954dbed9f70b3c0f9d57853f1d0b233ca"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/ccs_install_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/ccs_new_predetermined.csv",
+      "bytes": 70,
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/co2_injection_limits.csv",
+      "bytes": 72,
+      "sha256": "bcd3578044f98d0f2c9a452fb5860a990d37180fca37a34c78c48462a6e22aeb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/electricity_demand.csv",
+      "bytes": 661,
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/financials.csv",
+      "bytes": 65,
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/fuel supply curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/fuel_cost.csv",
+      "bytes": 5701,
+      "sha256": "20ed706dc563107891e67800def420ccc27dc0a5137b6c08b4efe208c413b6f9"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/fuel_supply_curves.csv",
+      "bytes": 17862,
+      "sha256": "2bb1d544b83dcd4dac27e40f07daf9ff89ae566a1a27ba8e911aaccd9d176f95"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/fuels.csv",
+      "bytes": 113,
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/gen_build_costs.csv",
+      "bytes": 98645,
+      "sha256": "7e4194d779df4174e25a99e46c31595a3e7b643de793e66afeb30df4f7cc71a7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/gen_build_predetermined.csv",
+      "bytes": 32139,
+      "sha256": "3f192d382a545b2c1e1cac55a755296077ada9903f94583a89675dbbf43cecb5"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/gen_ccs_energy_load.csv",
+      "bytes": 137,
+      "sha256": "b502e66bd4c64a8da52a02ee8c9db1145ac33c6f1f710741151e18a4c09e2dfe"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/gen_info.csv",
+      "bytes": 63967,
+      "sha256": "789f55f7f8c6ef8a06bd16c5ab3602d079317b8e108c9e75ca78011a54675500"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/hydro_timeseries.csv",
+      "bytes": 19979,
+      "sha256": "625fbafcd7e0d840147a0b7411cd8b25c09182017471576a3e8df93e3da3d782"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/legacy_storage_policy.csv",
+      "bytes": 12525,
+      "sha256": "517c802ad35e0b403327c4116435fe3c7f35fddd5486cc5c2841200e9a78954d"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/load_zones.csv",
+      "bytes": 2684,
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/loads.csv",
+      "bytes": 96498,
+      "sha256": "e877ab53716091232eb02d726122d0b9393eb0e37773887bc13b8ffb5e9c1db3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/loads_new.csv",
+      "bytes": 91655,
+      "sha256": "b02101033b2e42aaff4355130a84b206b8b9854b32fbc1b6fbe91b851980e27b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/non_fuel_energy_sources.csv",
+      "bytes": 35,
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/periods.csv",
+      "bytes": 97,
+      "sha256": "7668d40e347a806cfeb85583938279d9979b67dba9f84f2cb16efd5035834e61"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/planning_reserve_requirement_zones.csv",
+      "bytes": 876,
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/planning_reserve_requirements.csv",
+      "bytes": 1121,
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "bytes": 3085,
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/regional_fuel_markets.csv",
+      "bytes": 523,
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/timepoints.csv",
+      "bytes": 3131,
+      "sha256": "bf48995558caa05bcdd4d0727f7a9634f85242caebcb0d9e4e7e3ff91bdfe08f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/timeseries.csv",
+      "bytes": 418,
+      "sha256": "734aacd4ee385dd28c7d0f12fcf2783006d3bbcd922bc6d3d70fd8b7ed37e605"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/total_capacity_limits.csv",
+      "bytes": 92,
+      "sha256": "500b8821d552783b3229443ea99aa52ce0d19340a69ff39da835ad86011be872"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/total_capacity_tech_limits.csv",
+      "bytes": 46,
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/trans_params.csv",
+      "bytes": 113,
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/transmission_lines.csv",
+      "bytes": 7394,
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/variable_capacity_factors.csv",
+      "bytes": 436733,
+      "sha256": "acb5cc64e0d9609cf7372cc3b1a58da2dea079f0717229fbd2febf307e721991"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/zone_coincident_peak_demand.csv",
+      "bytes": 2067,
+      "sha256": "21aff812f9004493d23e99bdebd370c81d4da20506a0526bdaba8d5b40e5931e"
+    },
+    {
+      "path": "template_cases_4h/TY2033_CHRONO_OPTIMAL/inputs/zone_to_regional_fuel_market.csv",
+      "bytes": 569,
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f"
+    },
+    {
+      "path": "tools/apply_existing_storage_to_case.py",
+      "bytes": 4734,
+      "sha256": "9054a66de3bd24ec30aca05f415cca7b24159719dac25271da0b1a688ba7475e"
+    },
+    {
+      "path": "tools/apply_ldes_technology_portfolio.py",
+      "bytes": 6355,
+      "sha256": "2af91037342e8747792e56623a4ae7c5cc5e53ac6496965af3e83702ee4b6472"
+    },
+    {
+      "path": "tools/apply_nlr_2025_battery_costs.py",
+      "bytes": 5707,
+      "sha256": "d9c12f20ac69efd1fe9d8be8b2b1c68a37a305c3ed10080506a6a1dad3c22f8f"
+    },
+    {
+      "path": "tools/apply_spatial_legacy.py",
+      "bytes": 16386,
+      "sha256": "0eac49d139ee8158a50de8e0c329263abdbdb247975520ba33ca427a096f9cb0"
+    },
+    {
+      "path": "tools/apply_vre_cf_to_case.py",
+      "bytes": 5791,
+      "sha256": "97f33bb327eafbf41fb299bd63fbb4fc6c2b84e77f55a1ac9abdf4fc4cb50181"
+    },
+    {
+      "path": "tools/audit_legacy_storage_provenance.py",
+      "bytes": 2760,
+      "sha256": "57854b0d471c8abc0bbea05719bf9b5527490a785b974f0f1036d828afdc5fb4"
+    },
+    {
+      "path": "tools/audit_targetyear_pair_identity.py",
+      "bytes": 6667,
+      "sha256": "5d678222ec8c31398647ba9fd51c08aade07e43af2ea0db47b3d6f383681c35e"
+    },
+    {
+      "path": "tools/build_8760_audit_notebook.py",
+      "bytes": 5746,
+      "sha256": "311d1bf2d270eacb5d88ba1daca6d5d589b54a77dad08394d57ae2fb802b5130"
+    },
+    {
+      "path": "tools/build_8760_package_manifest.py",
+      "bytes": 3853,
+      "sha256": "56d537a9c8d9d0f61a1e49c599227585f8ee2c25ac0d7fa51816ad6fa873b789"
+    },
+    {
+      "path": "tools/build_8760_summary.py",
+      "bytes": 10248,
+      "sha256": "f8290b5d4cc738e7e49832079b2842bf1a6516c65a5b85eecfc60cceb605c191"
+    },
+    {
+      "path": "tools/build_nea_storage_inputs.py",
+      "bytes": 21203,
+      "sha256": "406f483843c2abedab8759ec530bd9902ee6a9a53dfbd3bcf6330844d762ce48"
+    },
+    {
+      "path": "tools/build_publication_vre_cf.py",
+      "bytes": 14321,
+      "sha256": "edf430f8d6fc1837dcfa83030bf04be99e960be85740e6cc34380bf2dd757045"
+    },
+    {
+      "path": "tools/build_storage_base_case.py",
+      "bytes": 9413,
+      "sha256": "c6b26661720de4d83c0aaed9d2ff864c70623ea2d7b1be60834c186f55d86875"
+    },
+    {
+      "path": "tools/check_8760_package.py",
+      "bytes": 23434,
+      "sha256": "ea30e514f23a647da3aed3212b8307bf338300e9be01fcd4faf251a127d860ea"
+    },
+    {
+      "path": "tools/check_julia_8760_static.py",
+      "bytes": 16921,
+      "sha256": "5c48e70e306987dbacf78cc0afb7be184949f65d1ae9bde3df5110650fba678d"
+    },
+    {
+      "path": "tools/check_parallel_scheduler.py",
+      "bytes": 3849,
+      "sha256": "c3bfabf319919191447fb6172fdc09cce3f3b36698197c53dedfc32b235eef69"
+    },
+    {
+      "path": "tools/extract_figshare_2024_load.py",
+      "bytes": 7529,
+      "sha256": "27d5a3307cc574927184dc879012edbff3ae3dc4ff1ceae5c5ab3022c4e335bd"
+    },
+    {
+      "path": "tools/ingest_vre_cf.py",
+      "bytes": 5144,
+      "sha256": "377acf6ab216d9030f237fa7072cfdc91e4aefac5936526614bfb68ae93e0ac7"
+    },
+    {
+      "path": "tools/normalize_release_audit_paths.py",
+      "bytes": 2067,
+      "sha256": "de1c0a04cd69ed2ae8d38725f0c353b676353cd8dd95b606340d1c396cecc952"
+    },
+    {
+      "path": "tools/prepare_8760_cases.py",
+      "bytes": 18014,
+      "sha256": "eeb1d633ea2ea8f08cc3a4b817cf5e4672181df7cac9b8bb2c94cfb168e75197"
+    },
+    {
+      "path": "tools/publication_source_common.py",
+      "bytes": 18202,
+      "sha256": "27f22e914134db95cb0647ba08cec7c87ac5564ca5f0d1ea96514a116072d111"
+    },
+    {
+      "path": "tools/publication_source_contract.py",
+      "bytes": 1581,
+      "sha256": "d035322f4b6aae29f1a605473ace15c88aee26a3da2da4d135c16bfc88b22ae9"
+    },
+    {
+      "path": "tools/publication_source_gate.py",
+      "bytes": 10304,
+      "sha256": "98e349b950ff19a809581f5d599d0b704910f0602ce23903aaee5de7eab7b92c"
+    },
+    {
+      "path": "tools/rebuild_publication_source_fingerprint.py",
+      "bytes": 248,
+      "sha256": "ad3ecb60c0179ad612a630a89a5899831dce678b37a5f33800c592d67644fb0c"
+    },
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "bytes": 27749,
+      "sha256": "3937df326da9d53967e56e4ac0fe37278b52c6b1e742e2a3fcf1af1734dcc646"
+    },
+    {
+      "path": "tools/validate_8760_case.py",
+      "bytes": 9518,
+      "sha256": "a961e5ea0e11d3ebf614ca988994a9acc89ed3e70e9bbfc6041f4f1db90ce293"
+    },
+    {
+      "path": "tools/validate_storage_inputs.py",
+      "bytes": 11838,
+      "sha256": "3d551d40ba259fc06a8dc86d7c5413e4ebd57c5b5cdbb8eb0666657281ea106c"
+    },
+    {
+      "path": "tools/verify_8760_package_manifest.py",
+      "bytes": 5334,
+      "sha256": "f6207a803126e008c7f7dc0ea2a805b4ff39e94786309f726085e139a4a300af"
+    },
+    {
+      "path": "tools/verify_hf2p1_patch.py",
+      "bytes": 2241,
+      "sha256": "7589b04ba6c1d4fe7e7b2d60d46dba199cb06c2c8d4968d3034a143f2f37c892"
+    },
+    {
+      "path": "tools/write_publication_result_lineage.py",
+      "bytes": 4402,
+      "sha256": "ef035bc0ef046fbfdf18b4748d866050f7ccb08aded89cd92dd990be6e236596"
+    }
+  ]
+}

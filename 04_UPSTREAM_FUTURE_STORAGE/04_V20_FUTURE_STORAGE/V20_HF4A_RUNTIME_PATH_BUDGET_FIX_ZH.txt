@@ -1,0 +1,19 @@
+V20 HF4A 运行产物路径预算热修
+================================
+
+现象：正常断点续跑已生成 future_correction_outputs/_attempts 等目录后，
+CHECK_V20_STATIC.bat 的 relative_path_budget_le_180 可能报告 192。
+
+根因：HF3 检查器虽然明确允许正常续跑保留 outputs/logs，但路径预算仍扫描了
+运行生成目录。长 attempt 标签与诊断文件名叠加后，错误改变了“源码包便携性”结论。
+
+修正：
+1. 不放宽 180 字符门槛。
+2. 源码包路径预算排除 outputs、batch_logs、failed_diagnostics、
+   future_correction_outputs、future_correction_batch_logs 等运行生成目录。
+3. 发布洁净模式 --release-clean 仍独立检查并拒绝携带这些运行产物。
+4. 不修改模型、输入、case、求解参数、既有结果或 HF4 投影逻辑。
+
+覆盖后重新运行：
+  cd /d C:\Users\Admin\Desktop\01_UPSTREAM_16PLUS8\04_V20_FUTURE_STORAGE
+  call RUN_V20_HF4_RESUME_REMAINING_15_1x10.bat

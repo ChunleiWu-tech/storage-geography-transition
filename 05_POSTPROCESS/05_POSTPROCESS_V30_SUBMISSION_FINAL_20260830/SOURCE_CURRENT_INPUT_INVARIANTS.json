@@ -1,0 +1,22 @@
+{
+  "schema_version": "source_current_input_invariants_v1",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "purpose": "Input closure and internal-identity audit for newly solved source-current outputs; not a numerical result target.",
+  "input_invariants": {
+    "national_power_mw": 135930.0,
+    "national_energy_mwh": 351120.0,
+    "national_average_duration_h": 2.583094239682189,
+    "model_zone_count": 32,
+    "main_scenario_count": 16,
+    "targetyear_scenario_count": 8,
+    "wind_target_cf_8760": 0.2532072175254301,
+    "switch_china_raw_inputs_version": "2.0.9"
+  },
+  "allowed_correction_classes": [
+    "partly corrected",
+    "persistent or amplified",
+    "reversal",
+    "substantially corrected"
+  ],
+  "forbidden_use": "Do not use these input invariants as substitutes for model outputs; all result metrics must be regenerated after the 16+8 solve."
+}

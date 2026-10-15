@@ -1,0 +1,42 @@
+{
+  "version": "V17T2R6R9_HF4P2_SCOPE_SAFE_FULL8760_PRIMAL_DUAL_SUPPORTED_OBJECTIVE_CONTINUATION",
+  "scope": "HF4P2 patch files only; the helper scope repair is read-only and all four prepared cases remain governed by their frozen CASE_PUBLICATION_SOURCE_FINGERPRINT.json files",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "bytes": 428548,
+      "sha256": "6170c01dbecad8169203ff1d830ef17aa99616e32a21d85ae2c6b2d05b899391"
+    },
+    {
+      "path": "base_model_v39/full8760_hf4_objective_continuation.jl",
+      "bytes": 29444,
+      "sha256": "f5c78166db3ad8f01bac5484417a9a6f95277b100ebbb77067f12464d8bfca4e"
+    },
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "bytes": 40357,
+      "sha256": "7558f4f23e6ea489f9870a67bd9a84339f6d943e1251997deca059fd2dd8e4f4"
+    },
+    {
+      "path": "tools/check_v17t2r6r9_hf4_continuation.py",
+      "bytes": 15660,
+      "sha256": "d9b76f0ac6601b5dfa157e87d8ffd49349b150368766b64c5f6a20b257827238"
+    },
+    {
+      "path": "RUN_V17T2R6R9_HF4_8760_FINISH_MISSING_SERIAL.bat",
+      "bytes": 2158,
+      "sha256": "19a6099b30a7756065edf40a3f6317f6c69662a327fc330e3a583c4e476eac35"
+    },
+    {
+      "path": "CHECK_V17T2R6R9_HF4_8760.bat",
+      "bytes": 389,
+      "sha256": "b0f2f2d5e1c94354cef9e862fe347f9bacf07e920ff7d1620acd597a4a71a4ff"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R9_HF4.md",
+      "bytes": 1934,
+      "sha256": "9580bb2ea1a1e2e29eb2ba0cdaf6978eafb202bfbd25b6dba7095c88669e0918"
+    }
+  ]
+}

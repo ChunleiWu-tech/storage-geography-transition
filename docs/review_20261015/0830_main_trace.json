@@ -1,0 +1,765 @@
+{
+  "scope": "Read-only 0830 archive inventory; direct upstream input rebuild; saved model summary and derived-metric checks. No solve and no claim of raw-output re-extraction.",
+  "zip_inventory": [
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R1_PUBLICATION_FIGURES_STRICT_QA_20260831_000950.zip",
+      "entries": 210,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R2_PUBLICATION_FIGURES_CARTOGRAPHIC_QA_20260831_012250.zip",
+      "entries": 218,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R3_PUBLICATION_FIGURES_MAP_LEGIBILITY_QA_20260831_091256.zip",
+      "entries": 218,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R4_PUBLICATION_FIGURES_FINAL_ALIGNMENT_QA_20260831_095719.zip",
+      "entries": 218,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31_PUBLICATION_FIGURES_FINAL_20260830_233405.zip",
+      "entries": 206,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\01_MAIN_UPSTREAM_V17T4R3_SUBMISSION_FINAL_20260830.zip",
+      "entries": 1066,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\02_TARGETYEAR_SENSITIVITY_V17T2R5R5_SUBMISSION_FINAL_20260830.zip",
+      "entries": 589,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\03_FULL8760_V17T2R6R24P3_HF18P2_SUBMISSION_FINAL_20260830.zip",
+      "entries": 651,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\04_V20_FUTURE_STORAGE_HF5_SUBMISSION_FINAL_20260830.zip",
+      "entries": 1886,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\05_POSTPROCESS_V30_SUBMISSION_FINAL_20260830.zip",
+      "entries": 55,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\V30_ALL_REAL_TABLES_AND_AUDITS_20260830.zip",
+      "entries": 102,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\SUBMISSION_4PACK_FINAL_20260830_130000\\V30_PUBLICATION_FIGURES_FINAL_20260830_210418.zip",
+      "entries": 184,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R2_PUBLICATION_FIGURES_CARTOGRAPHIC_QA_20260831_012250\\metadata\\map_compliance\\GS_2023_2767_official_standard_map.zip",
+      "entries": 1,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R3_PUBLICATION_FIGURES_MAP_LEGIBILITY_QA_20260831_091256\\metadata\\map_compliance\\GS_2023_2767_official_standard_map.zip",
+      "entries": 1,
+      "raw_output_or_log_candidates": []
+    },
+    {
+      "archive": "E:\\桌面1\\储能\\0830\\V31R4_PUBLICATION_FIGURES_FINAL_ALIGNMENT_QA_20260831_095719\\metadata\\map_compliance\\GS_2023_2767_official_standard_map.zip",
+      "entries": 1,
+      "raw_output_or_log_candidates": []
+    }
+  ],
+  "current_vs_0830_v31r4": [
+    {
+      "table": "full8760_validation\\full8760_certificate_gate_matrix.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "full8760_validation\\full8760_certificate_summary.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "full8760_validation\\full8760_numerical_quality.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "full8760_validation\\FULL8760_PUBLICATION_CONTRACT.json",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "full8760_validation\\full8760_robustness_components.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "full8760_validation\\full8760_zone_robustness.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_equal_horizon_build_by_year_zone_tech.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_evidence_direct_build_by_year_zone_tech.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_evidence_horizon_penalty.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_a_8_strict_summary.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_a_correction_metrics.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_a_pair_costs.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_a_storage_build_presence.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_a_storage_builds.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_b_16_strict_summary.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_b_context_penalties.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\v20_layer_c_2_strict_summary.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage\\V20_PUBLICATION_CONTRACT.json",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage_v31\\fig6_adaptive_zone_portfolios.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage_v31\\fig6_layer_a_pair_metrics.csv",
+      "exists_0830": true,
+      "byte_identical_0830": false
+    },
+    {
+      "table": "future_storage_v31\\fig7_context_pair_metrics.csv",
+      "exists_0830": true,
+      "byte_identical_0830": false
+    },
+    {
+      "table": "future_storage_v31\\fig7_core_timing_by_technology.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage_v31\\fig7_core_zone_difference.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "future_storage_v31\\figS14_all26_case_metrics.csv",
+      "exists_0830": true,
+      "byte_identical_0830": false
+    },
+    {
+      "table": "future_storage_v31\\figS14_all26_technology_shares.csv",
+      "exists_0830": true,
+      "byte_identical_0830": false
+    },
+    {
+      "table": "future_storage_v31\\figS14_all26_timing_shares.csv",
+      "exists_0830": true,
+      "byte_identical_0830": false
+    },
+    {
+      "table": "future_storage_v31\\figS14_timing_display.csv",
+      "exists_0830": false,
+      "byte_identical_0830": false
+    },
+    {
+      "table": "main\\fig1a_legacy_nodes.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig1b_model_network_edges.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig1b_storage_demand_resource_match.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig1c_scenario_design.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig1c_storage_lorenz.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig1d_legacy_concentration.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig2_spatial_allocation.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig2b_legacy_value_ladder.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig3_system_value.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig3a_compensatory_investment.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig3b_spatial_burden_2028.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig4_future_storage_spatial_reconfiguration.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig4a_mismatch_persistence.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig4b_zone_period_deltas.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig4c_zone_correction.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig5_robustness_effects.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig5_transition_paths.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "main\\fig6_robustness.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS06_scenario_matrix.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS07_solver_audit.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS09_technology_capacity_differences.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS10_province_allocation_deltas.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS11_cost_decomposition.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS11_transmission_line_differences.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS12_curtailment_emissions.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS13_storage_capacity_duration.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS14_transmission_sensitivity.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS15_ph_carbon_cost_robustness.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\figS16_temporal_scope.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\installed_energy_by_zone_period.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\installed_power_by_zone_period.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "supplementary\\physical_audit_detail.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\figS12a_targetyear_cost_penalty.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\figS12b_cost_component_decomposition.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\figS12c_compensatory_investment.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\figS12c_ldes_technology_mix.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\figS12d_operational_response.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_all_scenario_metrics.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_generation_build_by_technology.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_ldes_attenuation.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_legacy_allocation_all_scenarios.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_one_hour_discretization.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_pairwise_observed_minus_optimal.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_reallocation_by_zone.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_soc_chronology_summary.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_storage_energy_build_by_technology.csv",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    },
+    {
+      "table": "targetyear_sensitivity\\targetyear_summary.json",
+      "exists_0830": true,
+      "byte_identical_0830": true
+    }
+  ],
+  "direct_upstream_input_rebuild": [
+    {
+      "table": "fig1a_legacy_nodes.csv",
+      "pass": true,
+      "rows": 32,
+      "detail": "all columns reconstructed from upstream inputs agree"
+    },
+    {
+      "table": "fig1b_model_network_edges.csv",
+      "pass": true,
+      "rows": 90,
+      "detail": "all columns reconstructed from upstream inputs agree"
+    },
+    {
+      "table": "fig1c_scenario_design.csv",
+      "pass": true,
+      "rows": 6,
+      "detail": "all columns reconstructed from upstream inputs agree"
+    },
+    {
+      "table": "fig1d_legacy_concentration.csv",
+      "pass": true,
+      "rows": 1,
+      "detail": "all columns reconstructed from upstream inputs agree"
+    }
+  ],
+  "input_statistics": [
+    {
+      "national_power_mw": 135930.0,
+      "national_energy_mwh": 351120.0,
+      "national_average_duration_h": 2.583094239682189,
+      "top5_power_share": 0.4528246870696479,
+      "herfindahl_hirschman_index": 0.06310775920350851,
+      "maximum_storage_to_peak_ratio": 0.7020237340829609,
+      "p95_storage_to_peak_ratio": 0.4037964130589428
+    }
+  ],
+  "independent_battery_capacity_aggregation": [
+    {
+      "period": 2023,
+      "national_battery_retained_minus_optimized_mw": -2.999513526447117e-08,
+      "battery_half_sum_absolute_difference_mw": 89929.60215507493
+    },
+    {
+      "period": 2028,
+      "national_battery_retained_minus_optimized_mw": 368.46278872269613,
+      "battery_half_sum_absolute_difference_mw": 89745.3707670015
+    },
+    {
+      "period": 2033,
+      "national_battery_retained_minus_optimized_mw": 35669.20702542129,
+      "battery_half_sum_absolute_difference_mw": 70665.3660771114
+    },
+    {
+      "period": 2038,
+      "national_battery_retained_minus_optimized_mw": -7134.672391925895,
+      "battery_half_sum_absolute_difference_mw": 5935.217216806532
+    },
+    {
+      "period": 2043,
+      "national_battery_retained_minus_optimized_mw": -1407.2876532426226,
+      "battery_half_sum_absolute_difference_mw": 8287.624384029043
+    },
+    {
+      "period": 2048,
+      "national_battery_retained_minus_optimized_mw": 505.9285020867196,
+      "battery_half_sum_absolute_difference_mw": 9732.727166138688
+    },
+    {
+      "period": 2053,
+      "national_battery_retained_minus_optimized_mw": 11422.811966237508,
+      "battery_half_sum_absolute_difference_mw": 14240.64324966688
+    },
+    {
+      "period": 2058,
+      "national_battery_retained_minus_optimized_mw": 4083.035933293787,
+      "battery_half_sum_absolute_difference_mw": 14784.699005427665
+    }
+  ],
+  "derived_capacity_comparison": [
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2023,
+      "calculated": 89929.60215507493,
+      "saved": 89929.60215507491,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2028,
+      "calculated": 368.46278872269613,
+      "saved": 368.4627887226816,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2028,
+      "calculated": 89745.3707670015,
+      "saved": 89745.3707670015,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2033,
+      "calculated": 35669.20702542129,
+      "saved": 35669.20702542129,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2033,
+      "calculated": 70665.3660771114,
+      "saved": 70665.3660771114,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2038,
+      "calculated": -7134.672391925895,
+      "saved": -7134.67239192588,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2038,
+      "calculated": 5935.217216806532,
+      "saved": 5935.2172168065335,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2043,
+      "calculated": -1407.2876532426226,
+      "saved": -1407.287653242645,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2043,
+      "calculated": 8287.624384029043,
+      "saved": 8287.624384029044,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2048,
+      "calculated": 505.9285020867196,
+      "saved": 505.9285020866664,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2048,
+      "calculated": 9732.727166138688,
+      "saved": 9732.727166138688,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2053,
+      "calculated": 11422.811966237508,
+      "saved": 11422.811966237612,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2053,
+      "calculated": 14240.64324966688,
+      "saved": 14240.6432496669,
+      "pass": true
+    },
+    {
+      "metric": "national_battery_difference",
+      "period": 2058,
+      "calculated": 4083.035933293787,
+      "saved": 4083.035933293868,
+      "pass": true
+    },
+    {
+      "metric": "half_sum_absolute_battery_difference",
+      "period": 2058,
+      "calculated": 14784.699005427665,
+      "saved": 14784.699005427688,
+      "pass": true
+    }
+  ],
+  "cost_vs_retained_solver_audit": [
+    {
+      "scenario": "SL03_NO_LEGACY",
+      "saved_aggregate_cost": 3576211996245.2124,
+      "saved_solver_stage1_objective": 3576211996244.965,
+      "difference_usd": 0.24755859375,
+      "solver_status": "OPTIMAL",
+      "primal_status": "FEASIBLE_POINT",
+      "native_solver_certificate": true,
+      "route": "stage1_solver_certified_economic_optimum"
+    },
+    {
+      "scenario": "SL00_OBSERVED_ACTUAL",
+      "saved_aggregate_cost": 3557008556061.8486,
+      "saved_solver_stage1_objective": 3557008556061.749,
+      "difference_usd": 0.099609375,
+      "solver_status": "OPTIMAL",
+      "primal_status": "FEASIBLE_POINT",
+      "native_solver_certificate": true,
+      "route": "stage1_solver_certified_economic_optimum"
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "saved_aggregate_cost": 3556852013717.7217,
+      "saved_solver_stage1_objective": 3556852013717.4526,
+      "difference_usd": 0.26904296875,
+      "solver_status": "OPTIMAL",
+      "primal_status": "FEASIBLE_POINT",
+      "native_solver_certificate": true,
+      "route": "stage1_solver_certified_economic_optimum"
+    },
+    {
+      "scenario": "SL04_RULE_LOAD",
+      "saved_aggregate_cost": 3554581846663.0103,
+      "saved_solver_stage1_objective": 3554581846662.7446,
+      "difference_usd": 0.265625,
+      "solver_status": "OPTIMAL",
+      "primal_status": "FEASIBLE_POINT",
+      "native_solver_certificate": true,
+      "route": "stage1_solver_certified_economic_optimum"
+    },
+    {
+      "scenario": "SL05_RULE_VRE",
+      "saved_aggregate_cost": 3556523561095.4688,
+      "saved_solver_stage1_objective": 3556523561095.2056,
+      "difference_usd": 0.26318359375,
+      "solver_status": "OPTIMAL",
+      "primal_status": "FEASIBLE_POINT",
+      "native_solver_certificate": true,
+      "route": "stage1_solver_certified_economic_optimum"
+    },
+    {
+      "scenario": "SL02_OPTIMAL_REALLOCATION",
+      "saved_aggregate_cost": 3550570678514.9766,
+      "saved_solver_stage1_objective": 3550570678514.7188,
+      "difference_usd": 0.2578125,
+      "solver_status": "OPTIMAL",
+      "primal_status": "FEASIBLE_POINT",
+      "native_solver_certificate": true,
+      "route": "stage1_solver_certified_economic_optimum"
+    }
+  ],
+  "independent_cost_calculation": {
+    "retained_minus_optimized_usd": 6281335202.745117,
+    "no_legacy_minus_optimized_usd": 25641317730.23584,
+    "value_retention_fraction": 0.7550307176554244,
+    "period_present_value_delta_sum_usd": 6281335202.744934,
+    "period_delta_closure_error_usd": -0.00018310546875
+  },
+  "0830_changes_characterized": [
+    {
+      "file": "future_storage_v31\\fig6_layer_a_pair_metrics.csv",
+      "changed_columns": [
+        "pair_label"
+      ],
+      "numeric_columns_unchanged": true
+    },
+    {
+      "file": "future_storage_v31\\fig7_context_pair_metrics.csv",
+      "changed_columns": [
+        "context"
+      ],
+      "numeric_columns_unchanged": true
+    },
+    {
+      "file": "future_storage_v31\\figS14_all26_case_metrics.csv",
+      "changed_columns": [
+        "scenario_label"
+      ],
+      "numeric_columns_unchanged": true
+    },
+    {
+      "file": "future_storage_v31\\figS14_all26_technology_shares.csv",
+      "changed_columns": [
+        "scenario_label"
+      ],
+      "numeric_columns_unchanged": true
+    },
+    {
+      "file": "future_storage_v31\\figS14_all26_timing_shares.csv",
+      "changed_columns": [
+        "scenario_label"
+      ],
+      "numeric_columns_unchanged": true
+    },
+    {
+      "file": "future_storage_v31\\figS14_timing_display.csv",
+      "reason": "new display-only timing table; not independently assessed by this main-figure audit"
+    }
+  ],
+  "scope_boundary": {
+    "raw_solve_output_reextraction": false,
+    "archived_postprocessed_result_and_solver_summary_consistency": true,
+    "raw_files_missing_in_both_current_workspace_and_0830_all15_zip_inventories": true,
+    "historical_lineage_report_contradiction": "UPSTREAM_RESULT_LINEAGE_AUDIT.json top-level status PASS and all checks true, but interpretation says Source lineage is not synchronized. This is a stale/hardcoded interpretation string; do not treat report as a newly executed live gate."
+  },
+  "figure_provenance_summary": {
+    "Fig1": "Upstream observational storage input mapping + 2023 model input demand/VRE/network; descriptive statistics, not solve outputs. Directly rebuilt and agreed.",
+    "Fig2": "Saved allocation audit/optimization decision + solver objective and no-legacy cost differences. Current table matches0830. Original allocation solve CSV absent.",
+    "Fig3": "Saved period cost components and province-period-technology installed capacity; direct capacity aggregation and PV closure verified. Original CSV absent.",
+    "Fig4": "Half-sum absolute differences/persistence/classification from saved spatial installed capacity; all8periods independently checked.",
+    "Fig5": "Six retained-vs-optimized contexts from scenario cost/capacity aggregate results; table byte-identical0830.",
+    "FigS1–S2": "Input statistics and accounting; FigS3 combines input envelope with saved optimized allocation.",
+    "FigS4": "Scenario specification/registry rather than solver result.",
+    "FigS5–S6": "Rule/optimized initial spatial allocations and duration accounting.",
+    "FigS7": "Saved period cost differences; FigS8 technology capacity/curtailment aggregate; FigS9 saved line investment differences; FigS10 final spatial capacity; FigS11 scenario robustness aggregate."
+  }
+}

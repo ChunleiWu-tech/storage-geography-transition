@@ -1,0 +1,24 @@
+metric,value,target,pass,note
+national_power_mw,135930.0,135930.0,True,official exact end-2025 total
+national_standardized_energy_mwh,351120.0,351120.0,True,exact national energy with common duration
+national_compiled_duration_sensitivity_energy_mwh,351120.00000000006,351120.0,True,prior duration pattern rescaled to exact national energy
+province_count,31.0,31.0,True,
+model_zone_count,32.0,32.0,True,Inner Mongolia split into two model zones
+region_Central_power_mw,15087.244274809158,15087.244274809158,True,official exact for North/Northwest; normalized rounded-share closure for other regions
+region_East_power_mw,19572.641221374044,19572.641221374044,True,official exact for North/Northwest; normalized rounded-share closure for other regions
+region_North_power_mw,44131.0,44131.0,True,official exact for North/Northwest; normalized rounded-share closure for other regions
+region_Northeast_power_mw,951.4478371501268,951.4478371501268,True,official exact for North/Northwest; normalized rounded-share closure for other regions
+region_Northwest_power_mw,38382.0,38382.0,True,official exact for North/Northwest; normalized rounded-share closure for other regions
+region_South_power_mw,17805.666666666664,17805.666666666664,True,official exact for North/Northwest; normalized rounded-share closure for other regions
+province_Inner_Mongolia_exact_power_mw,20260.0,20260.0,True,official exact
+province_Xinjiang_exact_power_mw,18800.0,18800.0,True,official exact
+province_Shandong_exact_power_mw,11210.0,11210.0,True,official exact
+province_Gansu_exact_power_mw,8405.8,8405.8,True,official exact
+province_Guizhou_exact_power_mw,2450.0,2450.0,True,official exact
+province_Hebei_reported_above_5gw_floor_mw,7424.660493827161,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"
+province_Jiangsu_reported_above_5gw_floor_mw,7589.917302798982,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"
+province_Ningxia_reported_above_5gw_floor_mw,5000.0,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"
+province_Yunnan_reported_above_5gw_floor_mw,5341.101449275361,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"
+province_Zhejiang_reported_above_5gw_floor_mw,5000.0,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"
+province_Henan_reported_above_5gw_floor_mw,6095.856272650165,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"
+province_Guangdong_reported_above_5gw_floor_mw,5007.282608695651,5000.0,True,"5,000 MW is a conservative model floor for an official above-5-GW statement"

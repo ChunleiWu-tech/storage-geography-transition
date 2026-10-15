@@ -1,0 +1,143 @@
+{
+  "version": "V17T2R6_FULL8760",
+  "scenario": "TY2033_FULL8760_OPTIMAL",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_input_files",
+      "pass": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "figshare_source_hash",
+      "pass": true,
+      "detail": "a93ff6d4a2f4f8c36538fdc4704e2e88bef16347d217c456a99a7a97d56a19e0"
+    },
+    {
+      "check": "processed_load_hash",
+      "pass": true,
+      "detail": "74944cc8d707561ac1b6e3210cfa7035eaa5d0e84a391d42c012de17304291ab"
+    },
+    {
+      "check": "period_design",
+      "pass": true,
+      "detail": "periods=[2023, 2033]"
+    },
+    {
+      "check": "timepoint_count",
+      "pass": true,
+      "detail": "rows=8760"
+    },
+    {
+      "check": "strict_hourly_sequence",
+      "pass": true,
+      "detail": "first=2035-01-01 00:00:00, last=2035-12-31 23:00:00"
+    },
+    {
+      "check": "no_february_29",
+      "pass": true,
+      "detail": "non-leap chronology"
+    },
+    {
+      "check": "twelve_calendar_months",
+      "pass": true,
+      "detail": "timeseries=12"
+    },
+    {
+      "check": "one_hour_duration",
+      "pass": true,
+      "detail": "durations=[np.int64(1)]"
+    },
+    {
+      "check": "calendar_month_counts",
+      "pass": true,
+      "detail": "counts={2035.01: 744, 2035.02: 672, 2035.03: 744, 2035.04: 720, 2035.05: 744, 2035.06: 720, 2035.07: 744, 2035.08: 744, 2035.09: 720, 2035.1: 744, 2035.11: 720, 2035.12: 744}"
+    },
+    {
+      "check": "period_scale",
+      "pass": true,
+      "detail": "scales=[np.float64(5.0)], period_years=5"
+    },
+    {
+      "check": "annual_hours_8760",
+      "pass": true,
+      "detail": "hours=8760.0"
+    },
+    {
+      "check": "loads.csv_complete_cross_product",
+      "pass": true,
+      "detail": "rows=280320, zones=32"
+    },
+    {
+      "check": "loads.csv_finite_positive",
+      "pass": true,
+      "detail": "min=874.4339478989614, max=234675.9215125074"
+    },
+    {
+      "check": "loads.csv_annual_energy_lock",
+      "pass": true,
+      "detail": "max_abs_residual_mwh=1.1920928955078125e-07"
+    },
+    {
+      "check": "loads_new.csv_complete_cross_product",
+      "pass": true,
+      "detail": "rows=280320, zones=32"
+    },
+    {
+      "check": "loads_new.csv_finite_positive",
+      "pass": true,
+      "detail": "min=559.4094569060671, max=113813.223100316"
+    },
+    {
+      "check": "loads_new.csv_annual_energy_lock",
+      "pass": true,
+      "detail": "max_abs_residual_mwh=5.960464477539063e-08"
+    },
+    {
+      "check": "vcf_complete_cross_product",
+      "pass": true,
+      "detail": "rows=1024920, projects=117"
+    },
+    {
+      "check": "vcf_finite_bounded",
+      "pass": true,
+      "detail": "min=0.0, max=1.0"
+    },
+    {
+      "check": "offshore_scope_isolated",
+      "pass": true,
+      "detail": "projects=21"
+    },
+    {
+      "check": "hydro_monthly_envelope_complete",
+      "pass": true,
+      "detail": "rows=372, projects=31"
+    },
+    {
+      "check": "hydro_flow_bounds",
+      "pass": true,
+      "detail": "avg_range=(0.01345,0.948)"
+    },
+    {
+      "check": "coincident_peak_updated",
+      "pass": true,
+      "detail": "max_abs_residual_mw=0.0"
+    },
+    {
+      "check": "scenario_chronology_mode",
+      "pass": true,
+      "detail": "mode=full_year_cyclic"
+    },
+    {
+      "check": "temporal_audit_present",
+      "pass": true,
+      "detail": "audits/FULL8760_TEMPORAL_INPUT_AUDIT.json"
+    },
+    {
+      "check": "timezone_alignment_declared",
+      "pass": true,
+      "detail": "ERA5 UTC -> China Standard Time by deterministic +8 h circular shift"
+    }
+  ],
+  "failed": []
+}

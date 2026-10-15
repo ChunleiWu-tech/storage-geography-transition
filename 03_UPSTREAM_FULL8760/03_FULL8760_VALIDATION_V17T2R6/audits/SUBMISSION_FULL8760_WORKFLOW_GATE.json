@@ -1,0 +1,21 @@
+{
+  "version": "SUBMISSION_FULL8760_R24P3_THREE_PHASE_FINAL",
+  "status": "PASS",
+  "checks_passed": 20,
+  "checks_total": 20,
+  "failed": [],
+  "prior_targets": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "quality_recovery_targets": [
+    "TY2033_FULL8760_LDES_OBSERVED",
+    "TY2033_FULL8760_OBSERVED"
+  ],
+  "postsolve_recovery_target": "TY2033_FULL8760_OBSERVED",
+  "solver_threads_per_case": 10,
+  "max_parallel_per_phase": 2,
+  "r24p3_resolve_performed": false,
+  "scientific_model_changed_by_workflow": false,
+  "numerical_evidence_status": "ALL4_CERTIFICATES_COMPLETED"
+}

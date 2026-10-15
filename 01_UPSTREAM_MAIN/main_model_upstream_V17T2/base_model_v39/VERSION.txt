@@ -1,0 +1,4 @@
+Storage planning model V17
+Stage 1: official solver-certified economic optimum; scaled Barrier primary, Crossover=0
+Stage 2: optional diagnostic sparse-face selection; non-blocking and not an official fallback
+Gross flow policy: degeneracy-sensitive; operational-mechanism interpretation prohibited

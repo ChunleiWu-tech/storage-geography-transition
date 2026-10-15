@@ -1,0 +1,113 @@
+{
+  "version": "V17T1",
+  "baseline": "user-supplied V17 prepared with its original V17 build and scenario workflow",
+  "scenario_count": 16,
+  "passed": 16,
+  "all_pass": true,
+  "rows": [
+    {
+      "scenario": "SL00_OBSERVED_ACTUAL",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL02_OPTIMAL_REALLOCATION",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL03_NO_LEGACY",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL04_RULE_LOAD",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL05_RULE_VRE",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL06_TX_FIXED_OBSERVED",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL07_TX_FIXED_OPTIMAL",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL08_PH_CONSERVATIVE_OBSERVED",
+      "differing_input_files": [
+        "capacity_plans.csv"
+      ],
+      "expected_differences": [
+        "capacity_plans.csv"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+      "differing_input_files": [
+        "capacity_plans.csv"
+      ],
+      "expected_differences": [
+        "capacity_plans.csv"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "SL10_CARBON_TIGHT_OBSERVED",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL11_CARBON_TIGHT_OPTIMAL",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL12_COST_LOW_OBSERVED",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL13_COST_LOW_OPTIMAL",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL14_COST_HIGH_OBSERVED",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    },
+    {
+      "scenario": "SL15_COST_HIGH_OPTIMAL",
+      "differing_input_files": [],
+      "expected_differences": [],
+      "pass": true
+    }
+  ]
+}

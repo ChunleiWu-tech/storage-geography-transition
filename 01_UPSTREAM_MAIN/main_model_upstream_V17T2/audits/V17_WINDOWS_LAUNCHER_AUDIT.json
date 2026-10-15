@@ -1,0 +1,893 @@
+{
+  "version": "V17",
+  "checks": 177,
+  "passed": 177,
+  "all_pass": true,
+  "checks_detail": [
+    {
+      "check": "expected_launcher_set",
+      "pass": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "no_obsolete_v17r2_launchers",
+      "pass": true,
+      "detail": "present=['CHECK_CLEAN_PACKAGE_MANIFEST.bat', 'CHECK_PUBLICATION_SOURCE_GATE.bat', 'CHECK_V17_PYTHON.bat', 'CHECK_V17_READINESS.bat', 'CHECK_V17_RELEASE.bat', 'CHECK_V17_RUNTIME.bat', 'CHECK_V17_SOURCE_LOAD.bat', 'INSTALL_V17_PYTHON_DEPS.bat', 'RUN_CLEAN_REPRODUCE_SUCCESSFUL_METHODS_16.bat', 'RUN_V17T1_POSTPROCESS.bat', 'RUN_V17T1_PREPARE_ONLY.bat', 'RUN_V17T1_UPSTREAM_FULL_16_1x10.bat', 'RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat', 'RUN_V17T2_POSTPROCESS.bat', 'RUN_V17T2_SL10_RESCUE_1x10.bat', 'RUN_V17T2_UPSTREAM_FULL_16_1x10.bat', 'RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat', 'RUN_V17T4R3_STANDALONE_RESUME_ALL_16_1x10.bat', 'RUN_V17_POSTPROCESS.bat', 'RUN_V17_PREPARE_ONLY.bat', 'RUN_V17_SL00_CONTROLLED_1x10.bat', 'RUN_V17_SL00_PRIMARY_ONLY_1x10.bat', 'RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat', 'RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat', 'RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat', 'RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat', 'V17_ENV_DEFAULTS.bat']"
+    },
+    {
+      "check": "CHECK_V17_RELEASE.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "CHECK_V17_RELEASE.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "CHECK_V17_RELEASE.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "CHECK_V17_RELEASE.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "CHECK_V17_RELEASE.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "CHECK_V17_RUNTIME.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "CHECK_V17_RUNTIME.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "CHECK_V17_RUNTIME.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "CHECK_V17_RUNTIME.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "CHECK_V17_RUNTIME.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17T2_POSTPROCESS.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17T2_POSTPROCESS.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17T2_POSTPROCESS.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17T2_POSTPROCESS.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17T2_POSTPROCESS.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_POSTPROCESS.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_POSTPROCESS.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_POSTPROCESS.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_POSTPROCESS.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_POSTPROCESS.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_PREPARE_ONLY.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_PREPARE_ONLY.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_PREPARE_ONLY.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_PREPARE_ONLY.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_PREPARE_ONLY.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:calls_shared_environment",
+      "pass": true,
+      "detail": "shared runtime selector"
+    },
+    {
+      "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:checks_environment_error",
+      "pass": true,
+      "detail": "abort on selector failure"
+    },
+    {
+      "check": "V17_ENV_DEFAULTS.bat:no_forbidden_control_bytes",
+      "pass": true,
+      "detail": "forbidden=[]"
+    },
+    {
+      "check": "V17_ENV_DEFAULTS.bat:strict_crlf",
+      "pass": true,
+      "detail": "lone_cr=[], lone_lf=[]"
+    },
+    {
+      "check": "V17_ENV_DEFAULTS.bat:ascii_safe",
+      "pass": true,
+      "detail": "ascii"
+    },
+    {
+      "check": "python_selector:if defined V17_PYTHON",
+      "pass": true,
+      "detail": "if defined V17_PYTHON"
+    },
+    {
+      "check": "python_selector:call :try_python py -3.12",
+      "pass": true,
+      "detail": "call :try_python py -3.12"
+    },
+    {
+      "check": "python_selector:call :try_python py -3.14",
+      "pass": true,
+      "detail": "call :try_python py -3.14"
+    },
+    {
+      "check": "python_selector:call :try_python py -3",
+      "pass": true,
+      "detail": "call :try_python py -3"
+    },
+    {
+      "check": "python_selector:call :try_python python",
+      "pass": true,
+      "detail": "call :try_python python"
+    },
+    {
+      "check": "python_selector:sys.version_info >= (3,10)",
+      "pass": true,
+      "detail": "sys.version_info >= (3,10)"
+    },
+    {
+      "check": "python_selector:No working Python 3.10+ runtime was found",
+      "pass": true,
+      "detail": "No working Python 3.10+ runtime was found"
+    },
+    {
+      "check": "python_selector:not_py_launcher_implies_312",
+      "pass": true,
+      "detail": "the selector tests each candidate instead of assuming py -3.12"
+    },
+    {
+      "check": "reference:CHECK_CLEAN_PACKAGE_MANIFEST.bat:tools/check_clean_package_manifest.py",
+      "pass": true,
+      "detail": "tools/check_clean_package_manifest.py"
+    },
+    {
+      "check": "reference:CHECK_CLEAN_PACKAGE_MANIFEST.bat:tools/check_clean_package_manifest.py",
+      "pass": true,
+      "detail": "tools/check_clean_package_manifest.py"
+    },
+    {
+      "check": "reference:CHECK_PUBLICATION_SOURCE_GATE.bat:tools/publication_source_gate.py",
+      "pass": true,
+      "detail": "tools/publication_source_gate.py"
+    },
+    {
+      "check": "reference:CHECK_V17_READINESS.bat:tools/check_v17_run_readiness.py",
+      "pass": true,
+      "detail": "tools/check_v17_run_readiness.py"
+    },
+    {
+      "check": "reference:CHECK_V17_RELEASE.bat:tools/validate_release_v17.py",
+      "pass": true,
+      "detail": "tools/validate_release_v17.py"
+    },
+    {
+      "check": "reference:CHECK_V17_RUNTIME.bat:storage_runner/check_v17_runtime.jl",
+      "pass": true,
+      "detail": "storage_runner/check_v17_runtime.jl"
+    },
+    {
+      "check": "reference:CHECK_V17_SOURCE_LOAD.bat:storage_runner/check_v17_source_load.jl",
+      "pass": true,
+      "detail": "storage_runner/check_v17_source_load.jl"
+    },
+    {
+      "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/preflight_spatial_legacy_outputs.py",
+      "pass": true,
+      "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+    },
+    {
+      "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/build_spatial_legacy_tables.py",
+      "pass": true,
+      "detail": "postprocess/build_spatial_legacy_tables.py"
+    },
+    {
+      "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/plot_spatial_legacy_figures.py",
+      "pass": true,
+      "detail": "postprocess/plot_spatial_legacy_figures.py"
+    },
+    {
+      "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/validate_spatial_legacy_release.py",
+      "pass": true,
+      "detail": "postprocess/validate_spatial_legacy_release.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/build_nea_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/build_nea_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/ingest_vre_cf.py",
+      "pass": true,
+      "detail": "tools/ingest_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/build_publication_vre_cf.py",
+      "pass": true,
+      "detail": "tools/build_publication_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/rebuild_publication_source_fingerprint.py",
+      "pass": true,
+      "detail": "tools/rebuild_publication_source_fingerprint.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/validate_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/validate_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/audit_legacy_storage_provenance.py",
+      "pass": true,
+      "detail": "tools/audit_legacy_storage_provenance.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "reference:RUN_V17_SL00_CONTROLLED_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "reference:RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "reference:RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:storage_runner/run_storage_one_solver_task.jl",
+      "pass": true,
+      "detail": "storage_runner/run_storage_one_solver_task.jl"
+    },
+    {
+      "check": "reference:RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/preflight_spatial_legacy_outputs.py",
+      "pass": true,
+      "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/build_spatial_legacy_tables.py",
+      "pass": true,
+      "detail": "postprocess/build_spatial_legacy_tables.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/plot_spatial_legacy_figures.py",
+      "pass": true,
+      "detail": "postprocess/plot_spatial_legacy_figures.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/validate_spatial_legacy_release.py",
+      "pass": true,
+      "detail": "postprocess/validate_spatial_legacy_release.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_PREPARE_ONLY.bat:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_PREPARE_ONLY.bat:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "reference:RUN_V17T1_PREPARE_ONLY.bat:tools/audit_v17t1_four_scenario_repairs.py",
+      "pass": true,
+      "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_nea_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/build_nea_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/ingest_vre_cf.py",
+      "pass": true,
+      "detail": "tools/ingest_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_publication_vre_cf.py",
+      "pass": true,
+      "detail": "tools/build_publication_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/rebuild_publication_source_fingerprint.py",
+      "pass": true,
+      "detail": "tools/rebuild_publication_source_fingerprint.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/validate_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/validate_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_legacy_storage_provenance.py",
+      "pass": true,
+      "detail": "tools/audit_legacy_storage_provenance.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_ne_config.py",
+      "pass": true,
+      "detail": "tools/check_v17_ne_config.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_windows_launchers_v17.py",
+      "pass": true,
+      "detail": "tools/audit_windows_launchers_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_empty_collection_safety.py",
+      "pass": true,
+      "detail": "tools/audit_julia_empty_collection_safety.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_syntax_v17.py",
+      "pass": true,
+      "detail": "tools/audit_julia_syntax_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_numerical_stability_v17.py",
+      "pass": true,
+      "detail": "tools/audit_numerical_stability_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_objective_certificate_v17.py",
+      "pass": true,
+      "detail": "tools/audit_objective_certificate_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17_release_policy.py",
+      "pass": true,
+      "detail": "tools/audit_v17_release_policy.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_run_readiness.py",
+      "pass": true,
+      "detail": "tools/check_v17_run_readiness.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/audit_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t1_four_scenario_repairs.py",
+      "pass": true,
+      "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/write_publication_result_lineage.py",
+      "pass": true,
+      "detail": "tools/write_publication_result_lineage.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/preflight_spatial_legacy_outputs.py",
+      "pass": true,
+      "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/build_spatial_legacy_tables.py",
+      "pass": true,
+      "detail": "postprocess/build_spatial_legacy_tables.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/plot_spatial_legacy_figures.py",
+      "pass": true,
+      "detail": "postprocess/plot_spatial_legacy_figures.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/validate_spatial_legacy_release.py",
+      "pass": true,
+      "detail": "postprocess/validate_spatial_legacy_release.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_SL10_RESCUE_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/audit_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_SL10_RESCUE_1x10.bat:tools/run_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/run_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_SL10_RESCUE_1x10.bat:postprocess/preflight_spatial_legacy_outputs.py",
+      "pass": true,
+      "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/build_nea_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/build_nea_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/build_publication_vre_cf.py",
+      "pass": true,
+      "detail": "tools/build_publication_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/validate_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/validate_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/audit_legacy_storage_provenance.py",
+      "pass": true,
+      "detail": "tools/audit_legacy_storage_provenance.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/audit_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/audit_v17t1_four_scenario_repairs.py",
+      "pass": true,
+      "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/write_publication_result_lineage.py",
+      "pass": true,
+      "detail": "tools/write_publication_result_lineage.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_nea_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/build_nea_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/ingest_vre_cf.py",
+      "pass": true,
+      "detail": "tools/ingest_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_publication_vre_cf.py",
+      "pass": true,
+      "detail": "tools/build_publication_vre_cf.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/rebuild_publication_source_fingerprint.py",
+      "pass": true,
+      "detail": "tools/rebuild_publication_source_fingerprint.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/validate_storage_inputs.py",
+      "pass": true,
+      "detail": "tools/validate_storage_inputs.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_legacy_storage_provenance.py",
+      "pass": true,
+      "detail": "tools/audit_legacy_storage_provenance.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_ne_config.py",
+      "pass": true,
+      "detail": "tools/check_v17_ne_config.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_windows_launchers_v17.py",
+      "pass": true,
+      "detail": "tools/audit_windows_launchers_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_empty_collection_safety.py",
+      "pass": true,
+      "detail": "tools/audit_julia_empty_collection_safety.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_syntax_v17.py",
+      "pass": true,
+      "detail": "tools/audit_julia_syntax_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_numerical_stability_v17.py",
+      "pass": true,
+      "detail": "tools/audit_numerical_stability_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_objective_certificate_v17.py",
+      "pass": true,
+      "detail": "tools/audit_objective_certificate_v17.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17_release_policy.py",
+      "pass": true,
+      "detail": "tools/audit_v17_release_policy.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_run_readiness.py",
+      "pass": true,
+      "detail": "tools/check_v17_run_readiness.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+      "pass": true,
+      "detail": "tools/audit_v17t2_sl10_rescue.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t1_four_scenario_repairs.py",
+      "pass": true,
+      "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/run_v17t4r3_empirical_full16.py",
+      "pass": true,
+      "detail": "tools/run_v17t4r3_empirical_full16.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/write_publication_result_lineage.py",
+      "pass": true,
+      "detail": "tools/write_publication_result_lineage.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_RESUME_ALL_16_1x10.bat:tools/run_v17t4r3_empirical_full16.py",
+      "pass": true,
+      "detail": "tools/run_v17t4r3_empirical_full16.py"
+    },
+    {
+      "check": "reference:RUN_V17T4R3_STANDALONE_RESUME_ALL_16_1x10.bat:tools/write_publication_result_lineage.py",
+      "pass": true,
+      "detail": "tools/write_publication_result_lineage.py"
+    },
+    {
+      "check": "clean_launcher:preserves_prepared_storage_cases",
+      "pass": true,
+      "detail": "%V17_PYTHON% \"tools\\run_official_batch.py\" --scenario-set spatial_legacy_full --max-workers 1 --julia \"%JULIA_EXE%\" --skip-postprocess --enable-controlled-fallback"
+    }
+  ]
+}

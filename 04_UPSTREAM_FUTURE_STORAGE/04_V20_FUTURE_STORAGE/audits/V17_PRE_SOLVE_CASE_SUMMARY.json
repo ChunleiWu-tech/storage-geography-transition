@@ -1,0 +1,9 @@
+{
+  "version": "V17T2",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "expected": 16,
+  "prepared": 16,
+  "pre_solve_passed": 16,
+  "case_fingerprints_present": 16,
+  "all_pass": true
+}

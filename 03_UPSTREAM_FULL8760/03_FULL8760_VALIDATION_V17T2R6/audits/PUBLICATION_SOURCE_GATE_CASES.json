@@ -1,0 +1,212 @@
+{
+  "status": "PASS",
+  "stage": "cases",
+  "kind": "sensitivity",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "checks": [
+    {
+      "check": "source_fingerprint_exact_current_match",
+      "passed": true,
+      "detail": "stored and recomputed canonical source fingerprint"
+    },
+    {
+      "check": "data_version",
+      "passed": true,
+      "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+    },
+    {
+      "check": "raw_vre_shape",
+      "passed": true,
+      "detail": [
+        271560,
+        11
+      ]
+    },
+    {
+      "check": "calibrated_vre_shape",
+      "passed": true,
+      "detail": [
+        271560,
+        11
+      ]
+    },
+    {
+      "check": "vre_bounds",
+      "passed": true,
+      "detail": "all capacity factors within [0,1]"
+    },
+    {
+      "check": "final_nea_wind_generation",
+      "passed": true,
+      "detail": 996.8
+    },
+    {
+      "check": "nea_wind_utilization",
+      "passed": true,
+      "detail": 0.959
+    },
+    {
+      "check": "wind_calibration_exact_closure",
+      "passed": true,
+      "detail": 0.25320721752543
+    },
+    {
+      "check": "province_storage_rows",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "check": "zone_storage_rows",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "check": "storage_power_closure",
+      "passed": true,
+      "detail": 135930.0
+    },
+    {
+      "check": "storage_energy_closure",
+      "passed": true,
+      "detail": 351120.0
+    },
+    {
+      "check": "no_legacy_storage_alias_columns",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_goldwind_scientific_source",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "weak_screenshot_datasets_removed",
+      "passed": true,
+      "detail": "all screenshot-derived utilization tables absent"
+    },
+    {
+      "check": "wind_calibration_dependency_lock",
+      "passed": true,
+      "detail": [
+        "generation_utilization_anchor_sha256",
+        "monthly_anchor_sha256",
+        "raw_profile_sha256",
+        "template_sha256",
+        "zone_mapping_sha256"
+      ]
+    },
+    {
+      "check": "wind_anchor_nea_only",
+      "passed": true,
+      "detail": {
+        "wind_generation_and_utilization": "National Energy Administration final 2024 monitoring statistics only",
+        "wind_capacity_path": "National Energy Administration month-end installed-capacity series with declared daily interpolation",
+        "hourly_shape": "supplied 2024 province-level ERA5-derived onshore-wind and solar profile",
+        "commercial_annual_report_source_used": false,
+        "scope": "national total-wind proxy level-corrects the onshore-wind profile; it is neither province validation nor an official onshore-only statistic"
+      }
+    },
+    {
+      "check": "latest_q1_storage_context_explicitly_not_model_input",
+      "passed": true,
+      "detail": [
+        {
+          "dataset_id": "latest_new_storage_context_2026_q1",
+          "use": "Latest context only; not model input",
+          "notes": "Officially reported as more than 140 GW at end-Q1 2026. Excluded from the model vector because no same-cutoff nationally closed energy total and province distribution were released; the internally coherent end-2025 baseline is retained."
+        }
+      ]
+    },
+    {
+      "check": "switch_china_version",
+      "passed": true,
+      "detail": "2.0.9"
+    },
+    {
+      "check": "switch_lineage_not_byte_identical_claim",
+      "passed": true,
+      "detail": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+    },
+    {
+      "check": "figshare_load_workbook_sha256",
+      "passed": true,
+      "detail": "a93ff6d4a2f4f8c36538fdc4704e2e88bef16347d217c456a99a7a97d56a19e0"
+    },
+    {
+      "check": "figshare_processed_8760_sha256",
+      "passed": true,
+      "detail": "74944cc8d707561ac1b6e3210cfa7035eaa5d0e84a391d42c012de17304291ab"
+    },
+    {
+      "check": "figshare_processed_8760_shape",
+      "passed": true,
+      "detail": [
+        8760,
+        33
+      ]
+    },
+    {
+      "check": "figshare_processed_8760_positive",
+      "passed": true,
+      "detail": "all 31 x 8760 load values positive"
+    },
+    {
+      "check": "model_full8760_chronology_compiled",
+      "passed": true,
+      "detail": "full-year SOC and commitment chronology tokens"
+    },
+    {
+      "check": "case_fingerprint::TY2033_FULL8760_OBSERVED",
+      "passed": true,
+      "detail": "current source and input manifest match"
+    },
+    {
+      "check": "full8760_prepared_validation::TY2033_FULL8760_OBSERVED",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "case_fingerprint::TY2033_FULL8760_OPTIMAL",
+      "passed": true,
+      "detail": "current source and input manifest match"
+    },
+    {
+      "check": "full8760_prepared_validation::TY2033_FULL8760_OPTIMAL",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "case_fingerprint::TY2033_FULL8760_LDES_OBSERVED",
+      "passed": true,
+      "detail": "current source and input manifest match"
+    },
+    {
+      "check": "full8760_prepared_validation::TY2033_FULL8760_LDES_OBSERVED",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "case_fingerprint::TY2033_FULL8760_LDES_OPTIMAL",
+      "passed": true,
+      "detail": "current source and input manifest match"
+    },
+    {
+      "check": "full8760_prepared_validation::TY2033_FULL8760_LDES_OPTIMAL",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "full8760_pair_identity",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "expected_case_count",
+      "passed": true,
+      "detail": 4
+    }
+  ],
+  "checks_passed": 35,
+  "checks_total": 35
+}

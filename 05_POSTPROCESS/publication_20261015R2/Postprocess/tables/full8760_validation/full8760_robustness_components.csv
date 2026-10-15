@@ -1,0 +1,9 @@
+scenario,case_label,component,robustness_distance_mw
+TY2033_FULL8760_OBSERVED,Observed inheritance,Ideal firm capacity,105450.41833399815
+TY2033_FULL8760_OBSERVED,Observed inheritance,Ideal surplus absorption,9.223366163403384e-05
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Ideal firm capacity,109320.44159694028
+TY2033_FULL8760_OPTIMAL,Optimized inheritance,Ideal surplus absorption,7.303360894863429e-05
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Ideal firm capacity,108031.15012914766
+TY2033_FULL8760_LDES_OBSERVED,Observed + LDES,Ideal surplus absorption,7.348817410496966e-05
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Ideal firm capacity,115199.52672016252
+TY2033_FULL8760_LDES_OPTIMAL,Optimized + LDES,Ideal surplus absorption,8.97020870098645e-05

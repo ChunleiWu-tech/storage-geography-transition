@@ -1,0 +1,15 @@
+{
+  "case_dir": "./base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "allocation_file": "data/processed/existing_new_storage_allocated_to_model_zones_2025.csv",
+  "allocation_sha256": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc",
+  "publication_source_fingerprint_sha256": "42fb35e0960104796e9a4eb8fae89401989b697735dc90359a7687e4e3e1d1c1",
+  "existing_storage_removed": false,
+  "power_scale": 1.0,
+  "energy_scale": 1.0,
+  "battery_power_added_mw": 135930.0,
+  "battery_energy_added_mwh": 351119.99999999994,
+  "rows_added": 32,
+  "input_scope": "NEA-constrained provincial power reconstruction; common national duration; pumped hydro excluded",
+  "province_values_official_31_row_inventory": false
+}

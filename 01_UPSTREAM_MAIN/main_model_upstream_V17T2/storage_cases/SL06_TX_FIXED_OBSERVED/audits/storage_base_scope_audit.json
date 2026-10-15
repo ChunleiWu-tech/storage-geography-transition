@@ -1,0 +1,43 @@
+{
+  "base_case": "base_model_v39/storage_base_noNBCCS_noDACCS_onshorePV",
+  "template": "base_model_v39/storage_base_template_v17.zip",
+  "scope": "Storage V17 publication-strict base; NBCCS/DACCS disabled; generator CCS scenario-controlled; nationally bias-corrected onshore wind plus solar PV; offshore wind excluded; 2023 is stock-only; operations start in 2028; no CDR in official storage scenarios; deep-decarbonization endpoint is 200 MtCO2/yr in the 2058-labelled block",
+  "operational_horizon_audit": {
+    "minimum_operational_period": 2028,
+    "historical_stock_anchor_period": 2023,
+    "timeseries_before": 96,
+    "timeseries_after": 84,
+    "timepoints_before": 576,
+    "timepoints_after": 504,
+    "expected_timeseries_after": 84,
+    "expected_timepoints_after": 504,
+    "loads_rows": {
+      "loads.csv": {
+        "before": 18432,
+        "after": 16128
+      },
+      "loads_new.csv": {
+        "before": 73728,
+        "after": 16128
+      }
+    },
+    "variable_cf_rows_before": 67392,
+    "variable_cf_rows_after": 58968,
+    "hydro_rows_before": 2976,
+    "hydro_rows_after": 2604,
+    "pass": true,
+    "scope_note": "2023-labelled capacities remain as predetermined end-2025 stock; dispatch, reserve and carbon evidence begins in 2028."
+  },
+  "carbon_policy_audit": {
+    "policy": "deep_decarbonization_without_cdr",
+    "final_period": 2058,
+    "old_final_cap_tco2_per_yr": 0.0,
+    "new_final_cap_tco2_per_yr": 200000000.0,
+    "initial_cap_tco2_per_yr": 4200000000.0,
+    "abatement_fraction_vs_initial_cap": 0.9523809523809523,
+    "cdr_scope": "NBCCS_DACCS_BECCS_disabled_in_official_storage_scenarios",
+    "physical_storage_denominator_retained": true
+  },
+  "offshore_projects": 21,
+  "offshore_predetermined_rows_zeroed": 12
+}

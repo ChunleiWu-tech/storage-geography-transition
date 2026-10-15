@@ -1,0 +1,331 @@
+{
+  "version": "V17T2R6R7_HF2P2_FULL8760",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_release_files",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "python_syntax",
+      "pass": true,
+      "detail": "all tools parsed"
+    },
+    {
+      "check": "no_python_cache",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_generated_release_state",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_platform_junk",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf2p2_immutable_manifest_scope",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "preflight_audit_writers_force_platform_independent_lf",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "four_scenarios_exact",
+      "pass": true,
+      "detail": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    {
+      "check": "scenario_registry_pairwise_wave_order",
+      "pass": true,
+      "detail": [
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL",
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL"
+      ]
+    },
+    {
+      "check": "clean_case_directory_scope",
+      "pass": true,
+      "detail": [
+        "TY2033_FULL8760_LDES_OBSERVED",
+        "TY2033_FULL8760_LDES_OPTIMAL",
+        "TY2033_FULL8760_OBSERVED",
+        "TY2033_FULL8760_OPTIMAL"
+      ]
+    },
+    {
+      "check": "four_frozen_templates_exact",
+      "pass": true,
+      "detail": [
+        "TY2033_CHRONO_LDES_OBSERVED",
+        "TY2033_CHRONO_LDES_OPTIMAL",
+        "TY2033_CHRONO_OBSERVED",
+        "TY2033_CHRONO_OPTIMAL"
+      ]
+    },
+    {
+      "check": "full_year_mode_only",
+      "pass": true,
+      "detail": [
+        "full_year_cyclic"
+      ]
+    },
+    {
+      "check": "direct_full8760_temporal_runtime_contract",
+      "pass": true,
+      "detail": {
+        "TY2033_FULL8760_LDES_OBSERVED": {
+          "pass": true,
+          "rows": 8760,
+          "timeseries": 12,
+          "first": "2035-01-01 00:00:00",
+          "last": "2035-12-31 23:00:00",
+          "timeseries_key_match": true
+        },
+        "TY2033_FULL8760_LDES_OPTIMAL": {
+          "pass": true,
+          "rows": 8760,
+          "timeseries": 12,
+          "first": "2035-01-01 00:00:00",
+          "last": "2035-12-31 23:00:00",
+          "timeseries_key_match": true
+        },
+        "TY2033_FULL8760_OBSERVED": {
+          "pass": true,
+          "rows": 8760,
+          "timeseries": 12,
+          "first": "2035-01-01 00:00:00",
+          "last": "2035-12-31 23:00:00",
+          "timeseries_key_match": true
+        },
+        "TY2033_FULL8760_OPTIMAL": {
+          "pass": true,
+          "rows": 8760,
+          "timeseries": 12,
+          "first": "2035-01-01 00:00:00",
+          "last": "2035-12-31 23:00:00",
+          "timeseries_key_match": true
+        }
+      }
+    },
+    {
+      "check": "all_prepared_cases_validated",
+      "pass": true,
+      "detail": {
+        "TY2033_FULL8760_LDES_OBSERVED": "PASS",
+        "TY2033_FULL8760_LDES_OPTIMAL": "PASS",
+        "TY2033_FULL8760_OBSERVED": "PASS",
+        "TY2033_FULL8760_OPTIMAL": "PASS"
+      }
+    },
+    {
+      "check": "chronology_metadata_consistent",
+      "pass": true,
+      "detail": {
+        "TY2033_FULL8760_LDES_OBSERVED": {
+          "top_level": true,
+          "nested": true,
+          "hourly_timepoints": 8760,
+          "old_four_hour_key_present": false,
+          "old_template_file_counts_present": false,
+          "template_audit_separated": true
+        },
+        "TY2033_FULL8760_LDES_OPTIMAL": {
+          "top_level": true,
+          "nested": true,
+          "hourly_timepoints": 8760,
+          "old_four_hour_key_present": false,
+          "old_template_file_counts_present": false,
+          "template_audit_separated": true
+        },
+        "TY2033_FULL8760_OBSERVED": {
+          "top_level": true,
+          "nested": true,
+          "hourly_timepoints": 8760,
+          "old_four_hour_key_present": false,
+          "old_template_file_counts_present": false,
+          "template_audit_separated": true
+        },
+        "TY2033_FULL8760_OPTIMAL": {
+          "top_level": true,
+          "nested": true,
+          "hourly_timepoints": 8760,
+          "old_four_hour_key_present": false,
+          "old_template_file_counts_present": false,
+          "template_audit_separated": true
+        }
+      }
+    },
+    {
+      "check": "pair_identity",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "full8760_model_tokens",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf2p1_postsolve_lookup_acceleration",
+      "pass": true,
+      "detail": {
+        "missing_lookup_tokens": [],
+        "slow_membership_hits": []
+      }
+    },
+    {
+      "check": "postsolve_export_uses_runtime_timepoint_count",
+      "pass": true,
+      "detail": {
+        "unsafe_uppercase_global_present": false,
+        "safe_runtime_local_present": true
+      }
+    },
+    {
+      "check": "active_timepoint_sort_avoids_inline_string_dispatch",
+      "pass": true,
+      "detail": {
+        "unsafe_direct_sort": false,
+        "missing_safe_tokens": []
+      }
+    },
+    {
+      "check": "full8760_extended_barrier_budget",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "runner_uses_v17t2r6_model",
+      "pass": true,
+      "detail": "runner include"
+    },
+    {
+      "check": "julia_static_audit_current",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "hf2_exact_projection_reduction_current_and_proven",
+      "pass": true,
+      "detail": {
+        "static_audit_version": "V17T2R6R7_HF2P1_FULL8760",
+        "code_contract": true,
+        "input_proof": true
+      }
+    },
+    {
+      "check": "figshare_source_hash",
+      "pass": true,
+      "detail": "a93ff6d4a2f4f8c36538fdc4704e2e88bef16347d217c456a99a7a97d56a19e0"
+    },
+    {
+      "check": "processed_load_hash",
+      "pass": true,
+      "detail": "74944cc8d707561ac1b6e3210cfa7035eaa5d0e84a391d42c012de17304291ab"
+    },
+    {
+      "check": "canonical_launchers_resume_safe",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "r7_all4_launcher_exact_2x10",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf2p1_clean_all4_launcher_contract",
+      "pass": true,
+      "detail": {
+        "missing_tokens": [],
+        "patch_check_precedes_deletion": true,
+        "preflight_includes_patch_check": true
+      }
+    },
+    {
+      "check": "r7_environment_defaults_2x10",
+      "pass": true,
+      "detail": {
+        "threads10": true,
+        "parallel2": true
+      }
+    },
+    {
+      "check": "r7_parallel_scheduler_contract",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "r7_parallel_scheduler_regression_pass",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "max_active_observed": 2
+      }
+    },
+    {
+      "check": "parallel_summary_parent_only",
+      "pass": true,
+      "detail": {
+        "run_selected_pos": 26377,
+        "summary_write_pos": 27191
+      }
+    },
+    {
+      "check": "no_stale_1x10_launchers",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_superseded_versioned_launchers",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_obsolete_v17t2r5_launchers",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_obsolete_targetyear_helpers",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_machine_specific_release_paths",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_goldwind_release_source",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "historical_r7_baseline_scientific_inputs_byte_identical_to_r6",
+      "pass": true,
+      "detail": {
+        "science_inputs_unchanged": true,
+        "scientific_byte_drift_count": 0,
+        "active_julia_model_byte_identical": true,
+        "julia_scenario_runner_byte_identical": true
+      }
+    }
+  ],
+  "failed": []
+}

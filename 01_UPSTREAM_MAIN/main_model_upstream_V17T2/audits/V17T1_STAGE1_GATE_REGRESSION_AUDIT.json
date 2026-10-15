@@ -1,0 +1,41 @@
+{
+  "version": "V17T1",
+  "checks": 6,
+  "passed": 6,
+  "all_pass": true,
+  "rows": [
+    {
+      "check": "standard_gate_identity::scaled_barrier",
+      "v17": true,
+      "v17t1": true,
+      "pass": true
+    },
+    {
+      "check": "standard_gate_identity::deterministic_concurrent",
+      "v17": true,
+      "v17t1": true,
+      "pass": true
+    },
+    {
+      "check": "standard_gate_identity::dual_simplex",
+      "v17": true,
+      "v17t1": true,
+      "pass": true
+    },
+    {
+      "check": "hard_gate_acceptance::hard_deterministic_concurrent_simplex",
+      "v17t1": true,
+      "pass": true
+    },
+    {
+      "check": "hard_gate_acceptance::hard_primal_simplex",
+      "v17t1": true,
+      "pass": true
+    },
+    {
+      "check": "hard_gate_acceptance::hard_homogeneous_barrier",
+      "v17t1": true,
+      "pass": true
+    }
+  ]
+}

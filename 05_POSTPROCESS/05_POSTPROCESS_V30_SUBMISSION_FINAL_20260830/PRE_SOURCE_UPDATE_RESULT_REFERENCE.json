@@ -1,0 +1,35 @@
+{
+  "schema_version": "pre_source_update_result_reference_v1",
+  "status": "HISTORICAL_DISCLOSURE_ONLY",
+  "source_layer": "pre-NEA/SWITCH-China-source-update run",
+  "purpose": "Transparent record of the previously successful numerical run. These values are never acceptance targets for the current-source rerun.",
+  "metrics": {
+    "national_power_mw": 136000.0,
+    "national_energy_mwh": 351000.0,
+    "national_average_duration_h": 2.5808823529411766,
+    "top5_power_share": 0.4684659892980807,
+    "hhi": 0.0684916292523791,
+    "max_storage_to_peak_ratio": 0.7554180557508016,
+    "equivalent_reallocation_mw": 102732.9055252196,
+    "optimized_value_usd": 15278469845.649414,
+    "observed_standardized_retention": 0.8073244378198041,
+    "base_cost_penalty_pv_usd": 2943787766.7634277,
+    "period_2028_battery_power_delta_mw": 62587.35301771728,
+    "period_2028_battery_energy_delta_mwh": 145675.6376814834,
+    "final_power_persistence_fraction": 0.1781517506422833,
+    "final_energy_persistence_fraction": 0.327953576996885,
+    "robust_cost_penalty_min_usd": 1956264829.2270508,
+    "robust_cost_penalty_max_usd": 4547336989.137207,
+    "robust_battery_power_min_mw": 49412.54610214103,
+    "robust_battery_power_max_mw": 69332.22417706251,
+    "robust_battery_energy_min_mwh": 101888.77494144812,
+    "robust_battery_energy_max_mwh": 184397.5835893564
+  },
+  "correction_class_counts": {
+    "partly corrected": 6,
+    "persistent or amplified": 2,
+    "reversal": 13,
+    "substantially corrected": 11
+  },
+  "forbidden_use": "Do not release, regress, or tune current-source results to these values. The current model stock is 135930 MW / 351120 MWh and must be solved anew."
+}

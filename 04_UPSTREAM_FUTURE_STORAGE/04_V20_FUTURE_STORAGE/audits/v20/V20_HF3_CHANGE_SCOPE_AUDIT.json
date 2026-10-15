@@ -1,0 +1,15 @@
+{
+  "version": "V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_FIX_R1",
+  "status": "PASS_STATIC_SCOPE_ONLY",
+  "solver_certified": false,
+  "parent_hf2_dynamic_sha256": "da8e22f538b3fdcfb536b265a598fffd4ec51091246397191d23c742d67efdbf",
+  "hf3_dynamic_sha256": "9aefc85c850165b17d69d4a7a66c386c0adc1c1fac2ee622422a892008a6781a",
+  "scientific_input_csv_changed": false,
+  "layerA_targetyear_core_changed": false,
+  "bounded_changes": [
+    "Hydro_Pumped capacity-plan accounting maps to legacy Hydro_Pumped + V18_PSH duration family when portfolio is active",
+    "runtime policy printout reports actual chronology/portfolio modes"
+  ],
+  "unchanged_resource_guardrail": "V18_PSH_Shared_Provincial_Resource_Ceiling remains active over legacy + V18 PSH family",
+  "reason": "HF2 local Gurobi presolve returned INFEASIBLE with a small IIS after future legacy Hydro_Pumped build rows were disabled while the inherited Hydro_Pumped floor counted only those legacy rows."
+}

@@ -1,0 +1,251 @@
+{
+  "status": "FAIL_RERUN_REQUIRED",
+  "stage": "results",
+  "kind": "main",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "checks": [
+    {
+      "check": "source_fingerprint_exact_current_match",
+      "passed": true,
+      "detail": "stored and recomputed canonical source fingerprint"
+    },
+    {
+      "check": "data_version",
+      "passed": true,
+      "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+    },
+    {
+      "check": "raw_vre_shape",
+      "passed": true,
+      "detail": [
+        271560,
+        11
+      ]
+    },
+    {
+      "check": "calibrated_vre_shape",
+      "passed": true,
+      "detail": [
+        271560,
+        11
+      ]
+    },
+    {
+      "check": "vre_bounds",
+      "passed": true,
+      "detail": "all capacity factors within [0,1]"
+    },
+    {
+      "check": "final_nea_wind_generation",
+      "passed": true,
+      "detail": 996.8
+    },
+    {
+      "check": "nea_wind_utilization",
+      "passed": true,
+      "detail": 0.959
+    },
+    {
+      "check": "wind_calibration_exact_closure",
+      "passed": true,
+      "detail": 0.25320721752543
+    },
+    {
+      "check": "province_storage_rows",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "check": "zone_storage_rows",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "check": "storage_power_closure",
+      "passed": true,
+      "detail": 135930.0
+    },
+    {
+      "check": "storage_energy_closure",
+      "passed": true,
+      "detail": 351120.0
+    },
+    {
+      "check": "no_legacy_storage_alias_columns",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_goldwind_scientific_source",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "weak_screenshot_datasets_removed",
+      "passed": true,
+      "detail": "all screenshot-derived utilization tables absent"
+    },
+    {
+      "check": "wind_calibration_dependency_lock",
+      "passed": true,
+      "detail": [
+        "generation_utilization_anchor_sha256",
+        "monthly_anchor_sha256",
+        "raw_profile_sha256",
+        "template_sha256",
+        "zone_mapping_sha256"
+      ]
+    },
+    {
+      "check": "wind_anchor_nea_only",
+      "passed": true,
+      "detail": {
+        "wind_generation_and_utilization": "National Energy Administration final 2024 monitoring statistics only",
+        "wind_capacity_path": "National Energy Administration month-end installed-capacity series with declared daily interpolation",
+        "hourly_shape": "supplied 2024 province-level ERA5-derived onshore-wind and solar profile",
+        "commercial_annual_report_source_used": false,
+        "scope": "national total-wind proxy level-corrects the onshore-wind profile; it is neither province validation nor an official onshore-only statistic"
+      }
+    },
+    {
+      "check": "latest_q1_storage_context_explicitly_not_model_input",
+      "passed": true,
+      "detail": [
+        {
+          "dataset_id": "latest_new_storage_context_2026_q1",
+          "use": "Latest context only; not model input",
+          "notes": "Officially reported as more than 140 GW at end-Q1 2026. Excluded from the model vector because no same-cutoff nationally closed energy total and province distribution were released; the internally coherent end-2025 baseline is retained."
+        }
+      ]
+    },
+    {
+      "check": "switch_china_version",
+      "passed": true,
+      "detail": "2.0.9"
+    },
+    {
+      "check": "switch_lineage_not_byte_identical_claim",
+      "passed": true,
+      "detail": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+    },
+    {
+      "check": "result_fingerprint::SL00_OBSERVED_ACTUAL",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL01_OBSERVED_STANDARDIZED",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL02_OPTIMAL_REALLOCATION",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL03_NO_LEGACY",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL04_RULE_LOAD",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL05_RULE_VRE",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL06_TX_FIXED_OBSERVED",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL07_TX_FIXED_OPTIMAL",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL08_PH_CONSERVATIVE_OBSERVED",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL09_PH_CONSERVATIVE_OPTIMAL",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL10_CARBON_TIGHT_OBSERVED",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL11_CARBON_TIGHT_OPTIMAL",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL12_COST_LOW_OBSERVED",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL13_COST_LOW_OPTIMAL",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL14_COST_HIGH_OBSERVED",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "result_fingerprint::SL15_COST_HIGH_OPTIMAL",
+      "passed": false,
+      "detail": [
+        "missing result fingerprint"
+      ]
+    },
+    {
+      "check": "expected_result_count",
+      "passed": true,
+      "detail": 16
+    }
+  ],
+  "checks_passed": 21,
+  "checks_total": 37
+}

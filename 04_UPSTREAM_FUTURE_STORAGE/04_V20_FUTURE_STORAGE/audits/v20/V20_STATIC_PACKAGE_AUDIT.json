@@ -1,0 +1,525 @@
+{
+  "version": "V20_HF4A_RUNTIME_PATH_BUDGET_AUDIT_FIX",
+  "status": "PASS",
+  "solver_certified": false,
+  "solver_note": "Static/prepared package gate only. Numerical claims require local Julia/Gurobi strict certificates. Runtime outputs/logs are governed by --release-clean and excluded from the source-package path budget.",
+  "checks_total": 49,
+  "checks_passed": 49,
+  "checks": [
+    {
+      "check": "exists::README_00_V20_RUN_FIRST_ZH.md",
+      "pass": true,
+      "detail": "README_00_V20_RUN_FIRST_ZH.md"
+    },
+    {
+      "check": "exists::docs/V20_EVIDENCE_POLICY_ZH.md",
+      "pass": true,
+      "detail": "docs/V20_EVIDENCE_POLICY_ZH.md"
+    },
+    {
+      "check": "exists::docs/V20_RUN_FIRST_DESIGN_ZH.md",
+      "pass": true,
+      "detail": "docs/V20_RUN_FIRST_DESIGN_ZH.md"
+    },
+    {
+      "check": "exists::docs/V20_MODEL_AND_CLAIM_CONTRACT_ZH.md",
+      "pass": true,
+      "detail": "docs/V20_MODEL_AND_CLAIM_CONTRACT_ZH.md"
+    },
+    {
+      "check": "exists::data/processed/v20_authoritative_evidence_ledger.csv",
+      "pass": true,
+      "detail": "data/processed/v20_authoritative_evidence_ledger.csv"
+    },
+    {
+      "check": "exists::data/processed/v20_layer_b_runtime_contract.csv",
+      "pass": true,
+      "detail": "data/processed/v20_layer_b_runtime_contract.csv"
+    },
+    {
+      "check": "exists::tools/prepare_v20_equal_horizon_pair.py",
+      "pass": true,
+      "detail": "tools/prepare_v20_equal_horizon_pair.py"
+    },
+    {
+      "check": "exists::tools/run_v20_chronology_isolation_diagnostics.py",
+      "pass": true,
+      "detail": "tools/run_v20_chronology_isolation_diagnostics.py"
+    },
+    {
+      "check": "exists::V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_FIX.md",
+      "pass": true,
+      "detail": "V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_FIX.md"
+    },
+    {
+      "check": "exists::audits/v20/V20_HF3_CHANGE_SCOPE_AUDIT.json",
+      "pass": true,
+      "detail": "audits/v20/V20_HF3_CHANGE_SCOPE_AUDIT.json"
+    },
+    {
+      "check": "exists::audits/v20/V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_AUDIT.json",
+      "pass": true,
+      "detail": "audits/v20/V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_AUDIT.json"
+    },
+    {
+      "check": "exists::audits/v20/V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_AUDIT.csv",
+      "pass": true,
+      "detail": "audits/v20/V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_AUDIT.csv"
+    },
+    {
+      "check": "exists::audits/v20/V20_HF3_DYNAMIC_CORE.diff",
+      "pass": true,
+      "detail": "audits/v20/V20_HF3_DYNAMIC_CORE.diff"
+    },
+    {
+      "check": "source_fingerprint_exact_current_match",
+      "pass": true,
+      "detail": "final packaged source archive index and frozen source fingerprint synchronized"
+    },
+    {
+      "check": "dynamic_julia_core_hf3_bounded_fix_locked",
+      "pass": true,
+      "detail": {
+        "current": "9aefc85c850165b17d69d4a7a66c386c0adc1c1fac2ee622422a892008a6781a",
+        "parent_hf2": "da8e22f538b3fdcfb536b265a598fffd4ec51091246397191d23c742d67efdbf"
+      }
+    },
+    {
+      "check": "layerA_targetyear_core_frozen",
+      "pass": true,
+      "detail": "2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84"
+    },
+    {
+      "check": "nlr_2025_appendix_table2_anchor_values",
+      "pass": true,
+      "detail": {
+        "2030": [
+          207.0,
+          279.0,
+          354.0
+        ],
+        "2035": [
+          147.0,
+          243.0,
+          339.0
+        ],
+        "2050": [
+          108.0,
+          178.0,
+          307.0
+        ],
+        "2058": [
+          97.0,
+          161.0,
+          299.0
+        ]
+      }
+    },
+    {
+      "check": "nlr_annual_2024_2060_complete",
+      "pass": true,
+      "detail": [
+        2024,
+        2060,
+        37
+      ]
+    },
+    {
+      "check": "authoritative_evidence_files_present",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "authoritative_evidence_sha256_match",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "official_source_archive_index_matches_evidence_ledger",
+      "pass": true,
+      "detail": {
+        "ledger_rows": 10,
+        "index_rows": 10
+      }
+    },
+    {
+      "check": "doe_si2030_not_direct_capex_forecast",
+      "pass": true,
+      "detail": "Evidence context and claim boundary only; supports why flow batteries remain a plausible LDES design option Evidence context and performance cross-check; V20 still enforces inherited zone PSH resource ceiling Evidence tier firewall only; documents innovation upside but is not a deterministic deployment-cost forecast Evidence-methodology firewall only; not a deterministic CAPEX forecast and not a numerical model-input trajectory Pressure-test evidence context only; not used as a direct CAPEX learning curve or province-level resource supply curve Pressure-test evidence context only; not used as a direct CAPEX learning curve or province-level hydrogen-resource prescriptionSI2030 LCOS/innovation portfolio results combine multiple cost/performance mechanisms and are not used as a direct CAPEX multiplier. PSH cost/resource feasibility is site-specific; model-zone result is not station-level engineering siting. Report explicitly addresses innovation/RD&D pathways; V20 does not treat LCOS redu"
+    },
+    {
+      "check": "headline_portfolio_exact_5",
+      "pass": true,
+      "detail": [
+        "V18_LFP_4h",
+        "V18_PSH_10h",
+        "V18_PSH_24h",
+        "V18_VRFB_10h",
+        "V18_VRFB_24h"
+      ]
+    },
+    {
+      "check": "caes_h2_not_headline",
+      "pass": true,
+      "detail": [
+        "V18_LFP_4h",
+        "V18_PSH_10h",
+        "V18_PSH_24h",
+        "V18_VRFB_10h",
+        "V18_VRFB_24h"
+      ]
+    },
+    {
+      "check": "official_dynamic_scenarios_still_16",
+      "pass": true,
+      "detail": [
+        "SL00_OBSERVED_ACTUAL",
+        "SL01_OBSERVED_STANDARDIZED",
+        "SL02_OPTIMAL_REALLOCATION",
+        "SL03_NO_LEGACY",
+        "SL04_RULE_LOAD",
+        "SL05_RULE_VRE",
+        "SL06_TX_FIXED_OBSERVED",
+        "SL07_TX_FIXED_OPTIMAL",
+        "SL08_PH_CONSERVATIVE_OBSERVED",
+        "SL09_PH_CONSERVATIVE_OPTIMAL",
+        "SL10_CARBON_TIGHT_OBSERVED",
+        "SL11_CARBON_TIGHT_OPTIMAL",
+        "SL12_COST_LOW_OBSERVED",
+        "SL13_COST_LOW_OPTIMAL",
+        "SL14_COST_HIGH_OBSERVED",
+        "SL15_COST_HIGH_OPTIMAL"
+      ]
+    },
+    {
+      "check": "hf2_official_registry_runtime_and_claim_contract",
+      "pass": true,
+      "detail": [
+        {
+          "scenario": "SL00_OBSERVED_ACTUAL",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL01_OBSERVED_STANDARDIZED",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL02_OPTIMAL_REALLOCATION",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL03_NO_LEGACY",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL04_RULE_LOAD",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL05_RULE_VRE",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL06_TX_FIXED_OBSERVED",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL07_TX_FIXED_OPTIMAL",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL08_PH_CONSERVATIVE_OBSERVED",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL10_CARBON_TIGHT_OBSERVED",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL11_CARBON_TIGHT_OPTIMAL",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL12_COST_LOW_OBSERVED",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL13_COST_LOW_OPTIMAL",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL14_COST_HIGH_OBSERVED",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        },
+        {
+          "scenario": "SL15_COST_HIGH_OPTIMAL",
+          "v18_storage_chronology_mode": "intraday_cyclic",
+          "v18_storage_portfolio_mode": "evidence_bounded"
+        }
+      ]
+    },
+    {
+      "check": "hf2_prepared_case_metadata_matches_runtime_contract",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "equal_horizon_registry_two_rows",
+      "pass": true,
+      "detail": [
+        "V20EH01_OBSERVED",
+        "V20EH02_OPTIMAL"
+      ]
+    },
+    {
+      "check": "hf2_layer_b_c_runtime_contract_exact_18_intraday_evidence_bounded",
+      "pass": true,
+      "detail": {
+        "rows": 18
+      }
+    },
+    {
+      "check": "equal_horizon_pair_strict_intervention_scope",
+      "pass": true,
+      "detail": [
+        {
+          "case": "V20EH01_OBSERVED",
+          "source": "SL01_OBSERVED_STANDARDIZED",
+          "non_cost_drift": [],
+          "changed_rows": 192,
+          "held_costs": [
+            775769.937741
+          ],
+          "audit_status": "PASS"
+        },
+        {
+          "case": "V20EH02_OPTIMAL",
+          "source": "SL02_OPTIMAL_REALLOCATION",
+          "non_cost_drift": [],
+          "changed_rows": 192,
+          "held_costs": [
+            775769.937741
+          ],
+          "audit_status": "PASS"
+        }
+      ]
+    },
+    {
+      "check": "equal_horizon_gen_build_costs_cell_scope",
+      "pass": true,
+      "detail": [
+        {
+          "case": "V20EH01_OBSERVED",
+          "changed_rows": 192,
+          "changed_columns": [
+            "gen_fixed_om",
+            "gen_overnight_cost"
+          ],
+          "scope_pass": true
+        },
+        {
+          "case": "V20EH02_OPTIMAL",
+          "changed_rows": 192,
+          "changed_columns": [
+            "gen_fixed_om",
+            "gen_overnight_cost"
+          ],
+          "scope_pass": true
+        }
+      ]
+    },
+    {
+      "check": "future_lfp_low_mid_high_cost_sensitivity_propagates",
+      "pass": true,
+      "detail": {
+        "low": [
+          269712.128891992
+        ],
+        "mid": [
+          447666.523212481
+        ],
+        "high": [
+          831380.685966036
+        ]
+      }
+    },
+    {
+      "check": "psh_duration_designs_share_single_zone_resource_ceiling",
+      "pass": true,
+      "detail": "shared existing + V18 PSH provincial ceiling"
+    },
+    {
+      "check": "hf3_hydro_pumped_capacity_plan_counts_v18_psh_family",
+      "pass": true,
+      "detail": "inherited Hydro_Pumped planning floor is met by legacy PSH + explicit V18 PSH duration designs"
+    },
+    {
+      "check": "hf3_hydro_pumped_plan_floor_within_shared_resource_ceiling",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf3_psh_capacity_plan_compatibility_audit_pass",
+      "pass": true,
+      "detail": {
+        "version": "V20_HF3_PSH_CAPACITY_PLAN_COMPATIBILITY_AUDIT_R1",
+        "status": "PASS",
+        "scenarios": 16,
+        "rows": 3472,
+        "rows_requiring_future_psh_to_meet_floor": 2656,
+        "max_future_psh_gap_mw": 21600.0,
+        "all_floors_within_shared_resource_ceiling": true,
+        "all_zones_have_10h_and_24h_candidates": true,
+        "example_hf2_conflict": [
+          {
+            "scenario": "SL01_OBSERVED_STANDARDIZED",
+            "zone": "Fujian",
+            "period": 2028,
+            "planned_psh_floor_mw": 2210.0,
+            "max_alive_legacy_psh_mw_without_future_legacy_builds": 1800.0,
+            "future_psh_gap_mw": 410.0,
+            "shared_psh_resource_ceiling_mw": 12870.0,
+            "floor_within_resource_ceiling": true,
+            "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+            "has_10h_and_24h_candidates": true
+          },
+          {
+            "scenario": "SL01_OBSERVED_STANDARDIZED",
+            "zone": "Gansu",
+            "period": 2028,
+            "planned_psh_floor_mw": 3670.0,
+            "max_alive_legacy_psh_mw_without_future_legacy_builds": 0.0,
+            "future_psh_gap_mw": 3670.0,
+            "shared_psh_resource_ceiling_mw": 18370.0,
+            "floor_within_resource_ceiling": true,
+            "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+            "has_10h_and_24h_candidates": true
+          },
+          {
+            "scenario": "SL01_OBSERVED_STANDARDIZED",
+            "zone": "Guangxi",
+            "period": 2028,
+            "planned_psh_floor_mw": 3440.0,
+            "max_alive_legacy_psh_mw_without_future_legacy_builds": 0.0,
+            "future_psh_gap_mw": 3440.0,
+            "shared_psh_resource_ceiling_mw": 17220.0,
+            "floor_within_resource_ceiling": true,
+            "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+            "has_10h_and_24h_candidates": true
+          },
+          {
+            "scenario": "SL01_OBSERVED_STANDARDIZED",
+            "zone": "Heilongjiang",
+            "period": 2028,
+            "planned_psh_floor_mw": 2640.0,
+            "max_alive_legacy_psh_mw_without_future_legacy_builds": 300.0,
+            "future_psh_gap_mw": 2340.0,
+            "shared_psh_resource_ceiling_mw": 13520.0,
+            "floor_within_resource_ceiling": true,
+            "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+            "has_10h_and_24h_candidates": true
+          },
+          {
+            "scenario": "SL01_OBSERVED_STANDARDIZED",
+            "zone": "Henan",
+            "period": 2028,
+            "planned_psh_floor_mw": 2180.0,
+            "max_alive_legacy_psh_mw_without_future_legacy_builds": 120.0,
+            "future_psh_gap_mw": 2060.0,
+            "shared_psh_resource_ceiling_mw": 11040.0,
+            "floor_within_resource_ceiling": true,
+            "v18_psh_candidates": "V18_PSH_10h|V18_PSH_24h",
+            "has_10h_and_24h_candidates": true
+          }
+        ],
+        "interpretation": "When the V20 portfolio is active, future legacy Hydro_Pumped builds are intentionally disabled. Any positive gap between the inherited Hydro_Pumped floor and surviving legacy PSH must therefore be satisfiable by V18_PSH_10h/24h and counted toward the same physical PSH floor. HF3 implements that mapping while preserving the shared provincial resource ceiling."
+      }
+    },
+    {
+      "check": "future_duration_is_discrete_design_not_continuous_ep_optimization",
+      "pass": true,
+      "detail": "headline technology-duration designs are discrete candidates"
+    },
+    {
+      "check": "hf2_future_build_constraints_exclude_stock_anchor",
+      "pass": true,
+      "detail": "future-only Battery/PSH exclusions do not touch 2023 stock anchor"
+    },
+    {
+      "check": "hf2_optimized_legacy_exception_preserved_in_generic_battery_disable",
+      "pass": true,
+      "detail": "generic Battery disable constraints preserve the 2023 optimized legacy allocation"
+    },
+    {
+      "check": "hf2_runtime_chronology_scope_not_hardcoded_monthly",
+      "pass": true,
+      "detail": "solve_status chronology scope follows actual runtime mode"
+    },
+    {
+      "check": "hf2_headline_runner_explicit_intraday_contract",
+      "pass": true,
+      "detail": "Layer B/C strict gate forbids intermonth/seasonal claim promotion"
+    },
+    {
+      "check": "active_v20_python_syntax",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "active_v20_windows_launchers_present",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "active_v20_windows_launchers_no_control_byte_corruption",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "v20_runtime_checks_production_source_and_gurobi",
+      "pass": true,
+      "detail": "Python deps + production Julia source load + JuMP/Gurobi native-route probe"
+    },
+    {
+      "check": "run_first_phase1_is_exactly_A4_B2_C2",
+      "pass": true,
+      "detail": "8 decisive cases before remaining 18"
+    },
+    {
+      "check": "required_26_case_matrix_exact_8_plus_18",
+      "pass": true,
+      "detail": {
+        "rows": 26
+      }
+    },
+    {
+      "check": "portable_filename_length_le_100",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "relative_path_budget_le_180",
+      "pass": true,
+      "detail": 133
+    }
+  ]
+}

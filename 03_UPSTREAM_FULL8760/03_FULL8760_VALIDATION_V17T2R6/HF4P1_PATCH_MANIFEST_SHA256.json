@@ -1,0 +1,42 @@
+{
+  "version": "V17T2R6R9_HF4P1_SAFE_PARALLEL_REMAINING_LDES",
+  "scope": "operational scheduling patch only; the R9-HF4 Julia scientific sources are byte-identical",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "bytes": 40357,
+      "sha256": "7558f4f23e6ea489f9870a67bd9a84339f6d943e1251997deca059fd2dd8e4f4"
+    },
+    {
+      "path": "tools/run_hf4_remaining_ldes_parallel.py",
+      "bytes": 4304,
+      "sha256": "dcc50ac46e57ec11952b54e95b3561c6e2b73459973e352f34fe634560455047"
+    },
+    {
+      "path": "tools/check_v17t2r6r9_hf4p1_parallel.py",
+      "bytes": 5793,
+      "sha256": "0d8afc29f5384c918a7767f1f5a81964cb3b2cb127782291ad123fa7cbbce797"
+    },
+    {
+      "path": "RUN_V17T2R6R9_HF4P1_8760_REMAINING_LDES_2X10.bat",
+      "bytes": 1182,
+      "sha256": "6aec873d3a399bbec3ecf439420f57b25905c2b218365b6b72673b634db4f4aa"
+    },
+    {
+      "path": "CHECK_V17T2R6R9_HF4P1_PARALLEL.bat",
+      "bytes": 420,
+      "sha256": "61c989ab8276431e257f9a2ad3cfb94b2618ef44088f7f5757718a00a9068e6c"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R9_HF4P1_PARALLEL.md",
+      "bytes": 929,
+      "sha256": "eb08dd0557f9bfb9b0e7f45cd5b506ad2deb7460180f79b32de660b55d9d0df5"
+    },
+    {
+      "path": "HF4_PATCH_MANIFEST_SHA256.json",
+      "bytes": 1557,
+      "sha256": "ae1e610a21e674059078de212adc78cbb4f993e723785899e0b0356e8ce581cd"
+    }
+  ]
+}

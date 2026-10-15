@@ -1,0 +1,2716 @@
+{
+  "version": "V17T2",
+  "generated_utc": "2026-08-09T02:53:27.408082+00:00",
+  "status": "PASS",
+  "pre_solve_summary": {
+    "version": "V17T2",
+    "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+    "expected": 16,
+    "prepared": 16,
+    "pre_solve_passed": 16,
+    "case_fingerprints_present": 16,
+    "all_pass": true
+  },
+  "components": {
+    "static_release": {
+      "summary": {
+        "version": "V17",
+        "hard_checks": 64,
+        "hard_passed": 64,
+        "hard_all_pass": true,
+        "official_scenario_count": 16,
+        "python_file_count": 38
+      },
+      "checks": [
+        {
+          "check": "python_compile",
+          "pass": true,
+          "detail": "[]",
+          "severity": "error"
+        },
+        {
+          "check": "scenario_master_columns",
+          "pass": true,
+          "detail": "[]",
+          "severity": "error"
+        },
+        {
+          "check": "sixteen_official_scenarios",
+          "pass": true,
+          "detail": "16",
+          "severity": "error"
+        },
+        {
+          "check": "scenario_names_unique",
+          "pass": true,
+          "detail": "['SL00_OBSERVED_ACTUAL', 'SL01_OBSERVED_STANDARDIZED', 'SL02_OPTIMAL_REALLOCATION', 'SL03_NO_LEGACY', 'SL04_RULE_LOAD', 'SL05_RULE_VRE', 'SL06_TX_FIXED_OBSERVED', 'SL07_TX_FIXED_OPTIMAL', 'SL08_PH_CONSERVATIVE_OBSERVED', 'SL09_PH_CONSERVATIVE_OPTIMAL', 'SL10_CARBON_TIGHT_OBSERVED', 'SL11_CARBON_TIGHT_OPTIMAL', 'SL12_COST_LOW_OBSERVED', 'SL13_COST_LOW_OPTIMAL', 'SL14_COST_HIGH_OBSERVED', 'SL15_COST_HIGH_OPTIMAL']",
+          "severity": "error"
+        },
+        {
+          "check": "all_official_no_beccs",
+          "pass": true,
+          "detail": "[]",
+          "severity": "error"
+        },
+        {
+          "check": "all_official_declare_no_cdr",
+          "pass": true,
+          "detail": "NBCCS, DACCS and BECCS disabled; fossil generator CCS remains separately declared",
+          "severity": "error"
+        },
+        {
+          "check": "claim_scope_excludes_long_duration",
+          "pass": true,
+          "detail": "representative-day evidence boundary",
+          "severity": "error"
+        },
+        {
+          "check": "model:scaled_economic_objective",
+          "pass": true,
+          "detail": "ECONOMIC_OBJECTIVE_SCALE_USD = 1.0e6",
+          "severity": "error"
+        },
+        {
+          "check": "model:configurable_threads",
+          "pass": true,
+          "detail": "V17_SOLVER_THREADS",
+          "severity": "error"
+        },
+        {
+          "check": "model:barrier_primary",
+          "pass": true,
+          "detail": "profile == \"scaled_barrier\"",
+          "severity": "error"
+        },
+        {
+          "check": "model:barrier_no_crossover",
+          "pass": true,
+          "detail": "crossover = 0",
+          "severity": "error"
+        },
+        {
+          "check": "model:native_solver_certificate",
+          "pass": true,
+          "detail": "stage1_native_solver_certificate_pass",
+          "severity": "error"
+        },
+        {
+          "check": "model:native_barrier_proof_source",
+          "pass": true,
+          "detail": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+          "severity": "error"
+        },
+        {
+          "check": "model:native_zero_iteration_proof_source",
+          "pass": true,
+          "detail": "gurobi_zero_iteration_optimal_under_barrier_configuration",
+          "severity": "error"
+        },
+        {
+          "check": "model:presolve_safe_iteration_mode",
+          "pass": true,
+          "detail": "stage1_zero_iteration_optimal",
+          "severity": "error"
+        },
+        {
+          "check": "model:native_gurobi_status",
+          "pass": true,
+          "detail": "stage1_gurobi_status_gate_pass",
+          "severity": "error"
+        },
+        {
+          "check": "model:native_gurobi_objval",
+          "pass": true,
+          "detail": "stage1_gurobi_objval_gate_pass",
+          "severity": "error"
+        },
+        {
+          "check": "model:external_diagnostic_tolerance",
+          "pass": true,
+          "detail": "STAGE1_CERT_ACCEPT_REL_TOL",
+          "severity": "error"
+        },
+        {
+          "check": "model:safe_objbound",
+          "pass": true,
+          "detail": "_safe_solve_float(() -> objective_bound(mod))",
+          "severity": "error"
+        },
+        {
+          "check": "model:safe_dual_objective",
+          "pass": true,
+          "detail": "_safe_solve_float(() -> dual_objective_value(mod))",
+          "severity": "error"
+        },
+        {
+          "check": "model:certificate_grade",
+          "pass": true,
+          "detail": "strict_solver_native",
+          "severity": "error"
+        },
+        {
+          "check": "model:external_diagnostic_only",
+          "pass": true,
+          "detail": "stage1_dual_objective_diagnostic_only",
+          "severity": "error"
+        },
+        {
+          "check": "model:single_cleanup_route",
+          "pass": true,
+          "detail": "cleanup_route_for_profile(cleanup_profile)",
+          "severity": "error"
+        },
+        {
+          "check": "model:economic_cost_band",
+          "pass": true,
+          "detail": "Enforce_Lexicographic_Economic_Cost_Band",
+          "severity": "error"
+        },
+        {
+          "check": "model:aggregate_generation_locks",
+          "pass": true,
+          "detail": "gen_build_groups",
+          "severity": "error"
+        },
+        {
+          "check": "model:aggregate_storage_energy_locks",
+          "pass": true,
+          "detail": "storage_energy_groups",
+          "severity": "error"
+        },
+        {
+          "check": "model:retirement_locks",
+          "pass": true,
+          "detail": "retirement_groups",
+          "severity": "error"
+        },
+        {
+          "check": "model:ccs_locks",
+          "pass": true,
+          "detail": "ccs_groups",
+          "severity": "error"
+        },
+        {
+          "check": "model:local_grid_locks",
+          "pass": true,
+          "detail": "BuildLocalTD[idx]",
+          "severity": "error"
+        },
+        {
+          "check": "model:explicit_gate_diagnostics",
+          "pass": true,
+          "detail": "solve_gate_diagnostics.json",
+          "severity": "error"
+        },
+        {
+          "check": "model:publication_gate",
+          "pass": true,
+          "detail": "PUBLICATION_SOLVE_GATE_FAILED",
+          "severity": "error"
+        },
+        {
+          "check": "model:cdr_compile_off",
+          "pass": true,
+          "detail": "STORAGE_CDR_MODULES_COMPILED = false",
+          "severity": "error"
+        },
+        {
+          "check": "model:raw_pstart_reset",
+          "pass": true,
+          "detail": "Gurobi.GRBreset",
+          "severity": "error"
+        },
+        {
+          "check": "model:raw_pstart_array",
+          "pass": true,
+          "detail": "Gurobi.GRBsetdblattrarray",
+          "severity": "error"
+        },
+        {
+          "check": "model:raw_pstart_list",
+          "pass": true,
+          "detail": "Gurobi.GRBsetdblattrlist",
+          "severity": "error"
+        },
+        {
+          "check": "model:raw_pstart_column_map",
+          "pass": true,
+          "detail": "Gurobi.c_column",
+          "severity": "error"
+        },
+        {
+          "check": "model:raw_pstart_not_serialized",
+          "pass": true,
+          "detail": ":cleanup_raw_pstart_serialized => [false]",
+          "severity": "error"
+        },
+        {
+          "check": "model:optional_diagnostic_cleanup_pstart",
+          "pass": true,
+          "detail": "diagnostic_primal_simplex_raw_pstart_sparse_face_selection",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:crossover_basis_attribute_write",
+          "pass": true,
+          "detail": "\"CrossoverBasis\",",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:price_basis",
+          "pass": true,
+          "detail": "price_basis",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:capture_simplex_basis",
+          "pass": true,
+          "detail": "capture_simplex_basis",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:restore_simplex_basis",
+          "pass": true,
+          "detail": "restore_simplex_basis!",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:variable_basis_status",
+          "pass": true,
+          "detail": "VariableBasisStatus",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:constraint_basis_status",
+          "pass": true,
+          "detail": "ConstraintBasisStatus",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:dual_start_attribute_write",
+          "pass": true,
+          "detail": "\"DStart\",",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:set_start_value",
+          "pass": true,
+          "detail": "set_start_value(",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:old_cleanup_profile",
+          "pass": true,
+          "detail": "two_stage_physical_cleanup",
+          "severity": "error"
+        },
+        {
+          "check": "forbidden_absent:old_objbound_tolerance",
+          "pass": true,
+          "detail": "stage1_objective_bound_gap_tolerance_usd",
+          "severity": "error"
+        },
+        {
+          "check": "runner_hard_disables_cdr",
+          "pass": true,
+          "detail": "runner arguments",
+          "severity": "error"
+        },
+        {
+          "check": "batch_fresh_process_attempts",
+          "pass": true,
+          "detail": "fresh model per route",
+          "severity": "error"
+        },
+        {
+          "check": "batch_no_stage1_primal_diagnostic",
+          "pass": true,
+          "detail": "stage-1 primal simplex remains diagnostic only",
+          "severity": "error"
+        },
+        {
+          "check": "bounded_stage1_route_tree",
+          "pass": true,
+          "detail": "official fallback changes only the stage-1 solver algorithm",
+          "severity": "error"
+        },
+        {
+          "check": "stage1_official_primary",
+          "pass": true,
+          "detail": "formal route publishes the certified stage-1 solution",
+          "severity": "error"
+        },
+        {
+          "check": "cleanup_absent_from_official_fallback",
+          "pass": true,
+          "detail": "cleanup algorithms cannot replace or reject the official stage-1 result",
+          "severity": "error"
+        },
+        {
+          "check": "raw_pstart_only_ephemeral",
+          "pass": true,
+          "detail": "no PStart persistence",
+          "severity": "error"
+        },
+        {
+          "check": "source_load_probe_present",
+          "pass": true,
+          "detail": "production source is actually included before solve",
+          "severity": "error"
+        },
+        {
+          "check": "runtime_invokes_source_load",
+          "pass": true,
+          "detail": "runtime validation cannot bypass production source lowering",
+          "severity": "error"
+        },
+        {
+          "check": "grb_error_constant_top_level",
+          "pass": true,
+          "detail": "no local const declaration",
+          "severity": "error"
+        },
+        {
+          "check": "figure_registry_22",
+          "pass": true,
+          "detail": "22",
+          "severity": "error"
+        },
+        {
+          "check": "six_main_figures",
+          "pass": true,
+          "detail": "main figures",
+          "severity": "error"
+        },
+        {
+          "check": "figure_ids_unique",
+          "pass": true,
+          "detail": "['Fig1', 'Fig2', 'Fig3', 'Fig4', 'Fig5', 'Fig6', 'FigS01', 'FigS02', 'FigS03', 'FigS04', 'FigS05', 'FigS06', 'FigS07', 'FigS08', 'FigS09', 'FigS10', 'FigS11', 'FigS12', 'FigS13', 'FigS14', 'FigS15', 'FigS16']",
+          "severity": "error"
+        },
+        {
+          "check": "legacy_32_zones",
+          "pass": true,
+          "detail": "{'rows': 32, 'zones': 32}",
+          "severity": "error"
+        },
+        {
+          "check": "legacy_power_closure",
+          "pass": true,
+          "detail": "135930.0",
+          "severity": "error"
+        },
+        {
+          "check": "legacy_energy_closure",
+          "pass": true,
+          "detail": "351120.0",
+          "severity": "error"
+        }
+      ]
+    },
+    "windows_launchers": {
+      "version": "V17",
+      "checks": 175,
+      "passed": 175,
+      "all_pass": true,
+      "checks_detail": [
+        {
+          "check": "expected_launcher_set",
+          "pass": true,
+          "detail": "missing=[]"
+        },
+        {
+          "check": "no_obsolete_v17r2_launchers",
+          "pass": true,
+          "detail": "present=['CHECK_PUBLICATION_SOURCE_GATE.bat', 'CHECK_V17_PYTHON.bat', 'CHECK_V17_READINESS.bat', 'CHECK_V17_RELEASE.bat', 'CHECK_V17_RUNTIME.bat', 'CHECK_V17_SOURCE_LOAD.bat', 'INSTALL_V17_PYTHON_DEPS.bat', 'RUN_V17T1_POSTPROCESS.bat', 'RUN_V17T1_PREPARE_ONLY.bat', 'RUN_V17T1_UPSTREAM_FULL_16_1x10.bat', 'RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat', 'RUN_V17T2_POSTPROCESS.bat', 'RUN_V17T2_SL10_RESCUE_1x10.bat', 'RUN_V17T2_UPSTREAM_FULL_16_1x10.bat', 'RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat', 'RUN_V17T4R3_STANDALONE_RESUME_ALL_16_1x10.bat', 'RUN_V17_POSTPROCESS.bat', 'RUN_V17_PREPARE_ONLY.bat', 'RUN_V17_SL00_CONTROLLED_1x10.bat', 'RUN_V17_SL00_PRIMARY_ONLY_1x10.bat', 'RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat', 'RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat', 'RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat', 'RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat', 'V17_ENV_DEFAULTS.bat']"
+        },
+        {
+          "check": "CHECK_V17_RELEASE.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "CHECK_V17_RELEASE.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "CHECK_V17_RELEASE.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "CHECK_V17_RELEASE.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "CHECK_V17_RELEASE.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "CHECK_V17_RUNTIME.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "CHECK_V17_RUNTIME.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "CHECK_V17_RUNTIME.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "CHECK_V17_RUNTIME.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "CHECK_V17_RUNTIME.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17T2_POSTPROCESS.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17T2_POSTPROCESS.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17T2_POSTPROCESS.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17T2_POSTPROCESS.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17T2_POSTPROCESS.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17T2_SL10_RESCUE_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_POSTPROCESS.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_POSTPROCESS.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_POSTPROCESS.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_POSTPROCESS.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_POSTPROCESS.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_PREPARE_ONLY.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_PREPARE_ONLY.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_PREPARE_ONLY.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_PREPARE_ONLY.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_PREPARE_ONLY.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_SL00_CONTROLLED_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:calls_shared_environment",
+          "pass": true,
+          "detail": "shared runtime selector"
+        },
+        {
+          "check": "RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:checks_environment_error",
+          "pass": true,
+          "detail": "abort on selector failure"
+        },
+        {
+          "check": "V17_ENV_DEFAULTS.bat:no_forbidden_control_bytes",
+          "pass": true,
+          "detail": "forbidden=[]"
+        },
+        {
+          "check": "V17_ENV_DEFAULTS.bat:strict_crlf",
+          "pass": true,
+          "detail": "lone_cr=[], lone_lf=[]"
+        },
+        {
+          "check": "V17_ENV_DEFAULTS.bat:ascii_safe",
+          "pass": true,
+          "detail": "ascii"
+        },
+        {
+          "check": "python_selector:if defined V17_PYTHON",
+          "pass": true,
+          "detail": "if defined V17_PYTHON"
+        },
+        {
+          "check": "python_selector:call :try_python py -3.12",
+          "pass": true,
+          "detail": "call :try_python py -3.12"
+        },
+        {
+          "check": "python_selector:call :try_python py -3.14",
+          "pass": true,
+          "detail": "call :try_python py -3.14"
+        },
+        {
+          "check": "python_selector:call :try_python py -3",
+          "pass": true,
+          "detail": "call :try_python py -3"
+        },
+        {
+          "check": "python_selector:call :try_python python",
+          "pass": true,
+          "detail": "call :try_python python"
+        },
+        {
+          "check": "python_selector:sys.version_info >= (3,10)",
+          "pass": true,
+          "detail": "sys.version_info >= (3,10)"
+        },
+        {
+          "check": "python_selector:No working Python 3.10+ runtime was found",
+          "pass": true,
+          "detail": "No working Python 3.10+ runtime was found"
+        },
+        {
+          "check": "python_selector:not_py_launcher_implies_312",
+          "pass": true,
+          "detail": "the selector tests each candidate instead of assuming py -3.12"
+        },
+        {
+          "check": "reference:CHECK_PUBLICATION_SOURCE_GATE.bat:tools/publication_source_gate.py",
+          "pass": true,
+          "detail": "tools/publication_source_gate.py"
+        },
+        {
+          "check": "reference:CHECK_V17_READINESS.bat:tools/check_v17_run_readiness.py",
+          "pass": true,
+          "detail": "tools/check_v17_run_readiness.py"
+        },
+        {
+          "check": "reference:CHECK_V17_RELEASE.bat:tools/validate_release_v17.py",
+          "pass": true,
+          "detail": "tools/validate_release_v17.py"
+        },
+        {
+          "check": "reference:CHECK_V17_RUNTIME.bat:storage_runner/check_v17_runtime.jl",
+          "pass": true,
+          "detail": "storage_runner/check_v17_runtime.jl"
+        },
+        {
+          "check": "reference:CHECK_V17_SOURCE_LOAD.bat:storage_runner/check_v17_source_load.jl",
+          "pass": true,
+          "detail": "storage_runner/check_v17_source_load.jl"
+        },
+        {
+          "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/preflight_spatial_legacy_outputs.py",
+          "pass": true,
+          "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/build_spatial_legacy_tables.py",
+          "pass": true,
+          "detail": "postprocess/build_spatial_legacy_tables.py"
+        },
+        {
+          "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/plot_spatial_legacy_figures.py",
+          "pass": true,
+          "detail": "postprocess/plot_spatial_legacy_figures.py"
+        },
+        {
+          "check": "reference:RUN_V17T1_POSTPROCESS.bat:postprocess/validate_spatial_legacy_release.py",
+          "pass": true,
+          "detail": "postprocess/validate_spatial_legacy_release.py"
+        },
+        {
+          "check": "reference:RUN_V17T1_PREPARE_ONLY.bat:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "reference:RUN_V17T1_PREPARE_ONLY.bat:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "reference:RUN_V17T1_PREPARE_ONLY.bat:tools/audit_v17t1_four_scenario_repairs.py",
+          "pass": true,
+          "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_nea_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/build_nea_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/ingest_vre_cf.py",
+          "pass": true,
+          "detail": "tools/ingest_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_publication_vre_cf.py",
+          "pass": true,
+          "detail": "tools/build_publication_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/rebuild_publication_source_fingerprint.py",
+          "pass": true,
+          "detail": "tools/rebuild_publication_source_fingerprint.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/validate_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/validate_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_legacy_storage_provenance.py",
+          "pass": true,
+          "detail": "tools/audit_legacy_storage_provenance.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_ne_config.py",
+          "pass": true,
+          "detail": "tools/check_v17_ne_config.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_windows_launchers_v17.py",
+          "pass": true,
+          "detail": "tools/audit_windows_launchers_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_empty_collection_safety.py",
+          "pass": true,
+          "detail": "tools/audit_julia_empty_collection_safety.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_syntax_v17.py",
+          "pass": true,
+          "detail": "tools/audit_julia_syntax_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_numerical_stability_v17.py",
+          "pass": true,
+          "detail": "tools/audit_numerical_stability_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_objective_certificate_v17.py",
+          "pass": true,
+          "detail": "tools/audit_objective_certificate_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17_release_policy.py",
+          "pass": true,
+          "detail": "tools/audit_v17_release_policy.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_run_readiness.py",
+          "pass": true,
+          "detail": "tools/check_v17_run_readiness.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+          "pass": true,
+          "detail": "tools/audit_v17t2_sl10_rescue.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t1_four_scenario_repairs.py",
+          "pass": true,
+          "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/write_publication_result_lineage.py",
+          "pass": true,
+          "detail": "tools/write_publication_result_lineage.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/preflight_spatial_legacy_outputs.py",
+          "pass": true,
+          "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/build_spatial_legacy_tables.py",
+          "pass": true,
+          "detail": "postprocess/build_spatial_legacy_tables.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/plot_spatial_legacy_figures.py",
+          "pass": true,
+          "detail": "postprocess/plot_spatial_legacy_figures.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_POSTPROCESS.bat:postprocess/validate_spatial_legacy_release.py",
+          "pass": true,
+          "detail": "postprocess/validate_spatial_legacy_release.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_SL10_RESCUE_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+          "pass": true,
+          "detail": "tools/audit_v17t2_sl10_rescue.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_SL10_RESCUE_1x10.bat:tools/run_v17t2_sl10_rescue.py",
+          "pass": true,
+          "detail": "tools/run_v17t2_sl10_rescue.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_SL10_RESCUE_1x10.bat:postprocess/preflight_spatial_legacy_outputs.py",
+          "pass": true,
+          "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/build_nea_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/build_nea_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/build_publication_vre_cf.py",
+          "pass": true,
+          "detail": "tools/build_publication_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/validate_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/validate_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/audit_legacy_storage_provenance.py",
+          "pass": true,
+          "detail": "tools/audit_legacy_storage_provenance.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+          "pass": true,
+          "detail": "tools/audit_v17t2_sl10_rescue.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/audit_v17t1_four_scenario_repairs.py",
+          "pass": true,
+          "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "reference:RUN_V17T2_UPSTREAM_FULL_16_1x10.bat:tools/write_publication_result_lineage.py",
+          "pass": true,
+          "detail": "tools/write_publication_result_lineage.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_nea_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/build_nea_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/ingest_vre_cf.py",
+          "pass": true,
+          "detail": "tools/ingest_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_publication_vre_cf.py",
+          "pass": true,
+          "detail": "tools/build_publication_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/rebuild_publication_source_fingerprint.py",
+          "pass": true,
+          "detail": "tools/rebuild_publication_source_fingerprint.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/validate_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/validate_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_legacy_storage_provenance.py",
+          "pass": true,
+          "detail": "tools/audit_legacy_storage_provenance.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_ne_config.py",
+          "pass": true,
+          "detail": "tools/check_v17_ne_config.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_windows_launchers_v17.py",
+          "pass": true,
+          "detail": "tools/audit_windows_launchers_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_empty_collection_safety.py",
+          "pass": true,
+          "detail": "tools/audit_julia_empty_collection_safety.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_julia_syntax_v17.py",
+          "pass": true,
+          "detail": "tools/audit_julia_syntax_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_numerical_stability_v17.py",
+          "pass": true,
+          "detail": "tools/audit_numerical_stability_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_objective_certificate_v17.py",
+          "pass": true,
+          "detail": "tools/audit_objective_certificate_v17.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17_release_policy.py",
+          "pass": true,
+          "detail": "tools/audit_v17_release_policy.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/check_v17_run_readiness.py",
+          "pass": true,
+          "detail": "tools/check_v17_run_readiness.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t2_sl10_rescue.py",
+          "pass": true,
+          "detail": "tools/audit_v17t2_sl10_rescue.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/audit_v17t1_four_scenario_repairs.py",
+          "pass": true,
+          "detail": "tools/audit_v17t1_four_scenario_repairs.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/run_v17t4r3_empirical_full16.py",
+          "pass": true,
+          "detail": "tools/run_v17t4r3_empirical_full16.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat:tools/write_publication_result_lineage.py",
+          "pass": true,
+          "detail": "tools/write_publication_result_lineage.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_RESUME_ALL_16_1x10.bat:tools/run_v17t4r3_empirical_full16.py",
+          "pass": true,
+          "detail": "tools/run_v17t4r3_empirical_full16.py"
+        },
+        {
+          "check": "reference:RUN_V17T4R3_STANDALONE_RESUME_ALL_16_1x10.bat:tools/write_publication_result_lineage.py",
+          "pass": true,
+          "detail": "tools/write_publication_result_lineage.py"
+        },
+        {
+          "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/preflight_spatial_legacy_outputs.py",
+          "pass": true,
+          "detail": "postprocess/preflight_spatial_legacy_outputs.py"
+        },
+        {
+          "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/build_spatial_legacy_tables.py",
+          "pass": true,
+          "detail": "postprocess/build_spatial_legacy_tables.py"
+        },
+        {
+          "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/plot_spatial_legacy_figures.py",
+          "pass": true,
+          "detail": "postprocess/plot_spatial_legacy_figures.py"
+        },
+        {
+          "check": "reference:RUN_V17_POSTPROCESS.bat:postprocess/validate_spatial_legacy_release.py",
+          "pass": true,
+          "detail": "postprocess/validate_spatial_legacy_release.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/build_nea_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/build_nea_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/ingest_vre_cf.py",
+          "pass": true,
+          "detail": "tools/ingest_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/build_publication_vre_cf.py",
+          "pass": true,
+          "detail": "tools/build_publication_vre_cf.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/rebuild_publication_source_fingerprint.py",
+          "pass": true,
+          "detail": "tools/rebuild_publication_source_fingerprint.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/validate_storage_inputs.py",
+          "pass": true,
+          "detail": "tools/validate_storage_inputs.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/audit_legacy_storage_provenance.py",
+          "pass": true,
+          "detail": "tools/audit_legacy_storage_provenance.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "reference:RUN_V17_PREPARE_ONLY.bat:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "reference:RUN_V17_SL00_CONTROLLED_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "reference:RUN_V17_SL00_PRIMARY_ONLY_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "reference:RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "reference:RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "reference:RUN_V17_SL00_SPARSE_FACE_DIAGNOSTIC_1x10.bat:storage_runner/run_storage_one_solver_task.jl",
+          "pass": true,
+          "detail": "storage_runner/run_storage_one_solver_task.jl"
+        },
+        {
+          "check": "reference:RUN_V17_SPATIAL_LEGACY_CORE_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "reference:RUN_V17_SPATIAL_LEGACY_FULL_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "reference:RUN_V17_SPATIAL_LEGACY_ROBUSTNESS_1x10.bat:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "clean_launcher:preserves_prepared_storage_cases",
+          "pass": true,
+          "detail": "%V17_PYTHON% \"tools\\run_official_batch.py\" --scenario-set spatial_legacy_full --max-workers 1 --julia \"%JULIA_EXE%\" --skip-postprocess --enable-controlled-fallback"
+        }
+      ]
+    },
+    "empty_collection_safety": {
+      "summary": {
+        "version": "V17",
+        "checks": 8,
+        "passed": 8,
+        "all_pass": true
+      },
+      "checks": [
+        {
+          "check": "all_generator_reductions_define_identity",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "check": "no_direct_first_index_on_period_timepoints",
+          "pass": true,
+          "detail": "TPS_IN_PERIOD[p][1]"
+        },
+        {
+          "check": "operational_period_partition_present",
+          "pass": true,
+          "detail": "period partition"
+        },
+        {
+          "check": "stock_anchor_reserve_skipped",
+          "pass": true,
+          "detail": "planning reserve logic"
+        },
+        {
+          "check": "hours_reduction_is_empty_safe",
+          "pass": true,
+          "detail": "hours_in_period"
+        },
+        {
+          "check": "peak_load_reduction_is_empty_safe",
+          "pass": true,
+          "detail": "peak load"
+        },
+        {
+          "check": "biomass_shadow_empty_guard",
+          "pass": true,
+          "detail": "empty biomass shadow table"
+        },
+        {
+          "check": "empty_safety_token_exported",
+          "pass": true,
+          "detail": "solve status metadata"
+        }
+      ]
+    },
+    "julia_lexical_architecture": {
+      "summary": {
+        "version": "V17",
+        "julia_files_scanned": 4,
+        "checks": 26,
+        "passed": 26,
+        "all_pass": true
+      },
+      "checks": [
+        {
+          "check": "lexical:base_model_v39/cheer_power_storage_v1.jl",
+          "pass": true,
+          "detail": "mode=code, unclosed_delimiters=[]"
+        },
+        {
+          "check": "lexical:storage_runner/check_v17_runtime.jl",
+          "pass": true,
+          "detail": "mode=code, unclosed_delimiters=[]"
+        },
+        {
+          "check": "lexical:storage_runner/check_v17_source_load.jl",
+          "pass": true,
+          "detail": "mode=code, unclosed_delimiters=[]"
+        },
+        {
+          "check": "lexical:storage_runner/run_storage_one_solver_task.jl",
+          "pass": true,
+          "detail": "mode=code, unclosed_delimiters=[]"
+        },
+        {
+          "check": "no_top_level_only_declarations_inside_functions",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "check": "grb_error_constant_is_top_level",
+          "pass": true,
+          "detail": "Gurobi 10005 constant precedes run_model"
+        },
+        {
+          "check": "production_source_load_probe",
+          "pass": true,
+          "detail": "real include/lowering smoke test"
+        },
+        {
+          "check": "four_cleanup_routes",
+          "pass": true,
+          "detail": "approved routes"
+        },
+        {
+          "check": "one_route_per_process",
+          "pass": true,
+          "detail": "no internal cascade"
+        },
+        {
+          "check": "result_count_guards",
+          "pass": true,
+          "detail": "safe result reads"
+        },
+        {
+          "check": "production_queries_before_modification",
+          "pass": true,
+          "detail": "capture stage-1 values first"
+        },
+        {
+          "check": "runtime_queries_before_modification",
+          "pass": true,
+          "detail": "runtime query discipline"
+        },
+        {
+          "check": "no_basis_or_generic_start",
+          "pass": true,
+          "detail": "no basis/DStart/generic API"
+        },
+        {
+          "check": "raw_pstart_present",
+          "pass": true,
+          "detail": "explicit C API"
+        },
+        {
+          "check": "pstart_after_modification",
+          "pass": true,
+          "detail": "start matches modified model"
+        },
+        {
+          "check": "pstart_not_serialized",
+          "pass": true,
+          "detail": "ephemeral only"
+        },
+        {
+          "check": "scaled_stage1",
+          "pass": true,
+          "detail": "scaled objective"
+        },
+        {
+          "check": "solver_native_certificate",
+          "pass": true,
+          "detail": "native certificate"
+        },
+        {
+          "check": "presolve_safe_zero_iteration",
+          "pass": true,
+          "detail": "presolve safe"
+        },
+        {
+          "check": "safe_external_diagnostics",
+          "pass": true,
+          "detail": "non-blocking"
+        },
+        {
+          "check": "runner_default_stage1_official",
+          "pass": true,
+          "detail": "formal default is the certified stage-1 release"
+        },
+        {
+          "check": "runtime_raw_pstart",
+          "pass": true,
+          "detail": "runtime route"
+        },
+        {
+          "check": "runtime_reset",
+          "pass": true,
+          "detail": "discard hidden state first"
+        },
+        {
+          "check": "pstart_readback_10005_nonblocking",
+          "pass": true,
+          "detail": "Gurobi 10.0.1 readback is diagnostic only"
+        },
+        {
+          "check": "runtime_barrier_probe",
+          "pass": true,
+          "detail": "dedicated engine probe"
+        },
+        {
+          "check": "direct_mode_interval_safe",
+          "pass": true,
+          "detail": "native separate rows"
+        }
+      ]
+    },
+    "numerical_stability": {
+      "summary": {
+        "version": "V17",
+        "checks": 25,
+        "passed": 25,
+        "all_pass": true
+      },
+      "checks": [
+        {
+          "check": "economic_objective_scaled",
+          "pass": true,
+          "detail": "economic objective scaling only"
+        },
+        {
+          "check": "stage1_barrier_no_crossover",
+          "pass": true,
+          "detail": "primary stage-1 algorithm"
+        },
+        {
+          "check": "strict_solver_tolerances",
+          "pass": true,
+          "detail": "no tolerance relaxation"
+        },
+        {
+          "check": "solver_native_certificate",
+          "pass": true,
+          "detail": "native certificate is formal proof"
+        },
+        {
+          "check": "external_diagnostics_nonblocking",
+          "pass": true,
+          "detail": "ObjBound and reconstructed dual are diagnostics"
+        },
+        {
+          "check": "official_profile_default",
+          "pass": true,
+          "detail": "formal run does not invoke cleanup"
+        },
+        {
+          "check": "official_route_branch",
+          "pass": true,
+          "detail": "stage 1 selected as publication result"
+        },
+        {
+          "check": "solve_gate_uses_stage1",
+          "pass": true,
+          "detail": "cleanup convergence is not a release condition"
+        },
+        {
+          "check": "cleanup_nonblocking_fields",
+          "pass": true,
+          "detail": "diagnostic state is explicit"
+        },
+        {
+          "check": "degeneracy_disclosure",
+          "pass": true,
+          "detail": "gross-flow interpretation is restricted"
+        },
+        {
+          "check": "diagnostic_audits_not_hard_gate",
+          "pass": true,
+          "detail": "degeneracy review cannot block release"
+        },
+        {
+          "check": "row_level_restrictions",
+          "pass": true,
+          "detail": "labels survive downstream separation"
+        },
+        {
+          "check": "optional_cleanup_routes_retained",
+          "pass": true,
+          "detail": "sparse-face experiments remain available"
+        },
+        {
+          "check": "pstart_ephemeral",
+          "pass": true,
+          "detail": "diagnostic PStart is memory-only"
+        },
+        {
+          "check": "no_basis_or_dual_start",
+          "pass": true,
+          "detail": "basis-independent architecture"
+        },
+        {
+          "check": "official_batch_stage1_only",
+          "pass": true,
+          "detail": "official fallback changes only stage-1 solver"
+        },
+        {
+          "check": "certified_stage1_stops_retry",
+          "pass": true,
+          "detail": "downstream failures are not hidden by algorithm changes"
+        },
+        {
+          "check": "batch_requires_interpretation_policy",
+          "pass": true,
+          "detail": "promotion verifies restriction policy"
+        },
+        {
+          "check": "preflight_stage1_source",
+          "pass": true,
+          "detail": "postprocessing accepts official stage 1 only"
+        },
+        {
+          "check": "preflight_gross_flow_labels",
+          "pass": true,
+          "detail": "postprocessing validates row-level restrictions"
+        },
+        {
+          "check": "runtime_cleanup_is_probe",
+          "pass": true,
+          "detail": "optional algorithm/API route remains testable"
+        },
+        {
+          "check": "numerical_version_synchronized",
+          "pass": true,
+          "detail": "cross-layer version string"
+        },
+        {
+          "check": "cleanup_policy_version_synchronized",
+          "pass": true,
+          "detail": "cross-layer policy string"
+        },
+        {
+          "check": "pure_lp_and_no_cdr",
+          "pass": true,
+          "detail": "scope unchanged"
+        },
+        {
+          "check": "json_safe_diagnostics",
+          "pass": true,
+          "detail": "failed diagnostics cannot be masked by NaN serialization"
+        }
+      ]
+    },
+    "objective_certificate": {
+      "summary": {
+        "version": "V17",
+        "checks": 21,
+        "passed": 21,
+        "all_pass": true
+      },
+      "checks": [
+        {
+          "check": "objbound_safe_read",
+          "pass": true,
+          "detail": "attribute absence cannot crash"
+        },
+        {
+          "check": "dual_objective_safe_read",
+          "pass": true,
+          "detail": "diagnostic read cannot crash"
+        },
+        {
+          "check": "native_certificate_present",
+          "pass": true,
+          "detail": "native solver certificate with positive-iteration and zero-iteration modes"
+        },
+        {
+          "check": "external_diagnostics_nonblocking",
+          "pass": true,
+          "detail": "ObjBound/dual diagnostics do not gate"
+        },
+        {
+          "check": "status_core_gate",
+          "pass": true,
+          "detail": "status and result availability"
+        },
+        {
+          "check": "presolve_safe_barrier_route",
+          "pass": true,
+          "detail": "zero BarIterCount is accepted only with OPTIMAL status and zero simplex iterations"
+        },
+        {
+          "check": "scale_consistency_independent",
+          "pass": true,
+          "detail": "native/scaled objective equality"
+        },
+        {
+          "check": "diagnostic_outputs",
+          "pass": true,
+          "detail": "traceable diagnostics"
+        },
+        {
+          "check": "runtime_native_certificate",
+          "pass": true,
+          "detail": "native status regression"
+        },
+        {
+          "check": "runtime_presolve_zero_iteration_safe",
+          "pass": true,
+          "detail": "normal presolve may solve before Barrier iterations"
+        },
+        {
+          "check": "runtime_dedicated_barrier_engine_probe",
+          "pass": true,
+          "detail": "separate probe verifies positive Barrier iterations"
+        },
+        {
+          "check": "runtime_direct_mode_interval_safe",
+          "pass": true,
+          "detail": "direct_model probe avoids unsupported ScalarAffineFunction-in-Interval"
+        },
+        {
+          "check": "runtime_bad_dual_nonblocking",
+          "pass": true,
+          "detail": "real SL00 failure mode covered"
+        },
+        {
+          "check": "runtime_optional_objbound",
+          "pass": true,
+          "detail": "ObjBound remains optional"
+        },
+        {
+          "check": "batch_checks_native_certificate",
+          "pass": true,
+          "detail": "release layer checks native certificate"
+        },
+        {
+          "check": "batch_allows_nonblocking_diagnostic_warning",
+          "pass": true,
+          "detail": "diagnostic mismatch cannot reject"
+        },
+        {
+          "check": "batch_checks_proof_source",
+          "pass": true,
+          "detail": "both proof modes retained"
+        },
+        {
+          "check": "preflight_checks_native_certificate",
+          "pass": true,
+          "detail": "release layer checks native certificate"
+        },
+        {
+          "check": "preflight_allows_nonblocking_diagnostic_warning",
+          "pass": true,
+          "detail": "diagnostic mismatch cannot reject"
+        },
+        {
+          "check": "preflight_checks_proof_source",
+          "pass": true,
+          "detail": "both proof modes retained"
+        },
+        {
+          "check": "no_external_certificate_mandatory",
+          "pass": true,
+          "detail": "no mandatory reconstructed objective certificate"
+        }
+      ]
+    },
+    "stage1_release_policy": {
+      "summary": {
+        "version": "V17",
+        "checks": 12,
+        "passed": 12,
+        "all_pass": true
+      },
+      "checks": [
+        {
+          "check": "official_default",
+          "pass": true,
+          "detail": "formal default"
+        },
+        {
+          "check": "official_source",
+          "pass": true,
+          "detail": "source label"
+        },
+        {
+          "check": "single_stage1_source_label",
+          "pass": true,
+          "detail": "all certified stage-1 points use one canonical source label"
+        },
+        {
+          "check": "release_gate_stage1",
+          "pass": true,
+          "detail": "formal gate"
+        },
+        {
+          "check": "cleanup_diagnostic_nonblocking",
+          "pass": true,
+          "detail": "separate diagnostic state"
+        },
+        {
+          "check": "no_cleanup_official_fallback",
+          "pass": true,
+          "detail": "official route tree"
+        },
+        {
+          "check": "stage1_solver_fallbacks",
+          "pass": true,
+          "detail": "controlled alternatives"
+        },
+        {
+          "check": "gross_dispatch_disclosure",
+          "pass": true,
+          "detail": "interpretation restriction"
+        },
+        {
+          "check": "policy_file_exported",
+          "pass": true,
+          "detail": "machine-readable policy"
+        },
+        {
+          "check": "restricted_files_labeled",
+          "pass": true,
+          "detail": "row labels"
+        },
+        {
+          "check": "preflight_policy_enforced",
+          "pass": true,
+          "detail": "downstream enforcement"
+        },
+        {
+          "check": "docs_disclose_limits",
+          "pass": true,
+          "detail": "human-readable interpretation boundary"
+        }
+      ]
+    },
+    "run_readiness": {
+      "version": "V17",
+      "python": "/opt/pyvenv/bin/python",
+      "checks": 26,
+      "passed": 26,
+      "all_pass": true,
+      "details": [
+        {
+          "check": "exists:base_model_v39/cheer_power_storage_v1.jl",
+          "pass": true,
+          "detail": "base_model_v39/cheer_power_storage_v1.jl"
+        },
+        {
+          "check": "exists:base_model_v39/storage_base_template_v17.zip",
+          "pass": true,
+          "detail": "base_model_v39/storage_base_template_v17.zip"
+        },
+        {
+          "check": "exists:storage_runner/run_storage_one_solver_task.jl",
+          "pass": true,
+          "detail": "storage_runner/run_storage_one_solver_task.jl"
+        },
+        {
+          "check": "exists:storage_runner/check_v17_runtime.jl",
+          "pass": true,
+          "detail": "storage_runner/check_v17_runtime.jl"
+        },
+        {
+          "check": "exists:storage_runner/scenarios_storage_master.csv",
+          "pass": true,
+          "detail": "storage_runner/scenarios_storage_master.csv"
+        },
+        {
+          "check": "exists:tools/run_official_batch.py",
+          "pass": true,
+          "detail": "tools/run_official_batch.py"
+        },
+        {
+          "check": "exists:tools/prepare_storage_cases.py",
+          "pass": true,
+          "detail": "tools/prepare_storage_cases.py"
+        },
+        {
+          "check": "exists:tools/build_storage_base_case.py",
+          "pass": true,
+          "detail": "tools/build_storage_base_case.py"
+        },
+        {
+          "check": "model:profile == \"scaled_barrier\"",
+          "pass": true,
+          "detail": "profile == \"scaled_barrier\""
+        },
+        {
+          "check": "model:crossover = 0",
+          "pass": true,
+          "detail": "crossover = 0"
+        },
+        {
+          "check": "model:cleanup_profile=\"stage1_official_release\"",
+          "pass": true,
+          "detail": "cleanup_profile=\"stage1_official_release\""
+        },
+        {
+          "check": "model:publication_solution_source = \"stage1_solver_certified_economic_optimum\"",
+          "pass": true,
+          "detail": "publication_solution_source = \"stage1_solver_certified_economic_optimum\""
+        },
+        {
+          "check": "model:gross_dispatch_operational_interpretation_allowed = false",
+          "pass": true,
+          "detail": "gross_dispatch_operational_interpretation_allowed = false"
+        },
+        {
+          "check": "model:sparse_face_diagnostic_primal_pstart",
+          "pass": true,
+          "detail": "sparse_face_diagnostic_primal_pstart"
+        },
+        {
+          "check": "model:Gurobi.GRBsetdblattrarray",
+          "pass": true,
+          "detail": "Gurobi.GRBsetdblattrarray"
+        },
+        {
+          "check": "model:Gurobi.GRBreset",
+          "pass": true,
+          "detail": "Gurobi.GRBreset"
+        },
+        {
+          "check": "model:_write_json_safe",
+          "pass": true,
+          "detail": "_write_json_safe"
+        },
+        {
+          "check": "model:stage1_dual_objective_diagnostic_only",
+          "pass": true,
+          "detail": "stage1_dual_objective_diagnostic_only"
+        },
+        {
+          "check": "model:fresh_julia_process_per_attempt",
+          "pass": true,
+          "detail": "fresh_julia_process_per_attempt"
+        },
+        {
+          "check": "forbidden:VariableBasisStatus",
+          "pass": true,
+          "detail": "VariableBasisStatus"
+        },
+        {
+          "check": "forbidden:ConstraintBasisStatus",
+          "pass": true,
+          "detail": "ConstraintBasisStatus"
+        },
+        {
+          "check": "forbidden:\"CrossoverBasis\",",
+          "pass": true,
+          "detail": "\"CrossoverBasis\","
+        },
+        {
+          "check": "forbidden:\"DStart\",",
+          "pass": true,
+          "detail": "\"DStart\","
+        },
+        {
+          "check": "forbidden:set_start_value(",
+          "pass": true,
+          "detail": "set_start_value("
+        },
+        {
+          "check": "official_scenario_count",
+          "pass": true,
+          "detail": "16"
+        },
+        {
+          "check": "no_cdr_official",
+          "pass": true,
+          "detail": "no-CDR"
+        }
+      ]
+    },
+    "input_validation": {
+      "status": "PASS",
+      "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+      "checks": [
+        {
+          "check": "publication_source_fingerprint_exists",
+          "passed": true,
+          "detail": "audits/PUBLICATION_SOURCE_FINGERPRINT.json"
+        },
+        {
+          "check": "data_version",
+          "passed": true,
+          "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+        },
+        {
+          "check": "switch_china_raw_snapshot_exists",
+          "passed": true,
+          "detail": "shared_source_snapshots/SWITCH_China_inputs_v2.0.9.zip"
+        },
+        {
+          "check": "switch_china_raw_snapshot_sha256",
+          "passed": true,
+          "detail": "95ce45549736af0c9be1eaa312b89d12bf2209ed5e8ccd7d1fe40e30e7199db3"
+        },
+        {
+          "check": "raw_vre_snapshot_exists",
+          "passed": true,
+          "detail": "shared_source_snapshots/hourly_vre_capacity_factor_2024_CHN_province_withSP.csv.gz"
+        },
+        {
+          "check": "raw_vre_snapshot_sha256",
+          "passed": true,
+          "detail": "fad546d8198992275db19262d6c59ad62ed910860ed2eefd4d65dbd3a541ab70"
+        },
+        {
+          "check": "study_template_exists",
+          "passed": true,
+          "detail": "base_model_v39/storage_base_template_v17.zip"
+        },
+        {
+          "check": "study_template_sha256",
+          "passed": true,
+          "detail": "e42ef4fbaf93106f5a1639281e98c73a187ef858f05d35b70006011fd1df9a8f"
+        },
+        {
+          "check": "switch_china_lineage_audit_exists",
+          "passed": true,
+          "detail": "data/build3/main/main_model_upstream_V17T2/SWITCH_CHINA_INPUT_LINEAGE_AUDIT.json"
+        },
+        {
+          "check": "switch_china_declared_version",
+          "passed": true,
+          "detail": "2.0.9"
+        },
+        {
+          "check": "switch_china_no_false_byte_identity_claim",
+          "passed": true,
+          "detail": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+        },
+        {
+          "check": "province_reconstruction_exists",
+          "passed": true,
+          "detail": "data/processed/new_storage_existing_by_province_2025_nea_constrained_reconstruction.csv"
+        },
+        {
+          "check": "zone_storage_input_exists",
+          "passed": true,
+          "detail": "data/processed/existing_new_storage_allocated_to_model_zones_2025.csv"
+        },
+        {
+          "check": "province_source_ledger_exists",
+          "passed": true,
+          "detail": "data/source_registry/provincial_storage_source_ledger_2025.csv"
+        },
+        {
+          "check": "regional_constraints_exists",
+          "passed": true,
+          "detail": "data/source_registry/nea_new_storage_national_regional_constraints_2025.csv"
+        },
+        {
+          "check": "province_constraints_exists",
+          "passed": true,
+          "detail": "data/source_registry/nea_new_storage_provincial_constraints_2025.csv"
+        },
+        {
+          "check": "province_required_columns",
+          "passed": true,
+          "detail": "[]"
+        },
+        {
+          "check": "province_count_31",
+          "passed": true,
+          "detail": "(31, 31)"
+        },
+        {
+          "check": "province_version_lock",
+          "passed": true,
+          "detail": "{'NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2'}"
+        },
+        {
+          "check": "province_power_closure",
+          "passed": true,
+          "detail": "135930.0"
+        },
+        {
+          "check": "province_standardized_energy_closure",
+          "passed": true,
+          "detail": "351120.0"
+        },
+        {
+          "check": "province_compiled_duration_sensitivity_energy_closure",
+          "passed": true,
+          "detail": "351120.00000000006"
+        },
+        {
+          "check": "province_nonnegative",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "province_interpretation_lock",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "six_region_coverage",
+          "passed": true,
+          "detail": "(['Central', 'East', 'North', 'Northeast', 'Northwest', 'South'], ['Central', 'East', 'North', 'Northeast', 'Northwest', 'South'])"
+        },
+        {
+          "check": "region_North_power_closure",
+          "passed": true,
+          "detail": "44131.0"
+        },
+        {
+          "check": "region_Northwest_power_closure",
+          "passed": true,
+          "detail": "38382.0"
+        },
+        {
+          "check": "region_East_power_closure",
+          "passed": true,
+          "detail": "19572.641221374044"
+        },
+        {
+          "check": "region_South_power_closure",
+          "passed": true,
+          "detail": "17805.666666666664"
+        },
+        {
+          "check": "region_Central_power_closure",
+          "passed": true,
+          "detail": "15087.24427480916"
+        },
+        {
+          "check": "region_Northeast_power_closure",
+          "passed": true,
+          "detail": "951.4478371501268"
+        },
+        {
+          "check": "official_exact_Inner_Mongolia",
+          "passed": true,
+          "detail": "20260.0"
+        },
+        {
+          "check": "official_exact_Xinjiang",
+          "passed": true,
+          "detail": "18800.0"
+        },
+        {
+          "check": "official_exact_Shandong",
+          "passed": true,
+          "detail": "11210.0"
+        },
+        {
+          "check": "official_exact_Gansu",
+          "passed": true,
+          "detail": "8405.8"
+        },
+        {
+          "check": "official_exact_Guizhou",
+          "passed": true,
+          "detail": "2450.0"
+        },
+        {
+          "check": "official_threshold_Hebei",
+          "passed": true,
+          "detail": "7424.660493827161"
+        },
+        {
+          "check": "official_threshold_Jiangsu",
+          "passed": true,
+          "detail": "7589.917302798982"
+        },
+        {
+          "check": "official_threshold_Ningxia",
+          "passed": true,
+          "detail": "5000.0"
+        },
+        {
+          "check": "official_threshold_Yunnan",
+          "passed": true,
+          "detail": "5341.101449275361"
+        },
+        {
+          "check": "official_threshold_Zhejiang",
+          "passed": true,
+          "detail": "5000.0"
+        },
+        {
+          "check": "official_threshold_Henan",
+          "passed": true,
+          "detail": "6095.856272650165"
+        },
+        {
+          "check": "official_threshold_Guangdong",
+          "passed": true,
+          "detail": "5007.282608695651"
+        },
+        {
+          "check": "model_zone_count_32",
+          "passed": true,
+          "detail": "(32, 32)"
+        },
+        {
+          "check": "zone_version_lock",
+          "passed": true,
+          "detail": "{'NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2'}"
+        },
+        {
+          "check": "zone_power_closure",
+          "passed": true,
+          "detail": "135930.0"
+        },
+        {
+          "check": "zone_energy_closure",
+          "passed": true,
+          "detail": "351120.0"
+        },
+        {
+          "check": "zone_storage_hash_lock",
+          "passed": true,
+          "detail": "0b8e279d0891b0a6652a2804183798faf4daebcd37cff725207362759fd3a5bc"
+        },
+        {
+          "check": "source_ledger_31_rows",
+          "passed": true,
+          "detail": "(31, 31)"
+        },
+        {
+          "check": "source_ledger_language_lock",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "source_ledger_hash_lock",
+          "passed": true,
+          "detail": "e58e0458553b4144a16b27b0f47846927e52a930f948cac86db956be08e7e862"
+        },
+        {
+          "check": "raw_vre_processed_exists",
+          "passed": true,
+          "detail": "data/processed/vre_cf_hourly_by_province.csv"
+        },
+        {
+          "check": "calibrated_vre_exists",
+          "passed": true,
+          "detail": "data/processed/vre_cf_hourly_by_province_publication_calibrated.csv"
+        },
+        {
+          "check": "wind_benchmark_exists",
+          "passed": true,
+          "detail": "data/processed/vre_cf_national_benchmark_2024.csv"
+        },
+        {
+          "check": "wind_calibration_audit_exists",
+          "passed": true,
+          "detail": "audits/vre_cf_publication_calibration_audit.json"
+        },
+        {
+          "check": "raw_vre_31x8760",
+          "passed": true,
+          "detail": "(271560, 31, 8760)"
+        },
+        {
+          "check": "raw_solar_cf_bounded",
+          "passed": true,
+          "detail": "solar_cf"
+        },
+        {
+          "check": "raw_onshore_wind_cf_bounded",
+          "passed": true,
+          "detail": "onshore_wind_cf"
+        },
+        {
+          "check": "raw_offshore_wind_cf_bounded",
+          "passed": true,
+          "detail": "offshore_wind_cf"
+        },
+        {
+          "check": "raw_offshore_scope_zero",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "calibrated_vre_31x8760",
+          "passed": true,
+          "detail": "(271560, 31, 8760)"
+        },
+        {
+          "check": "calibrated_vre_bounded",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "calibrated_profile_hash_lock",
+          "passed": true,
+          "detail": "03c32eb58250478e532ec2a002be71e90a55ee0be53be06be335efc3136c8096"
+        },
+        {
+          "check": "wind_benchmark_one_row",
+          "passed": true,
+          "detail": "1"
+        },
+        {
+          "check": "wind_target_closure",
+          "passed": true,
+          "detail": "(0.2532072175254301, 0.25320721752543)"
+        },
+        {
+          "check": "wind_target_fingerprint",
+          "passed": true,
+          "detail": "0.2532072175254301"
+        },
+        {
+          "check": "wind_benchmark_hash_lock",
+          "passed": true,
+          "detail": "4160019072cb3dccfebb49fbfc6a49e0337d56b08b33de6aef9313a67349e9d5"
+        },
+        {
+          "check": "wind_audit_version",
+          "passed": true,
+          "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+        },
+        {
+          "check": "wind_official_source_lock",
+          "passed": true,
+          "detail": "National Energy Administration"
+        },
+        {
+          "check": "commercial_annual_report_excluded",
+          "passed": true,
+          "detail": "False"
+        },
+        {
+          "check": "wind_audit_hash_lock",
+          "passed": true,
+          "detail": "5896250e313b9e5d9180e40d1ac0b17c48c5e6fbfbbd996071a9bb673205955e"
+        },
+        {
+          "check": "template_no_nbccs",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "template_no_daccs",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "check": "template_beccs_physical_factor_one",
+          "passed": true,
+          "detail": "1.0"
+        },
+        {
+          "check": "expanded_base_power",
+          "passed": true,
+          "detail": "135930.0"
+        },
+        {
+          "check": "expanded_base_energy",
+          "passed": true,
+          "detail": "351120.0"
+        },
+        {
+          "check": "official_main_scenario_count_16",
+          "passed": true,
+          "detail": "(16, 16)"
+        },
+        {
+          "check": "cdr_disabled_all_official",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "legacy_provenance": {
+      "status": "PASS",
+      "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+      "national_power_mw": 135930.0,
+      "national_energy_mwh": 351120.0,
+      "national_closure_pass": true,
+      "official_evidence_boundary": {
+        "official_exact": "national power and energy; North and Northwest report values; Inner Mongolia, Xinjiang, Shandong, Gansu and Guizhou power",
+        "official_threshold": "seven additional provinces reported only as above 5 GW",
+        "model_reconstruction": "all remaining provincial point estimates and the East/South/Central/Northeast exact closure derived from rounded official shares and a frozen prior"
+      },
+      "main_input_interpretation": "NEA-constrained model reconstruction with a common exact national duration; not an official exact 31-province inventory",
+      "publication_language_lock": "Use model-reconstructed or NEA-constrained allocation. Never call the complete 31-province vector an official provincial census."
+    },
+    "publication_source": {
+      "status": "PASS",
+      "stage": "source",
+      "kind": "main",
+      "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+      "checks": [
+        {
+          "check": "source_fingerprint_exact_current_match",
+          "passed": true,
+          "detail": "stored and recomputed canonical source fingerprint"
+        },
+        {
+          "check": "data_version",
+          "passed": true,
+          "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+        },
+        {
+          "check": "raw_vre_shape",
+          "passed": true,
+          "detail": [
+            271560,
+            11
+          ]
+        },
+        {
+          "check": "calibrated_vre_shape",
+          "passed": true,
+          "detail": [
+            271560,
+            11
+          ]
+        },
+        {
+          "check": "vre_bounds",
+          "passed": true,
+          "detail": "all capacity factors within [0,1]"
+        },
+        {
+          "check": "final_nea_wind_generation",
+          "passed": true,
+          "detail": 996.8
+        },
+        {
+          "check": "nea_wind_utilization",
+          "passed": true,
+          "detail": 0.959
+        },
+        {
+          "check": "wind_calibration_exact_closure",
+          "passed": true,
+          "detail": 0.25320721752543
+        },
+        {
+          "check": "province_storage_rows",
+          "passed": true,
+          "detail": 31
+        },
+        {
+          "check": "zone_storage_rows",
+          "passed": true,
+          "detail": 32
+        },
+        {
+          "check": "storage_power_closure",
+          "passed": true,
+          "detail": 135930.0
+        },
+        {
+          "check": "storage_energy_closure",
+          "passed": true,
+          "detail": 351120.0
+        },
+        {
+          "check": "no_legacy_storage_alias_columns",
+          "passed": true,
+          "detail": []
+        },
+        {
+          "check": "no_goldwind_scientific_source",
+          "passed": true,
+          "detail": []
+        },
+        {
+          "check": "weak_screenshot_datasets_removed",
+          "passed": true,
+          "detail": "all screenshot-derived utilization tables absent"
+        },
+        {
+          "check": "wind_calibration_dependency_lock",
+          "passed": true,
+          "detail": [
+            "generation_utilization_anchor_sha256",
+            "monthly_anchor_sha256",
+            "raw_profile_sha256",
+            "template_sha256",
+            "zone_mapping_sha256"
+          ]
+        },
+        {
+          "check": "wind_anchor_nea_only",
+          "passed": true,
+          "detail": {
+            "wind_generation_and_utilization": "National Energy Administration final 2024 monitoring statistics only",
+            "wind_capacity_path": "National Energy Administration month-end installed-capacity series with declared daily interpolation",
+            "hourly_shape": "supplied 2024 province-level ERA5-derived onshore-wind and solar profile",
+            "commercial_annual_report_source_used": false,
+            "scope": "national total-wind proxy level-corrects the onshore-wind profile; it is neither province validation nor an official onshore-only statistic"
+          }
+        },
+        {
+          "check": "latest_q1_storage_context_explicitly_not_model_input",
+          "passed": true,
+          "detail": [
+            {
+              "dataset_id": "latest_new_storage_context_2026_q1",
+              "use": "Latest context only; not model input",
+              "notes": "Officially reported as more than 140 GW at end-Q1 2026. Excluded from the model vector because no same-cutoff nationally closed energy total and province distribution were released; the internally coherent end-2025 baseline is retained."
+            }
+          ]
+        },
+        {
+          "check": "switch_china_version",
+          "passed": true,
+          "detail": "2.0.9"
+        },
+        {
+          "check": "switch_lineage_not_byte_identical_claim",
+          "passed": true,
+          "detail": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+        }
+      ],
+      "checks_passed": 20,
+      "checks_total": 20
+    },
+    "publication_cases": {
+      "status": "PASS",
+      "stage": "cases",
+      "kind": "main",
+      "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+      "checks": [
+        {
+          "check": "source_fingerprint_exact_current_match",
+          "passed": true,
+          "detail": "stored and recomputed canonical source fingerprint"
+        },
+        {
+          "check": "data_version",
+          "passed": true,
+          "detail": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2"
+        },
+        {
+          "check": "raw_vre_shape",
+          "passed": true,
+          "detail": [
+            271560,
+            11
+          ]
+        },
+        {
+          "check": "calibrated_vre_shape",
+          "passed": true,
+          "detail": [
+            271560,
+            11
+          ]
+        },
+        {
+          "check": "vre_bounds",
+          "passed": true,
+          "detail": "all capacity factors within [0,1]"
+        },
+        {
+          "check": "final_nea_wind_generation",
+          "passed": true,
+          "detail": 996.8
+        },
+        {
+          "check": "nea_wind_utilization",
+          "passed": true,
+          "detail": 0.959
+        },
+        {
+          "check": "wind_calibration_exact_closure",
+          "passed": true,
+          "detail": 0.25320721752543
+        },
+        {
+          "check": "province_storage_rows",
+          "passed": true,
+          "detail": 31
+        },
+        {
+          "check": "zone_storage_rows",
+          "passed": true,
+          "detail": 32
+        },
+        {
+          "check": "storage_power_closure",
+          "passed": true,
+          "detail": 135930.0
+        },
+        {
+          "check": "storage_energy_closure",
+          "passed": true,
+          "detail": 351120.0
+        },
+        {
+          "check": "no_legacy_storage_alias_columns",
+          "passed": true,
+          "detail": []
+        },
+        {
+          "check": "no_goldwind_scientific_source",
+          "passed": true,
+          "detail": []
+        },
+        {
+          "check": "weak_screenshot_datasets_removed",
+          "passed": true,
+          "detail": "all screenshot-derived utilization tables absent"
+        },
+        {
+          "check": "wind_calibration_dependency_lock",
+          "passed": true,
+          "detail": [
+            "generation_utilization_anchor_sha256",
+            "monthly_anchor_sha256",
+            "raw_profile_sha256",
+            "template_sha256",
+            "zone_mapping_sha256"
+          ]
+        },
+        {
+          "check": "wind_anchor_nea_only",
+          "passed": true,
+          "detail": {
+            "wind_generation_and_utilization": "National Energy Administration final 2024 monitoring statistics only",
+            "wind_capacity_path": "National Energy Administration month-end installed-capacity series with declared daily interpolation",
+            "hourly_shape": "supplied 2024 province-level ERA5-derived onshore-wind and solar profile",
+            "commercial_annual_report_source_used": false,
+            "scope": "national total-wind proxy level-corrects the onshore-wind profile; it is neither province validation nor an official onshore-only statistic"
+          }
+        },
+        {
+          "check": "latest_q1_storage_context_explicitly_not_model_input",
+          "passed": true,
+          "detail": [
+            {
+              "dataset_id": "latest_new_storage_context_2026_q1",
+              "use": "Latest context only; not model input",
+              "notes": "Officially reported as more than 140 GW at end-Q1 2026. Excluded from the model vector because no same-cutoff nationally closed energy total and province distribution were released; the internally coherent end-2025 baseline is retained."
+            }
+          ]
+        },
+        {
+          "check": "switch_china_version",
+          "passed": true,
+          "detail": "2.0.9"
+        },
+        {
+          "check": "switch_lineage_not_byte_identical_claim",
+          "passed": true,
+          "detail": "The uploaded SWITCH-China inputs v2.0.9 are frozen as the foundational source snapshot. The study template is a versioned aggregation and extension with study-specific technologies, planning periods, representative timepoints, policies and storage constraints; it is not a byte-identical copy and no unsupported one-step exact transformation is claimed."
+        },
+        {
+          "check": "case_fingerprint::SL00_OBSERVED_ACTUAL",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL01_OBSERVED_STANDARDIZED",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL02_OPTIMAL_REALLOCATION",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL03_NO_LEGACY",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL04_RULE_LOAD",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL05_RULE_VRE",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL06_TX_FIXED_OBSERVED",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL07_TX_FIXED_OPTIMAL",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL08_PH_CONSERVATIVE_OBSERVED",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL09_PH_CONSERVATIVE_OPTIMAL",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL10_CARBON_TIGHT_OBSERVED",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL11_CARBON_TIGHT_OPTIMAL",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL12_COST_LOW_OBSERVED",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL13_COST_LOW_OPTIMAL",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL14_COST_HIGH_OBSERVED",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "case_fingerprint::SL15_COST_HIGH_OPTIMAL",
+          "passed": true,
+          "detail": "current source and input manifest match"
+        },
+        {
+          "check": "expected_case_count",
+          "passed": true,
+          "detail": 16
+        }
+      ],
+      "checks_passed": 37,
+      "checks_total": 37
+    }
+  },
+  "input_only_figure_smoke": "NOT_REQUESTED",
+  "julia_gurobi_runtime_check_executed_by_this_script": false,
+  "solver_results_present": false,
+  "publication_result_gate_status": "FAIL_RERUN_REQUIRED until the 16 current-source scenarios are solved locally",
+  "validation_scope": "Current-source data closure, launcher and source checks, Julia lexical/static audits, sixteen prepared-case input fingerprints and pre-solve validations. No numerical result claim.",
+  "required_local_next_step": "RUN_V17T2_CLEAN_REBUILD_AND_RUN_ALL_16_1x10.bat"
+}

@@ -1,0 +1,19 @@
+Package: China storage planning target-year linked-SOC sensitivity upstream
+Compatibility code line: V17T2R5
+Scientific input upgrade: V17T2R6_INPUT_UPGRADE
+Publication data version: NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2
+Design: independent 2028 and 2033 target-year capacity-and-dispatch re-optimization
+Representative chronology: 12 month-specific representative days; 72 four-hour or 288 one-hour timepoints
+Prepared scenario count: 8
+Pair count: 4
+National inherited new-type storage: 135,930 MW / 351,120 MWh / 2.583094239682189 h
+Battery cost source: NLR 2025 low/mid/high four-hour complete-system trajectories
+LDES source: frozen PNNL/DOE v2024 engineering database; eight discrete technology-duration options
+Source gate at delivery: PASS
+Prepared-case gate at delivery: PASS
+Solved-result gate at delivery: FAIL_RERUN_REQUIRED
+Required action: use current clean-rebuild or resume launcher; 1 h robust ladder is integrated.
+Active launcher: RUN_CURRENT_CLEAN_REBUILD_AND_RUN_ALL_8_1x10.bat
+Full multi-period transition-path claim supported: no
+Continuous 8760-hour chronology claim supported: no
+Strict release: solver-native OPTIMAL, primal and dual FEASIBLE_POINT, all physical/SOC/export gates, and current result lineage

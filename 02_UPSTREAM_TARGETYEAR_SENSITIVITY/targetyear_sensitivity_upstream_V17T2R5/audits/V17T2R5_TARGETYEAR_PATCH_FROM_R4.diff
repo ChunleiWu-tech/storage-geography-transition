@@ -1,0 +1,196 @@
+--- frozen_V17T2R4_solveronly.jl
++++ V17T2R5_targetyear.jl
+@@ -1,5 +1,7 @@
+ # ===========================================================
+-#                 CHEER/Power Source Code
++# CHEER/Power V17T2R5 target-year exact linked re-optimization
++# Derived from the frozen V17T2R1 scientific model; target-year
++# structure and solve orchestration are explicitly audited.
+ # ===========================================================
+ # This script contains the source code for the CHEER/Power 
+ # project, which focuses on modeling power system transition 
+@@ -94,7 +96,7 @@
+ const CO2_STORAGE_CONSTRAINT_SCALE_TCO2 = 1.0e6
+ const FUEL_LIMIT_CONSTRAINT_SCALE_MMBTU = 1.0e6
+ const VRE_CF_NUMERICAL_ZERO_THRESHOLD = 1.0e-6
+-const NUMERICAL_STABILITY_VERSION = "V17T2R1_chronology_ldes_sensitivity_stage1_official_release_json_safe"
++const NUMERICAL_STABILITY_VERSION = "V17T2R5_targetyear_exact_linked_reoptimization_stage1_official_release_json_safe"
+ 
+ # Optional external objective diagnostics. These thresholds classify ObjBound or
+ # JuMP dual-objective consistency when those values are available. They never
+@@ -138,10 +140,11 @@
+ # Standard V17 scenarios never read these limits or profiles.
+ const HARD_LP_TIME_LIMIT_SECONDS = parse(Float64, get(ENV, "V17T1_HARD_LP_TIME_LIMIT_SECONDS", "21600"))
+ const HARD_LP_BAR_ITER_LIMIT = parse(Int, get(ENV, "V17T1_HARD_LP_BAR_ITER_LIMIT", "5000"))
+-const V17T2R4_DUAL_CROSSOVER_TIME_LIMIT_SECONDS = parse(Float64, get(ENV, "V17T2R4_DUAL_CROSSOVER_TIME_LIMIT_SECONDS", "43200"))
+-const V17T2R4_CROSSOVER_BASIS = parse(Int, get(ENV, "V17T2R4_CROSSOVER_BASIS", "1"))
+-if !(V17T2R4_CROSSOVER_BASIS in (0, 1))
+-    error("V17T2R4_CROSSOVER_BASIS must be 0 or 1.")
++const V17T2R5_PRIMARY_TIME_LIMIT_SECONDS = parse(Float64, get(ENV, "V17T2R5_PRIMARY_TIME_LIMIT_SECONDS", "7200"))
++const V17T2R5_FALLBACK_TIME_LIMIT_SECONDS = parse(Float64, get(ENV, "V17T2R5_FALLBACK_TIME_LIMIT_SECONDS", "14400"))
++const V17T2R5_CROSSOVER_BASIS = parse(Int, get(ENV, "V17T2R5_CROSSOVER_BASIS", "1"))
++if !(V17T2R5_CROSSOVER_BASIS in (0, 1))
++    error("V17T2R5_CROSSOVER_BASIS must be 0 or 1.")
+ end
+ const CLEANUP_BARRIER_TIME_LIMIT_SECONDS = parse(Float64, get(ENV, "V17_CLEANUP_BARRIER_TIME_LIMIT_SECONDS", "1800"))
+ const CLEANUP_PRIMAL_TIME_LIMIT_SECONDS = parse(Float64, get(ENV, "V17_CLEANUP_PRIMAL_TIME_LIMIT_SECONDS", "3600"))
+@@ -160,8 +163,8 @@
+     "sparse_face_diagnostic_dual",
+ )
+ const STORAGE_CDR_MODULES_COMPILED = false
+-const REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED = 504
+-const STORAGE_CHRONOLOGY_SENSITIVITY_VERSION = "V17T2R1_monthly_representative_day_interperiod_soc_linkage"
++const REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED = 72
++const STORAGE_CHRONOLOGY_SENSITIVITY_VERSION = "V17T2R5_targetyear_monthly_representative_day_intermonth_soc_linkage"
+ const STORAGE_FULL_CHRONOLOGICAL_CLAIM_SUPPORTED = false
+ # The 2023-labelled period represents observed end-2025 stock only.
+ # It contains predetermined assets (or the equal-total optimized legacy allocation)
+@@ -199,6 +202,20 @@
+             time_limit_seconds = ECONOMIC_BARRIER_TIME_LIMIT_SECONDS,
+             route_role = "primary_scaled_barrier_no_crossover",
+         ))
++    elseif profile == "targetyear_deterministic_concurrent"
++        return merge(common, (
++            profile = profile,
++            method = 4,
++            crossover = 0,
++            threads = SOLVER_THREADS,
++            numeric_focus = 2,
++            scale_flag = -1,
++            aggregate = 1,
++            pre_sparsify = 1,
++            quad = -1,
++            time_limit_seconds = V17T2R5_PRIMARY_TIME_LIMIT_SECONDS,
++            route_role = "V17T2R5_targetyear_primary_deterministic_concurrent",
++        ))
+     elseif profile == "deterministic_concurrent"
+         return merge(common, (
+             profile = profile,
+@@ -271,12 +288,12 @@
+             time_limit_seconds = HARD_LP_TIME_LIMIT_SECONDS,
+             route_role = "hard_lp_homogeneous_barrier_with_crossover",
+         ))
+-    elseif profile == "hard_homogeneous_barrier_dual_crossover"
++    elseif profile == "targetyear_homogeneous_dual_crossover"
+         return merge(common, (
+             profile = profile,
+             method = 2,
+             crossover = 2,
+-            crossover_basis = V17T2R4_CROSSOVER_BASIS,
++            crossover_basis = V17T2R5_CROSSOVER_BASIS,
+             threads = SOLVER_THREADS,
+             numeric_focus = 3,
+             scale_flag = 2,
+@@ -285,8 +302,8 @@
+             quad = 1,
+             bar_homogeneous = 1,
+             bar_iter_limit = HARD_LP_BAR_ITER_LIMIT,
+-            time_limit_seconds = V17T2R4_DUAL_CROSSOVER_TIME_LIMIT_SECONDS,
+-            route_role = "V17T2R4_homogeneous_barrier_dual_simplex_cleanup_stable_basis",
++            time_limit_seconds = V17T2R5_FALLBACK_TIME_LIMIT_SECONDS,
++            route_role = "V17T2R5_targetyear_fallback_homogeneous_barrier_dual_cleanup",
+         ))
+     elseif profile == "primal_simplex_diagnostic"
+         return merge(common, (
+@@ -303,7 +320,7 @@
+             route_role = "explicit_diagnostic_primal_simplex",
+         ))
+     end
+-    error("Unknown solver_profile: $(profile). Valid profiles: scaled_barrier, deterministic_concurrent, dual_simplex, hard_deterministic_concurrent_simplex, hard_primal_simplex, hard_homogeneous_barrier, hard_homogeneous_barrier_dual_crossover, primal_simplex_diagnostic.")
++    error("Unknown solver_profile: $(profile). Valid profiles include targetyear_deterministic_concurrent and targetyear_homogeneous_dual_crossover.")
+ end
+ 
+ function apply_solver_profile!(mod, solver_profile::AbstractString)
+@@ -932,8 +949,8 @@
+         error("Require 0 < ldes_proxy_min_duration_h <= ldes_proxy_max_duration_h")
+ end
+ storage_chronology_scope = storage_chronology_mode == "monthly_linked" ?
+-    "2028_2060_monthly_representative_days_with_interperiod_soc_linkage_2023_stock_only" :
+-    "2028_2060_monthly_representative_days_with_intraday_cyclic_soc_2023_stock_only"
++    "single_target_year_monthly_representative_days_with_intermonth_soc_linkage_2023_stock_anchor" :
++    "single_target_year_monthly_representative_days_with_intraday_cyclic_soc_2023_stock_anchor"
+ storage_interperiod_soc_linked = storage_chronology_mode == "monthly_linked"
+ storage_multiday_seasonal_sensitivity_supported = storage_interperiod_soc_linked
+ storage_full_chronological_claim_supported = STORAGE_FULL_CHRONOLOGICAL_CLAIM_SUPPORTED
+@@ -962,7 +979,7 @@
+ # declare the model
+ # -------------------------------------
+ mod = direct_model(Gurobi.Optimizer())
+-println("V17T2R4 JuMP mode: DIRECT; the solver-certified stage-1 economic solution is official. No external VBasis/CBasis/PStart/DStart is read or written; CrossoverBasis is a Gurobi basis-construction strategy only. Optional cleanup remains non-release-blocking.")
++println("V17T2R5 target-year JuMP mode: DIRECT; only a solver-certified Stage-1 OPTIMAL solution is release-eligible. No time-limit incumbent is promoted.")
+ solver_settings = apply_solver_profile!(mod, solver_profile)
+ println("Solver profile: ", solver_settings.profile,
+     " | Method=", solver_settings.method,
+@@ -1309,6 +1326,21 @@
+  if INITIALIZATION_TRANSITION_PERIOD in PERIODS && !(INITIALIZATION_TRANSITION_PERIOD in STOCK_ANCHOR_PERIODS)
+      error("The 2023-labelled initialization period must be stock-only and contain zero operational timepoints in V17")
+  end
++ if length(PERIODS) != 2 || sort(Int.(PERIODS))[1] != INITIALIZATION_TRANSITION_PERIOD
++     error("V17T2R5 requires exactly two investment labels: the 2023 stock anchor and one target-year operating period.")
++ end
++ if length(STOCK_ANCHOR_PERIODS) != 1 || Int(first(STOCK_ANCHOR_PERIODS)) != INITIALIZATION_TRANSITION_PERIOD
++     error("V17T2R5 requires exactly one stock-anchor period: 2023.")
++ end
++ if length(OPERATION_PERIODS) != 1
++     error("V17T2R5 requires exactly one target-year operating period.")
++ end
++ TARGET_YEAR_OPERATION_PERIOD = Int(first(OPERATION_PERIODS))
++ TARGET_YEAR_OPERATION_PERIOD in (2028, 2033) ||
++     error("V17T2R5 target year must be 2028 or 2033; got $(TARGET_YEAR_OPERATION_PERIOD).")
++ if length(TIMEPOINTS) != REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED
++     error("V17T2R5 requires exactly $(REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED) target-year timepoints; got $(length(TIMEPOINTS)).")
++ end
+ 
+  # Load zones
+  col_lz = _require_col(df_load_zones, [:LOAD_ZONE, :load_zone, :zone], "load_zones.csv", "LOAD_ZONE")
+@@ -4434,6 +4466,12 @@
+             solver_settings.method == 1 &&
+             isfinite(stage1_simplex_iterations) && stage1_simplex_iterations >= 0.0
+         stage1_native_solver_certificate_source = "gurobi_dual_simplex_optimal_status"
++    elseif solver_settings.profile == "targetyear_deterministic_concurrent"
++        stage1_native_algorithm_gate_pass =
++            solver_settings.method == 4 && solver_settings.crossover == 0 &&
++            solver_settings.lp_warm_start == 0
++        stage1_native_solver_certificate_source =
++            "gurobi_V17T2R5_targetyear_deterministic_concurrent_optimal_status"
+     elseif solver_settings.profile == "deterministic_concurrent"
+         stage1_native_algorithm_gate_pass = solver_settings.method == 4
+         stage1_native_solver_certificate_source =
+@@ -4457,7 +4495,7 @@
+             solver_settings.bar_conv_tol <= 1.0e-8
+         stage1_native_solver_certificate_source =
+             "gurobi_hard_homogeneous_barrier_crossover_optimal_status"
+-    elseif solver_settings.profile == "hard_homogeneous_barrier_dual_crossover"
++    elseif solver_settings.profile == "targetyear_homogeneous_dual_crossover"
+         stage1_native_algorithm_gate_pass =
+             solver_settings.method == 2 && solver_settings.bar_homogeneous == 1 &&
+             solver_settings.crossover == 2 && solver_settings.crossover_basis == 1 &&
+@@ -4466,7 +4504,7 @@
+             isfinite(stage1_simplex_iterations) && stage1_simplex_iterations >= 0.0 &&
+             solver_settings.bar_conv_tol <= 1.0e-8
+         stage1_native_solver_certificate_source =
+-            "gurobi_V17T2R4_homogeneous_barrier_dual_cleanup_stable_basis_optimal_status"
++            "gurobi_V17T2R5_targetyear_homogeneous_barrier_dual_cleanup_optimal_status"
+     else
+         stage1_native_algorithm_gate_pass = false
+         stage1_native_solver_certificate_source = "unsupported_solver_profile"
+@@ -5086,6 +5124,10 @@
+     :representative_timepoint_count => [length(TIMEPOINTS)],
+     :operational_period_count => [length(OPERATION_PERIODS)],
+     :stock_anchor_period_count => [length(STOCK_ANCHOR_PERIODS)],
++    :target_year_operation_period => [TARGET_YEAR_OPERATION_PERIOD],
++    :target_year_static_reoptimization => [true],
++    :target_year_transition_path_claim_supported => [false],
++    :target_year_scope_note => ["Single-target-year capacity-and-dispatch re-optimization from exogenous surviving historical stock plus the 2025 inherited-storage counterfactual; no endogenous pre-target transition builds are carried in."],
+     :empty_collection_safety_version => [EMPTY_COLLECTION_SAFETY_VERSION],
+     :representative_timepoint_count_expected => [REPRESENTATIVE_TIMEPOINT_COUNT_EXPECTED],
+     :storage_chronology_scope => [storage_chronology_scope],
+@@ -5132,7 +5174,7 @@
+     :allow_beccs => [allow_beccs],
+     :allow_genccs => [allow_genccs],
+     :official_cdr_disabled => [!allow_nbccs && !allow_daccs && !allow_beccs],
+-    :carbon_policy_scope => ["deep_decarbonization_200Mt_2058_no_CDR"],
++    :carbon_policy_scope => ["target_year_input_carbon_policy_no_CDR"],
+     :final_carbon_cap_tco2_per_yr => [carbon_cap_tco2_per_yr[maximum(PERIODS)]]
+ )
+ CSV.write(joinpath(outdir, "solve_status.csv"), df_solve_status)

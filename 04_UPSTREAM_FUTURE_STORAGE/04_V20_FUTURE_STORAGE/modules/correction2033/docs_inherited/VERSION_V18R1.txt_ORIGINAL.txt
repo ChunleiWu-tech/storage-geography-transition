@@ -1,0 +1,9 @@
+V18R1_FUTURE_CORRECTION_STANDALONE_PUBLICATION_READY_20260809
+Package role: separate 2033 adaptive future-correction layer on frozen V17T2R5 scientific core
+Frozen core SHA-256: 2825377de801183dd624125d17d4f1541c70f724d48065b638026a774acd0a84
+Scientific core changed: false
+Primary claim cases: FC01-FC04
+Robustness/pressure cases: FC05-FC08
+Full transition timing claim supported: false
+Full 8760 chronology claim supported: false
+Strict solver-native OPTIMAL required: true

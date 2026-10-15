@@ -1,0 +1,2 @@
+province_en,datetime,weather_year,solar_cf,onshore_wind_cf,offshore_wind_cf,source_note
+Hebei,2018-01-01 00:00,2018,0.0,0.25,0.0,PLACEHOLDER_REPLACE_WITH_USER_CF

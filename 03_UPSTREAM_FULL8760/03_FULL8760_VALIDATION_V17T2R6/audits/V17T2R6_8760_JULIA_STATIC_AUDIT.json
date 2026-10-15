@@ -1,0 +1,157 @@
+{
+  "version": "V17T2R6R7_HF2P1_FULL8760",
+  "status": "PASS",
+  "scope": "static lexical/contract audit; runtime checker must still be executed on the target Julia/Gurobi machine",
+  "model_sha256": "4360f2c4b24dd9af867228b0e5d035a981dfcedade290c0cf4cd779617b351f2",
+  "runner_sha256": "a8c4d37995cfda2454f9e5e66d966da09a682a049896b842dcda28cbe47c1e57",
+  "runtime_checker_sha256": "6ba7944cb89001b35991be3921a4adfa833961d01235bf076e49af394eece32c",
+  "checks": [
+    {
+      "check": "model_utf8_and_balanced_delimiters",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "runner_utf8_and_balanced_delimiters",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "runtime_checker_utf8_and_balanced_delimiters",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "full8760_contract_tokens",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "generic_identifier_stringification",
+      "pass": true,
+      "detail": {
+        "model": [],
+        "runner": []
+      }
+    },
+    {
+      "check": "postsolve_export_uses_runtime_timepoint_count",
+      "pass": true,
+      "detail": {
+        "unsafe_uppercase_global_present": false,
+        "safe_runtime_local_present": true
+      }
+    },
+    {
+      "check": "full8760_timestamp_runtime_guards",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "inline_string_timepoint_sort_is_generic_and_stable",
+      "pass": true,
+      "detail": {
+        "unsafe_hits": [],
+        "missing_safe_tokens": []
+      }
+    },
+    {
+      "check": "runtime_preflight_exercises_real_8760_contract",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_obsolete_runtime_fallback",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "runner_model_binding",
+      "pass": true,
+      "detail": "V17T2R6 model include"
+    },
+    {
+      "check": "runner_default_is_official_no_crossover_route",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "hf2_exact_projection_code_contract",
+      "pass": true,
+      "detail": {
+        "missing_reduction_tokens": [],
+        "legacy_dense_hits": []
+      }
+    },
+    {
+      "check": "hf2p1_postsolve_membership_lookup_is_order_preserving",
+      "pass": true,
+      "detail": {
+        "missing_lookup_tokens": [],
+        "slow_vector_membership_hits": [],
+        "missing_ordered_iteration_tokens": [],
+        "proof": "Set mirrors replace only equality-based membership tests; ordered vectors remain every export iteration source"
+      }
+    },
+    {
+      "check": "hf2_exact_projection_input_proof",
+      "pass": true,
+      "detail": {
+        "proof": [
+          "non-CCS GenCapacityCCS is identically zero, hence omitted CCS dispatch and commitment columns are fixed-zero eliminations",
+          "omitted startup/shutdown variables have zero startup objective coefficient and no min-up/min-down occurrence",
+          "for every retained commitment sequence, Startup=max(delta,0) and Shutdown=max(-delta,0) reconstruct the eliminated equality",
+          "all scientific inputs, objective terms, chronology, reserve equations, tolerances, solver routes and publication gates remain unchanged"
+        ],
+        "case_stats": {
+          "TY2033_FULL8760_LDES_OBSERVED": {
+            "generators": 625,
+            "timepoints": 8760,
+            "ccs_generators": 96,
+            "non_ccs_generators": 529,
+            "startup_shutdown_active_generators": 96,
+            "startup_shutdown_omitted_generators": 529,
+            "fixed_zero_ccs_columns_omitted": 9268080,
+            "objective_neutral_startup_shutdown_columns_omitted": 9268080,
+            "total_hourly_columns_omitted": 18536160
+          },
+          "TY2033_FULL8760_LDES_OPTIMAL": {
+            "generators": 625,
+            "timepoints": 8760,
+            "ccs_generators": 96,
+            "non_ccs_generators": 529,
+            "startup_shutdown_active_generators": 96,
+            "startup_shutdown_omitted_generators": 529,
+            "fixed_zero_ccs_columns_omitted": 9268080,
+            "objective_neutral_startup_shutdown_columns_omitted": 9268080,
+            "total_hourly_columns_omitted": 18536160
+          },
+          "TY2033_FULL8760_OBSERVED": {
+            "generators": 371,
+            "timepoints": 8760,
+            "ccs_generators": 96,
+            "non_ccs_generators": 275,
+            "startup_shutdown_active_generators": 96,
+            "startup_shutdown_omitted_generators": 275,
+            "fixed_zero_ccs_columns_omitted": 4818000,
+            "objective_neutral_startup_shutdown_columns_omitted": 4818000,
+            "total_hourly_columns_omitted": 9636000
+          },
+          "TY2033_FULL8760_OPTIMAL": {
+            "generators": 371,
+            "timepoints": 8760,
+            "ccs_generators": 96,
+            "non_ccs_generators": 275,
+            "startup_shutdown_active_generators": 96,
+            "startup_shutdown_omitted_generators": 275,
+            "fixed_zero_ccs_columns_omitted": 4818000,
+            "objective_neutral_startup_shutdown_columns_omitted": 4818000,
+            "total_hourly_columns_omitted": 9636000
+          }
+        },
+        "errors": []
+      }
+    }
+  ],
+  "failed": []
+}

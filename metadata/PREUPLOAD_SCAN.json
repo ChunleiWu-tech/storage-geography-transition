@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "files_scanned": 4670,
+  "credential_signatures_found": 0,
+  "credential_like_archive_members_found": 0,
+  "largest_file_bytes": 59503759,
+  "source_bytes": 1436276804,
+  "all_copied_source_hashes_match": true,
+  "files_in_publication": 4374,
+  "source_bytes_in_publication": 1380562323,
+  "separate_journal_files": 296
+}

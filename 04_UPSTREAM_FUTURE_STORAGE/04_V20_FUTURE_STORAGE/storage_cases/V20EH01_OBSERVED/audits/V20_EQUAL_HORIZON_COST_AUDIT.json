@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "version": "V20_EQUAL_EVIDENCE_HORIZON_2030_HOLD_R1",
+  "scenario": "V20EH01_OBSERVED",
+  "source_scenario": "SL01_OBSERVED_STANDARDIZED",
+  "purpose": "Mandatory robustness test for asymmetric evidence horizon in long-run technology competition.",
+  "authoritative_lfp_source": "Cole, Ramasamy and Turan (2025), NREL/TP-6A40-93281, Appendix Table 2",
+  "doi": "10.2172/2583471",
+  "source_anchor_year": 2030,
+  "source_anchor_mid_2024usd_per_kwh": 279.0,
+  "cpi_u_2010": 218.056,
+  "cpi_u_2024": 313.689,
+  "deflator_2024_to_2010": 0.6951343528144117,
+  "model_hold_cost_2010usd_per_mw": 775769.9377408836,
+  "model_hold_fom_2010usd_per_mw_year": 31030.797509635344,
+  "changed_rows": 192,
+  "changed_build_years": [
+    2033,
+    2038,
+    2043,
+    2048,
+    2053,
+    2058
+  ],
+  "non_cost_input_drift": [],
+  "post2030_lfp_extrapolation_used": false,
+  "invented_vrfb_or_psh_learning_curve_used": false,
+  "doe_si2030_lcos_used_as_capex_scalar": false,
+  "claim_scope": "Sensitivity only. Technology-winner claims after 2030 are headline-eligible only if qualitatively robust to this equal-horizon pair."
+}

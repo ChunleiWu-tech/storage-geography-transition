@@ -1,0 +1,52 @@
+{
+  "version": "V17T2R6R9_HF4P1_SAFE_PARALLEL_REMAINING_LDES",
+  "status": "PASS",
+  "scope": "operational concurrency only; scientific Julia sources and exact solver routes unchanged",
+  "scientific_change": false,
+  "max_parallel_new_cases": 2,
+  "solver_threads_per_new_case": 10,
+  "checks": [
+    {
+      "check": "python_syntax",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "scientific_julia_sources_byte_unchanged",
+      "pass": true,
+      "detail": {
+        "model": "6170c01dbecad8169203ff1d830ef17aa99616e32a21d85ae2c6b2d05b899391",
+        "helper": "f8dad259f7793b9e21cfc9c700173b3453f6b6c817d4485057e33ecd183c77d7"
+      }
+    },
+    {
+      "check": "atomic_per_scenario_lease_and_wait_contract",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "heterogeneous_two_case_parallel_coordinator",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "current_optimal_case_not_touched_and_no_clean",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "parallel_launcher_preserves_current_process",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "hf4p1_patch_files_match_manifest",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "version": "ENERGY_PRESERVING_BOUNDED_REPDAY_1H_V1",
+  "source": "the current publication-calibrated four-hour case inputs",
+  "observed_hourly_data_used": false,
+  "full_8760_claim_supported": false,
+  "claim_scope": "representative-day temporal-discretization sensitivity only",
+  "method": "centered periodic within-block slope, shrunk to physical bounds; exact four-hour block-mean preservation",
+  "timeseries_count": 12,
+  "timepoint_count": 288,
+  "timepoint_duration_h": 1,
+  "timepoints_per_representative_day": 24,
+  "files": {
+    "loads.csv": {
+      "source_rows": 2304,
+      "hourly_rows": 9216,
+      "four_hour_block_count": 2304,
+      "nonflat_block_count": 2257,
+      "nonflat_block_share": 0.9796006944444444,
+      "maximum_block_mean_residual": 5.820766091346741e-11,
+      "minimum": 903.1614935668731,
+      "maximum": 252172.41706254994
+    },
+    "loads_new.csv": {
+      "source_rows": 2304,
+      "hourly_rows": 9216,
+      "four_hour_block_count": 2304,
+      "nonflat_block_count": 2257,
+      "nonflat_block_share": 0.9796006944444444,
+      "maximum_block_mean_residual": 2.9103830456733704e-11,
+      "minimum": 577.787586848236,
+      "maximum": 122298.68057152293
+    },
+    "variable_capacity_factors.csv": {
+      "source_rows": 8424,
+      "hourly_rows": 33696,
+      "four_hour_block_count": 8424,
+      "nonflat_block_count": 4903,
+      "nonflat_block_share": 0.5820275403608737,
+      "maximum_block_mean_residual": 2.220446049250313e-16,
+      "minimum": 0.0,
+      "maximum": 1.0
+    }
+  }
+}

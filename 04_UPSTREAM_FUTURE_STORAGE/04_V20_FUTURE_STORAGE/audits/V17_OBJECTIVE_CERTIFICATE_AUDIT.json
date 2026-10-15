@@ -1,0 +1,115 @@
+{
+  "summary": {
+    "version": "V17",
+    "checks": 21,
+    "passed": 21,
+    "all_pass": true
+  },
+  "checks": [
+    {
+      "check": "objbound_safe_read",
+      "pass": true,
+      "detail": "attribute absence cannot crash"
+    },
+    {
+      "check": "dual_objective_safe_read",
+      "pass": true,
+      "detail": "diagnostic read cannot crash"
+    },
+    {
+      "check": "native_certificate_present",
+      "pass": true,
+      "detail": "native solver certificate with positive-iteration and zero-iteration modes"
+    },
+    {
+      "check": "external_diagnostics_nonblocking",
+      "pass": true,
+      "detail": "ObjBound/dual diagnostics do not gate"
+    },
+    {
+      "check": "status_core_gate",
+      "pass": true,
+      "detail": "status and result availability"
+    },
+    {
+      "check": "presolve_safe_barrier_route",
+      "pass": true,
+      "detail": "zero BarIterCount is accepted only with OPTIMAL status and zero simplex iterations"
+    },
+    {
+      "check": "scale_consistency_independent",
+      "pass": true,
+      "detail": "native/scaled objective equality"
+    },
+    {
+      "check": "diagnostic_outputs",
+      "pass": true,
+      "detail": "traceable diagnostics"
+    },
+    {
+      "check": "runtime_native_certificate",
+      "pass": true,
+      "detail": "native status regression"
+    },
+    {
+      "check": "runtime_presolve_zero_iteration_safe",
+      "pass": true,
+      "detail": "normal presolve may solve before Barrier iterations"
+    },
+    {
+      "check": "runtime_dedicated_barrier_engine_probe",
+      "pass": true,
+      "detail": "separate probe verifies positive Barrier iterations"
+    },
+    {
+      "check": "runtime_direct_mode_interval_safe",
+      "pass": true,
+      "detail": "direct_model probe avoids unsupported ScalarAffineFunction-in-Interval"
+    },
+    {
+      "check": "runtime_bad_dual_nonblocking",
+      "pass": true,
+      "detail": "real SL00 failure mode covered"
+    },
+    {
+      "check": "runtime_optional_objbound",
+      "pass": true,
+      "detail": "ObjBound remains optional"
+    },
+    {
+      "check": "batch_checks_native_certificate",
+      "pass": true,
+      "detail": "release layer checks native certificate"
+    },
+    {
+      "check": "batch_allows_nonblocking_diagnostic_warning",
+      "pass": true,
+      "detail": "diagnostic mismatch cannot reject"
+    },
+    {
+      "check": "batch_checks_proof_source",
+      "pass": true,
+      "detail": "both proof modes retained"
+    },
+    {
+      "check": "preflight_checks_native_certificate",
+      "pass": true,
+      "detail": "release layer checks native certificate"
+    },
+    {
+      "check": "preflight_allows_nonblocking_diagnostic_warning",
+      "pass": true,
+      "detail": "diagnostic mismatch cannot reject"
+    },
+    {
+      "check": "preflight_checks_proof_source",
+      "pass": true,
+      "detail": "both proof modes retained"
+    },
+    {
+      "check": "no_external_certificate_mandatory",
+      "pass": true,
+      "detail": "no mandatory reconstructed objective certificate"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "V17T2R6R11_HF6_DUAL_START_BRIDGE_20260817",
+  "scientific_change": false,
+  "scope": [
+    "TY2033_FULL8760_OPTIMAL",
+    "TY2033_FULL8760_LDES_OPTIMAL"
+  ],
+  "files": [
+    {
+      "path": "base_model_v39/full8760_hf4_objective_continuation.jl",
+      "sha256": "AD23EA4316AA7A9B0CAF9DC1BF291B25B92A28FE3FE0FD52E5491A3E5A3714A8"
+    },
+    {
+      "path": "base_model_v39/cheer_power_storage_targetyear_v17t2r6_8760.jl",
+      "sha256": "5A8588FA9857D329399B7669C0752F6BA698A58D341F0D8539C7AE7EBC56A08E"
+    },
+    {
+      "path": "tools/run_targetyear_batch.py",
+      "sha256": "4D362EE8B8EDDA71416587FE02EA5EC6C4E1EB5F9F0AEEF1DB792ADB0A214B0B"
+    },
+    {
+      "path": "tools/run_hf6_optimized_pair_parallel.py",
+      "sha256": "BBEE13EB15642FE40E57F3EE867D15DF2832025257BDC3AAE030E03CBEDCBA80"
+    },
+    {
+      "path": "tools/check_v17t2r6r11_hf6_dual_start_bridge.py",
+      "sha256": "FD83FF5C0DF95B455EF2358C2D85133C334D5CD7A6B3CC34E0467BB3254A75AD"
+    },
+    {
+      "path": "RUN_V17T2R6R11_HF6_8760_OPTIMIZED_PAIR_2X15.bat",
+      "sha256": "B607CAC1587FDEA8DB7C68AB0F1F03E746B762F9E22C1D9E7E7DAC33B2F2CA1F"
+    },
+    {
+      "path": "CHECK_V17T2R6R11_HF6_8760_OPTIMIZED_PAIR.bat",
+      "sha256": "793E0A0C4667A3B7E2887723DDC72C15D792D68FE046E6230CA4C62984DA1622"
+    },
+    {
+      "path": "RELEASE_NOTES_V17T2R6R11_HF6_DUAL_START_BRIDGE.md",
+      "sha256": "2F08BB2FB5702561004742099DF5D29D09BB0D8F63B75EDAB18221CDF1076ACF"
+    }
+  ]
+}

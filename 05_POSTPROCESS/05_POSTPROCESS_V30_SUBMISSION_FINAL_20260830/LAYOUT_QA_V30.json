@@ -1,0 +1,15 @@
+{
+  "version": "V30_POSTPROCESS_SUBMISSION_20260830",
+  "status": "PASS",
+  "qa_date": "2026-08-30",
+  "scope": "synthetic layout-only rendering of Fig. 6, Fig. 7, Fig. S13 and Fig. S14",
+  "scientific_values_used": false,
+  "checks": [
+    "PDF, SVG and 600-dpi PNG emitted",
+    "titles and legends do not overlap",
+    "long FULL8760 labels are not clipped",
+    "panel labels and footnotes remain inside the 180-mm canvas",
+    "new figures inherit the byte-identical 0809 ne_style.py visual system"
+  ],
+  "synthetic_outputs_in_release": false
+}

@@ -1,0 +1,186 @@
+{
+  "summary": {
+    "version": "V17",
+    "julia_files_scanned": 13,
+    "checks": 35,
+    "passed": 35,
+    "all_pass": true
+  },
+  "checks": [
+    {
+      "check": "lexical:base_model_v39\\cheer_power_storage_v1.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:base_model_v39_hf4\\cheer_power_storage_hf4_projected.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\base_model_v39_hf4\\cheer_power_storage_targetyear_hf4_projected.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\docs\\baseline_reference\\cheer_power_storage_chronology_ldes_v2r1_frozen.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\docs\\baseline_reference\\cheer_power_storage_chronology_ldes_v2r4_solveronly_frozen.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\storage_runner\\check_v18r1_runtime.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\storage_runner\\run_future_correction_one.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:modules\\correction2033\\storage_runner\\run_future_correction_one_hf4_projected.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:storage_runner\\check_v17_runtime.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:storage_runner\\check_v17_source_load.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:storage_runner\\run_storage_one_solver_task.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "lexical:storage_runner\\run_storage_one_solver_task_hf4_projected.jl",
+      "pass": true,
+      "detail": "mode=code, unclosed_delimiters=[]"
+    },
+    {
+      "check": "no_top_level_only_declarations_inside_functions",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "grb_error_constant_is_top_level",
+      "pass": true,
+      "detail": "Gurobi 10005 constant precedes run_model"
+    },
+    {
+      "check": "production_source_load_probe",
+      "pass": true,
+      "detail": "real include/lowering smoke test"
+    },
+    {
+      "check": "four_cleanup_routes",
+      "pass": true,
+      "detail": "approved routes"
+    },
+    {
+      "check": "one_route_per_process",
+      "pass": true,
+      "detail": "no internal cascade"
+    },
+    {
+      "check": "result_count_guards",
+      "pass": true,
+      "detail": "safe result reads"
+    },
+    {
+      "check": "production_queries_before_modification",
+      "pass": true,
+      "detail": "capture stage-1 values first"
+    },
+    {
+      "check": "runtime_queries_before_modification",
+      "pass": true,
+      "detail": "runtime query discipline"
+    },
+    {
+      "check": "no_basis_or_generic_start",
+      "pass": true,
+      "detail": "no basis/DStart/generic API"
+    },
+    {
+      "check": "raw_pstart_present",
+      "pass": true,
+      "detail": "explicit C API"
+    },
+    {
+      "check": "pstart_after_modification",
+      "pass": true,
+      "detail": "start matches modified model"
+    },
+    {
+      "check": "pstart_not_serialized",
+      "pass": true,
+      "detail": "ephemeral only"
+    },
+    {
+      "check": "scaled_stage1",
+      "pass": true,
+      "detail": "scaled objective"
+    },
+    {
+      "check": "solver_native_certificate",
+      "pass": true,
+      "detail": "native certificate"
+    },
+    {
+      "check": "presolve_safe_zero_iteration",
+      "pass": true,
+      "detail": "presolve safe"
+    },
+    {
+      "check": "safe_external_diagnostics",
+      "pass": true,
+      "detail": "non-blocking"
+    },
+    {
+      "check": "runner_default_stage1_official",
+      "pass": true,
+      "detail": "formal default is the certified stage-1 release"
+    },
+    {
+      "check": "runtime_raw_pstart",
+      "pass": true,
+      "detail": "runtime route"
+    },
+    {
+      "check": "runtime_reset",
+      "pass": true,
+      "detail": "discard hidden state first"
+    },
+    {
+      "check": "pstart_readback_10005_nonblocking",
+      "pass": true,
+      "detail": "Gurobi 10.0.1 readback is diagnostic only"
+    },
+    {
+      "check": "runtime_barrier_probe",
+      "pass": true,
+      "detail": "dedicated engine probe"
+    },
+    {
+      "check": "direct_mode_interval_safe",
+      "pass": true,
+      "detail": "native separate rows"
+    }
+  ]
+}

@@ -1,0 +1,982 @@
+{
+  "version": "V17T2R5R4_OBSERVED_FEASIBLE_START_FULL_OPTIMAL_CONTINUATION_20260813",
+  "status": "PASS",
+  "errors": [],
+  "scientific_design": "single-target-year exact linked-SOC capacity-and-dispatch re-optimization",
+  "scenario_count": 8,
+  "pair_count": 4,
+  "prepared_cases_included": true,
+  "main_model_replaced": false,
+  "targetyear_equivalent_reduced_rank_reformulation": true,
+  "targetyear_legacy_energy_variable_projection": true,
+  "targetyear_exact_hourly_coordinate_reduction": true,
+  "targetyear_exact_hourly_coordinate_reduction_case": "TY2033_CHRONO_1H_OPTIMAL",
+  "targetyear_r4_observed_feasible_start_continuation": true,
+  "targetyear_r4_final_feasible_set_unchanged": true,
+  "targetyear_r4_other_seven_outputs_untouched": true,
+  "full_transition_path_claim_supported": false,
+  "full_8760_hour_claim_supported": false,
+  "strict_solver_native_optimality_required": true,
+  "julia_gurobi_solve_executed_in_build_environment": false,
+  "checks": {
+    "required::README_ZH.md": true,
+    "required::README_EN.md": true,
+    "required::VERSION_V17T2R5.txt": true,
+    "required::requirements_v17.txt": true,
+    "required::base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl": true,
+    "required::base_model_v39/storage_base_template_v17.zip": true,
+    "required::docs/baseline_reference/cheer_power_storage_chronology_ldes_v2r1_frozen.jl": true,
+    "required::docs/baseline_reference/cheer_power_storage_chronology_ldes_v2r4_solveronly_frozen.jl": true,
+    "required::storage_runner/scenarios_targetyear_linked.csv": true,
+    "required::storage_runner/run_targetyear_one.jl": true,
+    "required::storage_runner/check_v17t2r5_runtime.jl": true,
+    "required::tools/prepare_targetyear_cases.py": true,
+    "required::tools/apply_nlr_2025_battery_costs.py": true,
+    "required::tools/apply_ldes_technology_portfolio.py": true,
+    "required::tools/reconstruct_one_hour_repdays.py": true,
+    "required::tools/validate_targetyear_case.py": true,
+    "required::tools/audit_targetyear_pair_identity.py": true,
+    "required::tools/run_targetyear_batch.py": true,
+    "required::tools/build_targetyear_summary.py": true,
+    "required::tools/audit_julia_lexical_v17t2r5.py": true,
+    "required::tools/check_v17t2r5r2_projection.py": true,
+    "required::CHECK_V17T2R5_PACKAGE.bat": true,
+    "required::CHECK_V17T2R5_RUNTIME.bat": true,
+    "required::RUN_V17T2R5_PREPARE_TARGETYEAR_CASES.bat": true,
+    "required::RUN_V17T2R5_2028_PAIR_1x10.bat": true,
+    "required::RUN_V17T2R5_2033_PAIR_1x10.bat": true,
+    "required::RUN_V17T2R5_2033_LDES_PAIR_1x10.bat": true,
+    "required::RUN_V17T2R5_2033_1H_PAIR_1x10.bat": true,
+    "required::RUN_V17T2R5_ALL_8_1x10.bat": true,
+    "required::RUN_V17T2R5_CLEAN_REBUILD_AND_RUN_ALL_8_1x10.bat": true,
+    "required::CHECK_PUBLICATION_SOURCE_GATE.bat": true,
+    "required::tools/check_publication_source_gate.py": true,
+    "required::tools/publication_source_contract.py": true,
+    "required::tools/write_publication_result_lineage.py": true,
+    "required::BUILD_V17T2R5_SUMMARY.bat": true,
+    "required::RUN_V17T2R5R2_2033_1H_OPTIMAL_ONLY.bat": true,
+    "required::VERSION_V17T2R5R2.txt": true,
+    "required::README_R2_PATCH_ZH.txt": true,
+    "required::docs/V17T2R5R2_EQUIVALENT_PROJECTED_LEGACY_ENERGY.md": true,
+    "required::CHECK_V17T2R5R2_PATCH.bat": true,
+    "required::RUN_V17T2R5R3_2033_1H_OPTIMAL_ONLY.bat": true,
+    "required::CHECK_V17T2R5R3_PATCH.bat": true,
+    "required::VERSION_V17T2R5R3.txt": true,
+    "required::README_R3_PATCH_ZH.md": true,
+    "required::docs/V17T2R5R3_EXACT_HOURLY_COORDINATE_REDUCTION.md": true,
+    "required::tools/check_v17t2r5r3_projection.py": true,
+    "required::RUN_V17T2R5R4_2033_1H_OPTIMAL_ONLY.bat": true,
+    "required::CHECK_V17T2R5R4_PATCH.bat": true,
+    "required::VERSION_V17T2R5R4.txt": true,
+    "required::README_R4_PATCH_ZH.md": true,
+    "required::docs/V17T2R5R4_OBSERVED_FEASIBLE_START_CONTINUATION.md": true,
+    "required::tools/check_v17t2r5r4_continuation.py": true,
+    "required::PATCH_MANIFEST_SHA256_R4.json": true,
+    "required::RUN_V17T2R5R5_2033_1H_OPTIMAL_ONLY.bat": true,
+    "required::CHECK_V17T2R5R5_PATCH.bat": true,
+    "required::VERSION_V17T2R5R5.txt": true,
+    "required::README_R5_PATCH_ZH.md": true,
+    "required::docs/V17T2R5R5_PRIMAL_DUAL_SUPPORTED_OBJECTIVE_CONTINUATION.md": true,
+    "required::tools/check_v17t2r5r5_continuation.py": true,
+    "required::PATCH_MANIFEST_SHA256_R5.json": true,
+    "python_cache_items": [],
+    "legacy_root_files": [],
+    "python_syntax": [
+      {
+        "file": "tools/apply_existing_storage_to_case.py",
+        "pass": true
+      },
+      {
+        "file": "tools/apply_ldes_technology_portfolio.py",
+        "pass": true
+      },
+      {
+        "file": "tools/apply_nlr_2025_battery_costs.py",
+        "pass": true
+      },
+      {
+        "file": "tools/apply_spatial_legacy.py",
+        "pass": true
+      },
+      {
+        "file": "tools/apply_vre_cf_to_case.py",
+        "pass": true
+      },
+      {
+        "file": "tools/audit_julia_lexical_v17t2r5.py",
+        "pass": true
+      },
+      {
+        "file": "tools/audit_legacy_storage_provenance.py",
+        "pass": true
+      },
+      {
+        "file": "tools/audit_targetyear_pair_identity.py",
+        "pass": true
+      },
+      {
+        "file": "tools/build_nea_storage_inputs.py",
+        "pass": true
+      },
+      {
+        "file": "tools/build_publication_vre_cf.py",
+        "pass": true
+      },
+      {
+        "file": "tools/build_storage_base_case.py",
+        "pass": true
+      },
+      {
+        "file": "tools/build_targetyear_summary.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_clean_package_manifest.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_publication_source_gate.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_v17t2r5_package.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_v17t2r5r2_projection.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_v17t2r5r3_projection.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_v17t2r5r4_continuation.py",
+        "pass": true
+      },
+      {
+        "file": "tools/check_v17t2r5r5_continuation.py",
+        "pass": true
+      },
+      {
+        "file": "tools/ingest_vre_cf.py",
+        "pass": true
+      },
+      {
+        "file": "tools/prepare_targetyear_cases.py",
+        "pass": true
+      },
+      {
+        "file": "tools/publication_source_common.py",
+        "pass": true
+      },
+      {
+        "file": "tools/publication_source_contract.py",
+        "pass": true
+      },
+      {
+        "file": "tools/publication_source_gate.py",
+        "pass": true
+      },
+      {
+        "file": "tools/rebuild_publication_source_fingerprint.py",
+        "pass": true
+      },
+      {
+        "file": "tools/reconstruct_one_hour_repdays.py",
+        "pass": true
+      },
+      {
+        "file": "tools/run_targetyear_batch.py",
+        "pass": true
+      },
+      {
+        "file": "tools/validate_storage_inputs.py",
+        "pass": true
+      },
+      {
+        "file": "tools/validate_targetyear_case.py",
+        "pass": true
+      },
+      {
+        "file": "tools/write_publication_result_lineage.py",
+        "pass": true
+      }
+    ],
+    "model_lineage": {
+      "frozen_v17t2r1_sha256": "c9499d786a49a6de46da4884a8b8597e2e5fa6dafc02322d864a7a8d0bac5052",
+      "frozen_v17t2r4_solveronly_sha256": "1106204f5f41cf138e1b20b10a5b2ea66443d32889b978c746731067a6e71d71",
+      "v17t2r5_targetyear_model_sha256": "fffcca77edefe882bd8187974a8aec493f9d0aae37f8cffc1af9b5bb86d9ec67"
+    },
+    "base_template_zip": {
+      "pass": true,
+      "bad_member": null,
+      "members": 38
+    },
+    "scenario_count": 8,
+    "model_token::REPRESENTATIVE_TIMEPOINT_COUNTS_ALLOWED = (72, 288)": true,
+    "model_token::technology_portfolio_discrete": true,
+    "model_token::LDES_PSH_Shared_Provincial_Resource_Ceiling": true,
+    "model_token::TARGET_YEAR_OPERATION_PERIOD in (2028, 2033)": true,
+    "model_token::targetyear_deterministic_concurrent": true,
+    "model_token::method = 4": true,
+    "model_token::V17T2R5_PRIMARY_TIME_LIMIT_SECONDS": true,
+    "model_token::targetyear_homogeneous_dual_crossover": true,
+    "model_token::crossover = 2": true,
+    "model_token::dual_simplex": true,
+    "model_token::hard_deterministic_concurrent_simplex": true,
+    "model_token::V17T2R5R2_equivalent_projected_legacy_allocation_v2": true,
+    "model_token::V17T2R5R3_equivalent_hourly_coordinate_projection_v1": true,
+    "model_token::R3_HOURLY_COORDINATE_PROJECTION_ACTIVE": true,
+    "model_token::CCS_GEN_TPS = R3_HOURLY_COORDINATE_PROJECTION_ACTIVE ?": true,
+    "model_token::STARTUP_SHUTDOWN_GENS = R3_HOURLY_COORDINATE_PROJECTION_ACTIVE ?": true,
+    "model_token:::total_omitted_hourly_columns": true,
+    "model_token::legacy_national_energy_identity_pass": true,
+    "model_token::JuMP.set_upper_bound(power_var, min(current_power_ub, power_cap_mw))": true,
+    "model_token::LEGACY_ENERGY_VARIABLE_PROJECTION_ACTIVE": true,
+    "model_token::STORAGE_ENERGY_VARIABLE_BLD_YRS": true,
+    "model_token::function storage_energy_build(g, bld_yr)": true,
+    "model_token::crossover_basis = V17T2R5_CROSSOVER_BASIS": true,
+    "model_token::bar_homogeneous = 1": true,
+    "model_token::V17T2R5_FALLBACK_TIME_LIMIT_SECONDS": true,
+    "model_token:::target_year_static_reoptimization => [true]": true,
+    "model_token:::target_year_transition_path_claim_supported => [false]": true,
+    "model_token::r4_observed_seed_primal_continuation": true,
+    "model_token::r4_seed_source_scenario = \"TY2033_CHRONO_1H_OBSERVED\"": true,
+    "model_token::r4_seed_source_pair_identity_pass": true,
+    "model_token::r4_seed_gurobi_objval_gate_pass": true,
+    "model_token::r4_seed_objective_scale_gate_pass": true,
+    "model_token::r4_final_bounds_restored": true,
+    "model_token::r4_seed_full_pstart_max_bound_violation": true,
+    "model_token::_v17_apply_raw_pstart!(mod, r4_pstart_vars, r4_pstart_values)": true,
+    "model_token::gurobi_V17T2R5R4_full_optimal_primal_simplex_after_strict_observed_seed": true,
+    "model_token::r5_primal_dual_supported_objective_continuation": true,
+    "model_token::_v17_raw_set_double_array!(grb, \"PStart\", primal_start)": true,
+    "model_token::_v17_raw_set_double_array!(grb, \"DStart\", dual_start)": true,
+    "model_token::r5_support_objective =": true,
+    "model_token::apply_r5_bridge_profile!(mod)": true,
+    "model_token::V17T2R5R5_OBJECTIVE_HOMOTOPY_LEVELS": true,
+    "model_token::r5_bridge_basis_available": true,
+    "model_token::r5_final_max_objective_coefficient_error == 0.0": true,
+    "model_token::gurobi_V17T2R5R5_full_optimal_primal_simplex_after_primal_dual_supported_objective_continuation": true,
+    "model_redundant_row_absent::Legacy_Storage_National_Energy_Closure": true,
+    "model_redundant_row_absent::Legacy_Storage_Zone_Deployment_Envelope": true,
+    "batch_token::\"auto\": ROUTES": true,
+    "batch_token::\"primary\": ROUTES[:1]": true,
+    "batch_token::\"fallback\": ROUTES[1:]": true,
+    "batch_token::\"one_hour_robust\": ONE_H_ROUTES": true,
+    "batch_token::\"dual_rescue\": ONE_H_ROUTES[1:2]": true,
+    "batch_token::\"simplex_rescue\": ONE_H_ROUTES[2:]": true,
+    "batch_token::\"projected\": PROJECTED_ROUTE": true,
+    "batch_token::07_targetyear_projected_scaled_barrier": true,
+    "batch_token::\"r3_reduced\": R3_REDUCED_ROUTE": true,
+    "batch_token::08_targetyear_r3_hourly_reduced_scaled_barrier": true,
+    "batch_token::09_targetyear_r3_hourly_reduced_dual_simplex": true,
+    "batch_token::\"r4_continuation\": R4_CONTINUATION_ROUTE": true,
+    "batch_token::10_targetyear_r4_observed_seed_primal_continuation": true,
+    "batch_token::\"r5_continuation\": R5_CONTINUATION_ROUTE": true,
+    "batch_token::11_targetyear_r5_primal_dual_supported_objective_continuation": true,
+    "batch_token::r5 homotopy schedule did not complete": true,
+    "batch_token::r5 final objective coefficients were not restored exactly": true,
+    "batch_token::r4 full PStart violates a restored final-model bound": true,
+    "batch_token::legacy_reallocation_formulation_version": true,
+    "batch_token::gurobi_dual_simplex_optimal_status": true,
+    "batch_token::gurobi_hard_deterministic_concurrent_simplex_optimal_status": true,
+    "batch_token::fresh Julia process": true,
+    "batch_token::preexisting_official_success_skipped": true,
+    "batch_token::stage1_termination_status\") == \"OPTIMAL\"": true,
+    "batch_token::TIME_LIMIT incumbents or intermediate feasible bases are never publication outputs": true,
+    "batch_token::failed_diagnostics": true,
+    "julia_lexical_audit_return_code": 0,
+    "prepared_case_validation": [
+      {
+        "scenario": "TY2028_CHRONO_OBSERVED",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2028
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 72,
+          "time_resolution_h": 4,
+          "timeseries_periods": [
+            2028
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2028
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2028
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2028
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2028
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2028
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2028
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2028
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2028
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2028
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2028
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "observed_standardized",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "nlr_2025_battery_cost_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 4
+        }
+      },
+      {
+        "scenario": "TY2028_CHRONO_OPTIMAL",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2028
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 72,
+          "time_resolution_h": 4,
+          "timeseries_periods": [
+            2028
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2028
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2028
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2028
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2028
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2028
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2028
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2028
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2028
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2028
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2028
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "optimized_reallocation",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "nlr_2025_battery_cost_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 4
+        }
+      },
+      {
+        "scenario": "TY2033_CHRONO_OBSERVED",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2033
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 72,
+          "time_resolution_h": 4,
+          "timeseries_periods": [
+            2033
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2033
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2033
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2033
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2033
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2033
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2033
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "observed_standardized",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "nlr_2025_battery_cost_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 4
+        }
+      },
+      {
+        "scenario": "TY2033_CHRONO_OPTIMAL",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2033
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 72,
+          "time_resolution_h": 4,
+          "timeseries_periods": [
+            2033
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2033
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2033
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2033
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2033
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2033
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2033
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "optimized_reallocation",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "nlr_2025_battery_cost_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 4
+        }
+      },
+      {
+        "scenario": "TY2033_CHRONO_LDES_OBSERVED",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2033
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 72,
+          "time_resolution_h": 4,
+          "timeseries_periods": [
+            2033
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2033
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2033
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2033
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2033
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2033
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2033
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "observed_standardized",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "ldes_portfolio_techs": [
+            "LDES_CAES_100h",
+            "LDES_CAES_10h",
+            "LDES_CAES_24h",
+            "LDES_H2_100h",
+            "LDES_PSH_10h",
+            "LDES_PSH_24h",
+            "LDES_VRFB_10h",
+            "LDES_VRFB_24h"
+          ],
+          "nlr_2025_battery_cost_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 4
+        }
+      },
+      {
+        "scenario": "TY2033_CHRONO_LDES_OPTIMAL",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2033
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 72,
+          "time_resolution_h": 4,
+          "timeseries_periods": [
+            2033
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2033
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2033
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2033
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2033
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2033
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2033
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "optimized_reallocation",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "ldes_portfolio_techs": [
+            "LDES_CAES_100h",
+            "LDES_CAES_10h",
+            "LDES_CAES_24h",
+            "LDES_H2_100h",
+            "LDES_PSH_10h",
+            "LDES_PSH_24h",
+            "LDES_VRFB_10h",
+            "LDES_VRFB_24h"
+          ],
+          "nlr_2025_battery_cost_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 4
+        }
+      },
+      {
+        "scenario": "TY2033_CHRONO_1H_OBSERVED",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2033
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 288,
+          "time_resolution_h": 1,
+          "timeseries_periods": [
+            2033
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2033
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2033
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2033
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2033
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2033
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2033
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "observed_standardized",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "nlr_2025_battery_cost_audit_present": true,
+          "one_hour_reconstruction_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 1
+        }
+      },
+      {
+        "scenario": "TY2033_CHRONO_1H_OPTIMAL",
+        "status": "PASS",
+        "errors": [],
+        "checks": {
+          "required_periods.csv": true,
+          "required_timeseries.csv": true,
+          "required_timepoints.csv": true,
+          "required_gen_info.csv": true,
+          "required_gen_build_costs.csv": true,
+          "required_gen_build_predetermined.csv": true,
+          "required_legacy_storage_policy.csv": true,
+          "required_loads.csv": true,
+          "required_variable_capacity_factors.csv": true,
+          "required_hydro_timeseries.csv": true,
+          "required_carbon_policies.csv": true,
+          "required_capacity_plans.csv": true,
+          "required_zone_coincident_peak_demand.csv": true,
+          "periods": [
+            2023,
+            2033
+          ],
+          "timeseries_rows": 12,
+          "timepoint_rows": 288,
+          "time_resolution_h": 1,
+          "timeseries_periods": [
+            2033
+          ],
+          "representative_days_per_year": 365.0,
+          "future_build_vintages": [
+            2033
+          ],
+          "build_tx_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "capacity_plans.csv_periods": [
+            2023,
+            2033
+          ],
+          "carbon_policies.csv_periods": [
+            2023,
+            2033
+          ],
+          "co2_injection_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_cost.csv_periods": [
+            2023,
+            2033
+          ],
+          "fuel_supply_curves.csv_periods": [
+            2023,
+            2033
+          ],
+          "gen_ccs_energy_load.csv_periods": [
+            2023,
+            2033
+          ],
+          "total_capacity_limits.csv_periods": [
+            2023,
+            2033
+          ],
+          "zone_coincident_peak_demand.csv_periods": [
+            2023,
+            2033
+          ],
+          "legacy_policy_rows": 32,
+          "legacy_mode": "optimized_reallocation",
+          "legacy_power_target_mw": 135930.0,
+          "legacy_energy_target_mwh": 351120.0,
+          "legacy_standardized_duration_h": 2.583094239682189,
+          "nlr_2025_battery_cost_audit_present": true,
+          "one_hour_reconstruction_audit_present": true
+        },
+        "scope": {
+          "design": "single_target_year_capacity_and_dispatch_reoptimization",
+          "full_transition_path_claim_supported": false,
+          "full_8760_hour_claim_supported": false,
+          "endogenous_pre_target_builds_carried_in": false,
+          "representative_time_resolution_h": 1
+        }
+      }
+    ],
+    "pair_identity_audit_status": "PASS",
+    "manifest_file_count": 583
+  }
+}

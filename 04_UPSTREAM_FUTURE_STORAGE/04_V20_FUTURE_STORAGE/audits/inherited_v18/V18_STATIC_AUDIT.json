@@ -1,0 +1,433 @@
+{
+  "status": "PASS",
+  "version": "V18_STATIC_SCIENCE_AUDIT_R3",
+  "phase": "all",
+  "checks_total": 23,
+  "checks_passed": 23,
+  "portfolio_sha256": "d4b3d736304e84ae71b926db0325244af439a1505bbd4a9194c14cb1a291b8f0",
+  "pnnl_extract_sha256": "3fa9fc8ffae7fa0fa70250f0724f8088c9bdea18d2d0b7e3b9d3943f70998170",
+  "nrel_4h_table_sha256": "a69f36e15e5d27be988a9b3f43e6703d3251aea4cdd3f92ff12b93d48c32a7b6",
+  "julia_sha256": "1469b3168e5040486b091732bc58782d69501f014d5579bc1a638a920ec99eab",
+  "checks": [
+    {
+      "check": "portfolio_12_unique_candidates",
+      "pass": true,
+      "detail": {
+        "rows": 12,
+        "unique": 12
+      }
+    },
+    {
+      "check": "portfolio_has_required_families",
+      "pass": true,
+      "detail": [
+        "battery",
+        "caes",
+        "flow",
+        "hydrogen",
+        "psh"
+      ]
+    },
+    {
+      "check": "headline_vs_pressure_test_partition",
+      "pass": true,
+      "detail": {
+        "evidence_bounded": 7,
+        "pressure_test_only": 5
+      }
+    },
+    {
+      "check": "caes_h2_pressure_test_only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "psh_evidence_bounded_shared_ceiling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_unsupported_2035_rows_in_pnnl_extract",
+      "pass": true,
+      "detail": [
+        2021,
+        2023,
+        2030
+      ]
+    },
+    {
+      "check": "pnnl_candidate_source_years_exact",
+      "pass": true,
+      "detail": {
+        "V18_LFP_4h": [
+          2023,
+          2030
+        ],
+        "V18_LFP_8h": [
+          2023,
+          2030
+        ],
+        "V18_LFP_10h": [
+          2023,
+          2030
+        ],
+        "V18_VRFB_10h": [
+          2023,
+          2030
+        ],
+        "V18_VRFB_24h": [
+          2023,
+          2030
+        ],
+        "V18_CAES_10h": [
+          2023,
+          2030
+        ],
+        "V18_CAES_24h": [
+          2023,
+          2030
+        ],
+        "V18_CAES_100h": [
+          2023,
+          2030
+        ],
+        "V18_H2_24h": [
+          2021,
+          2030
+        ],
+        "V18_H2_100h": [
+          2021,
+          2030
+        ],
+        "V18_PSH_10h": [
+          2023,
+          2030
+        ],
+        "V18_PSH_24h": [
+          2023,
+          2030
+        ]
+      }
+    },
+    {
+      "check": "portfolio_parameters_trace_to_pnnl_extract",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "nrel_2025_4h_table2_selected_years_exact",
+      "pass": true,
+      "detail": {
+        "2024": {
+          "expected": [
+            334,
+            334,
+            334
+          ],
+          "got": [
+            334,
+            334,
+            334
+          ]
+        },
+        "2028": {
+          "expected": [
+            231,
+            293,
+            360
+          ],
+          "got": [
+            231,
+            293,
+            360
+          ]
+        },
+        "2033": {
+          "expected": [
+            171,
+            257,
+            345
+          ],
+          "got": [
+            171,
+            257,
+            345
+          ]
+        },
+        "2038": {
+          "expected": [
+            139,
+            230,
+            333
+          ],
+          "got": [
+            139,
+            230,
+            333
+          ]
+        },
+        "2043": {
+          "expected": [
+            126,
+            209,
+            322
+          ],
+          "got": [
+            126,
+            209,
+            322
+          ]
+        },
+        "2048": {
+          "expected": [
+            113,
+            187,
+            312
+          ],
+          "got": [
+            113,
+            187,
+            312
+          ]
+        },
+        "2053": {
+          "expected": [
+            104,
+            172,
+            304
+          ],
+          "got": [
+            104,
+            172,
+            304
+          ]
+        },
+        "2058": {
+          "expected": [
+            97,
+            161,
+            299
+          ],
+          "got": [
+            97,
+            161,
+            299
+          ]
+        },
+        "2060": {
+          "expected": [
+            94,
+            157,
+            297
+          ],
+          "got": [
+            94,
+            157,
+            297
+          ]
+        }
+      }
+    },
+    {
+      "check": "v18_psh_shared_ceiling_empty_safe",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all_16_master_scenarios_v18_evidence_bounded",
+      "pass": true,
+      "detail": {
+        "rows": 16
+      }
+    },
+    {
+      "check": "all_16_master_scenarios_monthly_linked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "julia_contains_v18_science_guards",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "julia_default_portfolio_evidence_bounded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "julia_default_chronology_monthly_linked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "linked_month_ldes_planning_claim_explicitly_enabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "full_chronological_claim_explicitly_disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "multiweather_claim_explicitly_disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "solve_status_exports_v18_runtime_semantics",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "official_batch_gate_certifies_v18_runtime_semantics",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "non_lfp_post2030_freeze_not_extrapolation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "lfp_uses_nrel_4h_trajectory_and_pnnl_duration_ratio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all_official_prepared_cases_v18_ready",
+      "pass": true,
+      "detail": [
+        [
+          "SL00_OBSERVED_ACTUAL",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL01_OBSERVED_STANDARDIZED",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL02_OPTIMAL_REALLOCATION",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL03_NO_LEGACY",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL04_RULE_LOAD",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL05_RULE_VRE",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL06_TX_FIXED_OBSERVED",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL07_TX_FIXED_OPTIMAL",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL08_PH_CONSERVATIVE_OBSERVED",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL09_PH_CONSERVATIVE_OPTIMAL",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL10_CARBON_TIGHT_OBSERVED",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL11_CARBON_TIGHT_OPTIMAL",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL12_COST_LOW_OBSERVED",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL13_COST_LOW_OPTIMAL",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL14_COST_HIGH_OBSERVED",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ],
+        [
+          "SL15_COST_HIGH_OPTIMAL",
+          true,
+          {
+            "v18_rows": 382,
+            "psh_resource_rows": 31
+          }
+        ]
+      ]
+    }
+  ]
+}

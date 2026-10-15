@@ -1,0 +1,107 @@
+{
+  "version": "V17T2R5",
+  "status": "PASS",
+  "julia_runtime_used": false,
+  "checks": [
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "balanced comments, literals and delimiters"
+    },
+    {
+      "file": "storage_runner\\run_targetyear_one.jl",
+      "pass": true,
+      "detail": "balanced comments, literals and delimiters"
+    },
+    {
+      "file": "storage_runner\\check_v17t2r5_runtime.jl",
+      "pass": true,
+      "detail": "balanced comments, literals and delimiters"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: NUMERICAL_STABILITY_VERSION = \"V17T2R5_targetyear_exact_linked_reoptimization_stage1_official_release_json_safe\""
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: REPRESENTATIVE_TIMEPOINT_COUNTS_ALLOWED = (72, 288)"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: targetyear_deterministic_concurrent"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: targetyear_homogeneous_dual_crossover"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: CrossoverBasis"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: TARGET_YEAR_OPERATION_PERIOD in (2028, 2033)"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: @variable(mod, InterdayStateOfCharge"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: Link_Interperiod_State_Of_Charge"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: technology_portfolio_discrete"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: LDES_PSH_Shared_Provincial_Resource_Ceiling"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: storage_chronology_audit.csv"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: ldes_proxy_build.csv"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: target_year_static_reoptimization"
+    },
+    {
+      "file": "base_model_v39\\cheer_power_storage_targetyear_v17t2r5.jl",
+      "pass": true,
+      "detail": "required token: target_year_transition_path_claim_supported"
+    },
+    {
+      "file": "storage_runner\\run_targetyear_one.jl",
+      "pass": true,
+      "detail": "required runner token: run_model(case_dir"
+    },
+    {
+      "file": "storage_runner\\run_targetyear_one.jl",
+      "pass": true,
+      "detail": "required runner token: storage_chronology_mode = String(r.storage_chronology_mode)"
+    },
+    {
+      "file": "storage_runner\\run_targetyear_one.jl",
+      "pass": true,
+      "detail": "required runner token: not full 8760 chronology"
+    }
+  ]
+}

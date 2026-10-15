@@ -1,0 +1,6 @@
+V17T2R6R24P3_HF18P2_POSTSOLVE_COMPLEMENTARITY_RECOVERY_20260830
+scientific_inputs_changed=false
+scientific_model_changed=false
+resolve_performed=false
+recovery_case=TY2033_FULL8760_OBSERVED
+protected_success_cases=3

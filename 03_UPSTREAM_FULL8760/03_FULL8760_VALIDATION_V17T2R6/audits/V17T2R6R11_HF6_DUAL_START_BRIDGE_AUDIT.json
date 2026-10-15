@@ -1,0 +1,22 @@
+{
+  "version": "V17T2R6R11_HF6_DUAL_START_BRIDGE",
+  "status": "PASS",
+  "scientific_change": false,
+  "bridge": {
+    "method": "dual simplex (1)",
+    "warm_start": "DStart only",
+    "lpwarmstart": 1,
+    "presolve": 0,
+    "crossover": 0,
+    "pstart_submitted": false
+  },
+  "checked_files": [
+    "base_model_v39\\full8760_hf4_objective_continuation.jl",
+    "base_model_v39\\cheer_power_storage_targetyear_v17t2r6_8760.jl",
+    "tools\\run_targetyear_batch.py",
+    "tools\\run_hf6_optimized_pair_parallel.py",
+    "RUN_V17T2R6R11_HF6_8760_OPTIMIZED_PAIR_2X15.bat",
+    "HF6_PATCH_MANIFEST_SHA256.json"
+  ],
+  "errors": []
+}

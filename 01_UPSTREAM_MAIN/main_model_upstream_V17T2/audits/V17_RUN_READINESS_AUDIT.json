@@ -1,0 +1,139 @@
+{
+  "version": "V17",
+  "python": "/opt/pyvenv/bin/python",
+  "checks": 26,
+  "passed": 26,
+  "all_pass": true,
+  "details": [
+    {
+      "check": "exists:base_model_v39/cheer_power_storage_v1.jl",
+      "pass": true,
+      "detail": "base_model_v39/cheer_power_storage_v1.jl"
+    },
+    {
+      "check": "exists:base_model_v39/storage_base_template_v17.zip",
+      "pass": true,
+      "detail": "base_model_v39/storage_base_template_v17.zip"
+    },
+    {
+      "check": "exists:storage_runner/run_storage_one_solver_task.jl",
+      "pass": true,
+      "detail": "storage_runner/run_storage_one_solver_task.jl"
+    },
+    {
+      "check": "exists:storage_runner/check_v17_runtime.jl",
+      "pass": true,
+      "detail": "storage_runner/check_v17_runtime.jl"
+    },
+    {
+      "check": "exists:storage_runner/scenarios_storage_master.csv",
+      "pass": true,
+      "detail": "storage_runner/scenarios_storage_master.csv"
+    },
+    {
+      "check": "exists:tools/run_official_batch.py",
+      "pass": true,
+      "detail": "tools/run_official_batch.py"
+    },
+    {
+      "check": "exists:tools/prepare_storage_cases.py",
+      "pass": true,
+      "detail": "tools/prepare_storage_cases.py"
+    },
+    {
+      "check": "exists:tools/build_storage_base_case.py",
+      "pass": true,
+      "detail": "tools/build_storage_base_case.py"
+    },
+    {
+      "check": "model:profile == \"scaled_barrier\"",
+      "pass": true,
+      "detail": "profile == \"scaled_barrier\""
+    },
+    {
+      "check": "model:crossover = 0",
+      "pass": true,
+      "detail": "crossover = 0"
+    },
+    {
+      "check": "model:cleanup_profile=\"stage1_official_release\"",
+      "pass": true,
+      "detail": "cleanup_profile=\"stage1_official_release\""
+    },
+    {
+      "check": "model:publication_solution_source = \"stage1_solver_certified_economic_optimum\"",
+      "pass": true,
+      "detail": "publication_solution_source = \"stage1_solver_certified_economic_optimum\""
+    },
+    {
+      "check": "model:gross_dispatch_operational_interpretation_allowed = false",
+      "pass": true,
+      "detail": "gross_dispatch_operational_interpretation_allowed = false"
+    },
+    {
+      "check": "model:sparse_face_diagnostic_primal_pstart",
+      "pass": true,
+      "detail": "sparse_face_diagnostic_primal_pstart"
+    },
+    {
+      "check": "model:Gurobi.GRBsetdblattrarray",
+      "pass": true,
+      "detail": "Gurobi.GRBsetdblattrarray"
+    },
+    {
+      "check": "model:Gurobi.GRBreset",
+      "pass": true,
+      "detail": "Gurobi.GRBreset"
+    },
+    {
+      "check": "model:_write_json_safe",
+      "pass": true,
+      "detail": "_write_json_safe"
+    },
+    {
+      "check": "model:stage1_dual_objective_diagnostic_only",
+      "pass": true,
+      "detail": "stage1_dual_objective_diagnostic_only"
+    },
+    {
+      "check": "model:fresh_julia_process_per_attempt",
+      "pass": true,
+      "detail": "fresh_julia_process_per_attempt"
+    },
+    {
+      "check": "forbidden:VariableBasisStatus",
+      "pass": true,
+      "detail": "VariableBasisStatus"
+    },
+    {
+      "check": "forbidden:ConstraintBasisStatus",
+      "pass": true,
+      "detail": "ConstraintBasisStatus"
+    },
+    {
+      "check": "forbidden:\"CrossoverBasis\",",
+      "pass": true,
+      "detail": "\"CrossoverBasis\","
+    },
+    {
+      "check": "forbidden:\"DStart\",",
+      "pass": true,
+      "detail": "\"DStart\","
+    },
+    {
+      "check": "forbidden:set_start_value(",
+      "pass": true,
+      "detail": "set_start_value("
+    },
+    {
+      "check": "official_scenario_count",
+      "pass": true,
+      "detail": "16"
+    },
+    {
+      "check": "no_cdr_official",
+      "pass": true,
+      "detail": "no-CDR"
+    }
+  ]
+}

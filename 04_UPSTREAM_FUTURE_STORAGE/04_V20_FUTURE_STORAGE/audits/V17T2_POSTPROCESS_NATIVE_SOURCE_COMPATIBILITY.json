@@ -1,0 +1,99 @@
+{
+  "version": "V17T2",
+  "scope": "postprocess native-proof-source compatibility against the 15 successful V17T1 rows, including SL13 hard homogeneous barrier with crossover",
+  "checks": 15,
+  "passed": 15,
+  "all_pass": true,
+  "rows": [
+    {
+      "scenario": "SL00_OBSERVED_ACTUAL",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL01_OBSERVED_STANDARDIZED",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL02_OPTIMAL_REALLOCATION",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL03_NO_LEGACY",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL04_RULE_LOAD",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL05_RULE_VRE",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL06_TX_FIXED_OBSERVED",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL07_TX_FIXED_OPTIMAL",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL08_PH_CONSERVATIVE_OBSERVED",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL09_PH_CONSERVATIVE_OPTIMAL",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL11_CARBON_TIGHT_OPTIMAL",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL12_COST_LOW_OBSERVED",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL13_COST_LOW_OPTIMAL",
+      "proof_source": "gurobi_hard_homogeneous_barrier_crossover_optimal_status",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL14_COST_HIGH_OBSERVED",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "scenario": "SL15_COST_HIGH_OPTIMAL",
+      "proof_source": "gurobi_barrier_optimal_status_barconvtol_no_crossover",
+      "pass": true,
+      "failures": []
+    }
+  ]
+}

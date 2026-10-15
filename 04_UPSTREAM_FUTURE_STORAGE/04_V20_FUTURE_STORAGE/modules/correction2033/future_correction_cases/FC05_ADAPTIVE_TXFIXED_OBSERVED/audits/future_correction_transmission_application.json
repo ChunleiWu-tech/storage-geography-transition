@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "transmission_case": "TX_fixed",
+  "action": "no new interprovincial transmission; existing capacity remains dispatchable",
+  "all_new_build_flags_disabled": true,
+  "line_new_build_cap_max_mw": 0.0,
+  "period_build_limit_max_mw": 0.0
+}

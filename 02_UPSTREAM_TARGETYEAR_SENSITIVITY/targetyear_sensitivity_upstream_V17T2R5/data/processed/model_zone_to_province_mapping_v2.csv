@@ -1,0 +1,33 @@
+model_zone,province_en,province_cn,mapping_note
+Chongqing,Chongqing,重庆,one-to-one provincial zone
+Henan,Henan,河南,one-to-one provincial zone
+Hubei,Hubei,湖北,one-to-one provincial zone
+Hunan,Hunan,湖南,one-to-one provincial zone
+Jiangxi,Jiangxi,江西,one-to-one provincial zone
+Sichuan,Sichuan,四川,one-to-one provincial zone
+Anhui,Anhui,安徽,one-to-one provincial zone
+Fujian,Fujian,福建,one-to-one provincial zone
+Jiangsu,Jiangsu,江苏,one-to-one provincial zone
+Shanghai,Shanghai,上海,one-to-one provincial zone
+Zhejiang,Zhejiang,浙江,one-to-one provincial zone
+Beijing,Beijing,北京,one-to-one provincial zone
+Hebei,Hebei,河北,one-to-one provincial zone
+Shandong,Shandong,山东,one-to-one provincial zone
+Shanxi,Shanxi,山西,one-to-one provincial zone
+Tianjin,Tianjin,天津,one-to-one provincial zone
+West_Inner_Mongolia,Inner_Mongolia,内蒙古,Inner Mongolia split zone; same provincial CF used; existing storage split by base-model VRE capacity share
+East_Inner_Mongolia,Inner_Mongolia,内蒙古,Inner Mongolia split zone; same provincial CF used; existing storage split by base-model VRE capacity share
+Heilongjiang,Heilongjiang,黑龙江,one-to-one provincial zone
+Jilin,Jilin,吉林,one-to-one provincial zone
+Liaoning,Liaoning,辽宁,one-to-one provincial zone
+Gansu,Gansu,甘肃,one-to-one provincial zone
+Ningxia,Ningxia,宁夏,one-to-one provincial zone
+Qinghai,Qinghai,青海,one-to-one provincial zone
+Shaanxi,Shaanxi,陕西,one-to-one provincial zone
+Xinjiang,Xinjiang,新疆,one-to-one provincial zone
+Guangdong,Guangdong,广东,one-to-one provincial zone
+Guangxi,Guangxi,广西,one-to-one provincial zone
+Guizhou,Guizhou,贵州,one-to-one provincial zone
+Hainan,Hainan,海南,one-to-one provincial zone
+Yunnan,Yunnan,云南,one-to-one provincial zone
+Tibet,Tibet,西藏,one-to-one provincial zone

@@ -1,0 +1,3 @@
+V17T1
+Baseline: user-supplied solver-validated V17
+Repair scope: SL08/SL09 PH-policy floor conflict; SL10/SL13 isolated hard-LP solver routes

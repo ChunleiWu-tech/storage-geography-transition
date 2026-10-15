@@ -1,0 +1,26 @@
+{
+  "version": "V17T2R5R3_EXACT_HOURLY_COORDINATE_REDUCTION_20260813",
+  "scope": "TY2033_CHRONO_1H_OPTIMAL only",
+  "archive_layout": "extract into the existing targetyear_sensitivity_upstream_V17T2R5 root",
+  "scientific_inputs_in_archive": false,
+  "solver_results_in_archive": false,
+  "logs_in_archive": false,
+  "core_payload_sha256": {
+    "base_model_v39/cheer_power_storage_targetyear_v17t2r5.jl": "59949cd037125fcd0194e3ba336e6d1bdc7cfc335cee53b66c4c122a0dae0a38",
+    "tools/run_targetyear_batch.py": "fc1a169ec3ddb874b35030cc2e2caa72da753a17032d2b67ebfd3a0bff1b93ec",
+    "tools/check_v17t2r5_package.py": "86306c6148bc5f691cd11b3fb3177c7934ff032706fa26d88ffc0868e3541bb0",
+    "tools/check_v17t2r5r3_projection.py": "4e7da0d5809c06d7e98e3ce6be1f39e7972d6440d2415335ecbb0e648540b814",
+    "RUN_V17T2R5R3_2033_1H_OPTIMAL_ONLY.bat": "dd9f8aa782837465fa7ac4cf20da84de78d9f8750807fd841097086dfaa3e5d3",
+    "CHECK_V17T2R5R3_PATCH.bat": "fd60d0c763d3772156eccde42fe33f2592c716f894130b11bc5aecb7c457b60d",
+    "VERSION_V17T2R5R3.txt": "13ef458f48c243225d3985f0309d579e937371f6dd717a6e36a671eb048ec541",
+    "README_R3_PATCH_ZH.md": "104f7a0d4240a3e2abfca72b46a168c8df2ba3ba66485daeabb5c884beda4c4d",
+    "docs/V17T2R5R3_EXACT_HOURLY_COORDINATE_REDUCTION.md": "f0a3e8623a0d5e3d3bed4b22e0ea2044679e92e3f2d7c489f6f318c2856dab79"
+  },
+  "generated_audit_files_are_excluded_from_self_hashing": [
+    "audits/V17T2R5R3_EQUIVALENCE_AUDIT.json",
+    "audits/JULIA_LEXICAL_AUDIT_V17T2R5.json",
+    "audits/STATIC_PACKAGE_AUDIT_V17T2R5.json",
+    "PACKAGE_MANIFEST_SHA256.json",
+    "PATCH_MANIFEST_SHA256_R3.json"
+  ]
+}

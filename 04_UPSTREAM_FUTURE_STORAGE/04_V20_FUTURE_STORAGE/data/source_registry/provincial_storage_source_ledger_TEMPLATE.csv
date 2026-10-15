@@ -1,0 +1,33 @@
+model_zone,province_en,province_cn,existing_new_storage_power_mw,existing_new_storage_energy_mwh,allocation_note,allocation_share,primary_power_source_title,primary_power_source_url,primary_power_source_date,primary_energy_source_title,primary_energy_source_url,primary_energy_source_date,quoted_power_value_mw,quoted_energy_value_mwh,conversion_or_scaling_note,verified_by,verification_date,submission_ready
+East_Inner_Mongolia,Inner_Mongolia,内蒙古,5989.774880748376,16065.610085873072,Split between East/West Inner Mongolia by base-model existing onshore wind+solar predetermined capacity share,0.2326385779576378,,,,,,,,,,,,False
+West_Inner_Mongolia,Inner_Mongolia,内蒙古,19757.351556033234,52992.62705998212,Split between East/West Inner Mongolia by base-model existing onshore wind+solar predetermined capacity share,0.7673614220423622,,,,,,,,,,,,False
+Xinjiang,Xinjiang,新疆,20229.885057471263,55246.58971668415,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Hebei,Hebei,河北,8735.632183908046,22098.635886673663,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Shandong,Shandong,山东,8091.954022988506,19336.30640083945,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Jiangsu,Jiangsu,江苏,6896.551724137931,17494.753410283316,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Gansu,Gansu,甘肃,5977.0114942528735,16573.976915005245,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Ningxia,Ningxia,宁夏,5517.241379310345,14732.423924449107,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Qinghai,Qinghai,青海,5057.471264367816,13811.647429171038,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Shanxi,Shanxi,山西,4781.609195402299,11970.0944386149,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Yunnan,Yunnan,云南,4413.793103448275,11049.317943336831,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Guangdong,Guangdong,广东,4137.931034482758,10128.541448058762,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Anhui,Anhui,安徽,3862.0689655172414,9207.764952780692,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Henan,Henan,河南,3678.1609195402298,8747.376705141658,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Zhejiang,Zhejiang,浙江,3494.252873563218,8286.988457502623,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Guangxi,Guangxi,广西,3218.390804597701,7826.600209863589,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Shaanxi,Shaanxi,陕西,2942.528735632184,7366.211962224554,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Guizhou,Guizhou,贵州,2574.712643678161,6445.435466946485,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Liaoning,Liaoning,辽宁,2298.850574712644,5524.658971668416,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Jilin,Jilin,吉林,2022.9885057471265,5064.270724029381,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Heilongjiang,Heilongjiang,黑龙江,1839.0804597701149,4603.882476390347,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Fujian,Fujian,福建,1655.1724137931035,4143.494228751311,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Sichuan,Sichuan,四川,1379.3103448275865,3683.105981112277,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Hunan,Hunan,湖南,1287.3563218390805,3222.7177334732423,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Hubei,Hubei,湖北,1195.4022988505749,2946.4847848898216,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Jiangxi,Jiangxi,江西,1103.4482758620688,2762.329485834208,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Hainan,Hainan,海南,919.5402298850574,2301.9412381951734,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Shanghai,Shanghai,上海,827.5862068965517,2025.7082896117524,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Beijing,Beijing,北京,735.6321839080459,1841.5529905561384,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Tianjin,Tianjin,天津,643.6781609195402,1657.3976915005246,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Chongqing,Chongqing,重庆,459.7701149425287,1104.9317943336832,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False
+Tibet,Tibet,西藏,275.8620689655172,736.6211962224554,Province maps one-to-one to model zone,1.0,,,,,,,,,,,,False

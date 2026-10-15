@@ -1,0 +1,260 @@
+{
+  "case_kind": "main",
+  "data_version": "NEA_SWITCH_CHINA_SOURCE_UPDATE_20260803_V2",
+  "input_files": [
+    {
+      "path": "inputs/beccs_lifecycle_factors.csv",
+      "sha256": "90c8ed6a60026f908ff657eef0b4bd7c824801cbe1a6857710f1e2a8f4713d1a",
+      "size_bytes": 134
+    },
+    {
+      "path": "inputs/biomass_procure_case_params.csv",
+      "sha256": "150585fcb225de0ddbd8e15fadef11f5a516a5a14df2d90971c2a3612b7c7bc7",
+      "size_bytes": 327
+    },
+    {
+      "path": "inputs/build_tx_limits.csv",
+      "sha256": "ee3c64344b059b4c15127849bc6265a9fd4ac7db928baab1bbd7056fce002d21",
+      "size_bytes": 132
+    },
+    {
+      "path": "inputs/capacity_plans.csv",
+      "sha256": "435445607c46d57d078f946e98d905a2aef8a2509b20d5ebd72df78cbdabf263",
+      "size_bytes": 8602
+    },
+    {
+      "path": "inputs/carbon_policies.csv",
+      "sha256": "84e4f8304f652b7df2eb3517794bba085669cfb34e087f2c3e1ba8f7e88d3750",
+      "size_bytes": 231
+    },
+    {
+      "path": "inputs/ccs_install_costs.csv",
+      "sha256": "134a04be01dc1c54fab049c7c260df495322ca7c5ce79db176ba01c2eedcbdca",
+      "size_bytes": 226349
+    },
+    {
+      "path": "inputs/ccs_install_predetermined.csv",
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351",
+      "size_bytes": 70
+    },
+    {
+      "path": "inputs/ccs_new_predetermined.csv",
+      "sha256": "4bd3711f97e429e5aebee360ba32bf71b94f31071bdbfea7ce04ba521cd7c351",
+      "size_bytes": 70
+    },
+    {
+      "path": "inputs/co2_injection_limits.csv",
+      "sha256": "76cb18b47ecd2b3a62e76cc2991826cfd8d2bdb7c9928697970927b4ad62d464",
+      "size_bytes": 177
+    },
+    {
+      "path": "inputs/electricity_demand.csv",
+      "sha256": "5999cac2156cc37f106dd1bf2b01d88082bcea4843878d1c1bbd9c3995af5cb5",
+      "size_bytes": 661
+    },
+    {
+      "path": "inputs/financials.csv",
+      "sha256": "e2686f2d81559816a467c6d63b0ca37f0fc76ce986b0df7dd696f2045f884ed9",
+      "size_bytes": 65
+    },
+    {
+      "path": "inputs/fuel supply curves.csv",
+      "sha256": "426e345a16475a2560ca2c5605d6a03fde68f61f3daa57862d2601a1e5daaeb3",
+      "size_bytes": 70327
+    },
+    {
+      "path": "inputs/fuel_cost.csv",
+      "sha256": "e89471c0edc8a9f4de644e49a51dd93f2c00eea5ca2b4e6f304f72716a590abc",
+      "size_bytes": 22705
+    },
+    {
+      "path": "inputs/fuel_supply_curves.csv",
+      "sha256": "426e345a16475a2560ca2c5605d6a03fde68f61f3daa57862d2601a1e5daaeb3",
+      "size_bytes": 70327
+    },
+    {
+      "path": "inputs/fuels.csv",
+      "sha256": "83e0af313dcc61845215f750d7f45aec773ee59197991122ff43d42bc93e9da0",
+      "size_bytes": 113
+    },
+    {
+      "path": "inputs/gen_build_costs.csv",
+      "sha256": "0d9957608806cb0e8156b593ed55144e2b352c1dbda73f2eaad567b88993b632",
+      "size_bytes": 329021
+    },
+    {
+      "path": "inputs/gen_build_predetermined.csv",
+      "sha256": "ab1dfd014c808d35ac29d90f81395e7bcdc3ba56aca2a040935ed78dce85008e",
+      "size_bytes": 33178
+    },
+    {
+      "path": "inputs/gen_ccs_energy_load.csv",
+      "sha256": "1631d452a9f60aa3e2402acd16f21e7e6cae2be684416c4be61c9a76eeb99959",
+      "size_bytes": 435
+    },
+    {
+      "path": "inputs/gen_info.csv",
+      "sha256": "56daffac24ecb49ae247ca6a17ae9b2db60234bdd7dff9fab6c676ecac6be5bf",
+      "size_bytes": 94422
+    },
+    {
+      "path": "inputs/hydro_timeseries.csv",
+      "sha256": "4d74cc4f0a86dbb1569205f9d9f251fdf8ea0f198f015d0c8a9c00687c1fb0b5",
+      "size_bytes": 136828
+    },
+    {
+      "path": "inputs/legacy_storage_policy.csv",
+      "sha256": "361d85984c78a76f557bced31c7f64f1f15a15d83972e238b9939378db55c058",
+      "size_bytes": 12894
+    },
+    {
+      "path": "inputs/load_zones.csv",
+      "sha256": "a326d7c7ef419949d89cb1bd43e851412710bddebf33ba474de6ef8bace9e147",
+      "size_bytes": 2684
+    },
+    {
+      "path": "inputs/loads.csv",
+      "sha256": "5911ad86ed92c1869a3041d930e78f0985d493ee6b9fd6038df15db3fa0de64c",
+      "size_bytes": 658680
+    },
+    {
+      "path": "inputs/loads_new.csv",
+      "sha256": "a388c55b901aa509399b6b9d6b9c113d7ea86b74c765aef9c512b54caeee23a4",
+      "size_bytes": 625240
+    },
+    {
+      "path": "inputs/non_fuel_energy_sources.csv",
+      "sha256": "f809cba92ec1750deffedbad4eca9b3aa94e39f97508311c76d6b624b6785eda",
+      "size_bytes": 35
+    },
+    {
+      "path": "inputs/periods.csv",
+      "sha256": "136c1beb3e41be1de50a62db48b4a8a5ba32715dedf1ea6176dfb002e5fd1f96",
+      "size_bytes": 223
+    },
+    {
+      "path": "inputs/planning_reserve_requirement_zones.csv",
+      "sha256": "91eead9e5b52ddd3cf9fb45385f102d8d7c6ab0d79a97924b4ae80f0a286fe3b",
+      "size_bytes": 876
+    },
+    {
+      "path": "inputs/planning_reserve_requirements.csv",
+      "sha256": "a9b9e496092db6873616bad3187a0f904af125868d69f204274323d69605adbc",
+      "size_bytes": 1121
+    },
+    {
+      "path": "inputs/provincial_biomass_procure_cost_usd_per_tco2.csv",
+      "sha256": "138f11301e0ce47abc162eda755e938053b0c0a83e52ef4ae6aa4733e25bd698",
+      "size_bytes": 3085
+    },
+    {
+      "path": "inputs/regional_fuel_markets.csv",
+      "sha256": "9b5a69fa445b9eebe4d2a71a79ee9779bb8c082c5f92e5191a9679d162e64df3",
+      "size_bytes": 523
+    },
+    {
+      "path": "inputs/storage_resource_limits_v18.csv",
+      "sha256": "cdbf77d0bd93f3282cd9b9cfcdb5f1d28b4e7c624aa802f66f01acd4c93531f3",
+      "size_bytes": 2944
+    },
+    {
+      "path": "inputs/timepoints.csv",
+      "sha256": "956306b73a6675562c75964af161520f805cc7fd2826d0ec4ab68b03586f912c",
+      "size_bytes": 21202
+    },
+    {
+      "path": "inputs/timeseries.csv",
+      "sha256": "6a46afe49b21b6ef006c591837a1b9b69b7b69b5e6fccd9397ef21216a54c57d",
+      "size_bytes": 2421
+    },
+    {
+      "path": "inputs/total_capacity_limits.csv",
+      "sha256": "d57be07d3252388b7c2b88d4732e01bb84c0f7ec717dc17bed048e1e53f2b8f5",
+      "size_bytes": 230
+    },
+    {
+      "path": "inputs/total_capacity_tech_limits.csv",
+      "sha256": "2f2317402b9cbf310cb886712ccda9d3f7cb294327c4a1e23a93ecaff931c6c7",
+      "size_bytes": 46
+    },
+    {
+      "path": "inputs/trans_params.csv",
+      "sha256": "f11779b4bfffd74dd4d6f911a276897fae18329df0a9476886b4f1a99c7162cb",
+      "size_bytes": 113
+    },
+    {
+      "path": "inputs/transmission_lines.csv",
+      "sha256": "0c90bc3cdcd5a12af88886e97655fe57ed539de0710c8da88b75a7708c8d823f",
+      "size_bytes": 7394
+    },
+    {
+      "path": "inputs/variable_capacity_factors.csv",
+      "sha256": "96980977efb22d7dfd66cd37a3d714f59fd80a29b548fb14f89c2b69dff02881",
+      "size_bytes": 2995211
+    },
+    {
+      "path": "inputs/zone_coincident_peak_demand.csv",
+      "sha256": "60b8c562b7d874126f80e1446d375c69127cb888d78f531125c0755704406d99",
+      "size_bytes": 9195
+    },
+    {
+      "path": "inputs/zone_to_regional_fuel_market.csv",
+      "sha256": "22069a8b16daa58d88c819ac35eeb8426d3111d6acccef98ce094dc72790e90f",
+      "size_bytes": 569
+    }
+  ],
+  "input_manifest_sha256": "b018a065b8fbb2c24d6c46914d68b4df63b6a3450c4f507b4b07de5b8b857458",
+  "metadata_file": "STORAGE_SCENARIO_META.json",
+  "metadata_sha256": "fc840f4d25c3c657ef38294e8023282a59d2a17773c35564932fa8a2d57e3f38",
+  "scenario": "SL04_RULE_LOAD",
+  "scenario_registry_file": "storage_runner/scenarios_storage_master.csv",
+  "scenario_registry_sha256": "b6737909d9a99c6903e9360749e89d43d77d9920f1cd225194743596f13e4ff1",
+  "scenario_row_sha256": "f983426b89a53809cb8aa541343448611e7f8d355599a4b9fc98cb8a4a3620da",
+  "scenario_runtime_contract": {
+    "allow_beccs": false,
+    "allow_cas": false,
+    "allow_genccs": true,
+    "allow_new_battery": true,
+    "allow_new_pumped_hydro": true,
+    "base_case": "storage_base_noNBCCS_noDACCS_onshorePV",
+    "battery_cost_case": "NLR_2025_mid",
+    "carbon_cap_multiplier": 1.0,
+    "carbon_cap_nz_year": 0,
+    "case_group": "Core",
+    "ccs_geologic_cap_multiplier": 1.0,
+    "ccs_scope": "fossil_generator_CCS_allowed_BECCS_disabled_no_CDR",
+    "description": "Same national 2025 storage MW and MWh allocated proportional to 2023 coincident peak under common envelope.",
+    "implementation_status": "V17_spatial_legacy_fully_wired",
+    "legacy_allocation_mode": "rule_load",
+    "legacy_cap_quantile": 0.95,
+    "legacy_context": "base",
+    "legacy_pair_id": "core_rules",
+    "legacy_story_set": "spatial_legacy_core",
+    "nbccs_dac_genccs": "nbccs_daccs_beccs_disabled_fossil_generator_CCS_allowed",
+    "ne_role": "spatial_legacy_counterfactual",
+    "ne_tier": "A_publication_main",
+    "official_run": true,
+    "offshore_wind_in_main_case": false,
+    "publication_claim_scope": "eligible_after_strict_optimal_and_physical_audit",
+    "publication_use_note": "V17 Nature Energy spatial-legacy evidence chain; 2023 stock-only, operations 2028-2060, no CDR, 200 MtCO2/yr central residual cap, strict optimal and physical/legacy audits required.",
+    "pumped_hydro_case": null,
+    "scenario": "SL04_RULE_LOAD",
+    "semantic_base_case": "Storage_NoNBCCS_NoDACCS_OnshoreWind_Solar_ExistingStorage2025",
+    "storage_duration_case": "flexible_energy",
+    "temporal_evidence_class": "2028_2060_representative_day_capacity_and_intraday_operation",
+    "transmission_case": "TX_policy",
+    "v17_claim_scope": "2025 new-type storage spatial legacy under deep power-sector decarbonization; 2023 is stock-only; representative-day capacity and intraday-operation evidence; no multi-day storage or carbon-removal claim",
+    "v17_official_unique": true,
+    "v17_publication_role": "main_core",
+    "v18_claim_scope": "future technology-duration-zone-year capacity expansion under V17-native intraday-cyclic representative days; no intermonth, seasonal, full-8760, or multiweather operational claim",
+    "v18_publication_role": "headline_evidence_bounded",
+    "v18_storage_chronology_mode": "intraday_cyclic",
+    "v18_storage_portfolio_mode": "evidence_bounded",
+    "v19_claim_scope": "2028-2058 multi-period technology-duration-zone-year capacity pathway under V17-native intraday-cyclic representative days; headline portfolio is LFP4h+VRFB10/24h+PSH10/24h; no intermonth, seasonal, full-8760, or multiweather operational claim",
+    "v19_publication_role": "dynamic_pathway_extension",
+    "v19_storage_portfolio_scope": "primary",
+    "vre_cf_variant": "publication_calibrated"
+  },
+  "schema_version": "publication_case_fingerprint_v2",
+  "source_fingerprint_sha256": "333a782f8b622af398ea0ad63ac3115cfbaa44b6a6896643a8834bd72e27aaeb"
+}

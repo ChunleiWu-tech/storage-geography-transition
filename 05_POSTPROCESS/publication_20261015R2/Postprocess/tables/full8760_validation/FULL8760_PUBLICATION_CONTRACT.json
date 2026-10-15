@@ -1,0 +1,27 @@
+{
+  "version": "V30_FULL8760_R24P3_PUBLICATION_CONTRACT",
+  "status": "PASS",
+  "scientific_system": "HF18 fixed-portfolio continuous-8760 minimum ideal-flexibility robustness certificate",
+  "economic_reoptimization_outputs_used": false,
+  "historical_attempt_directories_used": false,
+  "route_versioned_diagnostic_policy": {
+    "R24P1": "common native quality fields required; later scaled-residual fields exported blank with available=false",
+    "R24P2_R24P3": "common and enhanced componentwise/scaled diagnostics required and finite",
+    "missing_values_filled_with_zero": false
+  },
+  "source_summary": "C:\\Users\\Admin\\Desktop\\01_UPSTREAM_16PLUS8\\03_FULL8760_VALIDATION_V17T2R6\\robustness_distance_8760_quality_recovery_outputs\\V17T2R6R24P3_HF18P2_COMBINED_ALL4_final_summary.json",
+  "scenario_count": 4,
+  "all_certificates_success": true,
+  "all_original_fixed_portfolios_feasible": false,
+  "metric": "minimum ideal local flexibility robustness distance (MW)",
+  "unit_alignment": "Upstream MW is retained in tables and divided exactly once by 1000 only in GW-labelled figures.",
+  "closure_checks": "Total MW = ideal firm MW + ideal absorption MW = sum of zone-level components.",
+  "zero_interpretation": "The original fixed source portfolio is strictly feasible under continuous cyclic 8760 chronology.",
+  "positive_interpretation": "A quantified lower-bound robustness gap to chronological feasibility.",
+  "forbidden_interpretations": [
+    "actual technology build",
+    "economic system cost",
+    "least-cost investment recommendation",
+    "original fixed portfolio feasibility PASS when distance is positive"
+  ]
+}
